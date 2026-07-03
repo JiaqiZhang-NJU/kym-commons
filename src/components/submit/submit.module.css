@@ -75,3 +75,14 @@
   white-space: pre-wrap;
   overflow-x: auto;
 }
+
+.panel :global(h2),
+.panel :global(h3),
+.panel :global(label),
+.panel :global(strong) {
+  color: var(--ifm-font-color-base);
+}
+
+.previewBlock {
+  border: 1px solid var(--kym-border);
+}
