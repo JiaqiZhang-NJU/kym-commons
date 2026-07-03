@@ -4,9 +4,13 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const projectName = 'kym-commons';
+const organizationName = process.env.GITHUB_REPOSITORY_OWNER ?? 'kanashimi';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'KYM Commons',
+  tagline: '匡院资料站',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -14,25 +18,16 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  url: isGithubActions ? `https://${organizationName}.github.io` : 'http://localhost:3000',
+  baseUrl: isGithubActions ? `/${projectName}/` : '/',
+  organizationName,
+  projectName,
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -41,26 +36,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -69,27 +47,25 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'KYM Commons',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'KYM Commons Logo',
         src: 'img/logo.svg',
       },
       items: [
+        {to: '/foundation', label: 'Foundation', position: 'left'},
+        {to: '/tracks', label: 'Tracks', position: 'left'},
+        {to: '/browse', label: 'Browse', position: 'left'},
+        {to: '/submit', label: 'Submit', position: 'left'},
+        {to: '/docs/rules', label: 'Rules', position: 'left'},
+        {to: '/docs/about', label: 'About', position: 'left'},
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
+          href: `https://github.com/${organizationName}/${projectName}`,
           label: 'GitHub',
           position: 'right',
         },
@@ -99,46 +75,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'KYM Commons',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
+            {label: 'Foundation', to: '/foundation'},
+            {label: 'Tracks', to: '/tracks'},
           ],
         },
         {
-          title: 'Community',
+          title: 'Contribute',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            {label: 'Submit Materials', to: '/submit'},
+            {label: 'Rules', to: '/docs/rules'},
           ],
         },
         {
-          title: 'More',
+          title: 'Project',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+            {label: 'About', to: '/docs/about'},
+            {label: 'GitHub', href: `https://github.com/${organizationName}/${projectName}`},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} KYM Commons. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
