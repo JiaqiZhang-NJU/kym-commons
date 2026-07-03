@@ -19,10 +19,10 @@ export function normalizeCourseSlug(name: string): string {
 
 export function buildCoursePath(input: BuildCoursePathInput): string {
   if (input.section === "foundation") {
-    return `/foundation/${input.courseSlug}`;
+    return `/materials?section=foundation&course=${input.courseSlug}`;
   }
 
-  return `/tracks/${input.trackSlug}/${input.courseSlug}`;
+  return `/materials?section=track&track=${input.trackSlug}&course=${input.courseSlug}`;
 }
 
 export function resolveSubmissionTarget(input: {
