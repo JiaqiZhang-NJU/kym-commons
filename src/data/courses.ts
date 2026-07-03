@@ -10,7 +10,11 @@ export const FOUNDATION_COURSES = [
 export const TRACK_COURSES = {
   math: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
   biochem: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
-  cs: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
+  cs: [
+    { slug: "data-structures", title: "数据结构", isGeneral: false },
+    { slug: "machine-learning", title: "机器学习", isGeneral: false },
+    { slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true },
+  ],
   physics: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
   astronomy: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
   other: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
