@@ -1,10 +1,28 @@
 # About
 
-KYM Commons is a student-facing materials hub for Kuang Yaming College.
+KYM Commons is an academic materials platform for the Kuang Yaming learning community.
 
-It organizes Foundation courses, track courses, and direction-level `General Resources` in one consistent structure.
+The project brings Foundation courses, track-based course materials, and direction-level `General Resources` into one coherent structure so that materials can be collected, reviewed, and maintained over time.
 
-The project uses GitHub for review, traceability, and automatic publication.
+## Purpose
+
+KYM Commons aims to provide a stable and searchable knowledge space for course-related materials and shared disciplinary resources. The platform emphasizes continuity, clarity, and maintainability rather than short-term file collection.
+
+## Content Organization
+
+The current structure includes:
+
+- Foundation course materials for the first three semesters
+- Track-based course materials organized by broad disciplinary direction
+- `General Resources` for materials that belong to a direction but not to a single course
+
+## Contribution Model
+
+Materials are submitted through the platform, reviewed through GitHub-based workflows, and then incorporated into the published site through a consistent release process.
+
+## Review Principles
+
+KYM Commons follows a curated model. Contributions are expected to be structured, attributable when appropriate, and suitable for long-term academic reference.
 
 ## Maintainer Notes
 
