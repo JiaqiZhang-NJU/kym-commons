@@ -1,0 +1,34 @@
+name: Material Submission
+description: Submit a new course material or General Resources item
+title: "[Submission][Track][Course] term material-type"
+labels: ["submission"]
+body:
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Metadata
+      description: Keep the generated structure unchanged.
+      value: |
+        ## 基本信息
+        - 归属：
+        - 方向：
+        - 课程：
+        - 类型：
+        - 标题：
+        - 学期：
+  - type: textarea
+    id: summary
+    attributes:
+      label: 资料说明
+  - type: textarea
+    id: links
+    attributes:
+      label: 文件或链接
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 确认事项
+      options:
+        - label: 我确认资料已脱敏
+        - label: 我确认资料不侵犯他人版权
+        - label: 我同意维护者对内容进行整理后发布
