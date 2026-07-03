@@ -1,0 +1,77 @@
+.wizardShell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stepper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.stepCard {
+  border: 1px solid var(--kym-border);
+  border-radius: 16px;
+  background: var(--kym-surface);
+  padding: 1rem;
+}
+
+.stepCardActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 1px var(--ifm-color-primary);
+}
+
+.panel {
+  border: 1px solid var(--kym-border);
+  border-radius: 20px;
+  background: var(--kym-surface);
+  padding: 1.5rem;
+  box-shadow: var(--kym-shadow);
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.choiceGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.choiceButton {
+  border: 1px solid var(--kym-border);
+  border-radius: 16px;
+  background: var(--kym-surface);
+  color: inherit;
+  text-align: left;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.choiceButtonActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--kym-surface-emphasis);
+}
+
+.muted {
+  color: var(--kym-muted-text);
+}
+
+.previewBlock {
+  border-radius: 16px;
+  background: var(--kym-code-surface);
+  color: var(--kym-code-text);
+  padding: 1rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
