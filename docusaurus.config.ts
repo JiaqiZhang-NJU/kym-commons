@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const projectName = 'kym-commons';
-const organizationName = process.env.GITHUB_REPOSITORY_OWNER ?? 'kanashimi';
+const organizationName = process.env.GITHUB_REPOSITORY_OWNER ?? 'JiaqiZhang-NJU';
 const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
 
 const config: Config = {
