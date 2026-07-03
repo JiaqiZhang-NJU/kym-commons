@@ -1,14 +1,25 @@
 # KYM Commons
 
-`KYM Commons` 是一个面向匡院同学的资料共享站，采用 `Docusaurus + GitHub Pages + GitHub Issues + GitHub Actions` 构建。
+`KYM Commons` 是一个面向匡院学习共同体的学术资料平台，用于系统整理大类培养课程、宽口径方向课程与方向共享资源，并通过统一的投稿、审核与发布流程支持长期维护。
 
-项目当前支持：
+项目当前包括以下核心部分：
 
-- `Foundation` 大类培养课程资料浏览
-- `Tracks` 宽口径方向课程与 `General Resources`
-- `Submit` 分步式投稿向导
-- GitHub Issue 预览与审核流
-- 审核后自动生成资料页的脚本基础设施
+- `Foundation`：前三学期大类培养课程资料浏览
+- `Tracks`：宽口径方向课程与 `General Resources`
+- `Submit`：分步式投稿与 GitHub Issue 预览
+- `Review Flow`：基于 GitHub 的审核与追踪机制
+- `Automation`：审核后生成资料内容的脚本基础设施
+
+## 项目定位
+
+`KYM Commons` 的目标不是简单堆放资料文件，而是提供一个结构清晰、便于检索、适合持续沉淀的课程与方向资源平台。
+
+平台当前采用以下内容组织方式：
+
+- 按 `Foundation` 与 `Tracks` 进行一级划分
+- 宽口径方向下按课程继续组织内容
+- 每个方向保留 `General Resources` 作为非课程资料入口
+- 资料通过统一投稿流程进入审核与发布链路
 
 ## 技术栈
 
@@ -68,18 +79,14 @@ npm run test
 - Repo: `kym-commons`
 - 策略：`先私有后公开`
 
-首次 push 与公开发布前准备，见：
+项目维护与发布准备文档见：
 
 - [GitHub Setup](./docs/github-setup.md)
 - [First Push Checklist](./docs/first-push-checklist.md)
 
-## 公开上线约束
+## 发布准备
 
-公开给学弟学妹访问时，**不要**直接使用默认 GitHub Pages 地址：
-
-- `https://JiaqiZhang-NJU.github.io/kym-commons/`
-
-公开发布必须满足：
+正式发布前建议完成以下配置检查：
 
 - 已配置自定义域名
 - DNS 已正确解析
@@ -95,7 +102,7 @@ npm run test
 - GitHub 仓库真实 owner 配置
 - GitHub 首推与上线准备文档
 
-下一步通常是：
+常见的下一步工作包括：
 
 1. 创建私有 GitHub 仓库
 2. 添加 `origin`
