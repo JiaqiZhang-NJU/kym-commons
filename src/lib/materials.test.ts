@@ -15,14 +15,14 @@ describe("normalizeCourseSlug", () => {
 describe("buildCoursePath", () => {
   it("builds foundation course paths", () => {
     expect(buildCoursePath({ section: "foundation", courseSlug: "math-analysis" })).toBe(
-      "/foundation/math-analysis"
+      "/materials?section=foundation&course=math-analysis"
     );
   });
 
   it("builds track course paths", () => {
     expect(
       buildCoursePath({ section: "track", trackSlug: "cs", courseSlug: GENERAL_RESOURCES_SLUG })
-    ).toBe("/tracks/cs/general-resources");
+    ).toBe("/materials?section=track&track=cs&course=general-resources");
   });
 });
 

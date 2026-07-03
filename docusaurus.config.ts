@@ -37,6 +37,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: `https://github.com/${organizationName}/${projectName}/tree/main/`,
+          exclude: ['superpowers/**'],
         },
         blog: false,
         theme: {
