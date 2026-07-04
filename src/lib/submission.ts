@@ -17,13 +17,16 @@ export type DetailStepState = {
 
 export const COURSE_TYPES = ["课程笔记", "作业经验", "历年题/回忆", "参考资料", "FAQ"] as const;
 export const GENERAL_TYPES = ["方向导引", "经验分享", "科研入门", "竞赛/项目", "工具资源", "书单/参考资源", "其他"] as const;
+export type CourseMaterialType = (typeof COURSE_TYPES)[number];
+export type GeneralMaterialType = (typeof GENERAL_TYPES)[number];
+export type MaterialType = CourseMaterialType | GeneralMaterialType;
 
 export type SubmissionPayload = {
   scope: SubmissionScope;
   sectionLabel: string;
   trackLabel: string | null;
   courseTitle: string;
-  materialType: string;
+  materialType: MaterialType;
   title: string;
   term: string;
   summary: string;

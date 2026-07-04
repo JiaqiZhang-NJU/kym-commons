@@ -11,6 +11,7 @@ import {
   isDetailsStepComplete,
   isScopeStepComplete,
   isTargetStepComplete,
+  type MaterialType,
   type SubmissionScope,
 } from "../../lib/submission";
 import SubmitStepDetails from "./SubmitStepDetails";
@@ -28,7 +29,7 @@ export default function SubmitWizard() {
   const [existingCourseSlug, setExistingCourseSlug] = useState("general-resources");
   const [useNewCourse, setUseNewCourse] = useState(false);
   const [newCourseTitle, setNewCourseTitle] = useState("");
-  const [materialType, setMaterialType] = useState(getDefaultMaterialType("track-general"));
+  const [materialType, setMaterialType] = useState<MaterialType>(getDefaultMaterialType("track-general"));
   const [title, setTitle] = useState("");
   const [term, setTerm] = useState("2026 Spring");
   const [summary, setSummary] = useState("");

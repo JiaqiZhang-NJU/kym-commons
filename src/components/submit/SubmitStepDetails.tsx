@@ -1,15 +1,15 @@
-import { COURSE_TYPES, GENERAL_TYPES, type SubmissionScope } from "../../lib/submission";
+import { COURSE_TYPES, GENERAL_TYPES, type MaterialType, type SubmissionScope } from "../../lib/submission";
 import styles from "./submit.module.css";
 
 type Props = {
   scope: SubmissionScope;
-  materialType: string;
+  materialType: MaterialType;
   title: string;
   term: string;
   summary: string;
   link: string;
   anonymous: boolean;
-  onMaterialTypeChange: (value: string) => void;
+  onMaterialTypeChange: (value: MaterialType) => void;
   onTitleChange: (value: string) => void;
   onTermChange: (value: string) => void;
   onSummaryChange: (value: string) => void;
@@ -24,7 +24,10 @@ export default function SubmitStepDetails(props: Props) {
     <>
       <label className={styles.field}>
         <span>资料类型</span>
-        <select value={props.materialType} onChange={(event) => props.onMaterialTypeChange(event.target.value)}>
+        <select
+          value={props.materialType}
+          onChange={(event) => props.onMaterialTypeChange(event.target.value as MaterialType)}
+        >
           {types.map((type) => (
             <option key={type} value={type}>
               {type}
