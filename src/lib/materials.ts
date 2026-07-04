@@ -2,6 +2,10 @@ export const GENERAL_RESOURCES_SLUG = "general-resources";
 
 export type SectionKey = "foundation" | "track";
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
+export type CategorizedMaterial<T = unknown> = T & {
+  category: string;
+  categoryOrder?: number;
+};
 
 type BuildCoursePathInput =
   | { section: "foundation"; courseSlug: string }
@@ -51,4 +55,32 @@ export function resolveSubmissionTarget(input: {
     trackSlug: input.trackSlug ?? "",
     courseSlug: input.courseSlug ?? "",
   };
+}
+
+export function groupMaterialsByCategory<T extends { category: string; categoryOrder?: number }>(materials: T[]) {
+  const groups = new Map<string, { category: string; categoryOrder: number; items: T[] }>();
+
+  for (const material of materials) {
+    const existing = groups.get(material.category);
+
+    if (existing) {
+      existing.items.push(material);
+      existing.categoryOrder = Math.min(existing.categoryOrder, material.categoryOrder ?? Number.MAX_SAFE_INTEGER);
+      continue;
+    }
+
+    groups.set(material.category, {
+      category: material.category,
+      categoryOrder: material.categoryOrder ?? Number.MAX_SAFE_INTEGER,
+      items: [material],
+    });
+  }
+
+  return [...groups.values()].sort((left, right) => {
+    if (left.categoryOrder !== right.categoryOrder) {
+      return left.categoryOrder - right.categoryOrder;
+    }
+
+    return left.category.localeCompare(right.category, "zh-Hans");
+  });
 }
