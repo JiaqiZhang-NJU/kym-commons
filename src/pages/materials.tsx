@@ -4,6 +4,7 @@ import { useLocation } from "@docusaurus/router";
 import MaterialCard from "../components/MaterialCard";
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
+import { groupMaterialsByCategory } from "../lib/materials";
 
 export default function MaterialsPage() {
   const { search } = useLocation();
@@ -27,6 +28,7 @@ export default function MaterialsPage() {
 
     return item.section === "track" && item.trackSlug === track && item.courseSlug === course;
   });
+  const groupedMaterials = groupMaterialsByCategory(materials);
 
   return (
     <Layout title={title}>
@@ -34,20 +36,27 @@ export default function MaterialsPage() {
         <h1>{title}</h1>
         <p>
           {section === "foundation"
-            ? "Foundation 课程资料页。"
+            ? "Foundation 课程资料页，资料按类别分组展示。"
             : "方向课程或 General Resources 的资料页。"}
         </p>
         <div className="margin-top--lg">
-          {materials.length > 0 ? (
-            materials.map((material) => (
-              <MaterialCard
-                key={material.id}
-                title={material.title}
-                type={material.type}
-                term={material.term}
-                summary={material.summary}
-                href={material.href}
-              />
+          {groupedMaterials.length > 0 ? (
+            groupedMaterials.map((group) => (
+              <section className="margin-bottom--xl" key={group.category}>
+                <h2>{group.category}</h2>
+                <div className="margin-top--md">
+                  {group.items.map((material) => (
+                    <MaterialCard
+                      key={material.id}
+                      title={material.title}
+                      type={material.type}
+                      term={material.term}
+                      summary={material.summary}
+                      href={material.href}
+                    />
+                  ))}
+                </div>
+              </section>
             ))
           ) : (
             <p>目前该课程下还没有示例资料，后续会通过审核流自动补充。</p>

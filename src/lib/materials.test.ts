@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   GENERAL_RESOURCES_SLUG,
   buildCoursePath,
+  groupMaterialsByCategory,
   normalizeCourseSlug,
   resolveSubmissionTarget,
 } from "./materials";
@@ -39,5 +40,31 @@ describe("resolveSubmissionTarget", () => {
       trackSlug: "physics",
       courseSlug: GENERAL_RESOURCES_SLUG,
     });
+  });
+});
+
+describe("groupMaterialsByCategory", () => {
+  it("groups materials by category and preserves category order", () => {
+    const grouped = groupMaterialsByCategory([
+      { id: "b", category: "往年卷", categoryOrder: 2 },
+      { id: "a", category: "作业答案", categoryOrder: 1 },
+      { id: "c", category: "往年卷", categoryOrder: 2 },
+    ]);
+
+    expect(grouped).toEqual([
+      {
+        category: "作业答案",
+        categoryOrder: 1,
+        items: [{ id: "a", category: "作业答案", categoryOrder: 1 }],
+      },
+      {
+        category: "往年卷",
+        categoryOrder: 2,
+        items: [
+          { id: "b", category: "往年卷", categoryOrder: 2 },
+          { id: "c", category: "往年卷", categoryOrder: 2 },
+        ],
+      },
+    ]);
   });
 });

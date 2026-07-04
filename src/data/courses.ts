@@ -1,10 +1,11 @@
 import { GENERAL_RESOURCES_SLUG } from "../lib/materials";
 
 export const FOUNDATION_COURSES = [
-  { slug: "math-analysis", title: "数学分析" },
-  { slug: "advanced-algebra", title: "高等代数" },
-  { slug: "general-physics", title: "普通物理" },
-  { slug: "programming-fundamentals", title: "程序设计基础" },
+  { slug: "calculus-i", title: "微积分一" },
+  { slug: "calculus-ii", title: "微积分二" },
+  { slug: "university-physics-i", title: "大学物理上" },
+  { slug: "university-physics-ii", title: "大学物理下" },
+  { slug: "linear-algebra", title: "线性代数" },
 ];
 
 export const TRACK_COURSES = {
