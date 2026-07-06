@@ -1,3 +1,7 @@
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+import { isExternalHref } from "../lib/materials";
+
 type Props = {
   title: string;
   type: string;
@@ -7,6 +11,8 @@ type Props = {
 };
 
 export default function MaterialCard({ title, type, term, summary, href }: Props) {
+  const resolvedHref = isExternalHref(href) ? href : useBaseUrl(href);
+
   return (
     <article className="card margin-bottom--md">
       <div className="card__body">
@@ -15,7 +21,7 @@ export default function MaterialCard({ title, type, term, summary, href }: Props
         </div>
         <h3>{title}</h3>
         <p>{summary}</p>
-        <a href={href} target="_blank" rel="noreferrer">
+        <a href={resolvedHref} target="_blank" rel="noreferrer">
           Open material
         </a>
       </div>

@@ -7,6 +7,10 @@ export type CategorizedMaterial<T = unknown> = T & {
   categoryOrder?: number;
 };
 
+export function isExternalHref(href: string): boolean {
+  return /^(?:[a-z]+:)?\/\//i.test(href);
+}
+
 type BuildCoursePathInput =
   | { section: "foundation"; courseSlug: string }
   | { section: "track"; trackSlug: string; courseSlug: string };

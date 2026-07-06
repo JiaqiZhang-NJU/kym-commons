@@ -3,6 +3,7 @@ import {
   GENERAL_RESOURCES_SLUG,
   buildCoursePath,
   groupMaterialsByCategory,
+  isExternalHref,
   normalizeCourseSlug,
   resolveSubmissionTarget,
 } from "./materials";
@@ -66,5 +67,15 @@ describe("groupMaterialsByCategory", () => {
         ],
       },
     ]);
+  });
+});
+
+describe("isExternalHref", () => {
+  it("treats absolute web urls as external", () => {
+    expect(isExternalHref("https://example.com/file.pdf")).toBe(true);
+  });
+
+  it("treats site-relative file paths as internal", () => {
+    expect(isExternalHref("/files/foundation/university-physics-i/review/review-notes-1.pdf")).toBe(false);
   });
 });
