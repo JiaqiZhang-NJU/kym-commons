@@ -66,6 +66,21 @@ const physicsIISlides = [
   })),
 ];
 
+const physicsIITopicNotes = [
+  { fileName: "Chapter22.pdf", title: "Chapter 22 专题讲义" },
+  { fileName: "Chap24.pdf", title: "Chapter 24 专题讲义" },
+  { fileName: "SHO.pdf", title: "简谐振子（SHO）专题" },
+  { fileName: "静电场.pdf", title: "静电场" },
+  { fileName: "静磁场.pdf", title: "静磁场" },
+  { fileName: "导体与电介质.pdf", title: "导体与电介质" },
+  { fileName: "磁介质.pdf", title: "磁介质" },
+  { fileName: "电磁感应.pdf", title: "电磁感应" },
+  { fileName: "电动力学初步.pdf", title: "电动力学初步" },
+  { fileName: "场论分析.pdf", title: "场论分析" },
+  { fileName: "角动量理论.pdf", title: "角动量理论" },
+  { fileName: "态密度.pdf", title: "态密度" },
+];
+
 const foundationMaterials: MaterialRecord[] = [
   ...buildFoundationCategoryRecords({
     courseSlug: "university-physics-i",
@@ -196,8 +211,17 @@ const foundationMaterials: MaterialRecord[] = [
   }),
   ...buildFoundationCategoryRecords({
     courseSlug: "university-physics-ii",
-    category: "作业答案",
+    category: "专题讲义",
     categoryOrder: 2,
+    term: "大学物理下",
+    summary: "大学物理下专题讲义与知识点梳理资料。",
+    basePath: "/files/foundation/university-physics-ii/topic-notes",
+    files: physicsIITopicNotes,
+  }),
+  ...buildFoundationCategoryRecords({
+    courseSlug: "university-physics-ii",
+    category: "作业答案",
+    categoryOrder: 3,
     term: "大学物理下",
     summary: "大学物理下作业答案与习题讲解。",
     basePath: "/files/foundation/university-physics-ii/assignment-solutions",
@@ -218,7 +242,7 @@ const foundationMaterials: MaterialRecord[] = [
   ...buildFoundationCategoryRecords({
     courseSlug: "university-physics-ii",
     category: "期中样卷",
-    categoryOrder: 3,
+    categoryOrder: 4,
     term: "大学物理下",
     summary: "大学物理下期中样卷与历年卷解答。",
     basePath: "/files/foundation/university-physics-ii/midterms",
@@ -245,7 +269,7 @@ const foundationMaterials: MaterialRecord[] = [
   ...buildFoundationCategoryRecords({
     courseSlug: "university-physics-ii",
     category: "期末样卷",
-    categoryOrder: 4,
+    categoryOrder: 5,
     term: "大学物理下",
     summary: "大学物理下期末样卷与参考解答。",
     basePath: "/files/foundation/university-physics-ii/finals",
