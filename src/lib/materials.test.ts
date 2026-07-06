@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   GENERAL_RESOURCES_SLUG,
   buildCoursePath,
+  getVisibleGroupItems,
   groupMaterialsByCategory,
   isExternalHref,
   normalizeCourseSlug,
@@ -77,5 +78,51 @@ describe("isExternalHref", () => {
 
   it("treats site-relative file paths as internal", () => {
     expect(isExternalHref("/files/foundation/university-physics-i/review/review-notes-1.pdf")).toBe(false);
+  });
+});
+
+describe("getVisibleGroupItems", () => {
+  const items = [
+    { id: "1", title: "A" },
+    { id: "2", title: "B" },
+    { id: "3", title: "C" },
+    { id: "4", title: "D" },
+  ];
+
+  it("returns all items when the list is shorter than the limit", () => {
+    expect(getVisibleGroupItems(items.slice(0, 2), 3, false)).toEqual({
+      visibleItems: items.slice(0, 2),
+      hiddenCount: 0,
+    });
+  });
+
+  it("returns all items when the list length equals the limit", () => {
+    expect(getVisibleGroupItems(items.slice(0, 3), 3, false)).toEqual({
+      visibleItems: items.slice(0, 3),
+      hiddenCount: 0,
+    });
+  });
+
+  it("returns only the first items and hidden count while collapsed", () => {
+    expect(getVisibleGroupItems(items, 3, false)).toEqual({
+      visibleItems: items.slice(0, 3),
+      hiddenCount: 1,
+    });
+  });
+
+  it("returns all items while expanded", () => {
+    expect(getVisibleGroupItems(items, 3, true)).toEqual({
+      visibleItems: items,
+      hiddenCount: 0,
+    });
+  });
+
+  it("returns the correct hidden count for long groups", () => {
+    const longerItems = [...items, { id: "5", title: "E" }];
+
+    expect(getVisibleGroupItems(longerItems, 3, false)).toEqual({
+      visibleItems: longerItems.slice(0, 3),
+      hiddenCount: 2,
+    });
   });
 });

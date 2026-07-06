@@ -11,6 +11,20 @@ export function isExternalHref(href: string): boolean {
   return /^(?:[a-z]+:)?\/\//i.test(href);
 }
 
+export function getVisibleGroupItems<T>(items: T[], limit: number, expanded: boolean) {
+  if (expanded || items.length <= limit) {
+    return {
+      visibleItems: items,
+      hiddenCount: 0,
+    };
+  }
+
+  return {
+    visibleItems: items.slice(0, limit),
+    hiddenCount: items.length - limit,
+  };
+}
+
 type BuildCoursePathInput =
   | { section: "foundation"; courseSlug: string }
   | { section: "track"; trackSlug: string; courseSlug: string };
