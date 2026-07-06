@@ -1,10 +1,13 @@
 import Layout from "@theme/Layout";
 import { useLocation } from "@docusaurus/router";
+import { useMemo, useState } from "react";
 
 import MaterialCard from "../components/MaterialCard";
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
-import { groupMaterialsByCategory } from "../lib/materials";
+import { getVisibleGroupItems, groupMaterialsByCategory } from "../lib/materials";
+
+const GROUP_PREVIEW_LIMIT = 3;
 
 export default function MaterialsPage() {
   const { search } = useLocation();
@@ -12,6 +15,7 @@ export default function MaterialsPage() {
   const section = params.get("section");
   const track = params.get("track");
   const course = params.get("course");
+  const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
 
   const title =
     section === "foundation"
@@ -28,7 +32,14 @@ export default function MaterialsPage() {
 
     return item.section === "track" && item.trackSlug === track && item.courseSlug === course;
   });
-  const groupedMaterials = groupMaterialsByCategory(materials);
+  const groupedMaterials = useMemo(() => groupMaterialsByCategory(materials), [materials]);
+
+  function toggleGroup(category: string) {
+    setExpandedGroups((current) => ({
+      ...current,
+      [category]: !current[category],
+    }));
+  }
 
   return (
     <Layout title={title}>
@@ -41,23 +52,41 @@ export default function MaterialsPage() {
         </p>
         <div className="margin-top--lg">
           {groupedMaterials.length > 0 ? (
-            groupedMaterials.map((group) => (
-              <section className="margin-bottom--xl" key={group.category}>
-                <h2>{group.category}</h2>
-                <div className="margin-top--md">
-                  {group.items.map((material) => (
-                    <MaterialCard
-                      key={material.id}
-                      title={material.title}
-                      type={material.type}
-                      term={material.term}
-                      summary={material.summary}
-                      href={material.href}
-                    />
-                  ))}
-                </div>
-              </section>
-            ))
+            groupedMaterials.map((group) => {
+              const expanded = expandedGroups[group.category] ?? false;
+              const { visibleItems, hiddenCount } = getVisibleGroupItems(
+                group.items,
+                GROUP_PREVIEW_LIMIT,
+                expanded
+              );
+
+              return (
+                <section className="margin-bottom--xl" key={group.category}>
+                  <h2>{group.category}</h2>
+                  <div className="margin-top--md">
+                    {visibleItems.map((material) => (
+                      <MaterialCard
+                        key={material.id}
+                        title={material.title}
+                        type={material.type}
+                        term={material.term}
+                        summary={material.summary}
+                        href={material.href}
+                      />
+                    ))}
+                  </div>
+                  {group.items.length > GROUP_PREVIEW_LIMIT ? (
+                    <button
+                      className="button button--secondary button--sm margin-top--sm"
+                      type="button"
+                      onClick={() => toggleGroup(group.category)}
+                    >
+                      {expanded ? "收起" : `查看更多（还有 ${hiddenCount} 条）`}
+                    </button>
+                  ) : null}
+                </section>
+              );
+            })
           ) : (
             <p>目前该课程下还没有示例资料，后续会通过审核流自动补充。</p>
           )}
