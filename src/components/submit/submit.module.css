@@ -63,6 +63,21 @@
   background: var(--kym-surface-emphasis);
 }
 
+.helperBox {
+  border: 1px dashed var(--ifm-color-primary);
+  border-radius: 16px;
+  background: var(--kym-surface-emphasis);
+  color: var(--ifm-font-color-base);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fieldsetReset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .muted {
   color: var(--kym-muted-text);
 }
