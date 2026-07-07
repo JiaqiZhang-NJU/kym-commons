@@ -5,6 +5,7 @@ import {
   buildIssueTitle,
   buildIssueUrl,
   getDefaultMaterialType,
+  getDefaultSourceMode,
   getResolvedCourseTitle,
   isDetailsStepComplete,
   isScopeStepComplete,
@@ -46,7 +47,32 @@ describe("step completion helpers", () => {
         title: "机器学习入门资源整理",
         term: "2026 Spring",
         summary: "",
-        link: "https://example.com/ml-guide",
+        sourceMode: "external-link",
+        externalLink: "https://example.com/ml-guide",
+      })
+    ).toBe(false);
+  });
+
+  it("allows attachment mode without an external link", () => {
+    expect(
+      isDetailsStepComplete({
+        title: "机器学习入门资源整理",
+        term: "2026 Spring",
+        summary: "给方向新人的入门路径。",
+        sourceMode: "issue-attachment",
+        externalLink: "",
+      })
+    ).toBe(true);
+  });
+
+  it("requires an external link in external-link mode", () => {
+    expect(
+      isDetailsStepComplete({
+        title: "机器学习入门资源整理",
+        term: "2026 Spring",
+        summary: "给方向新人的入门路径。",
+        sourceMode: "external-link",
+        externalLink: "",
       })
     ).toBe(false);
   });
@@ -55,6 +81,10 @@ describe("step completion helpers", () => {
 describe("submission defaults", () => {
   it("returns general material types for track-general", () => {
     expect(getDefaultMaterialType("track-general")).toBe("科研入门");
+  });
+
+  it("defaults to issue attachment mode", () => {
+    expect(getDefaultSourceMode()).toBe("issue-attachment");
   });
 
   it("resolves General Resources for track-general submissions", () => {
@@ -94,7 +124,8 @@ describe("buildIssueBody", () => {
       title: "机器学习入门资源整理",
       term: "2026 Spring",
       summary: "给方向新人的入门路径。",
-      link: "https://example.com/ml-guide",
+      sourceMode: "issue-attachment",
+      externalLink: "",
       anonymous: true,
     });
 
@@ -102,6 +133,29 @@ describe("buildIssueBody", () => {
     expect(body).toContain("- 方向：计算机");
     expect(body).toContain("- 课程：General Resources");
     expect(body).toContain("- 标题：机器学习入门资源整理");
+    expect(body).toContain("## 文件来源");
+    expect(body).toContain("- 来源方式：GitHub Issue 附件");
+    expect(body).toContain("- 外部链接：无");
+    expect(body).toContain("## 上传说明");
+  });
+
+  it("records external-link mode with the given url", () => {
+    const body = buildIssueBody({
+      scope: "track-general",
+      sectionLabel: "宽口径方向课程",
+      trackLabel: "计算机",
+      courseTitle: "General Resources",
+      materialType: "科研入门",
+      title: "机器学习入门资源整理",
+      term: "2026 Spring",
+      summary: "给方向新人的入门路径。",
+      sourceMode: "external-link",
+      externalLink: "https://example.com/ml-guide",
+      anonymous: true,
+    });
+
+    expect(body).toContain("- 来源方式：外部链接");
+    expect(body).toContain("- 外部链接：https://example.com/ml-guide");
   });
 });
 

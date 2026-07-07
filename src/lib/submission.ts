@@ -1,4 +1,5 @@
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
+export type FileSourceMode = "issue-attachment" | "external-link";
 
 export type TargetStepState = {
   scope: SubmissionScope;
@@ -12,7 +13,8 @@ export type DetailStepState = {
   title: string;
   term: string;
   summary: string;
-  link: string;
+  sourceMode: FileSourceMode;
+  externalLink: string;
 };
 
 export const COURSE_TYPES = ["课程笔记", "作业经验", "历年题/回忆", "参考资料", "FAQ"] as const;
@@ -30,12 +32,17 @@ export type SubmissionPayload = {
   title: string;
   term: string;
   summary: string;
-  link: string;
+  sourceMode: FileSourceMode;
+  externalLink: string;
   anonymous: boolean;
 };
 
 export function getDefaultMaterialType(scope: SubmissionScope) {
   return scope === "track-general" ? GENERAL_TYPES[2] : COURSE_TYPES[0];
+}
+
+export function getDefaultSourceMode(): FileSourceMode {
+  return "issue-attachment";
 }
 
 export function getResolvedCourseTitle(input: {
@@ -78,12 +85,21 @@ export function isTargetStepComplete(input: TargetStepState) {
 }
 
 export function isDetailsStepComplete(input: DetailStepState) {
-  return (
+  const baseComplete =
     input.title.trim().length > 0 &&
     input.term.trim().length > 0 &&
     input.summary.trim().length > 0 &&
-    input.link.trim().length > 0
-  );
+    input.sourceMode.length > 0;
+
+  if (!baseComplete) {
+    return false;
+  }
+
+  if (input.sourceMode === "external-link") {
+    return input.externalLink.trim().length > 0;
+  }
+
+  return true;
 }
 
 export function buildIssueTitle(
@@ -95,6 +111,12 @@ export function buildIssueTitle(
 
 export function buildIssueBody(payload: SubmissionPayload) {
   const scopeLabel = payload.scope === "track-general" ? "方向非课程资料" : payload.sectionLabel;
+  const sourceLabel = payload.sourceMode === "issue-attachment" ? "GitHub Issue 附件" : "外部链接";
+  const externalLinkLabel = payload.externalLink.trim().length > 0 ? payload.externalLink : "无";
+  const uploadSection =
+    payload.sourceMode === "issue-attachment"
+      ? ["", "## 上传说明", "- [ ] 我会在创建 Issue 后上传资料附件"]
+      : [];
 
   return [
     "## 基本信息",
@@ -108,8 +130,10 @@ export function buildIssueBody(payload: SubmissionPayload) {
     "## 资料说明",
     payload.summary,
     "",
-    "## 文件或链接",
-    `- 链接：${payload.link}`,
+    "## 文件来源",
+    `- 来源方式：${sourceLabel}`,
+    `- 外部链接：${externalLinkLabel}`,
+    ...uploadSection,
     "",
     "## 发布偏好",
     `- 是否匿名：${payload.anonymous ? "是" : "否"}`,
