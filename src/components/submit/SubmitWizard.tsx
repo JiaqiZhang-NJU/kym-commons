@@ -7,10 +7,12 @@ import {
   buildIssueTitle,
   buildIssueUrl,
   getDefaultMaterialType,
+  getDefaultSourceMode,
   getResolvedCourseTitle,
   isDetailsStepComplete,
   isScopeStepComplete,
   isTargetStepComplete,
+  type FileSourceMode,
   type MaterialType,
   type SubmissionScope,
 } from "../../lib/submission";
@@ -30,10 +32,11 @@ export default function SubmitWizard() {
   const [useNewCourse, setUseNewCourse] = useState(false);
   const [newCourseTitle, setNewCourseTitle] = useState("");
   const [materialType, setMaterialType] = useState<MaterialType>(getDefaultMaterialType("track-general"));
+  const [sourceMode, setSourceMode] = useState<FileSourceMode>(getDefaultSourceMode());
   const [title, setTitle] = useState("");
   const [term, setTerm] = useState("2026 Spring");
   const [summary, setSummary] = useState("");
-  const [link, setLink] = useState("");
+  const [externalLink, setExternalLink] = useState("");
   const [anonymous, setAnonymous] = useState(true);
 
   const trackLabel = TRACKS.find((track) => track.slug === trackSlug)?.label ?? null;
@@ -67,7 +70,8 @@ export default function SubmitWizard() {
       title,
       term,
       summary,
-      link,
+      sourceMode,
+      externalLink,
       anonymous,
     });
 
@@ -80,7 +84,7 @@ export default function SubmitWizard() {
         body: issueBody,
       }),
     };
-  }, [anonymous, courseTitle, link, materialType, scope, sectionLabel, summary, term, title, trackLabel]);
+  }, [anonymous, courseTitle, externalLink, materialType, scope, sectionLabel, sourceMode, summary, term, title, trackLabel]);
 
   const canGoNext =
     stepIndex === 0
@@ -88,7 +92,7 @@ export default function SubmitWizard() {
       : stepIndex === 1
         ? isTargetStepComplete({ scope, trackSlug, useNewCourse, existingCourseSlug, newCourseTitle })
         : stepIndex === 2
-          ? isDetailsStepComplete({ title, term, summary, link })
+          ? isDetailsStepComplete({ title, term, summary, sourceMode, externalLink })
           : true;
 
   const handleScopeChange = (nextScope: SubmissionScope) => {
@@ -131,16 +135,18 @@ export default function SubmitWizard() {
           <SubmitStepDetails
             scope={scope}
             materialType={materialType}
+            sourceMode={sourceMode}
             title={title}
             term={term}
             summary={summary}
-            link={link}
+            externalLink={externalLink}
             anonymous={anonymous}
             onMaterialTypeChange={setMaterialType}
+            onSourceModeChange={setSourceMode}
             onTitleChange={setTitle}
             onTermChange={setTerm}
             onSummaryChange={setSummary}
-            onLinkChange={setLink}
+            onExternalLinkChange={setExternalLink}
             onAnonymousChange={setAnonymous}
           />
         )}
@@ -151,6 +157,8 @@ export default function SubmitWizard() {
             issueBody={preview.issueBody}
             anonymous={anonymous}
             issueUrl={preview.issueUrl}
+            sourceMode={sourceMode}
+            externalLink={externalLink}
           />
         )}
 
