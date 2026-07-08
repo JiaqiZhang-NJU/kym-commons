@@ -1,3 +1,5 @@
+import { METADATA_BACKFILL_MATERIALS } from "./materialsBackfill";
+
 export type MaterialRecord = {
   id: string;
   section: "foundation" | "track";
@@ -10621,4 +10623,13 @@ const remainingBatch2: MaterialRecord[] = [
   }
 ];
 
-export const SAMPLE_MATERIALS: MaterialRecord[] = [...foundationMaterials, ...trackMaterials, ...csMaterials, ...csBatch2, ...csBatch3, ...remainingBatch, ...remainingBatch2];
+export const SAMPLE_MATERIALS: MaterialRecord[] = [
+  ...foundationMaterials,
+  ...trackMaterials,
+  ...csMaterials,
+  ...csBatch2,
+  ...csBatch3,
+  ...remainingBatch,
+  ...remainingBatch2,
+  ...METADATA_BACKFILL_MATERIALS,
+];

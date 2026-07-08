@@ -417,4 +417,23 @@ describe("material classification integrity", () => {
     expect(canterburyTales.courseSlug).toBe("general-resources");
     expect(canterburyTales.href).toContain("/files/tracks/other/general-resources/");
   });
+
+  it("backfills missing course materials but keeps auxiliary assets hidden", () => {
+    const bigDataTagSystem = getMaterialByTitle("《大数据构建用户标签体系》.pdf");
+    const tensorflowGuide = getMaterialByTitle("Tensorflow 实战Google深度学习框架（完整版pdf)[aibbt.com].pdf");
+
+    expect(bigDataTagSystem.trackSlug).toBe("cs");
+    expect(bigDataTagSystem.courseSlug).toBe("big-data");
+    expect(bigDataTagSystem.href).toContain("/files/tracks/cs/big-data/materials/");
+
+    expect(tensorflowGuide.trackSlug).toBe("cs");
+    expect(tensorflowGuide.courseSlug).toBe("artificial-intelligence");
+    expect(tensorflowGuide.href).toContain("/files/tracks/cs/artificial-intelligence/materials/");
+
+    expect(
+      SAMPLE_MATERIALS.some(
+        (item) => item.href === "/files/tracks/cs/computer-architecture/materials/answers.txt"
+      )
+    ).toBe(false);
+  });
 });
