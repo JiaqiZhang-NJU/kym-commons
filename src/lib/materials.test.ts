@@ -277,6 +277,16 @@ describe("material classification integrity", () => {
     ).toBe(false);
   });
 
+  it("keeps jyy operating systems papers under operating-systems-jyy", () => {
+    const final2024 = getMaterialByTitle("2024期末-jyy");
+    const midterm2025 = getMaterialByTitle("jyyos 2025期中");
+
+    expect(final2024.courseSlug).toBe("operating-systems-jyy");
+    expect(final2024.href).toContain("/files/tracks/cs/operating-systems-jyy/");
+    expect(midterm2025.courseSlug).toBe("operating-systems-jyy");
+    expect(midterm2025.href).toContain("/files/tracks/cs/operating-systems-jyy/");
+  });
+
   it("keeps tcs probability papers under probability-tcs", () => {
     const paper2026 = getMaterialByTitle("尹一通概率论2026sp期末");
 
@@ -291,6 +301,16 @@ describe("material classification integrity", () => {
           )
       )
     ).toBe(false);
+  });
+
+  it("keeps big-class probability midterms under probability-general", () => {
+    const midterm2024 = getMaterialByTitle("2024秋概率论与数理统计期中试卷");
+    const midterm2223 = getMaterialByTitle("22-23概率论与数理统计期中考试");
+
+    expect(midterm2024.courseSlug).toBe("probability-general");
+    expect(midterm2024.href).toContain("/files/tracks/cs/probability-general/");
+    expect(midterm2223.courseSlug).toBe("probability-general");
+    expect(midterm2223.href).toContain("/files/tracks/cs/probability-general/");
   });
 
   it("moves obviously cross-course materials out of problem-solving", () => {
