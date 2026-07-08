@@ -1,13 +1,136 @@
 import { describe, expect, it } from "vitest";
+import type { MaterialRecord } from "../data/materials";
 import {
   GENERAL_RESOURCES_SLUG,
+  buildBrowseQuery,
   buildCoursePath,
+  filterMaterials,
+  getBrowseFilterOptions,
   getVisibleGroupItems,
   groupMaterialsByCategory,
   isExternalHref,
   normalizeCourseSlug,
+  parseBrowseQuery,
   resolveSubmissionTarget,
 } from "./materials";
+
+const browseFixtures: MaterialRecord[] = [
+  {
+    id: "foundation-slide",
+    section: "foundation",
+    courseSlug: "university-physics-ii",
+    category: "课程讲义",
+    categoryOrder: 2,
+    title: "第 22 章课件",
+    type: "课程讲义",
+    term: "大学物理下",
+    summary: "大学物理下课程讲义与章节课件。",
+    href: "/files/foundation/university-physics-ii/course-slides/chapter22.pdf",
+  },
+  {
+    id: "track-guide",
+    section: "track",
+    trackSlug: "cs",
+    courseSlug: "machine-learning",
+    category: "科研入门",
+    categoryOrder: 1,
+    title: "机器学习入门路线",
+    type: "科研入门",
+    term: "Sophomore Spring",
+    summary: "面向计算机方向学生的机器学习科研入门资料。",
+    href: "https://example.com/ml-guide",
+  },
+];
+
+describe("parseBrowseQuery", () => {
+  it("parses valid browse query params", () => {
+    expect(parseBrowseQuery("?q=physics&section=foundation&category=课程讲义&term=大学物理下")).toEqual({
+      q: "physics",
+      section: "foundation",
+      category: "课程讲义",
+      term: "大学物理下",
+    });
+  });
+
+  it("falls back to all for invalid section values", () => {
+    expect(parseBrowseQuery("?section=unknown")).toEqual({
+      q: "",
+      section: "all",
+      category: "",
+      term: "",
+    });
+  });
+});
+
+describe("buildBrowseQuery", () => {
+  it("omits empty and default values", () => {
+    expect(
+      buildBrowseQuery({
+        q: "  ",
+        section: "all",
+        category: "",
+        term: "",
+      })
+    ).toBe("");
+  });
+
+  it("builds a stable search string for active filters", () => {
+    expect(
+      buildBrowseQuery({
+        q: "physics",
+        section: "foundation",
+        category: "课程讲义",
+        term: "大学物理下",
+      })
+    ).toBe(
+      "?q=physics&section=foundation&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B"
+    );
+  });
+});
+
+describe("getBrowseFilterOptions", () => {
+  it("derives deduplicated category and term options", () => {
+    expect(getBrowseFilterOptions(browseFixtures)).toEqual({
+      categories: ["科研入门", "课程讲义"],
+      terms: ["Sophomore Spring", "大学物理下"],
+    });
+  });
+});
+
+describe("filterMaterials", () => {
+  it("matches keyword against metadata context", () => {
+    expect(
+      filterMaterials(browseFixtures, {
+        q: "machine",
+        section: "all",
+        category: "",
+        term: "",
+      }).map((item) => item.id)
+    ).toEqual(["track-guide"]);
+  });
+
+  it("applies section category and term filters together", () => {
+    expect(
+      filterMaterials(browseFixtures, {
+        q: "",
+        section: "foundation",
+        category: "课程讲义",
+        term: "大学物理下",
+      }).map((item) => item.id)
+    ).toEqual(["foundation-slide"]);
+  });
+
+  it("returns all materials when all conditions are empty", () => {
+    expect(
+      filterMaterials(browseFixtures, {
+        q: "",
+        section: "all",
+        category: "",
+        term: "",
+      }).map((item) => item.id)
+    ).toEqual(["foundation-slide", "track-guide"]);
+  });
+});
 
 describe("normalizeCourseSlug", () => {
   it("normalizes english and chinese mixed names", () => {
