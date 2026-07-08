@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { SAMPLE_MATERIALS } from "../data/materials";
 import type { MaterialRecord } from "../data/materials";
 import {
   GENERAL_RESOURCES_SLUG,
@@ -247,5 +248,56 @@ describe("getVisibleGroupItems", () => {
       visibleItems: longerItems.slice(0, 3),
       hiddenCount: 2,
     });
+  });
+});
+
+describe("material classification integrity", () => {
+  function getMaterialByTitle(title: string) {
+    const material = SAMPLE_MATERIALS.find((item) => item.title === title);
+    expect(material).toBeDefined();
+    return material!;
+  }
+
+  it("keeps operating systems big-class papers under the big-class course", () => {
+    const finals = getMaterialByTitle("OS-大班-2026-期末");
+    const midterm = getMaterialByTitle("大班2026期中");
+
+    expect(finals.courseSlug).toBe("operating-systems-general");
+    expect(finals.href).toContain("/files/tracks/cs/operating-systems-general/");
+    expect(midterm.courseSlug).toBe("operating-systems-general");
+    expect(midterm.href).toContain("/files/tracks/cs/operating-systems-general/");
+    expect(
+      SAMPLE_MATERIALS.some(
+        (item) =>
+          item.courseSlug === "operating-systems-jyy" &&
+          ["OS-大班-2024A-A-final-Answer", "OS-大班-2024A-A-final", "OS-大班-2026-期末", "大班2026期中"].includes(
+            item.title
+          )
+      )
+    ).toBe(false);
+  });
+
+  it("keeps tcs probability papers under probability-tcs", () => {
+    const paper2026 = getMaterialByTitle("尹一通概率论2026sp期末");
+
+    expect(paper2026.courseSlug).toBe("probability-tcs");
+    expect(paper2026.href).toContain("/files/tracks/cs/probability-tcs/");
+    expect(
+      SAMPLE_MATERIALS.some(
+        (item) =>
+          item.courseSlug === "probability-general" &&
+          ["尹一通概率论2026sp期末", "概率论与数理统计(2025春)-期末回忆版", "概率论与数理统计-sp2024-期末"].includes(
+            item.title
+          )
+      )
+    ).toBe(false);
+  });
+
+  it("moves obviously cross-course materials out of problem-solving", () => {
+    expect(getMaterialByTitle("人工智能：复杂问题求解的结构和策略").courseSlug).toBe("artificial-intelligence");
+    expect(getMaterialByTitle("0图论 知识目录").courseSlug).toBe("graph-theory");
+    expect(getMaterialByTitle("图论思维练习").courseSlug).toBe("graph-theory");
+    expect(getMaterialByTitle("数据结构 知识目录").courseSlug).toBe("data-structures-and-algorithms");
+    expect(getMaterialByTitle("数据结构复习题讲评").courseSlug).toBe("data-structures-and-algorithms");
   });
 });
