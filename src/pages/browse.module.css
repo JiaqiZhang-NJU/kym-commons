@@ -1,0 +1,53 @@
+.searchPanel {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  background: var(--ifm-background-surface-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.searchInput {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.searchInput input {
+  width: 100%;
+}
+
+.filterGrid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.selectControl {
+  width: 100%;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.clearButton {
+  border: none;
+  background: none;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.emptyState {
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 16px;
+  padding: 1rem;
+  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-background-surface-color);
+}
