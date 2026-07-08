@@ -26,4 +26,4 @@ KYM Commons follows a curated model. Contributions are expected to be structured
 
 ## Maintainer Notes
 
-Maintainers should follow the GitHub setup guide in [GitHub Setup](./github-setup.md) before the first push and before any public rollout.
+Maintainers should verify the repository, Pages, Actions, and domain configuration before the first push and before any public rollout.
