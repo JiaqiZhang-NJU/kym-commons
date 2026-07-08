@@ -79,10 +79,7 @@ npm run test
 - Repo: `kym-commons`
 - 策略：`先私有后公开`
 
-项目维护与发布准备文档见：
-
-- [GitHub Setup](./docs/github-setup.md)
-- [First Push Checklist](./docs/first-push-checklist.md)
+项目维护与发布请直接参考下方“发布准备”清单，并结合仓库当前的 GitHub Pages、Actions 与自定义域名配置执行。
 
 ## 发布准备
 
