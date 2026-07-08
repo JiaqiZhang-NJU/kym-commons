@@ -1,10 +1,13 @@
 import { describe, expect, it } from "vitest";
+import { TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
 import type { MaterialRecord } from "../data/materials";
 import {
   GENERAL_RESOURCES_SLUG,
   buildBrowseQuery,
   buildCoursePath,
+  buildMaterialCoursePath,
+  buildMaterialLocationLabel,
   filterMaterials,
   getBrowseFilterOptions,
   getVisibleGroupItems,
@@ -150,6 +153,72 @@ describe("buildCoursePath", () => {
     expect(
       buildCoursePath({ section: "track", trackSlug: "cs", courseSlug: GENERAL_RESOURCES_SLUG })
     ).toBe("/materials?section=track&track=cs&course=general-resources");
+  });
+});
+
+describe("buildMaterialCoursePath", () => {
+  it("builds a course page path from a foundation material", () => {
+    expect(
+      buildMaterialCoursePath({
+        id: "foundation",
+        section: "foundation",
+        courseSlug: "linear-algebra",
+        category: "参考资料",
+        title: "线性代数教材",
+        type: "参考资料",
+        term: "未知",
+        summary: "教材",
+        href: "/files/foundation/linear-algebra/materials/book.pdf",
+      })
+    ).toBe("/materials?section=foundation&course=linear-algebra");
+  });
+
+  it("builds a course page path from a track material", () => {
+    expect(
+      buildMaterialCoursePath({
+        id: "track",
+        section: "track",
+        trackSlug: "cs",
+        courseSlug: "machine-learning",
+        category: "参考资料",
+        title: "机器学习教材",
+        type: "参考资料",
+        term: "未知",
+        summary: "教材",
+        href: "/files/tracks/cs/machine-learning/materials/book.pdf",
+      })
+    ).toBe("/materials?section=track&track=cs&course=machine-learning");
+  });
+});
+
+describe("buildMaterialLocationLabel", () => {
+  it("formats foundation breadcrumb labels", () => {
+    expect(
+      buildMaterialLocationLabel({
+        section: "foundation",
+        courseTitle: "线性代数",
+      })
+    ).toBe("Foundation / 线性代数");
+  });
+
+  it("formats track breadcrumb labels", () => {
+    expect(
+      buildMaterialLocationLabel({
+        section: "track",
+        trackSlug: "cs",
+        courseTitle: "机器学习",
+      })
+    ).toBe("Tracks / 计算机 / 机器学习");
+  });
+
+  it("formats general resources breadcrumb labels", () => {
+    expect(
+      buildMaterialLocationLabel({
+        section: "track",
+        trackSlug: "other",
+        courseTitle: "General Resources",
+      })
+    ).toBe("Tracks / 其他 / General Resources");
   });
 });
 
@@ -319,5 +388,33 @@ describe("material classification integrity", () => {
     expect(getMaterialByTitle("图论思维练习").courseSlug).toBe("graph-theory");
     expect(getMaterialByTitle("数据结构 知识目录").courseSlug).toBe("data-structures-and-algorithms");
     expect(getMaterialByTitle("数据结构复习题讲评").courseSlug).toBe("data-structures-and-algorithms");
+  });
+
+  it("places astronomy quantum mechanics papers under the astronomy track", () => {
+    expect(TRACK_COURSES.astronomy.some((item) => item.slug === "quantum-mechanics")).toBe(true);
+
+    const astronomyQuantumRetake = getMaterialByTitle("2025-2026天文与空间科学学院量子力学期末复卷");
+
+    expect(astronomyQuantumRetake.trackSlug).toBe("astronomy");
+    expect(astronomyQuantumRetake.courseSlug).toBe("quantum-mechanics");
+    expect(astronomyQuantumRetake.href).toContain("/files/tracks/astronomy/quantum-mechanics/");
+  });
+
+  it("keeps representative common textbooks under the intended targets", () => {
+    const pumpkinBook = getMaterialByTitle("pumpkin_book");
+    const zhouZhihua = getMaterialByTitle("机器学习_周志华");
+    const canterburyTales = getMaterialByTitle("The Canterbury Tales (Penguin Classics)");
+
+    expect(pumpkinBook.trackSlug).toBe("cs");
+    expect(pumpkinBook.courseSlug).toBe("general-resources");
+    expect(pumpkinBook.href).toContain("/files/tracks/cs/general-resources/");
+
+    expect(zhouZhihua.trackSlug).toBe("cs");
+    expect(zhouZhihua.courseSlug).toBe("machine-learning");
+    expect(zhouZhihua.href).toContain("/files/tracks/cs/machine-learning/");
+
+    expect(canterburyTales.trackSlug).toBe("other");
+    expect(canterburyTales.courseSlug).toBe("general-resources");
+    expect(canterburyTales.href).toContain("/files/tracks/other/general-resources/");
   });
 });

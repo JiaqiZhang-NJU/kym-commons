@@ -1,6 +1,14 @@
 import type { MaterialRecord } from "../data/materials";
 
 export const GENERAL_RESOURCES_SLUG = "general-resources";
+export const TRACK_LABELS = {
+  math: "数学",
+  biochem: "生化",
+  cs: "计算机",
+  physics: "物理",
+  astronomy: "天文",
+  other: "其他",
+} as const;
 
 export type SectionKey = "foundation" | "track";
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
@@ -159,6 +167,31 @@ export function buildCoursePath(input: BuildCoursePathInput): string {
   }
 
   return `/materials?section=track&track=${input.trackSlug}&course=${input.courseSlug}`;
+}
+
+export function buildMaterialCoursePath(material: MaterialRecord): string {
+  if (material.section === "foundation") {
+    return buildCoursePath({ section: "foundation", courseSlug: material.courseSlug });
+  }
+
+  return buildCoursePath({
+    section: "track",
+    trackSlug: material.trackSlug ?? "",
+    courseSlug: material.courseSlug,
+  });
+}
+
+export function buildMaterialLocationLabel(input: {
+  section: MaterialRecord["section"];
+  trackSlug?: MaterialRecord["trackSlug"];
+  courseTitle: string;
+}): string {
+  if (input.section === "foundation") {
+    return `Foundation / ${input.courseTitle}`;
+  }
+
+  const trackLabel = input.trackSlug ? TRACK_LABELS[input.trackSlug] ?? input.trackSlug : "未知方向";
+  return `Tracks / ${trackLabel} / ${input.courseTitle}`;
 }
 
 export function resolveSubmissionTarget(input: {

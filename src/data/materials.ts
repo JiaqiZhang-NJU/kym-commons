@@ -3210,7 +3210,7 @@ const remainingBatch: MaterialRecord[] = [
   {
     "id": "dd1ec073-386a-4d71-b450-a57f813e7d34",
     "section": "track",
-    "trackSlug": "physics",
+    "trackSlug": "astronomy",
     "courseSlug": "quantum-mechanics",
     "category": "期末试卷",
     "categoryOrder": 6,
@@ -3218,7 +3218,7 @@ const remainingBatch: MaterialRecord[] = [
     "type": "历年题/回忆",
     "term": "2025-2026",
     "summary": "来源: 用户上传补充资料",
-    "href": "/files/tracks/physics/quantum-mechanics/finals/2025-2026天文与空间科学学院量子力学期末复卷.pdf"
+    "href": "/files/tracks/astronomy/quantum-mechanics/finals/2025-2026天文与空间科学学院量子力学期末复卷.pdf"
   },
   {
     "id": "6202d8a4-8f94-4f75-9f2c-00bacd614ada",
@@ -4149,15 +4149,16 @@ const remainingBatch: MaterialRecord[] = [
   },
   {
     "id": "1fb3205b-541d-4354-a4e2-82cd3c8954c0",
-    "section": "foundation",
-    "courseSlug": "university-physics-i",
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "general-resources",
     "category": "参考资料",
     "categoryOrder": 10,
     "title": "大学物理（中文）",
-    "type": "历年题/回忆",
+    "type": "参考资料",
     "term": "未知",
     "summary": "来源: 用户上传补充资料",
-    "href": "/files/foundation/university-physics-i/materials/大学物理（中文）.pdf"
+    "href": "/files/tracks/physics/general-resources/materials/大学物理（中文）.pdf"
   },
   {
     "id": "c043f024-aac6-43c4-b0b4-44760731c33b",
@@ -10477,6 +10478,146 @@ const remainingBatch2: MaterialRecord[] = [
     "term": "未知",
     "summary": "来源: 用户上传补充资料",
     "href": "/files/tracks/cs/artificial-intelligence/materials/计算视觉SLAM十四讲高清.rar"
+  },
+  {
+    "id": "foundation-calculus-i-gaodengshuxue-qiuqingjiu",
+    "section": "foundation",
+    "courseSlug": "calculus-i",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "高等数学 仇庆久编(1)",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/foundation/calculus-i/materials/高等数学 仇庆久编(1).pdf"
+  },
+  {
+    "id": "foundation-university-physics-experiment-supplement-2025-spring",
+    "section": "foundation",
+    "courseSlug": "university-physics-experiment",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "大学物理实验一2025春季补充材料 (1)",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/foundation/university-physics-experiment/materials/大学物理实验一2025春季补充材料 (1).pdf"
+  },
+  {
+    "id": "foundation-university-physics-experiment-introduction-202503",
+    "section": "foundation",
+    "courseSlug": "university-physics-experiment",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "物理实验（一）绪论202503",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/foundation/university-physics-experiment/materials/物理实验（一）绪论202503.pdf"
+  },
+  {
+    "id": "track-cs-general-resources-pumpkin-book",
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "general-resources",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "pumpkin_book",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/cs/general-resources/materials/pumpkin_book.pdf"
+  },
+  {
+    "id": "track-cs-machine-learning-zhouzhihua",
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "machine-learning",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "机器学习_周志华",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/cs/machine-learning/materials/机器学习_周志华.pdf"
+  },
+  {
+    "id": "track-cs-problem-solving-ws-problem-solving-cpp-9th",
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "WS Problem Solving with C++ 9th 1",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/cs/problem-solving/materials/WS Problem Solving with C++ 9th 1.pdf"
+  },
+  {
+    "id": "track-math-analytic-geometry-vector-analysis",
+    "section": "track",
+    "trackSlug": "math",
+    "courseSlug": "analytic-geometry",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "矢量代数与分析",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/math/analytic-geometry/materials/矢量代数与分析.pdf"
+  },
+  {
+    "id": "track-other-general-resources-canterbury-tales",
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "The Canterbury Tales (Penguin Classics)",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/other/general-resources/materials/The Canterbury Tales (Penguin Classics) (Geoffrey Chaucer, Nevill Coghill) (Z-Library).pdf"
+  },
+  {
+    "id": "track-other-general-resources-nju-xianlin-map-2019",
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "南京大学仙林校区地图2019",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/other/general-resources/materials/南京大学仙林校区地图2019.jpg"
+  },
+  {
+    "id": "track-other-general-resources-american-literature-brief-history",
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "美国文学简史",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/other/general-resources/materials/美国文学简史.pdf"
+  },
+  {
+    "id": "track-other-general-resources-british-literature-history",
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources",
+    "category": "参考资料",
+    "categoryOrder": 10,
+    "title": "英国文学通史",
+    "type": "参考资料",
+    "term": "未知",
+    "summary": "来源: 常用教材整理",
+    "href": "/files/tracks/other/general-resources/materials/英国文学通史.pdf"
   }
 ];
 

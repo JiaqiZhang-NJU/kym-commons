@@ -66,6 +66,9 @@ export const TRACK_COURSES = {
     { slug: "electronic-circuit-foundation", title: "电子电路基础", isGeneral: false },
     { slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }
   ],
-  astronomy: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
+  astronomy: [
+    { slug: "quantum-mechanics", title: "量子力学", isGeneral: false },
+    { slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }
+  ],
   other: [{ slug: GENERAL_RESOURCES_SLUG, title: "General Resources", isGeneral: true }],
 } as const;
