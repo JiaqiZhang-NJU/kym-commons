@@ -22,6 +22,12 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.searchActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
 .selectControl {
   width: 100%;
 }

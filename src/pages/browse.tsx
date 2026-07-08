@@ -1,10 +1,13 @@
-import { useLocation } from "@docusaurus/router";
+﻿import { useLocation } from "@docusaurus/router";
 import Layout from "@theme/Layout";
 import { useEffect, useMemo, useState } from "react";
 
 import MaterialCard from "../components/MaterialCard";
+import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
 import {
+  buildMaterialCoursePath,
+  buildMaterialLocationLabel,
   buildBrowseQuery,
   filterMaterials,
   getBrowseFilterOptions,
@@ -29,15 +32,42 @@ function hasActiveConditions(query: BrowseQuery) {
   );
 }
 
+function getCourseTitle(material: (typeof SAMPLE_MATERIALS)[number]) {
+  if (material.section === "foundation") {
+    return FOUNDATION_COURSES.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
+  }
+
+  const trackCourses = material.trackSlug
+    ? TRACK_COURSES[material.trackSlug as keyof typeof TRACK_COURSES]
+    : undefined;
+
+  return trackCourses?.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
+}
+
 export default function BrowsePage() {
   const { search } = useLocation();
+  const [draftQuery, setDraftQuery] = useState<BrowseQuery>(() => parseBrowseQuery(search));
   const [query, setQuery] = useState<BrowseQuery>(() => parseBrowseQuery(search));
   const options = useMemo(() => getBrowseFilterOptions(SAMPLE_MATERIALS), []);
   const results = useMemo(() => filterMaterials(SAMPLE_MATERIALS, query), [query]);
-  const isDirty = hasActiveConditions(query);
+  const isDirty = hasActiveConditions(draftQuery);
+
+  function submitQuery(nextQuery = draftQuery) {
+    setQuery({
+      ...nextQuery,
+      q: nextQuery.q.trim(),
+    });
+  }
+
+  function clearQuery() {
+    setDraftQuery(EMPTY_QUERY);
+    setQuery(EMPTY_QUERY);
+  }
 
   useEffect(() => {
-    setQuery(parseBrowseQuery(search));
+    const parsedQuery = parseBrowseQuery(search);
+    setDraftQuery(parsedQuery);
+    setQuery(parsedQuery);
   }, [search]);
 
   useEffect(() => {
@@ -60,14 +90,21 @@ export default function BrowsePage() {
         <h1>资料检索</h1>
         <p>统一检索站内资料：支持关键词搜索，并可按资料归属、分类、学期快速缩小范围。</p>
 
-        <section className={styles.searchPanel} aria-label="资料检索面板">
+        <form
+          className={styles.searchPanel}
+          aria-label="资料检索面板"
+          onSubmit={(event) => {
+            event.preventDefault();
+            submitQuery();
+          }}
+        >
           <label className={styles.searchInput}>
             <span className="margin-bottom--sm display-block">关键词</span>
             <input
               type="search"
-              value={query.q}
+              value={draftQuery.q}
               onChange={(event) =>
-                setQuery((current) => ({
+                setDraftQuery((current) => ({
                   ...current,
                   q: event.target.value,
                 }))
@@ -81,9 +118,9 @@ export default function BrowsePage() {
               <span className="margin-bottom--sm display-block">资料归属</span>
               <select
                 className={styles.selectControl}
-                value={query.section}
+                value={draftQuery.section}
                 onChange={(event) =>
-                  setQuery((current) => ({
+                  setDraftQuery((current) => ({
                     ...current,
                     section: event.target.value as BrowseQuery["section"],
                   }))
@@ -99,9 +136,9 @@ export default function BrowsePage() {
               <span className="margin-bottom--sm display-block">分类</span>
               <select
                 className={styles.selectControl}
-                value={query.category}
+                value={draftQuery.category}
                 onChange={(event) =>
-                  setQuery((current) => ({
+                  setDraftQuery((current) => ({
                     ...current,
                     category: event.target.value,
                   }))
@@ -120,9 +157,9 @@ export default function BrowsePage() {
               <span className="margin-bottom--sm display-block">学期</span>
               <select
                 className={styles.selectControl}
-                value={query.term}
+                value={draftQuery.term}
                 onChange={(event) =>
-                  setQuery((current) => ({
+                  setDraftQuery((current) => ({
                     ...current,
                     term: event.target.value,
                   }))
@@ -137,12 +174,18 @@ export default function BrowsePage() {
               </select>
             </label>
           </div>
-        </section>
+
+          <div className={styles.searchActions}>
+            <button className="button button--primary" type="submit">
+              搜索
+            </button>
+          </div>
+        </form>
 
         <div className={styles.summaryRow}>
           <strong>共找到 {results.length} 条资料</strong>
           {isDirty ? (
-            <button className={styles.clearButton} type="button" onClick={() => setQuery(EMPTY_QUERY)}>
+            <button className={styles.clearButton} type="button" onClick={clearQuery}>
               清空筛选
             </button>
           ) : null}
@@ -163,6 +206,12 @@ export default function BrowsePage() {
                 term={material.term}
                 summary={material.summary}
                 href={material.href}
+                locationLabel={buildMaterialLocationLabel({
+                  section: material.section,
+                  trackSlug: material.trackSlug,
+                  courseTitle: getCourseTitle(material),
+                })}
+                locationHref={buildMaterialCoursePath(material)}
               />
             ))}
           </div>
