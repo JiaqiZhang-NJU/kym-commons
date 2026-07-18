@@ -3,13 +3,14 @@ import Layout from "@theme/Layout";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 import MaterialCard from "../components/MaterialCard";
-import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
 import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
+import { getBrowseCourseOptions, getMaterialCourseTitle } from "../lib/courseNavigation";
 import {
   buildMaterialCoursePath,
   buildMaterialLocationLabel,
   buildBrowseQuery,
+  courseFilterMatchesSection,
   filterMaterials,
   getBrowseFilterOptions,
   paginateItems,
@@ -21,6 +22,7 @@ import styles from "./browse.module.css";
 const EMPTY_QUERY: BrowseQuery = {
   q: "",
   section: "all",
+  course: "",
   category: "",
   term: "",
   page: 1,
@@ -31,21 +33,10 @@ function hasActiveConditions(query: BrowseQuery) {
   return (
     query.q.trim().length > 0 ||
     query.section !== "all" ||
+    query.course.length > 0 ||
     query.category.length > 0 ||
     query.term.length > 0
   );
-}
-
-function getCourseTitle(material: (typeof SAMPLE_MATERIALS)[number]) {
-  if (material.section === "foundation") {
-    return FOUNDATION_COURSES.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
-  }
-
-  const trackCourses = material.trackSlug
-    ? TRACK_COURSES[material.trackSlug as keyof typeof TRACK_COURSES]
-    : undefined;
-
-  return trackCourses?.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
 }
 
 export default function BrowsePage() {
@@ -56,6 +47,14 @@ export default function BrowsePage() {
   const [favoritesOnly, setFavoritesOnly] = useState(false);
   const { favoriteIds, toggleFavorite } = useMaterialFavorites();
   const options = useMemo(() => getBrowseFilterOptions(SAMPLE_MATERIALS), []);
+  const allCourseOptions = useMemo(() => getBrowseCourseOptions(SAMPLE_MATERIALS), []);
+  const courseOptions = useMemo(
+    () =>
+      draftQuery.section === "all"
+        ? allCourseOptions
+        : allCourseOptions.filter((option) => option.section === draftQuery.section),
+    [allCourseOptions, draftQuery.section]
+  );
   const results = useMemo(() => {
     const filteredMaterials = filterMaterials(SAMPLE_MATERIALS, query);
     return favoritesOnly
@@ -121,7 +120,7 @@ export default function BrowsePage() {
     <Layout title="资料检索">
       <main className="container margin-vert--lg">
         <h1>资料检索</h1>
-        <p>统一检索站内资料：支持关键词搜索，并可按资料归属、分类、学期快速缩小范围。</p>
+        <p>统一检索站内资料：支持关键词搜索，并可按资料归属、课程、分类和学期快速缩小范围。</p>
 
         <form
           className={styles.searchPanel}
@@ -152,16 +151,39 @@ export default function BrowsePage() {
               <select
                 className={styles.selectControl}
                 value={draftQuery.section}
-                onChange={(event) =>
+                onChange={(event) => {
+                  const section = event.target.value as BrowseQuery["section"];
                   setDraftQuery((current) => ({
                     ...current,
-                    section: event.target.value as BrowseQuery["section"],
-                  }))
-                }
+                    section,
+                    course: courseFilterMatchesSection(current.course, section) ? current.course : "",
+                  }));
+                }}
               >
                 <option value="all">全部</option>
                 <option value="foundation">基础课程</option>
                 <option value="track">方向课程</option>
+              </select>
+            </label>
+
+            <label>
+              <span className="margin-bottom--sm display-block">课程</span>
+              <select
+                className={styles.selectControl}
+                value={draftQuery.course}
+                onChange={(event) =>
+                  setDraftQuery((current) => ({
+                    ...current,
+                    course: event.target.value,
+                  }))
+                }
+              >
+                <option value="">全部课程</option>
+                {courseOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
               </select>
             </label>
 
@@ -263,7 +285,7 @@ export default function BrowsePage() {
                 locationLabel={buildMaterialLocationLabel({
                   section: material.section,
                   trackSlug: material.trackSlug,
-                  courseTitle: getCourseTitle(material),
+                  courseTitle: getMaterialCourseTitle(material),
                 })}
                 locationHref={buildMaterialCoursePath(material)}
                 isFavorite={favoriteIds.has(material.id)}

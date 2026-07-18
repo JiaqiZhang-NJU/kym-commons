@@ -1,7 +1,12 @@
 import { describe, expect, it } from "vitest";
 
 import type { MaterialRecord } from "../data/materials";
-import { getCourseMaterials, resolveCoursePageContext } from "./courseNavigation";
+import {
+  getBrowseCourseOptions,
+  getCourseMaterials,
+  getMaterialCourseTitle,
+  resolveCoursePageContext,
+} from "./courseNavigation";
 
 const materials: MaterialRecord[] = [
   {
@@ -79,5 +84,25 @@ describe("getCourseMaterials", () => {
 
   it("does not expose materials for invalid course links", () => {
     expect(getCourseMaterials(materials, resolveCoursePageContext("?course=machine-learning"))).toEqual([]);
+  });
+});
+
+describe("browse course options", () => {
+  it("builds deduplicated, human-readable course choices", () => {
+    const options = getBrowseCourseOptions([...materials, materials[1]]);
+
+    expect(options).toEqual([
+      {
+        value: "foundation:calculus-i",
+        label: "Foundation / 微积分一",
+        section: "foundation",
+      },
+      {
+        value: "track:cs:machine-learning",
+        label: "Tracks / 计算机 / 机器学习",
+        section: "track",
+      },
+    ]);
+    expect(getMaterialCourseTitle(materials[1])).toBe("机器学习");
   });
 });
