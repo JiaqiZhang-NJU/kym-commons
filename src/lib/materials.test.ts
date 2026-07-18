@@ -20,6 +20,7 @@ import {
   paginateItems,
   parseBrowseQuery,
   resolveSubmissionTarget,
+  sortMaterials,
 } from "./materials";
 
 const browseFixtures: MaterialRecord[] = [
@@ -54,7 +55,7 @@ describe("parseBrowseQuery", () => {
   it("parses valid browse query params", () => {
     expect(
       parseBrowseQuery(
-        "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=课程讲义&term=大学物理下&page=3"
+        "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=课程讲义&term=大学物理下&sort=title&page=3"
       )
     ).toEqual({
       q: "physics",
@@ -62,6 +63,7 @@ describe("parseBrowseQuery", () => {
       course: "foundation:university-physics-ii",
       category: "课程讲义",
       term: "大学物理下",
+      sort: "title",
       page: 3,
     });
   });
@@ -73,6 +75,7 @@ describe("parseBrowseQuery", () => {
       course: "",
       category: "",
       term: "",
+      sort: "default",
       page: 1,
     });
   });
@@ -86,6 +89,10 @@ describe("parseBrowseQuery", () => {
     expect(parseBrowseQuery("?course=unknown").course).toBe("");
     expect(parseBrowseQuery("?section=foundation&course=track%3Acs%3Amachine-learning").course).toBe("");
   });
+
+  it("falls back to default for invalid sort values", () => {
+    expect(parseBrowseQuery("?sort=unknown").sort).toBe("default");
+  });
 });
 
 describe("buildBrowseQuery", () => {
@@ -97,6 +104,7 @@ describe("buildBrowseQuery", () => {
         course: "",
         category: "",
         term: "",
+        sort: "default",
         page: 1,
       })
     ).toBe("");
@@ -110,10 +118,11 @@ describe("buildBrowseQuery", () => {
         course: "foundation:university-physics-ii",
         category: "课程讲义",
         term: "大学物理下",
+        sort: "course",
         page: 3,
       })
     ).toBe(
-      "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B&page=3"
+      "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B&sort=course&page=3"
     );
   });
 });
@@ -125,6 +134,7 @@ describe("clearBrowseFilter", () => {
     course: "track:cs:machine-learning",
     category: "参考资料",
     term: "未知",
+    sort: "title" as const,
     page: 4,
   };
 
@@ -137,6 +147,11 @@ describe("clearBrowseFilter", () => {
     expect(clearBrowseFilter(activeQuery, "section")).toEqual({
       ...activeQuery,
       section: "all",
+      page: 1,
+    });
+    expect(clearBrowseFilter(activeQuery, "sort")).toEqual({
+      ...activeQuery,
+      sort: "default",
       page: 1,
     });
   });
@@ -160,6 +175,7 @@ describe("filterMaterials", () => {
         course: "",
         category: "",
         term: "",
+        sort: "default",
         page: 1,
       }).map((item) => item.id)
     ).toEqual(["track-guide"]);
@@ -177,6 +193,7 @@ describe("filterMaterials", () => {
       course: "",
       category: "",
       term: "",
+      sort: "default" as const,
       page: 1,
     };
 
@@ -198,6 +215,7 @@ describe("filterMaterials", () => {
         course: "foundation:university-physics-ii",
         category: "课程讲义",
         term: "大学物理下",
+        sort: "default",
         page: 1,
       }).map((item) => item.id)
     ).toEqual(["foundation-slide"]);
@@ -217,6 +235,7 @@ describe("filterMaterials", () => {
         course: "track:cs:machine-learning",
         category: "科研入门",
         term: "Sophomore Spring",
+        sort: "default",
         page: 1,
       }).map((item) => item.id)
     ).toEqual(["track-guide"]);
@@ -230,9 +249,38 @@ describe("filterMaterials", () => {
         course: "",
         category: "",
         term: "",
+        sort: "default",
         page: 1,
       }).map((item) => item.id)
     ).toEqual(["foundation-slide", "track-guide"]);
+  });
+});
+
+describe("sortMaterials", () => {
+  const sortableMaterials: MaterialRecord[] = [
+    { ...browseFixtures[1], id: "zeta", title: "第 10 章" },
+    { ...browseFixtures[0], id: "alpha", title: "第 2 章" },
+    { ...browseFixtures[1], id: "beta", title: "第 2 章" },
+  ];
+
+  it("preserves source order by default", () => {
+    expect(sortMaterials(sortableMaterials, "default")).toBe(sortableMaterials);
+  });
+
+  it("sorts titles naturally and preserves ties", () => {
+    expect(sortMaterials(sortableMaterials, "title").map((item) => item.id)).toEqual([
+      "alpha",
+      "beta",
+      "zeta",
+    ]);
+  });
+
+  it("sorts by resolved course labels", () => {
+    expect(
+      sortMaterials(sortableMaterials, "course", (material) =>
+        material.section === "foundation" ? "A 基础课程" : "B 方向课程"
+      ).map((item) => item.id)
+    ).toEqual(["alpha", "zeta", "beta"]);
   });
 });
 
