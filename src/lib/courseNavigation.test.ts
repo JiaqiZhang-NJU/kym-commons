@@ -4,6 +4,7 @@ import type { MaterialRecord } from "../data/materials";
 import {
   getBrowseCourseOptions,
   getCourseMaterials,
+  getMaterialBrowseSearchContext,
   getMaterialCourseTitle,
   resolveCoursePageContext,
 } from "./courseNavigation";
@@ -104,5 +105,6 @@ describe("browse course options", () => {
       },
     ]);
     expect(getMaterialCourseTitle(materials[1])).toBe("机器学习");
+    expect(getMaterialBrowseSearchContext(materials[1])).toBe("方向课程 Tracks 计算机 机器学习");
   });
 });
