@@ -1,39 +1,23 @@
 import Layout from "@theme/Layout";
 import { useLocation } from "@docusaurus/router";
+import Link from "@docusaurus/Link";
 import { useMemo, useState } from "react";
 
 import MaterialCard from "../components/MaterialCard";
-import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
 import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
+import { getCourseMaterials, resolveCoursePageContext } from "../lib/courseNavigation";
 import { getVisibleGroupItems, groupMaterialsByCategory } from "../lib/materials";
+import styles from "./materials.module.css";
 
 const GROUP_PREVIEW_LIMIT = 3;
 
 export default function MaterialsPage() {
   const { search } = useLocation();
-  const params = new URLSearchParams(search);
-  const section = params.get("section");
-  const track = params.get("track");
-  const course = params.get("course");
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
   const { favoriteIds, toggleFavorite } = useMaterialFavorites();
-
-  const title =
-    section === "foundation"
-      ? FOUNDATION_COURSES.find((item) => item.slug === course)?.title ?? "Unknown Course"
-      : track && course
-        ? TRACK_COURSES[track as keyof typeof TRACK_COURSES]?.find((item) => item.slug === course)?.title ??
-          "Unknown Course"
-        : "Unknown Course";
-
-  const materials = SAMPLE_MATERIALS.filter((item) => {
-    if (section === "foundation") {
-      return item.section === "foundation" && item.courseSlug === course;
-    }
-
-    return item.section === "track" && item.trackSlug === track && item.courseSlug === course;
-  });
+  const context = useMemo(() => resolveCoursePageContext(search), [search]);
+  const materials = useMemo(() => getCourseMaterials(SAMPLE_MATERIALS, context), [context]);
   const groupedMaterials = useMemo(() => groupMaterialsByCategory(materials), [materials]);
 
   function toggleGroup(category: string) {
@@ -44,15 +28,37 @@ export default function MaterialsPage() {
   }
 
   return (
-    <Layout title={title}>
+    <Layout title={context.title}>
       <main className="container margin-vert--lg">
-        <h1>{title}</h1>
-        <p>
-          {section === "foundation"
-            ? "Foundation 课程资料页，资料按类别分组展示。"
-            : "方向课程或 General Resources 的资料页。"}
-        </p>
+        <nav className={styles.breadcrumbs} aria-label="当前位置">
+          <ol className={styles.breadcrumbList}>
+            {context.breadcrumbs.map((item, index) => (
+              <li className={styles.breadcrumbItem} key={`${item.label}-${index}`}>
+                {item.href ? <Link to={item.href}>{item.label}</Link> : <span aria-current="page">{item.label}</span>}
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <h1>{context.title}</h1>
+        <p>{context.description}</p>
+
+        {context.status === "invalid" ? (
+          <section className={`${styles.stateCard} margin-top--lg`}>
+            <h2>可以从这些入口继续</h2>
+            <p className="margin-bottom--0">重新检索资料，或从课程目录进入正确的资料页。</p>
+            <div className={styles.stateActions}>
+              <Link className="button button--primary" to="/browse">
+                检索资料
+              </Link>
+              <Link className="button button--secondary" to="/foundation">
+                查看课程目录
+              </Link>
+            </div>
+          </section>
+        ) : (
         <div className="margin-top--lg">
+          <p className={styles.pageSummary}>共收录 {materials.length} 条资料</p>
           {groupedMaterials.length > 0 ? (
             groupedMaterials.map((group) => {
               const expanded = expandedGroups[group.category] ?? false;
@@ -93,9 +99,21 @@ export default function MaterialsPage() {
               );
             })
           ) : (
-            <p>目前该课程下还没有示例资料，后续会通过审核流自动补充。</p>
+            <section className={styles.stateCard}>
+              <h2>该课程暂时没有资料</h2>
+              <p className="margin-bottom--0">如果你有讲义、试卷或复习资料，可以通过统一投稿流程补充。</p>
+              <div className={styles.stateActions}>
+                <Link className="button button--primary" to="/submit">
+                  投稿资料
+                </Link>
+                <Link className="button button--secondary" to="/browse">
+                  浏览其他资料
+                </Link>
+              </div>
+            </section>
           )}
         </div>
+        )}
       </main>
     </Layout>
   );
