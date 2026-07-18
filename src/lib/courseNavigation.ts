@@ -1,6 +1,11 @@
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import type { MaterialRecord } from "../data/materials";
-import { TRACK_LABELS } from "./materials";
+import {
+  TRACK_LABELS,
+  buildMaterialCourseFilterValue,
+  buildMaterialLocationLabel,
+  type SectionKey,
+} from "./materials";
 
 type BreadcrumbItem = {
   label: string;
@@ -32,8 +37,51 @@ export type CoursePageContext =
       breadcrumbs: BreadcrumbItem[];
     };
 
+export type BrowseCourseOption = {
+  value: string;
+  label: string;
+  section: SectionKey;
+};
+
 function isTrackSlug(value: string | null): value is keyof typeof TRACK_COURSES {
   return value !== null && Object.prototype.hasOwnProperty.call(TRACK_COURSES, value);
+}
+
+export function getMaterialCourseTitle(material: MaterialRecord): string {
+  if (material.section === "foundation") {
+    return FOUNDATION_COURSES.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
+  }
+
+  const trackCourses = material.trackSlug && isTrackSlug(material.trackSlug) ? TRACK_COURSES[material.trackSlug] : [];
+  return trackCourses.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
+}
+
+export function getBrowseCourseOptions(materials: MaterialRecord[]): BrowseCourseOption[] {
+  const options = new Map<string, BrowseCourseOption>();
+
+  for (const material of materials) {
+    const value = buildMaterialCourseFilterValue(material);
+
+    if (!options.has(value)) {
+      options.set(value, {
+        value,
+        label: buildMaterialLocationLabel({
+          section: material.section,
+          trackSlug: material.trackSlug,
+          courseTitle: getMaterialCourseTitle(material),
+        }),
+        section: material.section,
+      });
+    }
+  }
+
+  return [...options.values()].sort((left, right) => {
+    if (left.section !== right.section) {
+      return left.section === "foundation" ? -1 : 1;
+    }
+
+    return left.label.localeCompare(right.label, "zh-Hans");
+  });
 }
 
 export function resolveCoursePageContext(search: string): CoursePageContext {

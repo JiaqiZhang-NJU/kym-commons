@@ -5,6 +5,7 @@ import type { MaterialRecord } from "../data/materials";
 import {
   GENERAL_RESOURCES_SLUG,
   buildBrowseQuery,
+  buildMaterialCourseFilterValue,
   buildCoursePath,
   buildMaterialCoursePath,
   buildMaterialLocationLabel,
@@ -14,6 +15,7 @@ import {
   groupMaterialsByCategory,
   isExternalHref,
   normalizeCourseSlug,
+  courseFilterMatchesSection,
   paginateItems,
   parseBrowseQuery,
   resolveSubmissionTarget,
@@ -49,9 +51,14 @@ const browseFixtures: MaterialRecord[] = [
 
 describe("parseBrowseQuery", () => {
   it("parses valid browse query params", () => {
-    expect(parseBrowseQuery("?q=physics&section=foundation&category=课程讲义&term=大学物理下&page=3")).toEqual({
+    expect(
+      parseBrowseQuery(
+        "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=课程讲义&term=大学物理下&page=3"
+      )
+    ).toEqual({
       q: "physics",
       section: "foundation",
+      course: "foundation:university-physics-ii",
       category: "课程讲义",
       term: "大学物理下",
       page: 3,
@@ -62,6 +69,7 @@ describe("parseBrowseQuery", () => {
     expect(parseBrowseQuery("?section=unknown")).toEqual({
       q: "",
       section: "all",
+      course: "",
       category: "",
       term: "",
       page: 1,
@@ -72,6 +80,11 @@ describe("parseBrowseQuery", () => {
     expect(parseBrowseQuery("?page=-2").page).toBe(1);
     expect(parseBrowseQuery("?page=abc").page).toBe(1);
   });
+
+  it("ignores malformed or section-incompatible course filters", () => {
+    expect(parseBrowseQuery("?course=unknown").course).toBe("");
+    expect(parseBrowseQuery("?section=foundation&course=track%3Acs%3Amachine-learning").course).toBe("");
+  });
 });
 
 describe("buildBrowseQuery", () => {
@@ -80,6 +93,7 @@ describe("buildBrowseQuery", () => {
       buildBrowseQuery({
         q: "  ",
         section: "all",
+        course: "",
         category: "",
         term: "",
         page: 1,
@@ -92,12 +106,13 @@ describe("buildBrowseQuery", () => {
       buildBrowseQuery({
         q: "physics",
         section: "foundation",
+        course: "foundation:university-physics-ii",
         category: "课程讲义",
         term: "大学物理下",
         page: 3,
       })
     ).toBe(
-      "?q=physics&section=foundation&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B&page=3"
+      "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B&page=3"
     );
   });
 });
@@ -117,6 +132,7 @@ describe("filterMaterials", () => {
       filterMaterials(browseFixtures, {
         q: "machine",
         section: "all",
+        course: "",
         category: "",
         term: "",
         page: 1,
@@ -129,6 +145,7 @@ describe("filterMaterials", () => {
       filterMaterials(browseFixtures, {
         q: "",
         section: "foundation",
+        course: "foundation:university-physics-ii",
         category: "课程讲义",
         term: "大学物理下",
         page: 1,
@@ -136,16 +153,51 @@ describe("filterMaterials", () => {
     ).toEqual(["foundation-slide"]);
   });
 
+  it("distinguishes courses that share the same section and metadata", () => {
+    const anotherTrackMaterial: MaterialRecord = {
+      ...browseFixtures[1],
+      id: "track-ai-guide",
+      courseSlug: "artificial-intelligence",
+    };
+
+    expect(
+      filterMaterials([...browseFixtures, anotherTrackMaterial], {
+        q: "",
+        section: "track",
+        course: "track:cs:machine-learning",
+        category: "科研入门",
+        term: "Sophomore Spring",
+        page: 1,
+      }).map((item) => item.id)
+    ).toEqual(["track-guide"]);
+  });
+
   it("returns all materials when all conditions are empty", () => {
     expect(
       filterMaterials(browseFixtures, {
         q: "",
         section: "all",
+        course: "",
         category: "",
         term: "",
         page: 1,
       }).map((item) => item.id)
     ).toEqual(["foundation-slide", "track-guide"]);
+  });
+});
+
+describe("course browse filters", () => {
+  it("builds unambiguous values for foundation and track courses", () => {
+    expect(buildMaterialCourseFilterValue(browseFixtures[0])).toBe("foundation:university-physics-ii");
+    expect(buildMaterialCourseFilterValue(browseFixtures[1])).toBe("track:cs:machine-learning");
+  });
+
+  it("validates course values against the selected section", () => {
+    expect(courseFilterMatchesSection("foundation:calculus-i", "foundation")).toBe(true);
+    expect(courseFilterMatchesSection("foundation:calculus-i", "track")).toBe(false);
+    expect(courseFilterMatchesSection("track:cs:machine-learning", "track")).toBe(true);
+    expect(courseFilterMatchesSection("track:cs:machine-learning", "all")).toBe(true);
+    expect(courseFilterMatchesSection("track:machine-learning", "all")).toBe(false);
   });
 });
 

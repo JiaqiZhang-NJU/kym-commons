@@ -16,6 +16,7 @@ export type BrowseSectionFilter = SectionKey | "all";
 export type BrowseQuery = {
   q: string;
   section: BrowseSectionFilter;
+  course: string;
   category: string;
   term: string;
   page: number;
@@ -29,10 +30,13 @@ export function parseBrowseQuery(search: string): BrowseQuery {
   const params = new URLSearchParams(search);
   const sectionParam = params.get("section");
   const pageParam = Number.parseInt(params.get("page") ?? "", 10);
+  const section = sectionParam === "foundation" || sectionParam === "track" ? sectionParam : "all";
+  const courseParam = params.get("course") ?? "";
 
   return {
     q: params.get("q")?.trim() ?? "",
-    section: sectionParam === "foundation" || sectionParam === "track" ? sectionParam : "all",
+    section,
+    course: courseFilterMatchesSection(courseParam, section) ? courseParam : "",
     category: params.get("category") ?? "",
     term: params.get("term") ?? "",
     page: Number.isSafeInteger(pageParam) && pageParam > 0 ? pageParam : 1,
@@ -49,6 +53,10 @@ export function buildBrowseQuery(query: BrowseQuery): string {
 
   if (query.section !== "all") {
     params.set("section", query.section);
+  }
+
+  if (query.course.length > 0 && courseFilterMatchesSection(query.course, query.section)) {
+    params.set("course", query.course);
   }
 
   if (query.category.length > 0) {
@@ -120,6 +128,10 @@ export function filterMaterials(materials: MaterialRecord[], query: BrowseQuery)
       return false;
     }
 
+    if (query.course.length > 0 && buildMaterialCourseFilterValue(material) !== query.course) {
+      return false;
+    }
+
     if (query.category.length > 0 && material.category !== query.category) {
       return false;
     }
@@ -134,6 +146,29 @@ export function filterMaterials(materials: MaterialRecord[], query: BrowseQuery)
 
     return getMaterialSearchText(material).includes(keyword);
   });
+}
+
+export function buildMaterialCourseFilterValue(material: MaterialRecord): string {
+  if (material.section === "foundation") {
+    return `foundation:${material.courseSlug}`;
+  }
+
+  return `track:${material.trackSlug ?? ""}:${material.courseSlug}`;
+}
+
+export function courseFilterMatchesSection(course: string, section: BrowseSectionFilter): boolean {
+  const isFoundationCourse = /^foundation:[^:]+$/.test(course);
+  const isTrackCourse = /^track:[^:]+:[^:]+$/.test(course);
+
+  if (section === "foundation") {
+    return isFoundationCourse;
+  }
+
+  if (section === "track") {
+    return isTrackCourse;
+  }
+
+  return course.length === 0 || isFoundationCourse || isTrackCourse;
 }
 
 export function paginateItems<T>(items: T[], requestedPage: number, pageSize: number) {
