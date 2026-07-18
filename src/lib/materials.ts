@@ -21,6 +21,7 @@ export type BrowseQuery = {
   term: string;
   page: number;
 };
+export type BrowseFilterKey = Exclude<keyof BrowseQuery, "page">;
 export type CategorizedMaterial<T = unknown> = T & {
   category: string;
   categoryOrder?: number;
@@ -73,6 +74,24 @@ export function buildBrowseQuery(query: BrowseQuery): string {
 
   const built = params.toString();
   return built.length > 0 ? `?${built}` : "";
+}
+
+export function clearBrowseFilter(query: BrowseQuery, filter: BrowseFilterKey): BrowseQuery {
+  const nextQuery = { ...query, page: 1 };
+
+  switch (filter) {
+    case "q":
+    case "course":
+    case "category":
+    case "term":
+      nextQuery[filter] = "";
+      break;
+    case "section":
+      nextQuery.section = "all";
+      break;
+  }
+
+  return nextQuery;
 }
 
 function normalizeSearchText(value: string | undefined): string {

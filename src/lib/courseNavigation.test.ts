@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import type { MaterialRecord } from "../data/materials";
 import {
   getBrowseCourseOptions,
+  getActiveBrowseFilters,
   getCourseMaterials,
   getMaterialBrowseSearchContext,
   getMaterialCourseTitle,
@@ -106,5 +107,31 @@ describe("browse course options", () => {
     ]);
     expect(getMaterialCourseTitle(materials[1])).toBe("机器学习");
     expect(getMaterialBrowseSearchContext(materials[1])).toBe("方向课程 Tracks 计算机 机器学习");
+  });
+});
+
+describe("active browse filters", () => {
+  it("formats applied conditions with human-readable course labels", () => {
+    const courseOptions = getBrowseCourseOptions(materials);
+
+    expect(
+      getActiveBrowseFilters(
+        {
+          q: "机器 学习",
+          section: "track",
+          course: "track:cs:machine-learning",
+          category: "参考资料",
+          term: "未知",
+          page: 2,
+        },
+        courseOptions
+      )
+    ).toEqual([
+      { key: "q", label: "关键词：机器 学习" },
+      { key: "section", label: "归属：方向课程" },
+      { key: "course", label: "课程：Tracks / 计算机 / 机器学习" },
+      { key: "category", label: "分类：参考资料" },
+      { key: "term", label: "学期：未知" },
+    ]);
   });
 });

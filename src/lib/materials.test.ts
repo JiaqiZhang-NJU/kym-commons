@@ -9,6 +9,7 @@ import {
   buildCoursePath,
   buildMaterialCoursePath,
   buildMaterialLocationLabel,
+  clearBrowseFilter,
   filterMaterials,
   getBrowseFilterOptions,
   getVisibleGroupItems,
@@ -114,6 +115,30 @@ describe("buildBrowseQuery", () => {
     ).toBe(
       "?q=physics&section=foundation&course=foundation%3Auniversity-physics-ii&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B&page=3"
     );
+  });
+});
+
+describe("clearBrowseFilter", () => {
+  const activeQuery = {
+    q: "机器学习",
+    section: "track" as const,
+    course: "track:cs:machine-learning",
+    category: "参考资料",
+    term: "未知",
+    page: 4,
+  };
+
+  it("clears only the requested condition and returns to the first page", () => {
+    expect(clearBrowseFilter(activeQuery, "category")).toEqual({
+      ...activeQuery,
+      category: "",
+      page: 1,
+    });
+    expect(clearBrowseFilter(activeQuery, "section")).toEqual({
+      ...activeQuery,
+      section: "all",
+      page: 1,
+    });
   });
 });
 

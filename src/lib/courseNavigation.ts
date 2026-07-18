@@ -4,6 +4,8 @@ import {
   TRACK_LABELS,
   buildMaterialCourseFilterValue,
   buildMaterialLocationLabel,
+  type BrowseFilterKey,
+  type BrowseQuery,
   type SectionKey,
 } from "./materials";
 
@@ -41,6 +43,11 @@ export type BrowseCourseOption = {
   value: string;
   label: string;
   section: SectionKey;
+};
+
+export type ActiveBrowseFilter = {
+  key: BrowseFilterKey;
+  label: string;
 };
 
 function isTrackSlug(value: string | null): value is keyof typeof TRACK_COURSES {
@@ -93,6 +100,40 @@ export function getBrowseCourseOptions(materials: MaterialRecord[]): BrowseCours
 
     return left.label.localeCompare(right.label, "zh-Hans");
   });
+}
+
+export function getActiveBrowseFilters(
+  query: BrowseQuery,
+  courseOptions: BrowseCourseOption[]
+): ActiveBrowseFilter[] {
+  const filters: ActiveBrowseFilter[] = [];
+  const keyword = query.q.trim();
+
+  if (keyword) {
+    filters.push({ key: "q", label: `关键词：${keyword}` });
+  }
+
+  if (query.section !== "all") {
+    filters.push({
+      key: "section",
+      label: `归属：${query.section === "foundation" ? "基础课程" : "方向课程"}`,
+    });
+  }
+
+  if (query.course) {
+    const courseLabel = courseOptions.find((option) => option.value === query.course)?.label ?? query.course;
+    filters.push({ key: "course", label: `课程：${courseLabel}` });
+  }
+
+  if (query.category) {
+    filters.push({ key: "category", label: `分类：${query.category}` });
+  }
+
+  if (query.term) {
+    filters.push({ key: "term", label: `学期：${query.term}` });
+  }
+
+  return filters;
 }
 
 export function resolveCoursePageContext(search: string): CoursePageContext {

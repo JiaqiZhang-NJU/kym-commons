@@ -7,6 +7,7 @@ import { SAMPLE_MATERIALS } from "../data/materials";
 import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
 import {
   getBrowseCourseOptions,
+  getActiveBrowseFilters,
   getMaterialBrowseSearchContext,
   getMaterialCourseTitle,
 } from "../lib/courseNavigation";
@@ -14,12 +15,14 @@ import {
   buildMaterialCoursePath,
   buildMaterialLocationLabel,
   buildBrowseQuery,
+  clearBrowseFilter,
   courseFilterMatchesSection,
   filterMaterials,
   getBrowseFilterOptions,
   paginateItems,
   parseBrowseQuery,
   type BrowseQuery,
+  type BrowseFilterKey,
 } from "../lib/materials";
 import styles from "./browse.module.css";
 
@@ -59,6 +62,10 @@ export default function BrowsePage() {
         : allCourseOptions.filter((option) => option.section === draftQuery.section),
     [allCourseOptions, draftQuery.section]
   );
+  const activeFilters = useMemo(
+    () => getActiveBrowseFilters(query, allCourseOptions),
+    [allCourseOptions, query]
+  );
   const results = useMemo(() => {
     const filteredMaterials = filterMaterials(SAMPLE_MATERIALS, query, getMaterialBrowseSearchContext);
     return favoritesOnly
@@ -80,6 +87,17 @@ export default function BrowsePage() {
     setDraftQuery(EMPTY_QUERY);
     setQuery(EMPTY_QUERY);
     setFavoritesOnly(false);
+  }
+
+  function removeFilter(filter: BrowseFilterKey) {
+    setDraftQuery((current) => clearBrowseFilter(current, filter));
+    setQuery((current) => clearBrowseFilter(current, filter));
+  }
+
+  function removeFavoritesFilter() {
+    setFavoritesOnly(false);
+    setDraftQuery((current) => ({ ...current, page: 1 }));
+    setQuery((current) => ({ ...current, page: 1 }));
   }
 
   function goToPage(page: number) {
@@ -265,6 +283,35 @@ export default function BrowsePage() {
             </button>
           ) : null}
         </div>
+
+        {activeFilters.length > 0 || favoritesOnly ? (
+          <div className={styles.activeFilters} aria-label="已生效筛选条件">
+            <span className={styles.activeFiltersLabel}>已生效：</span>
+            {activeFilters.map((filter) => (
+              <button
+                className={styles.filterChip}
+                type="button"
+                key={filter.key}
+                aria-label={`移除筛选条件：${filter.label}`}
+                onClick={() => removeFilter(filter.key)}
+              >
+                <span>{filter.label}</span>
+                <span aria-hidden="true">×</span>
+              </button>
+            ))}
+            {favoritesOnly ? (
+              <button
+                className={styles.filterChip}
+                type="button"
+                aria-label="移除筛选条件：仅看收藏"
+                onClick={removeFavoritesFilter}
+              >
+                <span>仅看收藏</span>
+                <span aria-hidden="true">×</span>
+              </button>
+            ) : null}
+          </div>
+        ) : null}
 
         {results.length === 0 ? (
           <div className={styles.emptyState}>
