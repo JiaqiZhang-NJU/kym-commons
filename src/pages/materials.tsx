@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import MaterialCard from "../components/MaterialCard";
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
+import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
 import { getVisibleGroupItems, groupMaterialsByCategory } from "../lib/materials";
 
 const GROUP_PREVIEW_LIMIT = 3;
@@ -16,6 +17,7 @@ export default function MaterialsPage() {
   const track = params.get("track");
   const course = params.get("course");
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>({});
+  const { favoriteIds, toggleFavorite } = useMaterialFavorites();
 
   const title =
     section === "foundation"
@@ -67,11 +69,14 @@ export default function MaterialsPage() {
                     {visibleItems.map((material) => (
                       <MaterialCard
                         key={material.id}
+                        id={material.id}
                         title={material.title}
                         type={material.type}
                         term={material.term}
                         summary={material.summary}
                         href={material.href}
+                        isFavorite={favoriteIds.has(material.id)}
+                        onToggleFavorite={toggleFavorite}
                       />
                     ))}
                   </div>
