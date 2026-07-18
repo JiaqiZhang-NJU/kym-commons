@@ -5,7 +5,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import MaterialCard from "../components/MaterialCard";
 import { SAMPLE_MATERIALS } from "../data/materials";
 import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
-import { getBrowseCourseOptions, getMaterialCourseTitle } from "../lib/courseNavigation";
+import {
+  getBrowseCourseOptions,
+  getMaterialBrowseSearchContext,
+  getMaterialCourseTitle,
+} from "../lib/courseNavigation";
 import {
   buildMaterialCoursePath,
   buildMaterialLocationLabel,
@@ -56,7 +60,7 @@ export default function BrowsePage() {
     [allCourseOptions, draftQuery.section]
   );
   const results = useMemo(() => {
-    const filteredMaterials = filterMaterials(SAMPLE_MATERIALS, query);
+    const filteredMaterials = filterMaterials(SAMPLE_MATERIALS, query, getMaterialBrowseSearchContext);
     return favoritesOnly
       ? filteredMaterials.filter((material) => favoriteIds.has(material.id))
       : filteredMaterials;
@@ -141,7 +145,7 @@ export default function BrowsePage() {
                   q: event.target.value,
                 }))
               }
-              placeholder="搜索标题、摘要、课程名或分类信息"
+              placeholder="搜索标题、课程名或分类；多个关键词用空格分隔"
             />
           </label>
 

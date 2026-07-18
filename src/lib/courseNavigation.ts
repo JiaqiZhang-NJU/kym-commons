@@ -56,6 +56,17 @@ export function getMaterialCourseTitle(material: MaterialRecord): string {
   return trackCourses.find((item) => item.slug === material.courseSlug)?.title ?? material.courseSlug;
 }
 
+export function getMaterialBrowseSearchContext(material: MaterialRecord): string {
+  const courseTitle = getMaterialCourseTitle(material);
+
+  if (material.section === "foundation") {
+    return `基础课程 Foundation ${courseTitle}`;
+  }
+
+  const trackLabel = material.trackSlug ? TRACK_LABELS[material.trackSlug] ?? material.trackSlug : "";
+  return `方向课程 Tracks ${trackLabel} ${courseTitle}`;
+}
+
 export function getBrowseCourseOptions(materials: MaterialRecord[]): BrowseCourseOption[] {
   const options = new Map<string, BrowseCourseOption>();
 

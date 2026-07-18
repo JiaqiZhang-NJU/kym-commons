@@ -106,7 +106,7 @@ export function getBrowseFilterOptions(materials: MaterialRecord[]) {
   return { categories, terms };
 }
 
-function getMaterialSearchText(material: MaterialRecord): string {
+function getMaterialSearchText(material: MaterialRecord, contextText = ""): string {
   return normalizeSearchText(
     [
       material.title,
@@ -116,12 +116,17 @@ function getMaterialSearchText(material: MaterialRecord): string {
       material.section,
       material.courseSlug,
       material.trackSlug,
+      contextText,
     ].join(" ")
   );
 }
 
-export function filterMaterials(materials: MaterialRecord[], query: BrowseQuery) {
-  const keyword = normalizeSearchText(query.q);
+export function filterMaterials(
+  materials: MaterialRecord[],
+  query: BrowseQuery,
+  getContextText?: (material: MaterialRecord) => string
+) {
+  const keywords = normalizeSearchText(query.q).split(" ").filter(Boolean);
 
   return materials.filter((material) => {
     if (query.section !== "all" && material.section !== query.section) {
@@ -140,11 +145,12 @@ export function filterMaterials(materials: MaterialRecord[], query: BrowseQuery)
       return false;
     }
 
-    if (keyword.length === 0) {
+    if (keywords.length === 0) {
       return true;
     }
 
-    return getMaterialSearchText(material).includes(keyword);
+    const searchText = getMaterialSearchText(material, getContextText?.(material));
+    return keywords.every((keyword) => searchText.includes(keyword));
   });
 }
 

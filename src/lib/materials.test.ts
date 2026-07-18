@@ -140,6 +140,31 @@ describe("filterMaterials", () => {
     ).toEqual(["track-guide"]);
   });
 
+  it("matches multiple keywords across injected course and direction context", () => {
+    const contextOnlyMaterial: MaterialRecord = {
+      ...browseFixtures[1],
+      title: "Lecture 01",
+      summary: "课程资料",
+    };
+    const query = {
+      q: "计算机 机器学习",
+      section: "all" as const,
+      course: "",
+      category: "",
+      term: "",
+      page: 1,
+    };
+
+    expect(
+      filterMaterials([contextOnlyMaterial], query, () => "方向课程 计算机 机器学习").map(
+        (item) => item.id
+      )
+    ).toEqual(["track-guide"]);
+    expect(filterMaterials([contextOnlyMaterial], { ...query, q: "计算机 量子" }, () => "计算机 机器学习")).toEqual(
+      []
+    );
+  });
+
   it("applies section category and term filters together", () => {
     expect(
       filterMaterials(browseFixtures, {
