@@ -63,6 +63,51 @@
   padding: 0;
 }
 
+.activeFilters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.25rem 0 1rem;
+}
+
+.activeFiltersLabel {
+  color: var(--kym-muted-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.filterChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  max-width: 100%;
+  border: 1px solid var(--kym-border);
+  border-radius: 999px;
+  background: var(--kym-surface-emphasis);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  padding: 0.4rem 0.7rem;
+  text-align: left;
+}
+
+.filterChip:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .filterChip:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+.filterChip:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
 .emptyState {
   border: 1px dashed var(--ifm-color-emphasis-300);
   border-radius: 16px;
