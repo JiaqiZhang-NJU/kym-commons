@@ -27,3 +27,73 @@
 .subtitle {
   max-width: 42rem;
 }
+
+.searchForm {
+  max-width: 46rem;
+  margin: 1.75rem 0;
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.searchLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.searchRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.65rem;
+}
+
+.searchInput {
+  min-width: 0;
+  border-color: rgba(255, 255, 255, 0.45);
+  background: #fff;
+  color: #1f2430;
+}
+
+.searchInput::placeholder {
+  color: #6d7483;
+}
+
+.searchInput:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.38);
+  outline-offset: 1px;
+}
+
+.searchSuggestions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.9rem;
+}
+
+.searchSuggestions a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-weight: 600;
+}
+
+.searchSuggestions a:hover {
+  border-bottom-color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .searchRow {
+    grid-template-columns: 1fr;
+  }
+
+  .searchRow button {
+    width: 100%;
+  }
+}
