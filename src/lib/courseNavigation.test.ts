@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import type { MaterialRecord } from "../data/materials";
 import {
+  buildCourseSubmissionPath,
   getBrowseCourseOptions,
   getActiveBrowseFilters,
   getCourseMaterials,
@@ -86,6 +87,28 @@ describe("getCourseMaterials", () => {
 
   it("does not expose materials for invalid course links", () => {
     expect(getCourseMaterials(materials, resolveCoursePageContext("?course=machine-learning"))).toEqual([]);
+  });
+});
+
+describe("buildCourseSubmissionPath", () => {
+  it("builds prefilled submission links for valid course contexts", () => {
+    expect(
+      buildCourseSubmissionPath(resolveCoursePageContext("?section=foundation&course=calculus-i"))
+    ).toBe("/submit?scope=foundation-course&course=calculus-i");
+    expect(
+      buildCourseSubmissionPath(
+        resolveCoursePageContext("?section=track&track=cs&course=machine-learning")
+      )
+    ).toBe("/submit?scope=track-course&track=cs&course=machine-learning");
+    expect(
+      buildCourseSubmissionPath(
+        resolveCoursePageContext("?section=track&track=physics&course=general-resources")
+      )
+    ).toBe("/submit?scope=track-general&track=physics&course=general-resources");
+  });
+
+  it("falls back to the normal submission page for invalid contexts", () => {
+    expect(buildCourseSubmissionPath(resolveCoursePageContext("?course=unknown"))).toBe("/submit");
   });
 });
 

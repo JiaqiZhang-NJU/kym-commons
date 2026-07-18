@@ -1,6 +1,7 @@
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import type { MaterialRecord } from "../data/materials";
 import {
+  GENERAL_RESOURCES_SLUG,
   TRACK_LABELS,
   buildMaterialCourseFilterValue,
   buildMaterialLocationLabel,
@@ -213,4 +214,26 @@ export function getCourseMaterials(materials: MaterialRecord[], context: CourseP
       material.courseSlug === context.courseSlug
     );
   });
+}
+
+export function buildCourseSubmissionPath(context: CoursePageContext): string {
+  if (context.status !== "valid") {
+    return "/submit";
+  }
+
+  const params = new URLSearchParams();
+
+  if (context.section === "foundation") {
+    params.set("scope", "foundation-course");
+    params.set("course", context.courseSlug);
+  } else {
+    params.set(
+      "scope",
+      context.courseSlug === GENERAL_RESOURCES_SLUG ? "track-general" : "track-course"
+    );
+    params.set("track", context.trackSlug);
+    params.set("course", context.courseSlug);
+  }
+
+  return `/submit?${params.toString()}`;
 }

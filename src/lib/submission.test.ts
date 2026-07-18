@@ -10,7 +10,45 @@ import {
   isDetailsStepComplete,
   isScopeStepComplete,
   isTargetStepComplete,
+  parseSubmissionPrefill,
 } from "./submission";
+
+describe("parseSubmissionPrefill", () => {
+  it("accepts known foundation and track courses", () => {
+    expect(parseSubmissionPrefill("?scope=foundation-course&course=calculus-i")).toEqual({
+      scope: "foundation-course",
+      trackSlug: "",
+      courseSlug: "calculus-i",
+    });
+    expect(
+      parseSubmissionPrefill("?scope=track-course&track=cs&course=machine-learning")
+    ).toEqual({
+      scope: "track-course",
+      trackSlug: "cs",
+      courseSlug: "machine-learning",
+    });
+  });
+
+  it("accepts a track general-resources target", () => {
+    expect(
+      parseSubmissionPrefill("?scope=track-general&track=physics&course=general-resources")
+    ).toEqual({
+      scope: "track-general",
+      trackSlug: "physics",
+      courseSlug: "general-resources",
+    });
+  });
+
+  it("rejects unknown or mismatched target combinations", () => {
+    expect(
+      parseSubmissionPrefill("?scope=track-course&track=math&course=machine-learning")
+    ).toBeNull();
+    expect(
+      parseSubmissionPrefill("?scope=track-course&track=cs&course=general-resources")
+    ).toBeNull();
+    expect(parseSubmissionPrefill("?scope=unknown&course=calculus-i")).toBeNull();
+  });
+});
 
 describe("step completion helpers", () => {
   it("accepts any valid submission scope", () => {

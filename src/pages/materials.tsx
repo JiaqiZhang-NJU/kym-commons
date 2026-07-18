@@ -6,7 +6,11 @@ import { useMemo, useState } from "react";
 import MaterialCard from "../components/MaterialCard";
 import { SAMPLE_MATERIALS } from "../data/materials";
 import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
-import { getCourseMaterials, resolveCoursePageContext } from "../lib/courseNavigation";
+import {
+  buildCourseSubmissionPath,
+  getCourseMaterials,
+  resolveCoursePageContext,
+} from "../lib/courseNavigation";
 import { getVisibleGroupItems, groupMaterialsByCategory } from "../lib/materials";
 import styles from "./materials.module.css";
 
@@ -103,7 +107,7 @@ export default function MaterialsPage() {
               <h2>该课程暂时没有资料</h2>
               <p className="margin-bottom--0">如果你有讲义、试卷或复习资料，可以通过统一投稿流程补充。</p>
               <div className={styles.stateActions}>
-                <Link className="button button--primary" to="/submit">
+                <Link className="button button--primary" to={buildCourseSubmissionPath(context)}>
                   投稿资料
                 </Link>
                 <Link className="button button--secondary" to="/browse">

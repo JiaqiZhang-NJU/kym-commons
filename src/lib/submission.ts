@@ -1,5 +1,14 @@
+import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
+import { GENERAL_RESOURCES_SLUG } from "./materials";
+
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
 export type FileSourceMode = "issue-attachment" | "external-link";
+
+export type SubmissionPrefill = {
+  scope: SubmissionScope;
+  trackSlug: string;
+  courseSlug: string;
+};
 
 export type TargetStepState = {
   scope: SubmissionScope;
@@ -36,6 +45,38 @@ export type SubmissionPayload = {
   externalLink: string;
   anonymous: boolean;
 };
+
+export function parseSubmissionPrefill(search: string): SubmissionPrefill | null {
+  const params = new URLSearchParams(search);
+  const scope = params.get("scope");
+  const trackSlug = params.get("track") ?? "";
+  const courseSlug = params.get("course") ?? "";
+
+  if (scope === "foundation-course") {
+    const courseExists = FOUNDATION_COURSES.some((course) => course.slug === courseSlug);
+    return courseExists ? { scope, trackSlug: "", courseSlug } : null;
+  }
+
+  if (!Object.prototype.hasOwnProperty.call(TRACK_COURSES, trackSlug)) {
+    return null;
+  }
+
+  if (scope === "track-general") {
+    return courseSlug === GENERAL_RESOURCES_SLUG
+      ? { scope, trackSlug, courseSlug }
+      : null;
+  }
+
+  if (scope === "track-course") {
+    const courses = TRACK_COURSES[trackSlug as keyof typeof TRACK_COURSES];
+    const courseExists = courses.some(
+      (course) => course.slug === courseSlug && !course.isGeneral
+    );
+    return courseExists ? { scope, trackSlug, courseSlug } : null;
+  }
+
+  return null;
+}
 
 export function getDefaultMaterialType(scope: SubmissionScope) {
   return scope === "track-general" ? GENERAL_TYPES[2] : COURSE_TYPES[0];

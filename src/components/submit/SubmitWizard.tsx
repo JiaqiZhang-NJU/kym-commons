@@ -14,6 +14,7 @@ import {
   isTargetStepComplete,
   type FileSourceMode,
   type MaterialType,
+  type SubmissionPrefill,
   type SubmissionScope,
 } from "../../lib/submission";
 import SubmitStepDetails from "./SubmitStepDetails";
@@ -24,14 +25,38 @@ import styles from "./submit.module.css";
 
 const steps = ["投稿类型", "归属位置", "资料详情", "预览提交"];
 
-export default function SubmitWizard() {
-  const [stepIndex, setStepIndex] = useState(0);
-  const [scope, setScope] = useState<SubmissionScope>("track-general");
-  const [trackSlug, setTrackSlug] = useState("cs");
-  const [existingCourseSlug, setExistingCourseSlug] = useState("general-resources");
+type Props = {
+  initialTarget?: SubmissionPrefill | null;
+};
+
+function getFirstCourseSlug(scope: SubmissionScope, trackSlug: string) {
+  if (scope === "foundation-course") {
+    return FOUNDATION_COURSES[0]?.slug ?? "";
+  }
+
+  if (scope === "track-general") {
+    return "general-resources";
+  }
+
+  return (
+    TRACK_COURSES[trackSlug as keyof typeof TRACK_COURSES]?.find(
+      (course) => !course.isGeneral
+    )?.slug ?? ""
+  );
+}
+
+export default function SubmitWizard({ initialTarget }: Props) {
+  const initialScope = initialTarget?.scope ?? "track-general";
+  const initialTrackSlug = initialTarget?.trackSlug || "cs";
+  const [stepIndex, setStepIndex] = useState(initialTarget ? 1 : 0);
+  const [scope, setScope] = useState<SubmissionScope>(initialScope);
+  const [trackSlug, setTrackSlug] = useState(initialTrackSlug);
+  const [existingCourseSlug, setExistingCourseSlug] = useState(
+    initialTarget?.courseSlug ?? "general-resources"
+  );
   const [useNewCourse, setUseNewCourse] = useState(false);
   const [newCourseTitle, setNewCourseTitle] = useState("");
-  const [materialType, setMaterialType] = useState<MaterialType>(getDefaultMaterialType("track-general"));
+  const [materialType, setMaterialType] = useState<MaterialType>(getDefaultMaterialType(initialScope));
   const [sourceMode, setSourceMode] = useState<FileSourceMode>(getDefaultSourceMode());
   const [title, setTitle] = useState("");
   const [term, setTerm] = useState("2026 Spring");
@@ -98,10 +123,14 @@ export default function SubmitWizard() {
   const handleScopeChange = (nextScope: SubmissionScope) => {
     setScope(nextScope);
     setMaterialType(getDefaultMaterialType(nextScope));
-    if (nextScope === "track-general") {
-      setUseNewCourse(false);
-      setExistingCourseSlug("general-resources");
-    }
+    setUseNewCourse(false);
+    setExistingCourseSlug(getFirstCourseSlug(nextScope, trackSlug));
+  };
+
+  const handleTrackChange = (nextTrackSlug: string) => {
+    setTrackSlug(nextTrackSlug);
+    setUseNewCourse(false);
+    setExistingCourseSlug(getFirstCourseSlug(scope, nextTrackSlug));
   };
 
   return (
@@ -119,17 +148,24 @@ export default function SubmitWizard() {
       <div className={styles.panel}>
         {stepIndex === 0 && <SubmitStepScope scope={scope} onSelect={handleScopeChange} />}
         {stepIndex === 1 && (
-          <SubmitStepTarget
-            scope={scope}
-            trackSlug={trackSlug}
-            existingCourseSlug={existingCourseSlug}
-            useNewCourse={useNewCourse}
-            newCourseTitle={newCourseTitle}
-            onTrackChange={setTrackSlug}
-            onExistingCourseChange={setExistingCourseSlug}
-            onUseNewCourseChange={setUseNewCourse}
-            onNewCourseTitleChange={setNewCourseTitle}
-          />
+          <>
+            {initialTarget && (
+              <p className={styles.prefillNotice}>
+                已根据课程页预填投稿位置，请在下方确认或修改。
+              </p>
+            )}
+            <SubmitStepTarget
+              scope={scope}
+              trackSlug={trackSlug}
+              existingCourseSlug={existingCourseSlug}
+              useNewCourse={useNewCourse}
+              newCourseTitle={newCourseTitle}
+              onTrackChange={handleTrackChange}
+              onExistingCourseChange={setExistingCourseSlug}
+              onUseNewCourseChange={setUseNewCourse}
+              onNewCourseTitleChange={setNewCourseTitle}
+            />
+          </>
         )}
         {stepIndex === 2 && (
           <SubmitStepDetails
