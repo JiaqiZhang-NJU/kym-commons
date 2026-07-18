@@ -1,6 +1,6 @@
 ﻿import { useLocation } from "@docusaurus/router";
 import Layout from "@theme/Layout";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import MaterialCard from "../components/MaterialCard";
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
@@ -11,6 +11,7 @@ import {
   buildBrowseQuery,
   filterMaterials,
   getBrowseFilterOptions,
+  paginateItems,
   parseBrowseQuery,
   type BrowseQuery,
 } from "../lib/materials";
@@ -21,7 +22,9 @@ const EMPTY_QUERY: BrowseQuery = {
   section: "all",
   category: "",
   term: "",
+  page: 1,
 };
+const PAGE_SIZE = 24;
 
 function hasActiveConditions(query: BrowseQuery) {
   return (
@@ -46,22 +49,34 @@ function getCourseTitle(material: (typeof SAMPLE_MATERIALS)[number]) {
 
 export default function BrowsePage() {
   const { search } = useLocation();
+  const resultsStartRef = useRef<HTMLDivElement>(null);
   const [draftQuery, setDraftQuery] = useState<BrowseQuery>(() => parseBrowseQuery(search));
   const [query, setQuery] = useState<BrowseQuery>(() => parseBrowseQuery(search));
   const options = useMemo(() => getBrowseFilterOptions(SAMPLE_MATERIALS), []);
   const results = useMemo(() => filterMaterials(SAMPLE_MATERIALS, query), [query]);
+  const pagination = useMemo(() => paginateItems(results, query.page, PAGE_SIZE), [query.page, results]);
   const isDirty = hasActiveConditions(draftQuery);
 
   function submitQuery(nextQuery = draftQuery) {
     setQuery({
       ...nextQuery,
       q: nextQuery.q.trim(),
+      page: 1,
     });
   }
 
   function clearQuery() {
     setDraftQuery(EMPTY_QUERY);
     setQuery(EMPTY_QUERY);
+  }
+
+  function goToPage(page: number) {
+    setDraftQuery((current) => ({ ...current, page }));
+    setQuery((current) => ({ ...current, page }));
+
+    window.requestAnimationFrame(() => {
+      resultsStartRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 
   useEffect(() => {
@@ -83,6 +98,15 @@ export default function BrowsePage() {
       window.history.replaceState(null, "", nextUrl);
     }
   }, [query]);
+
+  useEffect(() => {
+    if (pagination.page === query.page) {
+      return;
+    }
+
+    setDraftQuery((current) => ({ ...current, page: pagination.page }));
+    setQuery((current) => ({ ...current, page: pagination.page }));
+  }, [pagination.page, query.page]);
 
   return (
     <Layout title="资料检索">
@@ -182,8 +206,11 @@ export default function BrowsePage() {
           </div>
         </form>
 
-        <div className={styles.summaryRow}>
-          <strong>共找到 {results.length} 条资料</strong>
+        <div className={styles.summaryRow} ref={resultsStartRef}>
+          <strong>
+            共找到 {pagination.totalItems} 条资料
+            {pagination.totalItems > 0 ? `，当前显示第 ${pagination.startItem}–${pagination.endItem} 条` : ""}
+          </strong>
           {isDirty ? (
             <button className={styles.clearButton} type="button" onClick={clearQuery}>
               清空筛选
@@ -198,7 +225,7 @@ export default function BrowsePage() {
           </div>
         ) : (
           <div>
-            {results.map((material) => (
+            {pagination.items.map((material) => (
               <MaterialCard
                 key={material.id}
                 title={material.title}
@@ -216,6 +243,44 @@ export default function BrowsePage() {
             ))}
           </div>
         )}
+
+        {pagination.totalPages > 1 ? (
+          <nav className={styles.pagination} aria-label="检索结果分页">
+            <button
+              className="button button--secondary"
+              type="button"
+              disabled={pagination.page === 1}
+              onClick={() => goToPage(pagination.page - 1)}
+            >
+              上一页
+            </button>
+
+            <label className={styles.pagePicker}>
+              <span>第</span>
+              <select
+                aria-label="跳转页码"
+                value={pagination.page}
+                onChange={(event) => goToPage(Number(event.target.value))}
+              >
+                {Array.from({ length: pagination.totalPages }, (_, index) => index + 1).map((page) => (
+                  <option key={page} value={page}>
+                    {page}
+                  </option>
+                ))}
+              </select>
+              <span>/ {pagination.totalPages} 页</span>
+            </label>
+
+            <button
+              className="button button--secondary"
+              type="button"
+              disabled={pagination.page === pagination.totalPages}
+              onClick={() => goToPage(pagination.page + 1)}
+            >
+              下一页
+            </button>
+          </nav>
+        ) : null}
       </main>
     </Layout>
   );
