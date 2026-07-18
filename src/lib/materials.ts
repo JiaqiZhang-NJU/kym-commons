@@ -13,12 +13,14 @@ export const TRACK_LABELS: Readonly<Record<string, string>> = {
 export type SectionKey = "foundation" | "track";
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
 export type BrowseSectionFilter = SectionKey | "all";
+export type BrowseSort = "default" | "title" | "course";
 export type BrowseQuery = {
   q: string;
   section: BrowseSectionFilter;
   course: string;
   category: string;
   term: string;
+  sort: BrowseSort;
   page: number;
 };
 export type BrowseFilterKey = Exclude<keyof BrowseQuery, "page">;
@@ -33,6 +35,7 @@ export function parseBrowseQuery(search: string): BrowseQuery {
   const pageParam = Number.parseInt(params.get("page") ?? "", 10);
   const section = sectionParam === "foundation" || sectionParam === "track" ? sectionParam : "all";
   const courseParam = params.get("course") ?? "";
+  const sortParam = params.get("sort");
 
   return {
     q: params.get("q")?.trim() ?? "",
@@ -40,6 +43,7 @@ export function parseBrowseQuery(search: string): BrowseQuery {
     course: courseFilterMatchesSection(courseParam, section) ? courseParam : "",
     category: params.get("category") ?? "",
     term: params.get("term") ?? "",
+    sort: sortParam === "title" || sortParam === "course" ? sortParam : "default",
     page: Number.isSafeInteger(pageParam) && pageParam > 0 ? pageParam : 1,
   };
 }
@@ -68,6 +72,10 @@ export function buildBrowseQuery(query: BrowseQuery): string {
     params.set("term", query.term);
   }
 
+  if (query.sort !== "default") {
+    params.set("sort", query.sort);
+  }
+
   if (query.page > 1) {
     params.set("page", String(query.page));
   }
@@ -88,6 +96,9 @@ export function clearBrowseFilter(query: BrowseQuery, filter: BrowseFilterKey): 
       break;
     case "section":
       nextQuery.section = "all";
+      break;
+    case "sort":
+      nextQuery.sort = "default";
       break;
   }
 
@@ -171,6 +182,35 @@ export function filterMaterials(
     const searchText = getMaterialSearchText(material, getContextText?.(material));
     return keywords.every((keyword) => searchText.includes(keyword));
   });
+}
+
+export function sortMaterials(
+  materials: MaterialRecord[],
+  sort: BrowseSort,
+  getCourseLabel?: (material: MaterialRecord) => string
+): MaterialRecord[] {
+  if (sort === "default") {
+    return materials;
+  }
+
+  return materials
+    .map((material, index) => ({ material, index }))
+    .sort((left, right) => {
+      const leftValue = sort === "title" ? left.material.title : getCourseLabel?.(left.material) ?? left.material.courseSlug;
+      const rightValue =
+        sort === "title" ? right.material.title : getCourseLabel?.(right.material) ?? right.material.courseSlug;
+      const compared = leftValue.localeCompare(rightValue, "zh-Hans", {
+        numeric: true,
+        sensitivity: "base",
+      });
+
+      if (compared !== 0) {
+        return compared;
+      }
+
+      return left.index - right.index;
+    })
+    .map(({ material }) => material);
 }
 
 export function buildMaterialCourseFilterValue(material: MaterialRecord): string {

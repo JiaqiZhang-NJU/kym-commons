@@ -133,6 +133,13 @@ export function getActiveBrowseFilters(
     filters.push({ key: "term", label: `学期：${query.term}` });
   }
 
+  if (query.sort !== "default") {
+    filters.push({
+      key: "sort",
+      label: `排序：${query.sort === "title" ? "按标题" : "按课程"}`,
+    });
+  }
+
   return filters;
 }
 

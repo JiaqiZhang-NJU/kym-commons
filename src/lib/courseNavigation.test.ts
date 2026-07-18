@@ -122,6 +122,7 @@ describe("active browse filters", () => {
           course: "track:cs:machine-learning",
           category: "参考资料",
           term: "未知",
+          sort: "course",
           page: 2,
         },
         courseOptions
@@ -132,6 +133,7 @@ describe("active browse filters", () => {
       { key: "course", label: "课程：Tracks / 计算机 / 机器学习" },
       { key: "category", label: "分类：参考资料" },
       { key: "term", label: "学期：未知" },
+      { key: "sort", label: "排序：按课程" },
     ]);
   });
 });

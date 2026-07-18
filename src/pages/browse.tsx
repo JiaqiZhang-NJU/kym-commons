@@ -21,6 +21,7 @@ import {
   getBrowseFilterOptions,
   paginateItems,
   parseBrowseQuery,
+  sortMaterials,
   type BrowseQuery,
   type BrowseFilterKey,
 } from "../lib/materials";
@@ -32,6 +33,7 @@ const EMPTY_QUERY: BrowseQuery = {
   course: "",
   category: "",
   term: "",
+  sort: "default",
   page: 1,
 };
 const PAGE_SIZE = 24;
@@ -42,7 +44,8 @@ function hasActiveConditions(query: BrowseQuery) {
     query.section !== "all" ||
     query.course.length > 0 ||
     query.category.length > 0 ||
-    query.term.length > 0
+    query.term.length > 0 ||
+    query.sort !== "default"
   );
 }
 
@@ -68,9 +71,10 @@ export default function BrowsePage() {
   );
   const results = useMemo(() => {
     const filteredMaterials = filterMaterials(SAMPLE_MATERIALS, query, getMaterialBrowseSearchContext);
-    return favoritesOnly
+    const favoriteFilteredMaterials = favoritesOnly
       ? filteredMaterials.filter((material) => favoriteIds.has(material.id))
       : filteredMaterials;
+    return sortMaterials(favoriteFilteredMaterials, query.sort, getMaterialBrowseSearchContext);
   }, [favoriteIds, favoritesOnly, query]);
   const pagination = useMemo(() => paginateItems(results, query.page, PAGE_SIZE), [query.page, results]);
   const isDirty = hasActiveConditions(draftQuery) || favoritesOnly;
@@ -248,6 +252,24 @@ export default function BrowsePage() {
                     {term}
                   </option>
                 ))}
+              </select>
+            </label>
+
+            <label>
+              <span className="margin-bottom--sm display-block">排序</span>
+              <select
+                className={styles.selectControl}
+                value={draftQuery.sort}
+                onChange={(event) =>
+                  setDraftQuery((current) => ({
+                    ...current,
+                    sort: event.target.value as BrowseQuery["sort"],
+                  }))
+                }
+              >
+                <option value="default">默认顺序</option>
+                <option value="title">按标题</option>
+                <option value="course">按课程</option>
               </select>
             </label>
           </div>
