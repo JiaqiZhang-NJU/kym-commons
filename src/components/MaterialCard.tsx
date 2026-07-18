@@ -1,8 +1,10 @@
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import { isExternalHref } from "../lib/materials";
+import styles from "./MaterialCard.module.css";
 
 type Props = {
+  id: string;
   title: string;
   type: string;
   term: string;
@@ -10,9 +12,22 @@ type Props = {
   href: string;
   locationLabel?: string;
   locationHref?: string;
+  isFavorite?: boolean;
+  onToggleFavorite?: (materialId: string) => void;
 };
 
-export default function MaterialCard({ title, type, term, summary, href, locationLabel, locationHref }: Props) {
+export default function MaterialCard({
+  id,
+  title,
+  type,
+  term,
+  summary,
+  href,
+  locationLabel,
+  locationHref,
+  isFavorite = false,
+  onToggleFavorite,
+}: Props) {
   const resolvedHref = isExternalHref(href) ? href : useBaseUrl(href);
   const resolvedLocationHref =
     locationHref && !isExternalHref(locationHref) ? useBaseUrl(locationHref) : locationHref;
@@ -20,8 +35,21 @@ export default function MaterialCard({ title, type, term, summary, href, locatio
   return (
     <article className="card margin-bottom--md">
       <div className="card__body">
-        <div className="margin-bottom--sm">
-          <strong>{type}</strong> · <span>{term}</span>
+        <div className={`${styles.metaRow} margin-bottom--sm`}>
+          <div>
+            <strong>{type}</strong> · <span>{term}</span>
+          </div>
+          {onToggleFavorite ? (
+            <button
+              className={styles.favoriteButton}
+              type="button"
+              aria-pressed={isFavorite}
+              aria-label={`${isFavorite ? "取消收藏" : "收藏"}：${title}`}
+              onClick={() => onToggleFavorite(id)}
+            >
+              <span aria-hidden="true">{isFavorite ? "★" : "☆"}</span> {isFavorite ? "已收藏" : "收藏"}
+            </button>
+          ) : null}
         </div>
         <h3>{title}</h3>
         <p>{summary}</p>
@@ -38,7 +66,7 @@ export default function MaterialCard({ title, type, term, summary, href, locatio
           </p>
         ) : null}
         <a href={resolvedHref} target="_blank" rel="noreferrer">
-          Open material
+          {isExternalHref(href) ? "访问外部资料" : "打开资料"}
         </a>
       </div>
     </article>

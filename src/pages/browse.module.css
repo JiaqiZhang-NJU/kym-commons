@@ -28,6 +28,19 @@
   margin-top: 1rem;
 }
 
+.favoriteFilter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.favoriteFilter input {
+  width: auto;
+  margin: 0;
+}
+
 .selectControl {
   width: 100%;
 }

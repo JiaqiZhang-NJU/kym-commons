@@ -1,0 +1,33 @@
+.metaRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.favoriteButton {
+  flex: 0 0 auto;
+  border: 1px solid var(--kym-border);
+  border-radius: 999px;
+  background: var(--kym-surface-emphasis);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  padding: 0.4rem 0.7rem;
+}
+
+.favoriteButton:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .favoriteButton:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+.favoriteButton:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}

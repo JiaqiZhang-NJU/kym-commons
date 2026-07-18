@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import MaterialCard from "../components/MaterialCard";
 import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
 import { SAMPLE_MATERIALS } from "../data/materials";
+import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
 import {
   buildMaterialCoursePath,
   buildMaterialLocationLabel,
@@ -52,10 +53,17 @@ export default function BrowsePage() {
   const resultsStartRef = useRef<HTMLDivElement>(null);
   const [draftQuery, setDraftQuery] = useState<BrowseQuery>(() => parseBrowseQuery(search));
   const [query, setQuery] = useState<BrowseQuery>(() => parseBrowseQuery(search));
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const { favoriteIds, toggleFavorite } = useMaterialFavorites();
   const options = useMemo(() => getBrowseFilterOptions(SAMPLE_MATERIALS), []);
-  const results = useMemo(() => filterMaterials(SAMPLE_MATERIALS, query), [query]);
+  const results = useMemo(() => {
+    const filteredMaterials = filterMaterials(SAMPLE_MATERIALS, query);
+    return favoritesOnly
+      ? filteredMaterials.filter((material) => favoriteIds.has(material.id))
+      : filteredMaterials;
+  }, [favoriteIds, favoritesOnly, query]);
   const pagination = useMemo(() => paginateItems(results, query.page, PAGE_SIZE), [query.page, results]);
-  const isDirty = hasActiveConditions(draftQuery);
+  const isDirty = hasActiveConditions(draftQuery) || favoritesOnly;
 
   function submitQuery(nextQuery = draftQuery) {
     setQuery({
@@ -68,6 +76,7 @@ export default function BrowsePage() {
   function clearQuery() {
     setDraftQuery(EMPTY_QUERY);
     setQuery(EMPTY_QUERY);
+    setFavoritesOnly(false);
   }
 
   function goToPage(page: number) {
@@ -199,6 +208,19 @@ export default function BrowsePage() {
             </label>
           </div>
 
+          <label className={styles.favoriteFilter}>
+            <input
+              type="checkbox"
+              checked={favoritesOnly}
+              onChange={(event) => {
+                setFavoritesOnly(event.target.checked);
+                setDraftQuery((current) => ({ ...current, page: 1 }));
+                setQuery((current) => ({ ...current, page: 1 }));
+              }}
+            />
+            <span>仅看收藏（{favoriteIds.size}）</span>
+          </label>
+
           <div className={styles.searchActions}>
             <button className="button button--primary" type="submit">
               搜索
@@ -220,14 +242,19 @@ export default function BrowsePage() {
 
         {results.length === 0 ? (
           <div className={styles.emptyState}>
-            <strong>没有找到匹配的资料</strong>
-            <p className="margin-bottom--0">可以尝试修改关键词，或清空部分筛选条件。</p>
+            <strong>{favoritesOnly ? "收藏中没有匹配的资料" : "没有找到匹配的资料"}</strong>
+            <p className="margin-bottom--0">
+              {favoritesOnly
+                ? "可以先收藏常用资料，或关闭“仅看收藏”继续浏览。"
+                : "可以尝试修改关键词，或清空部分筛选条件。"}
+            </p>
           </div>
         ) : (
           <div>
             {pagination.items.map((material) => (
               <MaterialCard
                 key={material.id}
+                id={material.id}
                 title={material.title}
                 type={material.type}
                 term={material.term}
@@ -239,6 +266,8 @@ export default function BrowsePage() {
                   courseTitle: getCourseTitle(material),
                 })}
                 locationHref={buildMaterialCoursePath(material)}
+                isFavorite={favoriteIds.has(material.id)}
+                onToggleFavorite={toggleFavorite}
               />
             ))}
           </div>
