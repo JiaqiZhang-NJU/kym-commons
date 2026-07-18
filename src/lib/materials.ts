@@ -1,7 +1,7 @@
 import type { MaterialRecord } from "../data/materials";
 
 export const GENERAL_RESOURCES_SLUG = "general-resources";
-export const TRACK_LABELS = {
+export const TRACK_LABELS: Readonly<Record<string, string>> = {
   math: "数学",
   biochem: "生化",
   cs: "计算机",

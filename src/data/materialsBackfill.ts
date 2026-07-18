@@ -1,3 +1,5 @@
+import type { MaterialRecord } from "./materials";
+
 export const METADATA_BACKFILL_MATERIALS = [
   {
     id: "metadata-backfill-0001",
@@ -2087,4 +2089,4 @@ export const METADATA_BACKFILL_MATERIALS = [
     summary: "来源: 文件目录补录",
     href: "/files/tracks/physics/electronic-circuit-foundation/materials/微电子概论.pdf",
   },
-];
+] satisfies MaterialRecord[];
