@@ -1,0 +1,83 @@
+import { describe, expect, it } from "vitest";
+
+import type { MaterialRecord } from "../data/materials";
+import { getCourseMaterials, resolveCoursePageContext } from "./courseNavigation";
+
+const materials: MaterialRecord[] = [
+  {
+    id: "foundation-calculus",
+    section: "foundation",
+    courseSlug: "calculus-i",
+    category: "参考资料",
+    title: "微积分教材",
+    type: "参考资料",
+    term: "未知",
+    summary: "教材",
+    href: "/calculus.pdf",
+  },
+  {
+    id: "cs-machine-learning",
+    section: "track",
+    trackSlug: "cs",
+    courseSlug: "machine-learning",
+    category: "参考资料",
+    title: "机器学习教材",
+    type: "参考资料",
+    term: "未知",
+    summary: "教材",
+    href: "/machine-learning.pdf",
+  },
+];
+
+describe("resolveCoursePageContext", () => {
+  it("resolves a foundation course and its navigation path", () => {
+    expect(resolveCoursePageContext("?section=foundation&course=calculus-i")).toMatchObject({
+      status: "valid",
+      section: "foundation",
+      courseSlug: "calculus-i",
+      title: "微积分一",
+      breadcrumbs: [{ label: "Foundation", href: "/foundation" }, { label: "微积分一" }],
+    });
+  });
+
+  it("resolves a track course and its direction navigation path", () => {
+    expect(resolveCoursePageContext("?section=track&track=cs&course=machine-learning")).toMatchObject({
+      status: "valid",
+      section: "track",
+      trackSlug: "cs",
+      courseSlug: "machine-learning",
+      title: "机器学习",
+      breadcrumbs: [
+        { label: "Tracks", href: "/tracks" },
+        { label: "计算机", href: "/tracks/cs" },
+        { label: "机器学习" },
+      ],
+    });
+  });
+
+  it("returns a safe invalid state for incomplete or unknown links", () => {
+    expect(resolveCoursePageContext("?section=track&track=unknown&course=machine-learning").status).toBe(
+      "invalid"
+    );
+    expect(resolveCoursePageContext("?section=foundation&course=unknown").status).toBe("invalid");
+    expect(resolveCoursePageContext("").status).toBe("invalid");
+  });
+});
+
+describe("getCourseMaterials", () => {
+  it("selects only materials that belong to the resolved course", () => {
+    const foundationContext = resolveCoursePageContext("?section=foundation&course=calculus-i");
+    const trackContext = resolveCoursePageContext("?section=track&track=cs&course=machine-learning");
+
+    expect(getCourseMaterials(materials, foundationContext).map((item) => item.id)).toEqual([
+      "foundation-calculus",
+    ]);
+    expect(getCourseMaterials(materials, trackContext).map((item) => item.id)).toEqual([
+      "cs-machine-learning",
+    ]);
+  });
+
+  it("does not expose materials for invalid course links", () => {
+    expect(getCourseMaterials(materials, resolveCoursePageContext("?course=machine-learning"))).toEqual([]);
+  });
+});
