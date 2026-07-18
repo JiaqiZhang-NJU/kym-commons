@@ -18,6 +18,7 @@ export type BrowseQuery = {
   section: BrowseSectionFilter;
   category: string;
   term: string;
+  page: number;
 };
 export type CategorizedMaterial<T = unknown> = T & {
   category: string;
@@ -27,12 +28,14 @@ export type CategorizedMaterial<T = unknown> = T & {
 export function parseBrowseQuery(search: string): BrowseQuery {
   const params = new URLSearchParams(search);
   const sectionParam = params.get("section");
+  const pageParam = Number.parseInt(params.get("page") ?? "", 10);
 
   return {
     q: params.get("q")?.trim() ?? "",
     section: sectionParam === "foundation" || sectionParam === "track" ? sectionParam : "all",
     category: params.get("category") ?? "",
     term: params.get("term") ?? "",
+    page: Number.isSafeInteger(pageParam) && pageParam > 0 ? pageParam : 1,
   };
 }
 
@@ -54,6 +57,10 @@ export function buildBrowseQuery(query: BrowseQuery): string {
 
   if (query.term.length > 0) {
     params.set("term", query.term);
+  }
+
+  if (query.page > 1) {
+    params.set("page", String(query.page));
   }
 
   const built = params.toString();
@@ -127,6 +134,27 @@ export function filterMaterials(materials: MaterialRecord[], query: BrowseQuery)
 
     return getMaterialSearchText(material).includes(keyword);
   });
+}
+
+export function paginateItems<T>(items: T[], requestedPage: number, pageSize: number) {
+  if (!Number.isSafeInteger(pageSize) || pageSize < 1) {
+    throw new RangeError("pageSize must be a positive integer");
+  }
+
+  const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+  const page = Math.min(Math.max(Number.isSafeInteger(requestedPage) ? requestedPage : 1, 1), totalPages);
+  const startIndex = (page - 1) * pageSize;
+  const endIndex = Math.min(startIndex + pageSize, items.length);
+
+  return {
+    items: items.slice(startIndex, endIndex),
+    page,
+    pageSize,
+    totalItems: items.length,
+    totalPages,
+    startItem: items.length === 0 ? 0 : startIndex + 1,
+    endItem: endIndex,
+  };
 }
 
 export function isExternalHref(href: string): boolean {

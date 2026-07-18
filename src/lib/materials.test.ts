@@ -14,6 +14,7 @@ import {
   groupMaterialsByCategory,
   isExternalHref,
   normalizeCourseSlug,
+  paginateItems,
   parseBrowseQuery,
   resolveSubmissionTarget,
 } from "./materials";
@@ -48,11 +49,12 @@ const browseFixtures: MaterialRecord[] = [
 
 describe("parseBrowseQuery", () => {
   it("parses valid browse query params", () => {
-    expect(parseBrowseQuery("?q=physics&section=foundation&category=课程讲义&term=大学物理下")).toEqual({
+    expect(parseBrowseQuery("?q=physics&section=foundation&category=课程讲义&term=大学物理下&page=3")).toEqual({
       q: "physics",
       section: "foundation",
       category: "课程讲义",
       term: "大学物理下",
+      page: 3,
     });
   });
 
@@ -62,7 +64,13 @@ describe("parseBrowseQuery", () => {
       section: "all",
       category: "",
       term: "",
+      page: 1,
     });
+  });
+
+  it("falls back to the first page for invalid page values", () => {
+    expect(parseBrowseQuery("?page=-2").page).toBe(1);
+    expect(parseBrowseQuery("?page=abc").page).toBe(1);
   });
 });
 
@@ -74,6 +82,7 @@ describe("buildBrowseQuery", () => {
         section: "all",
         category: "",
         term: "",
+        page: 1,
       })
     ).toBe("");
   });
@@ -85,9 +94,10 @@ describe("buildBrowseQuery", () => {
         section: "foundation",
         category: "课程讲义",
         term: "大学物理下",
+        page: 3,
       })
     ).toBe(
-      "?q=physics&section=foundation&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B"
+      "?q=physics&section=foundation&category=%E8%AF%BE%E7%A8%8B%E8%AE%B2%E4%B9%89&term=%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8B&page=3"
     );
   });
 });
@@ -109,6 +119,7 @@ describe("filterMaterials", () => {
         section: "all",
         category: "",
         term: "",
+        page: 1,
       }).map((item) => item.id)
     ).toEqual(["track-guide"]);
   });
@@ -120,6 +131,7 @@ describe("filterMaterials", () => {
         section: "foundation",
         category: "课程讲义",
         term: "大学物理下",
+        page: 1,
       }).map((item) => item.id)
     ).toEqual(["foundation-slide"]);
   });
@@ -131,8 +143,41 @@ describe("filterMaterials", () => {
         section: "all",
         category: "",
         term: "",
+        page: 1,
       }).map((item) => item.id)
     ).toEqual(["foundation-slide", "track-guide"]);
+  });
+});
+
+describe("paginateItems", () => {
+  const items = Array.from({ length: 53 }, (_, index) => index + 1);
+
+  it("returns only the requested page and its visible range", () => {
+    expect(paginateItems(items, 2, 24)).toEqual({
+      items: items.slice(24, 48),
+      page: 2,
+      pageSize: 24,
+      totalItems: 53,
+      totalPages: 3,
+      startItem: 25,
+      endItem: 48,
+    });
+  });
+
+  it("clamps out-of-range pages and handles empty results", () => {
+    expect(paginateItems(items, 99, 24).page).toBe(3);
+    expect(paginateItems([], 4, 24)).toMatchObject({
+      items: [],
+      page: 1,
+      totalItems: 0,
+      totalPages: 1,
+      startItem: 0,
+      endItem: 0,
+    });
+  });
+
+  it("rejects invalid page sizes", () => {
+    expect(() => paginateItems(items, 1, 0)).toThrow(RangeError);
   });
 });
 
