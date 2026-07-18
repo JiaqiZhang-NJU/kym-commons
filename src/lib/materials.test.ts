@@ -12,6 +12,7 @@ import {
   clearBrowseFilter,
   filterMaterials,
   getBrowseFilterOptions,
+  getMaterialFileInfo,
   getVisibleGroupItems,
   groupMaterialsByCategory,
   isExternalHref,
@@ -462,10 +463,39 @@ describe("groupMaterialsByCategory", () => {
 describe("isExternalHref", () => {
   it("treats absolute web urls as external", () => {
     expect(isExternalHref("https://example.com/file.pdf")).toBe(true);
+    expect(isExternalHref("//cdn.example.com/file.pdf")).toBe(true);
+    expect(isExternalHref("mailto:maintainer@example.com")).toBe(true);
   });
 
   it("treats site-relative file paths as internal", () => {
     expect(isExternalHref("/files/foundation/university-physics-i/review/review-notes-1.pdf")).toBe(false);
+  });
+});
+
+describe("getMaterialFileInfo", () => {
+  it("identifies internal file formats and download eligibility", () => {
+    expect(getMaterialFileInfo("/files/课程讲义.pdf?download=1#page=2")).toEqual({
+      external: false,
+      downloadable: true,
+      fileName: "课程讲义.pdf",
+      extension: "pdf",
+      formatLabel: "PDF",
+    });
+  });
+
+  it("decodes filenames and keeps external resources non-downloadable", () => {
+    expect(getMaterialFileInfo("https://example.com/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.pptx")).toEqual({
+      external: true,
+      downloadable: false,
+      fileName: "机器学习.pptx",
+      extension: "pptx",
+      formatLabel: "PPTX",
+    });
+  });
+
+  it("uses a safe fallback when a link has no file extension", () => {
+    expect(getMaterialFileInfo("https://example.com/resource").formatLabel).toBe("外部链接");
+    expect(getMaterialFileInfo("/files/readme").formatLabel).toBe("文件");
   });
 });
 

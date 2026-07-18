@@ -5,6 +5,34 @@
   gap: 1rem;
 }
 
+.metaDetails {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.formatBadge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--kym-border);
+  border-radius: 999px;
+  background: var(--kym-surface-emphasis);
+  color: var(--kym-muted-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  padding: 0.3rem 0.5rem;
+}
+
+.materialActions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .favoriteButton {
   flex: 0 0 auto;
   border: 1px solid var(--kym-border);

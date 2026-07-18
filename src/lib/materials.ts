@@ -258,7 +258,38 @@ export function paginateItems<T>(items: T[], requestedPage: number, pageSize: nu
 }
 
 export function isExternalHref(href: string): boolean {
-  return /^(?:[a-z]+:)?\/\//i.test(href);
+  return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(href);
+}
+
+export function getMaterialFileInfo(href: string) {
+  const external = isExternalHref(href);
+  let pathname = href.split(/[?#]/, 1)[0];
+
+  try {
+    pathname = new URL(href, "https://kym-commons.local").pathname;
+  } catch {
+    // Fall back to the path-like portion for malformed legacy links.
+  }
+
+  const encodedFileName = pathname.slice(pathname.lastIndexOf("/") + 1);
+  let fileName = encodedFileName;
+
+  try {
+    fileName = decodeURIComponent(encodedFileName);
+  } catch {
+    // Keep the original filename when percent-encoding is incomplete.
+  }
+
+  const extensionMatch = fileName.match(/\.([a-z0-9]{1,10})$/i);
+  const extension = extensionMatch?.[1].toLowerCase() ?? "";
+
+  return {
+    external,
+    downloadable: !external,
+    fileName,
+    extension,
+    formatLabel: extension ? extension.toUpperCase() : external ? "外部链接" : "文件",
+  };
 }
 
 export function getVisibleGroupItems<T>(items: T[], limit: number, expanded: boolean) {
