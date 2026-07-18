@@ -1,11 +1,14 @@
 import type {ReactNode} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import SectionCard from '@site/src/components/SectionCard';
 import styles from './index.module.css';
 
 export default function Home(): ReactNode {
+  const browseUrl = useBaseUrl('/browse');
+
   return (
     <Layout title="KYM Commons" description="匡院资料站">
       <main className="container margin-vert--xl">
@@ -16,6 +19,30 @@ export default function Home(): ReactNode {
             <p className={styles.subtitle}>
               A curated academic materials platform for Foundation courses, track-based learning, and shared disciplinary resources.
             </p>
+            <form className={styles.searchForm} action={browseUrl} method="get" role="search">
+              <label className={styles.searchLabel} htmlFor="home-material-search">
+                直接查找资料
+              </label>
+              <div className={styles.searchRow}>
+                <input
+                  id="home-material-search"
+                  className={styles.searchInput}
+                  type="search"
+                  name="q"
+                  placeholder="输入课程名、资料标题或多个关键词"
+                  autoComplete="off"
+                />
+                <button className="button button--secondary button--lg" type="submit">
+                  搜索资料
+                </button>
+              </div>
+              <div className={styles.searchSuggestions} aria-label="常用搜索">
+                <span>试试：</span>
+                <Link to="/browse?q=期末试卷">期末试卷</Link>
+                <Link to="/browse?q=机器学习">机器学习</Link>
+                <Link to="/browse?q=大学物理">大学物理</Link>
+              </div>
+            </form>
             <div className={styles.buttons}>
               <Link className="button button--secondary button--lg" to="/browse">
                 Browse Materials
