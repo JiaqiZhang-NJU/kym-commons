@@ -72,6 +72,14 @@
   margin-bottom: 1rem;
 }
 
+.prefillNotice {
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  background: var(--kym-surface-emphasis);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
 .fieldsetReset {
   margin: 0;
   padding: 0;

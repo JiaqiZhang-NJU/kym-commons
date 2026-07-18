@@ -17,7 +17,10 @@ type Props = {
 
 export default function SubmitStepTarget(props: Props) {
   const trackCourses = TRACK_COURSES[props.trackSlug as keyof typeof TRACK_COURSES] ?? [];
-  const selectableCourses = props.scope === "foundation-course" ? FOUNDATION_COURSES : trackCourses;
+  const selectableCourses =
+    props.scope === "foundation-course"
+      ? FOUNDATION_COURSES
+      : trackCourses.filter((course) => !course.isGeneral);
 
   return (
     <>
@@ -67,6 +70,7 @@ export default function SubmitStepTarget(props: Props) {
             <label className={styles.field}>
               <span>已有课程</span>
               <select value={props.existingCourseSlug} onChange={(event) => props.onExistingCourseChange(event.target.value)}>
+                {selectableCourses.length === 0 && <option value="">暂无已有课程</option>}
                 {selectableCourses.map((course) => (
                   <option key={course.slug} value={course.slug}>
                     {course.title}
