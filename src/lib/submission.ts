@@ -6,8 +6,8 @@ export type FileSourceMode = "issue-attachment" | "external-link";
 
 export type SubmissionPrefill = {
   scope: SubmissionScope;
-  trackSlug: string;
-  courseSlug: string;
+  trackSlug?: string;
+  courseSlug?: string;
 };
 
 export type TargetStepState = {
@@ -34,6 +34,8 @@ export type MaterialType = CourseMaterialType | GeneralMaterialType;
 
 export type SubmissionPayload = {
   scope: SubmissionScope;
+  trackSlug?: string;
+  courseSlug?: string;
   sectionLabel: string;
   trackLabel: string | null;
   courseTitle: string;
@@ -159,7 +161,25 @@ export function buildIssueBody(payload: SubmissionPayload) {
       ? ["", "## 上传说明", "- [ ] 我会在创建 Issue 后上传资料附件"]
       : [];
 
+  const manifest = {
+    version: 2,
+    scope: payload.scope,
+    trackSlug: payload.trackSlug || null,
+    courseSlug: payload.courseSlug || "",
+    title: payload.title.trim(),
+    term: payload.term.trim(),
+    materialType: payload.materialType,
+    summary: payload.summary.trim(),
+    sourceMode: payload.sourceMode,
+    externalLink: payload.externalLink.trim() || null,
+    anonymous: payload.anonymous,
+  };
+
   return [
+    "<!-- kym-submission:v2",
+    JSON.stringify(manifest),
+    "-->",
+    "",
     "## 基本信息",
     `- 归属：${scopeLabel}`,
     `- 方向：${payload.trackLabel ?? "无"}`,

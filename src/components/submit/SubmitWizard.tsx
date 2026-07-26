@@ -88,6 +88,8 @@ export default function SubmitWizard({ initialTarget }: Props) {
     const issueTitle = buildIssueTitle({ scope, trackLabel, courseTitle, term, materialType });
     const issueBody = buildIssueBody({
       scope,
+      trackSlug,
+      courseSlug: useNewCourse ? "" : existingCourseSlug,
       sectionLabel,
       trackLabel,
       courseTitle,
