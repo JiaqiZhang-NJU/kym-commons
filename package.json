@@ -20,7 +20,8 @@
     "catalog:generate": "node scripts/catalog/generate-runtime.mjs",
     "catalog:classify": "node scripts/catalog/classify-packages.mjs",
     "catalog:consolidate": "node scripts/catalog/consolidate-programming-examples.mjs",
-    "catalog:check": "npm run catalog:validate && node scripts/catalog/classify-packages.mjs --check && node scripts/catalog/consolidate-programming-examples.mjs --check && node scripts/catalog/generate-runtime.mjs --check",
+    "catalog:deduplicate": "node scripts/catalog/deduplicate-assets.mjs",
+    "catalog:check": "npm run catalog:validate && node scripts/catalog/classify-packages.mjs --check && node scripts/catalog/deduplicate-assets.mjs --check && node scripts/catalog/consolidate-programming-examples.mjs --check && node scripts/catalog/generate-runtime.mjs --check",
     "catalog:migrate": "node scripts/catalog/migrate-legacy.mjs --force"
   },
   "dependencies": {
