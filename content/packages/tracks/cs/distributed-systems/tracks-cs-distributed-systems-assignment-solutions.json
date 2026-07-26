@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-distributed-systems-assignment-solutions",
+  "title": "分布式系统作业解答图集",
+  "summary": "分布式系统课程作业解答与订正图集，按原始编号顺序集中提供。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "distributed-systems"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "分布式系统",
+    "作业答案",
+    "图集"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "1",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/1.jpg",
+      "fileName": "1.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1989693,
+      "sha256": "a6281c6ad13579f3c015e49e66b706a2ff59e2932128c75c2a8111e895c2de28"
+    },
+    {
+      "id": "asset-002",
+      "label": "2",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/2.jpg",
+      "fileName": "2.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 2216163,
+      "sha256": "5ce1ac66ce8bf0d31c3f06195de5fa2fc446a1675ceb80f66566c8900161916d"
+    },
+    {
+      "id": "asset-003",
+      "label": "3",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/3.jpg",
+      "fileName": "3.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 2341644,
+      "sha256": "69a6b494ff9d4b63b6b47fe3b6b457c35f595b64f311162338b33fda2f1b1151"
+    },
+    {
+      "id": "asset-004",
+      "label": "4",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/4.jpg",
+      "fileName": "4.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 2018266,
+      "sha256": "87dac3f81e81fb92e6cada2280bad565db49a3f07d5e179d20071a91b5d3d75e"
+    },
+    {
+      "id": "asset-005",
+      "label": "5_数字63错误",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/5_数字63错误.jpg",
+      "fileName": "5_数字63错误.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1964156,
+      "sha256": "c475f9207f24cde7c2625bbbc8895a8e7282671c9ffe27491b76a81eccf123b8"
+    },
+    {
+      "id": "asset-006",
+      "label": "5_一种修改方法",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/5_一种修改方法.jpg",
+      "fileName": "5_一种修改方法.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1962507,
+      "sha256": "223a39942093e48b8d7576dfe4ef7a707069086cf780001e784b630ee9bfcb6e"
+    },
+    {
+      "id": "asset-007",
+      "label": "5",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/5.jpg",
+      "fileName": "5.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1948839,
+      "sha256": "661c104cad5ce52a0e87a9afa4d5065714dfb3797fc143c40d9032c7fb670236"
+    },
+    {
+      "id": "asset-008",
+      "label": "6_m4的P2为接受段",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/6_m4的P2为接受段.jpg",
+      "fileName": "6_m4的P2为接受段.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1775942,
+      "sha256": "6fe499c21b98d8ed913550d54b4d349fb354c30c8447ad4888aa2204adfc747c"
+    },
+    {
+      "id": "asset-009",
+      "label": "6图",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/6图.jpg",
+      "fileName": "6图.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1493672,
+      "sha256": "f96da0a51e7cf93d0c7edb89fae34feef02b7efd34de5ca406a8c13feb36ce45"
+    },
+    {
+      "id": "asset-010",
+      "label": "7",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/7.jpg",
+      "fileName": "7.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1735840,
+      "sha256": "ee04f568561eff6a29af5c84958c1f6267d0f94e11fd50ed129d3e49404d6d03"
+    },
+    {
+      "id": "asset-011",
+      "label": "8",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/8.jpg",
+      "fileName": "8.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1754698,
+      "sha256": "662bce922409096984a474df4ed9d804eaa5ca805cc8e846831b02206f813b31"
+    },
+    {
+      "id": "asset-012",
+      "label": "9",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/9.jpg",
+      "fileName": "9.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1858139,
+      "sha256": "60aedf5a1bfd098b295ed32e46ede179de0f193fced431e6faef830ed24243b3"
+    },
+    {
+      "id": "asset-013",
+      "label": "10",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/10.jpg",
+      "fileName": "10.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1895089,
+      "sha256": "35ecf570b34500ea6f059b627ebb9e3079d2d8d161fd77ef2e78304fd83e99fa"
+    },
+    {
+      "id": "asset-014",
+      "label": "11",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/11.jpg",
+      "fileName": "11.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1821556,
+      "sha256": "c27af0381cca2da6aa90a1111ac5448247396df1a31b4224cf2e4d28fc234935"
+    },
+    {
+      "id": "asset-015",
+      "label": "之前讲座_大数据系统问题1",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/之前讲座_大数据系统问题1.jpg",
+      "fileName": "之前讲座_大数据系统问题1.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1685542,
+      "sha256": "ad83790de82e168cae58dd170de375670e056f0bafdb8a068e96a471e18848bf"
+    },
+    {
+      "id": "asset-016",
+      "label": "之前讲座_大数据系统问题2",
+      "role": "solution",
+      "href": "/files/tracks/cs/distributed-systems/assignments/之前讲座_大数据系统问题2.jpg",
+      "fileName": "之前讲座_大数据系统问题2.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 2909150,
+      "sha256": "b9c60b1879e6699389c60bdedc36164c473825645b9026ddd6bf234060ff8a18"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "001b69ad-0411-487e-a20e-d8fdacbfa552",
+    "22bc02c1-3103-4933-9d28-0fffa24fbb8f",
+    "38ceb60d-912c-4eb6-aff3-cf2f23fcc949",
+    "3bb50e8a-8c8f-4caa-99e7-263770857903",
+    "43e477ab-1cdb-4ad3-afa8-278adafc8920",
+    "5eb76cb0-e0ba-4229-9b40-f100c3756471",
+    "75bb66e5-c6f3-4d3a-b558-462eda12f975",
+    "78dbb841-e4fb-4ccd-beae-bb3a200bdeb2",
+    "7ebf93c2-e39e-46d5-946a-82226207c6aa",
+    "92e6c538-ebc4-4eee-be00-c9f863f30781",
+    "9998e103-e2c1-4169-b859-147394ffe368",
+    "9a6683ff-168f-4e07-9991-92a72d7cf2c2",
+    "a9eabbeb-acc0-415c-9adf-91b122f3bc60",
+    "b30067ab-d5e1-4c42-8b43-669f3775e189",
+    "bb7b75f5-f703-4abd-a118-34742d25c889",
+    "bc3887ad-d6d0-4544-86ac-6a439eacdb49"
+  ]
+}

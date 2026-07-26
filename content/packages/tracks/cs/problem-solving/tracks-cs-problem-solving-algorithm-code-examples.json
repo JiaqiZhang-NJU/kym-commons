@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-algorithm-code-examples",
+  "title": "问题求解算法示例代码",
+  "summary": "问题求解课程配套的 C++ 算法实现与练习题代码，统一收录高精度运算、搜索及编号练习程序。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "示例代码",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "C++",
+    "算法",
+    "示例代码"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "1530",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/1530.cpp",
+      "fileName": "1530.cpp",
+      "mediaType": null,
+      "sizeBytes": 603,
+      "sha256": "33ff80d6f09f34f7643e51aa0d9ef7db2517e60da54613cc8146f99a732d5547"
+    },
+    {
+      "id": "asset-002",
+      "label": "1559",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/1559.cpp",
+      "fileName": "1559.cpp",
+      "mediaType": null,
+      "sizeBytes": 944,
+      "sha256": "86bb3525946b7fd3b6f03d0465d4ace74047ac207d45a2089d4e7a1719e05fdf"
+    },
+    {
+      "id": "asset-003",
+      "label": "1693 启发式搜索sudoku_helang",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/1693 启发式搜索sudoku_helang.cpp",
+      "fileName": "1693 启发式搜索sudoku_helang.cpp",
+      "mediaType": null,
+      "sizeBytes": 4733,
+      "sha256": "bc5f60e53825c536ce8dfd542f38cd778b888cfea93d8e866a138119c2368124"
+    },
+    {
+      "id": "asset-004",
+      "label": "1725",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/1725.cpp",
+      "fileName": "1725.cpp",
+      "mediaType": null,
+      "sizeBytes": 682,
+      "sha256": "bb513afb1c0645f9e585bd91994dd120fcf9a5ae8e7f28fa1ec87a520b58a8de"
+    },
+    {
+      "id": "asset-005",
+      "label": "2066",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/2066.cpp",
+      "fileName": "2066.cpp",
+      "mediaType": null,
+      "sizeBytes": 729,
+      "sha256": "526a8551fdc1a0775b2ea7fbfe5e8dfecac5c8fc3beb34d5eca29de33a273622"
+    },
+    {
+      "id": "asset-006",
+      "label": "2388",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/2388.cpp",
+      "fileName": "2388.cpp",
+      "mediaType": null,
+      "sizeBytes": 763,
+      "sha256": "3699b74c55884c9b9192437848d87795d4c5d7d05e455a106fbe0cb1d595b2f5"
+    },
+    {
+      "id": "asset-007",
+      "label": "3768",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3768.cpp",
+      "fileName": "3768.cpp",
+      "mediaType": null,
+      "sizeBytes": 953,
+      "sha256": "c568e1bf9aa2b14af21f61cc213e0ee482b5818bab013850f571dc931682b9c9"
+    },
+    {
+      "id": "asset-008",
+      "label": "3771",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3771.cpp",
+      "fileName": "3771.cpp",
+      "mediaType": null,
+      "sizeBytes": 2353,
+      "sha256": "b8b4864b549a1f1df04531366f532861d194805f30e004b79716b2873a935e1f"
+    },
+    {
+      "id": "asset-009",
+      "label": "3772",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3772.cpp",
+      "fileName": "3772.cpp",
+      "mediaType": null,
+      "sizeBytes": 1937,
+      "sha256": "81a8f5bedca5b9191bd002e0906b5a1a38dcc8c4238380ca0063636efce3af3b"
+    },
+    {
+      "id": "asset-010",
+      "label": "3773",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3773.cpp",
+      "fileName": "3773.cpp",
+      "mediaType": null,
+      "sizeBytes": 1953,
+      "sha256": "50efd97c73903789f2513a37ae1a5e9893085ac9bbf4f3108b1abab0fc513a98"
+    },
+    {
+      "id": "asset-011",
+      "label": "3775",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3775.cpp",
+      "fileName": "3775.cpp",
+      "mediaType": null,
+      "sizeBytes": 1616,
+      "sha256": "fb216d728cab49a438b966cc831a1a34d06a3236847e3d9138620dec8788914c"
+    },
+    {
+      "id": "asset-012",
+      "label": "3776",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3776.cpp",
+      "fileName": "3776.cpp",
+      "mediaType": null,
+      "sizeBytes": 1703,
+      "sha256": "e8c8c166522b9e32e30ea875fb55b8eb6161b77273384e79ed3695b8c8005c43"
+    },
+    {
+      "id": "asset-013",
+      "label": "3777",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3777.cpp",
+      "fileName": "3777.cpp",
+      "mediaType": null,
+      "sizeBytes": 1531,
+      "sha256": "cc59903dd5a29071a7167882fb4f818257d7a86b3b2f76e7d1d61f1a3e6ca461"
+    },
+    {
+      "id": "asset-014",
+      "label": "3782",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3782.cpp",
+      "fileName": "3782.cpp",
+      "mediaType": null,
+      "sizeBytes": 920,
+      "sha256": "87278a998d16145b48a5680b85df4ecf3ed7378519c357a7bb21abd7b3b8d5d8"
+    },
+    {
+      "id": "asset-015",
+      "label": "3787",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3787.cpp",
+      "fileName": "3787.cpp",
+      "mediaType": null,
+      "sizeBytes": 791,
+      "sha256": "f339fab7aae9cbfefae08fc9b9bc14119d682770bdd41514c8ac143ee1b8b01f"
+    },
+    {
+      "id": "asset-016",
+      "label": "3788",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3788.cpp",
+      "fileName": "3788.cpp",
+      "mediaType": null,
+      "sizeBytes": 1694,
+      "sha256": "a94cd9dd8281de82ee4869df46f3e58e6d18722364b85c8e3e5bb6622d184ecb"
+    },
+    {
+      "id": "asset-017",
+      "label": "3789",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3789.cpp",
+      "fileName": "3789.cpp",
+      "mediaType": null,
+      "sizeBytes": 956,
+      "sha256": "f8fe5ad730d7fb358142dc20a81a5ac0ca18aecaa773a9a42c5e6b7ad99549ad"
+    },
+    {
+      "id": "asset-018",
+      "label": "3790",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3790.cpp",
+      "fileName": "3790.cpp",
+      "mediaType": null,
+      "sizeBytes": 1396,
+      "sha256": "17ee26f7e621da4ac8059349c64160d3a9ae370406286c0c5cfacfc6c6063ffe"
+    },
+    {
+      "id": "asset-019",
+      "label": "3792",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/3792.cpp",
+      "fileName": "3792.cpp",
+      "mediaType": null,
+      "sizeBytes": 1336,
+      "sha256": "71937c5975426a81c2f5163a2244359c5652572259c47e6bfec9cc3157129eff"
+    },
+    {
+      "id": "asset-020",
+      "label": "高精度乘单精度",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度乘单精度.cpp",
+      "fileName": "高精度乘单精度.cpp",
+      "mediaType": null,
+      "sizeBytes": 641,
+      "sha256": "4998191292bdda34a25336d0721dacc6100717c1f4713eeeb05ae7297d5fdf4b"
+    },
+    {
+      "id": "asset-021",
+      "label": "高精度乘高精度",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度乘高精度.cpp",
+      "fileName": "高精度乘高精度.cpp",
+      "mediaType": null,
+      "sizeBytes": 1047,
+      "sha256": "0021d66813c4d70e9841cccaa190e59b84420a50b0e029efaf1489b7367c2286"
+    },
+    {
+      "id": "asset-022",
+      "label": "高精度乘高精度FFT优化",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度乘高精度FFT优化.cpp",
+      "fileName": "高精度乘高精度FFT优化.cpp",
+      "mediaType": null,
+      "sizeBytes": 3435,
+      "sha256": "71f82a49ff2ff33576864a410ce95104abfb00f95bd71084cb1ca652496008dc"
+    },
+    {
+      "id": "asset-023",
+      "label": "高精度除单精度",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度除单精度.cpp",
+      "fileName": "高精度除单精度.cpp",
+      "mediaType": null,
+      "sizeBytes": 605,
+      "sha256": "8a6564c5122881d98d43f80c6184727ae4d7f2ae0b92eeb19c6577f9d888a92c"
+    },
+    {
+      "id": "asset-024",
+      "label": "高精度除高精度",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度除高精度.cpp",
+      "fileName": "高精度除高精度.cpp",
+      "mediaType": null,
+      "sizeBytes": 2028,
+      "sha256": "c50cb15ee35345b607e55f33d58a62893fb9abb74f9429f42eef32cf4be87394"
+    },
+    {
+      "id": "asset-025",
+      "label": "高精度加法",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度加法.cpp",
+      "fileName": "高精度加法.cpp",
+      "mediaType": null,
+      "sizeBytes": 660,
+      "sha256": "f1d3cf21185faa78ed08c812f1b492228ac34ce1a28359b0b0f56c5d9139aa4b"
+    },
+    {
+      "id": "asset-026",
+      "label": "高精度减法",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度减法.cpp",
+      "fileName": "高精度减法.cpp",
+      "mediaType": null,
+      "sizeBytes": 736,
+      "sha256": "44dfc2d60b976a85b1f089c2e01d1bcade5098236075bcb41ef2a1f8c92aa683"
+    },
+    {
+      "id": "asset-027",
+      "label": "高精度阶乘",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度阶乘.cpp",
+      "fileName": "高精度阶乘.cpp",
+      "mediaType": null,
+      "sizeBytes": 644,
+      "sha256": "230391a94a0b0b45ac96e2e8869a0184de95aee0918589d885af6ca76dcc3660"
+    },
+    {
+      "id": "asset-028",
+      "label": "高精度进制转换",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度进制转换.cpp",
+      "fileName": "高精度进制转换.cpp",
+      "mediaType": null,
+      "sizeBytes": 1010,
+      "sha256": "462e38d6c7a9ac6a40a804e7749bc32334a5e3130dd0e854be99446a0c6e3cf6"
+    },
+    {
+      "id": "asset-029",
+      "label": "高精度幂",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度幂.cpp",
+      "fileName": "高精度幂.cpp",
+      "mediaType": null,
+      "sizeBytes": 3439,
+      "sha256": "586d878a952c1a45f89b4bb723b1293d2658599f93d036f922e98e88994e1cb8"
+    },
+    {
+      "id": "asset-030",
+      "label": "高精度求平方根",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度求平方根.cpp",
+      "fileName": "高精度求平方根.cpp",
+      "mediaType": null,
+      "sizeBytes": 4489,
+      "sha256": "6db2623df557ce5943713b71329dbc6acf7eccf55638ddb3b55e183af5ba74ac"
+    },
+    {
+      "id": "asset-031",
+      "label": "高精度取模",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度取模.cpp",
+      "fileName": "高精度取模.cpp",
+      "mediaType": null,
+      "sizeBytes": 395,
+      "sha256": "8526306a086ce89698e753f29d7a11b1124779826c382db88d87ce6d8e91b309"
+    },
+    {
+      "id": "asset-032",
+      "label": "高精度GCD",
+      "role": "source",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度GCD.cpp",
+      "fileName": "高精度GCD.cpp",
+      "mediaType": null,
+      "sizeBytes": 3590,
+      "sha256": "02017e4e3bd782d25d9186856e269fbaa74b44a98aae2de77b803fac70912128"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "06416976-3a05-4fad-a10f-9449f2a35a86",
+    "40f8a659-ba60-48a5-b3a6-9571042f73f6",
+    "437cc5ff-c949-4183-beb9-42ffd2e6757e",
+    "461a9673-f8be-42f0-88c9-75419b34ea04",
+    "4bca9bd2-746c-4d31-8934-7ae50dcd422e",
+    "505629af-aff5-4621-9fdd-a3350478d053",
+    "513cc116-0c86-412f-a2be-6cd85346da8c",
+    "57574699-7364-4085-a819-3e0e867da4a2",
+    "5a19312f-9f54-4e83-b059-43ad806c4e67",
+    "60f845da-8f93-4727-8a98-fc79e1869010",
+    "61cd30ce-0a69-496a-95ff-d03c5e26ff65",
+    "627dedb9-7a30-481d-9848-40c02b7550f8",
+    "7a7d392f-8171-488a-8e9c-83e7ab7bd176",
+    "7fc8a9d0-58e7-4085-bfef-3e56355f0652",
+    "85763d21-884a-44bb-a768-462032a71c06",
+    "8bd46141-8cbd-4a68-81e9-d223cf2751f6",
+    "8d1e1c20-a214-4f9b-abad-627265405c91",
+    "8e2c45b6-62f0-4851-8be4-0314dbb24dd7",
+    "9acede61-2a0c-4354-a114-370352e9867a",
+    "9ba69aa1-e6d0-438b-8ae9-b16364a8ae84",
+    "a63483ad-9096-4999-9fdd-8835e4ee7be7",
+    "b9b29eef-bf93-4ace-9b01-290d3dea9ec3",
+    "ba535c1c-2d1f-45c8-87af-80aadfedfc91",
+    "c1321214-5e30-42ff-8352-0f4f47f81542",
+    "c4b48b21-818a-494d-9b03-597c07946b97",
+    "cf3a0722-022b-41ef-a806-7546aa47b07c",
+    "d9122a7b-3b33-488c-a226-f21c90f07995",
+    "dbde4d06-d890-4e1b-890f-6b2520eb1e58",
+    "ee13e01b-1b5f-4a14-8506-780afa56af9c",
+    "f5901530-c486-4053-8a46-6ffef1734746",
+    "f6c303ad-e357-434c-b850-a662a75e882c",
+    "f83ea681-83c7-4e7b-8dbb-7d092d31fcdb"
+  ]
+}

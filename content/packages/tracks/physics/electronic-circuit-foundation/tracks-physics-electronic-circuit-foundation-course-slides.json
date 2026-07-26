@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-physics-electronic-circuit-foundation-course-slides",
+  "title": "电子电路基础课程课件",
+  "summary": "电子电路基础 00–21 讲连续课件合集，包含数字电路、模拟电路、放大器、反馈与电源等主题，并保留部分 PPTX/PDF 版本。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electronic-circuit-foundation"
+  },
+  "categorySlug": "reference",
+  "materialType": "课程课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "电子电路基础",
+    "课程课件",
+    "PPT"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "电子电路基础0-引子 - 副本",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础0-引子 - 副本.pptx",
+      "fileName": "电子电路基础0-引子 - 副本.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 400342,
+      "sha256": "8d040b0e6e8ee09045f444fecfd88c473a126a36a167645695f501361d4818d0"
+    },
+    {
+      "id": "asset-002",
+      "label": "电子电路基础00-引子",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础00-引子.pptx",
+      "fileName": "电子电路基础00-引子.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 11427770,
+      "sha256": "f423dc54e051fa124bbd897c504e2029edb958b522a3105997fff4b389d13138"
+    },
+    {
+      "id": "asset-003",
+      "label": "电子电路基础01-绪论",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础01-绪论.pptx",
+      "fileName": "电子电路基础01-绪论.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 5619989,
+      "sha256": "78aeb568f16454f43a502d453955866ba1c43d6631f988723b77de7600bba612"
+    },
+    {
+      "id": "asset-004",
+      "label": "电子电路基础02-逻辑",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础02-逻辑.pptx",
+      "fileName": "电子电路基础02-逻辑.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1397556,
+      "sha256": "6972938f0027277ca954323f01e5767ee5170855dfd31e22482abb390d44cbd1"
+    },
+    {
+      "id": "asset-005",
+      "label": "电子电路基础03-器件",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础03-器件.pptx",
+      "fileName": "电子电路基础03-器件.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 2675832,
+      "sha256": "a1fab8962458a6aae9f2a751f8b301bf5696923302a3ffd1aa3736dfded1ad9c"
+    },
+    {
+      "id": "asset-006",
+      "label": "电子电路基础04-组合",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础04-组合.pptx",
+      "fileName": "电子电路基础04-组合.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 5735625,
+      "sha256": "a96b53b94d1ecafe1092ad286e2e07234154990a2881139cf62ee16ca3e3b07a"
+    },
+    {
+      "id": "asset-007",
+      "label": "电子电路基础05-记忆",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础05-记忆.pptx",
+      "fileName": "电子电路基础05-记忆.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1643556,
+      "sha256": "f6ed21fc48788e7877ecd39f030915b216ac3397c4144ed6a8356e3ec0b8e27d"
+    },
+    {
+      "id": "asset-008",
+      "label": "电子电路基础06-时序",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础06-时序.pptx",
+      "fileName": "电子电路基础06-时序.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 3764258,
+      "sha256": "c400d1d4d11d72e0535e3bd0a650ede4b7d5ffa28085168236312e0f8242e8b9"
+    },
+    {
+      "id": "asset-009",
+      "label": "电子电路基础07-存储",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础07-存储.pptx",
+      "fileName": "电子电路基础07-存储.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1404908,
+      "sha256": "73c3b81ad6828d596249fd3ad30db74ea46d9498a8dfb46e1a90e82950345c9b"
+    },
+    {
+      "id": "asset-010",
+      "label": "电子电路基础09-转换",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础09-转换.pptx",
+      "fileName": "电子电路基础09-转换.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 2123004,
+      "sha256": "d0426495d895470978b27fd7a9db8f603665cc0fcd0dcd1b68d53facb6302c70"
+    },
+    {
+      "id": "asset-011",
+      "label": "电子电路基础10-模引",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础10-模引.pdf",
+      "fileName": "电子电路基础10-模引.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2258123,
+      "sha256": "7d2a5b90f5e068166ccf8b4aeaf7b08a7360225e91c8023edadac6ac581ca397"
+    },
+    {
+      "id": "asset-012",
+      "label": "电子电路基础10-模引",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础10-模引.pptx",
+      "fileName": "电子电路基础10-模引.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1618553,
+      "sha256": "0966a7e999cf391288ce6986bd8dc2878019bde495b4f91002918b6cbe2541a0"
+    },
+    {
+      "id": "asset-013",
+      "label": "电子电路基础12-OP",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础12-OP.pdf",
+      "fileName": "电子电路基础12-OP.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1430346,
+      "sha256": "2b2a967c6342a5d41ed9658d2620c2c8403b9bebf47c3c5c751896ca785afcb3"
+    },
+    {
+      "id": "asset-014",
+      "label": "电子电路基础13-D",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础13-D.pdf",
+      "fileName": "电子电路基础13-D.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 4001931,
+      "sha256": "5d7f0745f6d1b98e19f86aa12b322471a8a591961b468bb6d0caf60afc06fba8"
+    },
+    {
+      "id": "asset-015",
+      "label": "电子电路基础14-MOS",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础14-MOS.pptx",
+      "fileName": "电子电路基础14-MOS.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 4970714,
+      "sha256": "acf0240f81873ccb531e1886c4d7dd7009470b066534cb8dfb568b7e2e1e91a0"
+    },
+    {
+      "id": "asset-016",
+      "label": "电子电路基础15 T-",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础15 T-.pptx",
+      "fileName": "电子电路基础15 T-.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 2848091,
+      "sha256": "6fb518ef60407522b363c6359746236a73b4647ff49013760beeb351eacf5c85"
+    },
+    {
+      "id": "asset-017",
+      "label": "电子电路基础16-单管",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础16-单管.pptx",
+      "fileName": "电子电路基础16-单管.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 4235506,
+      "sha256": "0326aa74343018d8713bcd9d7a4bed1e033b079bcfcc656afb2ae0752268233c"
+    },
+    {
+      "id": "asset-018",
+      "label": "电子电路基础17-IC",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础17-IC.pptx",
+      "fileName": "电子电路基础17-IC.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 10684256,
+      "sha256": "248094fc9d5005731c08477851fb88b87517a6e9290478eb27a7bbb0003b9258"
+    },
+    {
+      "id": "asset-019",
+      "label": "电子电路基础18-1-FB",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础18-1-FB.pptx",
+      "fileName": "电子电路基础18-1-FB.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1987866,
+      "sha256": "18bd57c6a298a9a4e4f64b70c81d2347dad31d3c2499d5d189ee940dd3a2d3c5"
+    },
+    {
+      "id": "asset-020",
+      "label": "电子电路基础19-功放",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础19-功放.pptx",
+      "fileName": "电子电路基础19-功放.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1091026,
+      "sha256": "e5d2347d47da3b85b182bd3c009cddce1eec71a93c1a5bcdd038134610fe41a7"
+    },
+    {
+      "id": "asset-021",
+      "label": "电子电路基础20-2-FG",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础20-2-FG.pptx",
+      "fileName": "电子电路基础20-2-FG.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 2075488,
+      "sha256": "a01e13a8a7787761c59a90aa66ff1f507681fb200b2ca34b8234027c7673569b"
+    },
+    {
+      "id": "asset-022",
+      "label": "电子电路基础21-电源",
+      "role": "supplement",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础21-电源.pptx",
+      "fileName": "电子电路基础21-电源.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1901360,
+      "sha256": "100ef488a08f2a4e868f45c34590f99a6d3670f052b08b5655f240cd11559328"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "08ff829f-275f-4fef-9a3c-d6d86f38aa49",
+    "158f737b-6850-4427-9af0-2139fef760ae",
+    "3c1497e5-afca-454e-b3d7-40826a5ab210",
+    "43d118a3-4947-42a0-9cb2-0d612cf329af",
+    "5da94324-ba28-4bf6-af89-21e2ee29c103",
+    "647db61d-6c49-4e85-86b5-608036bf6c2a",
+    "72b1e38f-051a-415a-9fd5-2c7c4f0304dd",
+    "754822bd-9370-4765-ae38-125e95b5a312",
+    "8404cc0a-bcb6-4175-aa9b-f3224cb5f932",
+    "860e8c42-2e05-4688-8d7b-5c92cb443022",
+    "8e176077-660c-4bc4-b7fb-c83e19c075e3",
+    "9057544c-58f8-498d-b551-5621a5908e02",
+    "9b8b5668-e442-4310-8e29-1c3791731ab2",
+    "9dbc740d-ece1-44e6-80a8-aff2ae33e261",
+    "b0a8332f-9578-4a4b-b315-bf4170d8359c",
+    "b4535623-b2d9-4e23-bc1f-bcdb4bd4139d",
+    "b68b0712-5c03-4355-a780-a14e9d55e5de",
+    "b83a231f-6335-45ee-a6c7-61f6774b02e2",
+    "c00863ce-87e2-4ea5-99d9-95ade1d019f5",
+    "df7c27e6-4817-4321-8d5b-c6c1ad3c9d57",
+    "e33d1ab8-2e9a-4f53-81c9-a7cdb4d11689",
+    "f8c8b95f-9e48-41d2-8480-3632599bf1e6"
+  ]
+}
