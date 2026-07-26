@@ -42238,6 +42238,44 @@
     },
     {
       "schemaVersion": 1,
+      "id": "submission-2-test",
+      "title": "test",
+      "summary": "just for testing",
+      "placement": {
+        "section": "track",
+        "trackSlug": "other",
+        "courseSlug": "general-resources"
+      },
+      "categorySlug": "reference",
+      "materialType": "其他",
+      "term": {
+        "label": "2026 Spring",
+        "sortKey": null
+      },
+      "tags": [],
+      "aliases": [],
+      "assets": [
+        {
+          "id": "asset-1",
+          "label": "test.txt",
+          "role": "primary",
+          "href": "https://github.com/user-attachments/files/30388586/test.txt",
+          "fileName": "test.txt",
+          "mediaType": "text/plain",
+          "sizeBytes": null,
+          "sha256": null
+        }
+      ],
+      "source": {
+        "kind": "github-submission",
+        "issueNumber": 2
+      },
+      "publishedAt": null,
+      "updatedAt": "2026-07-26",
+      "legacyIds": []
+    },
+    {
+      "schemaVersion": 1,
       "id": "track-other-general-resources-american-literature-brief-history",
       "title": "美国文学简史",
       "summary": "来源: 常用教材整理",
