@@ -1,30 +1,42 @@
-name: Sync Submissions
+name: Publish Submission Intake
 
 on:
   issues:
     types: [labeled]
 
 permissions:
-  contents: write
+  contents: read
   issues: read
+  pull-requests: write
 
 jobs:
-  generate:
-    if: github.event.label.name == 'accepted'
+  intake:
+    if: github.event.label.name == 'submission:ready'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Create GitHub App token
+        id: app-token
+        if: ${{ secrets.KYM_APP_ID != '' && secrets.KYM_APP_PRIVATE_KEY != '' }}
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.KYM_APP_ID }}
+          private-key: ${{ secrets.KYM_APP_PRIVATE_KEY }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: node scripts/issue-to-content.mjs
+      - run: node scripts/submissions/issue-to-catalog.mjs && npm run catalog:generate
         env:
           KYM_ISSUE_BODY: ${{ github.event.issue.body }}
-      - run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs data
-          git commit -m "chore: sync accepted submission" || echo "No changes to commit"
-          git push
+          KYM_ISSUE_NUMBER: ${{ github.event.issue.number }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.app-token.outputs.token || github.token }}
+          branch: intake/submission-${{ github.event.issue.number }}
+          delete-branch: true
+          title: "content: intake submission #${{ github.event.issue.number }}"
+          commit-message: "content: intake submission #${{ github.event.issue.number }}"
+          body: "Generated from submission #${{ github.event.issue.number }}. Merge this PR to publish after review."
+          labels: submission:intake
