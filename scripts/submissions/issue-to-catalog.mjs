@@ -16,6 +16,56 @@ export function parseAssetManifest(body) {
   return assets;
 }
 
+export function parseGitHubAttachments(body) {
+  const assets = [];
+  const seenHrefs = new Set();
+  const markdownLinkPattern =
+    /\[([^\]\n]+)\]\((https:\/\/github\.com\/user-attachments\/(?:files|assets)\/[^)\s]+)\)/gi;
+  const bareLinkPattern =
+    /https:\/\/github\.com\/user-attachments\/(?:files|assets)\/[^\s<>)]+/gi;
+
+  for (const match of body.matchAll(markdownLinkPattern)) {
+    addAttachment(assets, seenHrefs, match[2], match[1]);
+  }
+
+  for (const match of body.matchAll(bareLinkPattern)) {
+    addAttachment(assets, seenHrefs, match[0], null);
+  }
+
+  return assets;
+}
+
+function addAttachment(assets, seenHrefs, href, markdownLabel) {
+  if (seenHrefs.has(href)) return;
+  seenHrefs.add(href);
+  const pathFileName = decodeURIComponent(new URL(href).pathname.split("/").pop() ?? "");
+  const fileName = markdownLabel && /\.[a-z0-9]{1,10}$/i.test(markdownLabel)
+    ? markdownLabel
+    : pathFileName || null;
+
+  assets.push({
+    href,
+    label: markdownLabel ?? fileName ?? `Attachment ${assets.length + 1}`,
+    role: "primary",
+    fileName,
+    mediaType: inferMediaType(fileName),
+  });
+}
+
+function inferMediaType(fileName) {
+  const extension = fileName?.split(".").pop()?.toLowerCase();
+  return {
+    pdf: "application/pdf",
+    txt: "text/plain",
+    zip: "application/zip",
+    rar: "application/vnd.rar",
+    doc: "application/msword",
+    docx: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    ppt: "application/vnd.ms-powerpoint",
+    pptx: "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+  }[extension] ?? null;
+}
+
 export function slugify(value) {
   return value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "submission";
 }
@@ -23,7 +73,7 @@ export function slugify(value) {
 export function createPackage({ manifest, assets, issueNumber }) {
   if (!manifest.courseSlug) throw new Error("New courses require a maintainer-created course catalog entry before publication.");
   const sourceAssets = manifest.sourceMode === "external-link" ? [{ href: manifest.externalLink, label: "External material", role: "primary" }] : assets;
-  if (!sourceAssets.length || sourceAssets.some((asset) => !asset.href)) throw new Error("A verified external link or kym-assets:v1 attachment manifest is required.");
+  if (!sourceAssets.length || sourceAssets.some((asset) => !asset.href)) throw new Error("A verified external link or GitHub Issue attachment is required.");
   const id = `submission-${issueNumber}-${slugify(manifest.title)}`;
   return {
     schemaVersion: 1, id, title: manifest.title, summary: manifest.summary,
@@ -41,10 +91,13 @@ export function outputPath(root, materialPackage) {
 }
 
 if (process.argv[1]?.endsWith("issue-to-catalog.mjs")) {
-  const body = process.env.KYM_ISSUE_BODY;
+  const contextPath = process.env.KYM_SUBMISSION_CONTEXT_PATH;
+  const body = contextPath ? fs.readFileSync(contextPath, "utf8") : process.env.KYM_ISSUE_BODY;
   const issueNumber = Number(process.env.KYM_ISSUE_NUMBER);
-  if (!body || !Number.isInteger(issueNumber)) throw new Error("KYM_ISSUE_BODY and KYM_ISSUE_NUMBER are required.");
-  const materialPackage = createPackage({ manifest: parseSubmissionManifest(body), assets: parseAssetManifest(body), issueNumber });
+  if (!body || !Number.isInteger(issueNumber)) throw new Error("Submission context and KYM_ISSUE_NUMBER are required.");
+  const declaredAssets = parseAssetManifest(body);
+  const assets = declaredAssets.length ? declaredAssets : parseGitHubAttachments(body);
+  const materialPackage = createPackage({ manifest: parseSubmissionManifest(body), assets, issueNumber });
   const target = outputPath(process.cwd(), materialPackage);
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, `${JSON.stringify(materialPackage, null, 2)}\n`);
