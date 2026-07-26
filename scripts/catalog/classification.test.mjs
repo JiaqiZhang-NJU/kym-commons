@@ -49,4 +49,25 @@ describe("catalog classification", () => {
       )
     ).toBe("finals");
   });
+
+  it("recognizes archived distributed-systems exam files", () => {
+    expect(
+      inferCategorySlug(
+        fixture({
+          placement: {
+            section: "track",
+            trackSlug: "cs",
+            courseSlug: "distributed-systems",
+          },
+          assets: [
+            {
+              label: "2024",
+              fileName: "2024.pdf",
+              href: "/files/tracks/cs/distributed-systems/materials/2024.pdf",
+            },
+          ],
+        })
+      )
+    ).toBe("sample-exams");
+  });
 });
