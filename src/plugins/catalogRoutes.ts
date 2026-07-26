@@ -32,7 +32,7 @@ export default function catalogRoutesPlugin(context: LoadContext): Plugin<void> 
             ? `/foundation/${course.slug}/`
             : `/tracks/${course.trackSlug}/${course.slug}/`;
         addRoute({
-          path: routePath,
+          path: withBaseUrl(context.baseUrl, routePath),
           component: "@site/src/pages/catalog-course-route.tsx",
           exact: true,
         });
@@ -40,11 +40,16 @@ export default function catalogRoutesPlugin(context: LoadContext): Plugin<void> 
 
       for (const materialPackage of catalog.packages) {
         addRoute({
-          path: `/materials/${materialPackage.id}/`,
+          path: withBaseUrl(context.baseUrl, `/materials/${materialPackage.id}/`),
           component: "@site/src/pages/material-package-route.tsx",
           exact: true,
         });
       }
     },
   };
+}
+
+function withBaseUrl(baseUrl: string, routePath: string): string {
+  const normalizedBaseUrl = baseUrl === "/" ? "" : baseUrl.replace(/\/$/, "");
+  return `${normalizedBaseUrl}${routePath}`;
 }
