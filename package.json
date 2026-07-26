@@ -16,6 +16,8 @@
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "catalog:validate": "node scripts/catalog/validate.mjs",
+    "catalog:generate": "node scripts/catalog/generate-runtime.mjs",
+    "catalog:check": "npm run catalog:validate && node scripts/catalog/generate-runtime.mjs --check",
     "catalog:migrate": "node scripts/catalog/migrate-legacy.mjs --force"
   },
   "dependencies": {

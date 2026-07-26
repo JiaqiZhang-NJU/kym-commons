@@ -1,8 +1,8 @@
 import CourseCard from "./CourseCard";
-import { TRACK_COURSES } from "../data/courses";
-import { buildCoursePath, GENERAL_RESOURCES_SLUG } from "../lib/materials";
+import { buildCanonicalCoursePath, getTrackCourses } from "../catalog/runtime";
+import { GENERAL_RESOURCES_SLUG } from "../lib/materials";
 
-type TrackSlug = keyof typeof TRACK_COURSES;
+type TrackSlug = string;
 
 type Props = {
   title: string;
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function TrackPageContent({ title, trackSlug }: Props) {
-  const courses = TRACK_COURSES[trackSlug];
+  const courses = getTrackCourses(trackSlug);
 
   return (
     <main className="container margin-vert--lg">
@@ -20,7 +20,7 @@ export default function TrackPageContent({ title, trackSlug }: Props) {
           <div className="col col--4" key={course.slug}>
             <CourseCard
               title={course.title}
-              to={buildCoursePath({ section: "track", trackSlug, courseSlug: course.slug })}
+              to={buildCanonicalCoursePath({ section: "track", trackSlug, courseSlug: course.slug })}
               isGeneral={course.slug === GENERAL_RESOURCES_SLUG}
             />
           </div>
