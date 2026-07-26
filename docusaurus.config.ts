@@ -46,6 +46,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  plugins: ["./src/plugins/catalogRoutes.ts"],
 
   themeConfig: {
     image: 'img/docusaurus-social-card.png',
