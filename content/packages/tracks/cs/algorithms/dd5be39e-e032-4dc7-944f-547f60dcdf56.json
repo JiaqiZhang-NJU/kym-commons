@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "dd5be39e-e032-4dc7-944f-547f60dcdf56",
+  "title": "算法-2026春期中",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026春",
+    "sortKey": "2026-2026-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法-2026春期中",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/midterms/算法-2026春期中.pdf",
+      "fileName": "算法-2026春期中.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1477414,
+      "sha256": "3125894ba3bc39e2088706f27e3655be4cee1e3b6af041a58dcf0400ef18abd7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "dd5be39e-e032-4dc7-944f-547f60dcdf56"
+  ]
+}

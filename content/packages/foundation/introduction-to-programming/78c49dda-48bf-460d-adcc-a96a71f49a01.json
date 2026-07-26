@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "78c49dda-48bf-460d-adcc-a96a71f49a01",
+  "title": "quit_chk",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "quit_chk",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/quit_chk.c",
+      "fileName": "quit_chk.c",
+      "mediaType": null,
+      "sizeBytes": 869,
+      "sha256": "e4559af21819877998a651153b0121a769bb310b6a2a536922fa592cdfd790c8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "78c49dda-48bf-460d-adcc-a96a71f49a01"
+  ]
+}

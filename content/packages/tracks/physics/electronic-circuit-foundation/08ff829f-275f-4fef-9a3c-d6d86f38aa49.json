@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "08ff829f-275f-4fef-9a3c-d6d86f38aa49",
+  "title": "电子电路基础21-电源",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electronic-circuit-foundation"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "电子电路基础21-电源",
+      "role": "primary",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础21-电源.pptx",
+      "fileName": "电子电路基础21-电源.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1901360,
+      "sha256": "100ef488a08f2a4e868f45c34590f99a6d3670f052b08b5655f240cd11559328"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "08ff829f-275f-4fef-9a3c-d6d86f38aa49"
+  ]
+}

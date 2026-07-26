@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "d187bb9d-eb30-4843-9231-176e51e97d2c",
+  "title": "马原重点2",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "marxism"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "马原重点2",
+      "role": "primary",
+      "href": "/files/foundation/marxism/materials/马原重点2.docx",
+      "fileName": "马原重点2.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 17307,
+      "sha256": "dddd1ed971c0e0a82be6bfee607d07df230a51b411b3d2ae7fdaded514ed146e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "d187bb9d-eb30-4843-9231-176e51e97d2c"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "7e527ee7-807b-4138-b75c-0a02c098107f",
+  "title": "微积分I（第一层次）期末-简评版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "微积分I（第一层次）期末-简评版",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/finals/微积分I（第一层次）期末-简评版.docx",
+      "fileName": "微积分I（第一层次）期末-简评版.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 882821,
+      "sha256": "b447d90cb242ff7d1b76152ef58e86579770ce7f1e20126b6d869862e9ed0176"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7e527ee7-807b-4138-b75c-0a02c098107f"
+  ]
+}

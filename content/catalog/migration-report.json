@@ -1,0 +1,44 @@
+{
+  "sourceRecordCount": 1136,
+  "writtenPackageCount": 1132,
+  "duplicateIdCounts": [
+    [
+      "foundation-university-physics-i-quiz03sol-pdf",
+      2
+    ],
+    [
+      "foundation-university-physics-ii-chapter22-pdf",
+      2
+    ],
+    [
+      "foundation-university-physics-ii-pdf",
+      9
+    ]
+  ],
+  "missingAssets": [
+    {
+      "id": "83462d40-fd45-49ac-9d64-32d459e93402",
+      "href": "/files/tracks/physics/theoretical-mechanics/materials/力学  下  理论力学——12307589.pdf",
+      "title": "力学  下  理论力学——12307589"
+    },
+    {
+      "id": "508b5518-67e7-4345-b673-eb39d9038c57",
+      "href": "/files/tracks/cs/probability-general/materials/概率论与数理统计.rar",
+      "title": "概率论与数理统计"
+    },
+    {
+      "id": "30e94a19-5624-4609-8610-c7774b82256d",
+      "href": "/files/foundation/introduction-to-programming/materials/C Primer Plus中文版附录.pdf",
+      "title": "C Primer Plus中文版附录"
+    }
+  ],
+  "mergedDuplicateAssets": [
+    {
+      "id": "foundation-university-physics-i-quiz03sol-pdf",
+      "href": "/files/foundation/university-physics-i/quizzes/Quiz03sol.pdf",
+      "title": "Quiz 03 参考解答（2018）",
+      "mergedInto": "foundation-university-physics-i-quiz03sol-pdf"
+    }
+  ],
+  "unknownCategories": []
+}

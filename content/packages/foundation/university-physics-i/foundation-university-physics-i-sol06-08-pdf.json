@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-sol06-08-pdf",
+  "title": "sol06-08.pdf",
+  "summary": "大学物理上作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol06-08.pdf",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/assignment-solutions/sol06-08.pdf",
+      "fileName": "sol06-08.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 270954,
+      "sha256": "b9ae24386d4fa757005410e693836b36719caed4dfac090c4b65f57c84eda7ab"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-sol06-08-pdf"
+  ]
+}

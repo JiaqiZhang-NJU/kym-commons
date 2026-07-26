@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c4b10de5-c7e2-47fd-8bdd-2b35a0285421",
+  "title": "put_put",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "put_put",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/put_put.c",
+      "fileName": "put_put.c",
+      "mediaType": null,
+      "sizeBytes": 607,
+      "sha256": "354fa22993b53e203844772b9fe7528ace74caf375017eadef03f4b06ecd9a4c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c4b10de5-c7e2-47fd-8bdd-2b35a0285421"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "7fbbd35d-d0db-4feb-a496-115921a83fc8",
+  "title": "s_and_r",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "s_and_r",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/s_and_r.c",
+      "fileName": "s_and_r.c",
+      "mediaType": null,
+      "sizeBytes": 372,
+      "sha256": "c5d67134ca9e399f0de26e4efdc55f5d29c54b10d2ed116e1a832289b90791f4"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7fbbd35d-d0db-4feb-a496-115921a83fc8"
+  ]
+}

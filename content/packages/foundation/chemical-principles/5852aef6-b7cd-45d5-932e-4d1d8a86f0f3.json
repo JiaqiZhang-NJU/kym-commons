@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "5852aef6-b7cd-45d5-932e-4d1d8a86f0f3",
+  "title": "化学原理 上 (印永嘉，姚天扬编, 印永嘉, 姚天扬等编, 印永嘉, 姚天扬) (Z-Library)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "chemical-principles"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "化学原理 上 (印永嘉，姚天扬编, 印永嘉, 姚天扬等编, 印永嘉, 姚天扬) (Z-Library)",
+      "role": "primary",
+      "href": "/files/foundation/chemical-principles/materials/化学原理 上 (印永嘉，姚天扬编, 印永嘉, 姚天扬等编, 印永嘉, 姚天扬) (Z-Library).pdf",
+      "fileName": "化学原理 上 (印永嘉，姚天扬编, 印永嘉, 姚天扬等编, 印永嘉, 姚天扬) (Z-Library).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 15550785,
+      "sha256": "4ad0de467d2ab5f0b842cad0849203d701ea23aa1d519c25837c1e74d68b13b9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5852aef6-b7cd-45d5-932e-4d1d8a86f0f3"
+  ]
+}

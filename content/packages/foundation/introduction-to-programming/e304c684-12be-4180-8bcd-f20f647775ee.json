@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "e304c684-12be-4180-8bcd-f20f647775ee",
+  "title": "designate",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "designate",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/designate.c",
+      "fileName": "designate.c",
+      "mediaType": null,
+      "sizeBytes": 273,
+      "sha256": "35d0d405f437f305c8db8beada1ad15b420ff675063b8fa7a557d4b4eb39a73d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "e304c684-12be-4180-8bcd-f20f647775ee"
+  ]
+}

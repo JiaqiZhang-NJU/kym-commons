@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-midterm-combined-pdf",
+  "title": "期中试卷合集",
+  "summary": "大学物理下期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期中试卷合集",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/midterms/midterm-combined.pdf",
+      "fileName": "midterm-combined.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2006153,
+      "sha256": "2bfa1bc441ff46c99eba6e526c761f243260ac03e042ea2cd1504d786b02ebf6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-midterm-combined-pdf"
+  ]
+}

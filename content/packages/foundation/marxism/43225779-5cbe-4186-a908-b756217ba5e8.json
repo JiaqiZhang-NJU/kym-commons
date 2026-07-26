@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "43225779-5cbe-4186-a908-b756217ba5e8",
+  "title": "马原提纲(1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "marxism"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "马原提纲(1)",
+      "role": "primary",
+      "href": "/files/foundation/marxism/materials/马原提纲(1).docx",
+      "fileName": "马原提纲(1).docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 19499,
+      "sha256": "5e2d2f7f96ab96dbc85f9f9a9b141e8724de8eb8fd11e265f8ad523fd0a3d895"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "43225779-5cbe-4186-a908-b756217ba5e8"
+  ]
+}

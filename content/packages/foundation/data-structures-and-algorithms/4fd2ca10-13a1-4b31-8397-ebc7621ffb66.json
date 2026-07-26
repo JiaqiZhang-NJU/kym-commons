@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "4fd2ca10-13a1-4b31-8397-ebc7621ffb66",
+  "title": "排序和查找程序小结",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "排序和查找程序小结",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/排序和查找程序小结.docx",
+      "fileName": "排序和查找程序小结.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 24962,
+      "sha256": "ae258104f2198ee376b26eb30062522716445ce76eecf63ec0b60a1cd201810e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "4fd2ca10-13a1-4b31-8397-ebc7621ffb66"
+  ]
+}

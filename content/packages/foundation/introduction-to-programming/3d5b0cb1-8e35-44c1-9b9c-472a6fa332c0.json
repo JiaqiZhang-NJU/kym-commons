@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "3d5b0cb1-8e35-44c1-9b9c-472a6fa332c0",
+  "title": "showf_pt",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "showf_pt",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/showf_pt.c",
+      "fileName": "showf_pt.c",
+      "mediaType": null,
+      "sizeBytes": 474,
+      "sha256": "dd7a31fd4c80644340704fa25445fdf8c6d28017107cb5b4c196f58bb6d3449c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3d5b0cb1-8e35-44c1-9b9c-472a6fa332c0"
+  ]
+}

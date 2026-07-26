@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "2e15b18e-4cf4-4db8-b6ea-088173635558",
+  "title": "2022期末",
+  "summary": "来源于 操作系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-general/finals/2022期末.pdf",
+      "fileName": "2022期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 387568,
+      "sha256": "e25ee8b979d06933af81c8d578041935545d5b130d913ad75d28bb59187aa5fb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "2e15b18e-4cf4-4db8-b6ea-088173635558"
+  ]
+}

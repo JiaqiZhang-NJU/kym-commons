@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "f79fcce8-83cf-4cb9-bf7f-57d20bfacf58",
+  "title": "electric",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "electric",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/electric.c",
+      "fileName": "electric.c",
+      "mediaType": null,
+      "sizeBytes": 1416,
+      "sha256": "d1eeb4b315f643655bd7e9ec3cf5fabadf9f73bf585ad842a4bcd7cecae3e533"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "f79fcce8-83cf-4cb9-bf7f-57d20bfacf58"
+  ]
+}

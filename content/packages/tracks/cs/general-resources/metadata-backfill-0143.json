@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0143",
+  "title": "prolog实现时间转换和八皇后问题.rar",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "prolog实现时间转换和八皇后问题.rar",
+      "role": "primary",
+      "href": "/files/tracks/cs/general-resources/materials/prolog实现时间转换和八皇后问题.rar",
+      "fileName": "prolog实现时间转换和八皇后问题.rar",
+      "mediaType": "application/vnd.rar",
+      "sizeBytes": 2548,
+      "sha256": "7c330a54840a9011641c7fd7f6a371a119465512c214366c0d504bd65f1c0a0e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0143"
+  ]
+}

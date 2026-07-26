@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-upiisamplefinal08-pdf",
+  "title": "期末样卷 08",
+  "summary": "大学物理下期末样卷与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "final-samples",
+  "materialType": "期末样卷",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末样卷 08",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/finals/UPIIsamplefinal08.pdf",
+      "fileName": "UPIIsamplefinal08.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 445805,
+      "sha256": "bca1cfc5da8ad69c286d1a19a29af027025b2f00be74b160d2ebfe9f8d243d7a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-upiisamplefinal08-pdf"
+  ]
+}

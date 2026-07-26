@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0f448587-0f7f-4011-a56f-933a885ea76b",
+  "title": "2026版匡院指北",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026",
+    "sortKey": "2026-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2026版匡院指北",
+      "role": "primary",
+      "href": "/files/tracks/other/general-resources/materials/2026版匡院指北.pdf",
+      "fileName": "2026版匡院指北.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1080789,
+      "sha256": "098d13bf4b27d70ad16d2d8d87bc26d2d96428e5f78e13a059a00ec63282e819"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0f448587-0f7f-4011-a56f-933a885ea76b"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-pdf-2",
+  "title": "静磁场",
+  "summary": "大学物理下专题讲义与知识点梳理资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "topic-notes",
+  "materialType": "专题讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "静磁场",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/topic-notes/%E9%9D%99%E7%A3%81%E5%9C%BA.pdf",
+      "fileName": "静磁场.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 7314930,
+      "sha256": "9a07f4ed84e5b183883d2e5d8fbba0af770b77d14aed5681260bcd329f11db61"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": []
+}

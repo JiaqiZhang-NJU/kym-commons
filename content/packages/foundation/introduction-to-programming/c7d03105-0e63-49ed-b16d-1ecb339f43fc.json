@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c7d03105-0e63-49ed-b16d-1ecb339f43fc",
+  "title": "petclub",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "petclub",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/petclub.c",
+      "fileName": "petclub.c",
+      "mediaType": null,
+      "sizeBytes": 4012,
+      "sha256": "e3b5e55b4dee948e26c5c123071294645a2d7840f5fd0cd1e90c2e31d85991cd"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c7d03105-0e63-49ed-b16d-1ecb339f43fc"
+  ]
+}

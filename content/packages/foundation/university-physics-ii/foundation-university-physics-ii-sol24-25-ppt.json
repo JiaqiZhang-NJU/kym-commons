@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-sol24-25-ppt",
+  "title": "sol24-25.ppt",
+  "summary": "大学物理下作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol24-25.ppt",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/assignment-solutions/sol24-25.ppt",
+      "fileName": "sol24-25.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 351744,
+      "sha256": "4eceb9f4b1e51882f9b3a6ba6d39e29ee9b198bb0e0704cd809dc89910487ca8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-sol24-25-ppt"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "98ab61b5-bffb-48fe-864a-047e07eb8490",
+  "title": "pizza",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "pizza",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/pizza.c",
+      "fileName": "pizza.c",
+      "mediaType": null,
+      "sizeBytes": 447,
+      "sha256": "e40f5e8ce8015ee62655adf0872025c6b55b8198291b20178afa6a9edebda885"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "98ab61b5-bffb-48fe-864a-047e07eb8490"
+  ]
+}

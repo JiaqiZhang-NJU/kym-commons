@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "1050ff4c-4375-4fee-b106-8f900e117af0",
+  "title": "2025 crypto final",
+  "summary": "来源于 密码学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "cryptography"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2025 crypto final",
+      "role": "primary",
+      "href": "/files/tracks/cs/cryptography/materials/2025 crypto final.pdf",
+      "fileName": "2025 crypto final.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 253310,
+      "sha256": "85a24df5dd629e28a6a7b101eefeeb75d8a1ec7af5ec84a755b7a518f11cc970"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "1050ff4c-4375-4fee-b106-8f900e117af0"
+  ]
+}

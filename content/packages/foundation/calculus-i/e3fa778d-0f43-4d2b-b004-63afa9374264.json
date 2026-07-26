@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "e3fa778d-0f43-4d2b-b004-63afa9374264",
+  "title": "2023春匡院微积分II期末 解析版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023春",
+    "sortKey": "2023-2023-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023春匡院微积分II期末 解析版",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/finals/2023春匡院微积分II期末 解析版-1.pdf",
+      "fileName": "2023春匡院微积分II期末 解析版-1.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 130190,
+      "sha256": "954b1a840cb4ebce8b89d06e6548bb4aa400be8c7181d059e091ce11ca123d8a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "e3fa778d-0f43-4d2b-b004-63afa9374264"
+  ]
+}

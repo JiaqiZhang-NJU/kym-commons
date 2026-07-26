@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0d514d64-73a7-4db5-b4a0-d8417aac4883",
+  "title": "算法-2023春期末",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023春",
+    "sortKey": "2023-2023-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法-2023春期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/finals/算法-2023春期末.pdf",
+      "fileName": "算法-2023春期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 275656,
+      "sha256": "24ecb810c0402d4826d732405a69924bd31ad4338f68c6a25dd8112b6138a98f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0d514d64-73a7-4db5-b4a0-d8417aac4883"
+  ]
+}

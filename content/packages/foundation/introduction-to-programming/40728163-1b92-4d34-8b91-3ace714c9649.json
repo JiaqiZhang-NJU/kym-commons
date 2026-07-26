@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "40728163-1b92-4d34-8b91-3ace714c9649",
+  "title": "nogood",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "nogood",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/nogood.c",
+      "fileName": "nogood.c",
+      "mediaType": null,
+      "sizeBytes": 251,
+      "sha256": "02957d5902c2fbb11b25091107f2bd2b568c1f13d38bae51c230fb507e8369ac"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "40728163-1b92-4d34-8b91-3ace714c9649"
+  ]
+}

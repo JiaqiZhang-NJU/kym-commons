@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "819fb670-5be0-4f20-842d-9c66ee4e7bef",
+  "title": "保研攻略2017级",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2017级",
+    "sortKey": "2017-2017-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "保研攻略2017级",
+      "role": "primary",
+      "href": "/files/tracks/other/general-resources/materials/保研攻略2017级.pdf",
+      "fileName": "保研攻略2017级.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1076719,
+      "sha256": "65aa7b7aa2a1489201e4ecb0f39df67f8d7cef9eeae89204e4ded98bfe36683c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "819fb670-5be0-4f20-842d-9c66ee4e7bef"
+  ]
+}

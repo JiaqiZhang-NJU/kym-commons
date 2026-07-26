@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "26e8dbd7-0a05-4434-8666-56ba7b0593ac",
+  "title": "2018数据结构期中考试 -部分",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2018",
+    "sortKey": "2018-2018-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2018数据结构期中考试 -部分",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/2018数据结构期中考试 -部分.pdf",
+      "fileName": "2018数据结构期中考试 -部分.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 222917,
+      "sha256": "6c6bb52051f8f2cbf3ccbee6338dca10bc5904fbbbee9d977c2f49da2b2ce6f9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "26e8dbd7-0a05-4434-8666-56ba7b0593ac"
+  ]
+}

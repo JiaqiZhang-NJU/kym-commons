@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "7cfe28b9-876c-4c32-8542-031f47539fd9",
+  "title": "CS2022_数据库复习卷（含参考答案）",
+  "summary": "来源于 数据库概论 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "database-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "CS2022_数据库复习卷（含参考答案）",
+      "role": "primary",
+      "href": "/files/tracks/cs/database-systems/materials/CS2022_数据库复习卷（含参考答案）.pdf",
+      "fileName": "CS2022_数据库复习卷（含参考答案）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1399886,
+      "sha256": "073923f336dbd05da2cb1a399f153d7558916d65b05f92eeb862d4ef5228815f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7cfe28b9-876c-4c32-8542-031f47539fd9"
+  ]
+}

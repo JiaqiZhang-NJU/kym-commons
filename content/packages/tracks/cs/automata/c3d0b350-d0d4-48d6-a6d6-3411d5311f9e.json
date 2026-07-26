@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "c3d0b350-d0d4-48d6-a6d6-3411d5311f9e",
+  "title": "自动机-2023秋",
+  "summary": "来源于 自动机 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "automata"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023秋",
+    "sortKey": "2023-2023-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "自动机-2023秋",
+      "role": "primary",
+      "href": "/files/tracks/cs/automata/materials/自动机-2023秋.pdf",
+      "fileName": "自动机-2023秋.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 213063,
+      "sha256": "ad5fd0ff8f71f3cbf219e72bc0ff43d386d4f92051125390f810f5061b042535"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c3d0b350-d0d4-48d6-a6d6-3411d5311f9e"
+  ]
+}

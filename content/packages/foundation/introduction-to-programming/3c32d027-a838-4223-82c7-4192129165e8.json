@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "3c32d027-a838-4223-82c7-4192129165e8",
+  "title": "statasrt",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "statasrt",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/statasrt.c",
+      "fileName": "statasrt.c",
+      "mediaType": null,
+      "sizeBytes": 180,
+      "sha256": "52b34f1b6e698e3cff2e0cd89a6d14982ada48ec2294558fc14d5e55f73f3824"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3c32d027-a838-4223-82c7-4192129165e8"
+  ]
+}

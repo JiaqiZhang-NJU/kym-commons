@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c87603e7-3fd8-4102-a8b2-fd256d40fb8b",
+  "title": "r_drive0",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "r_drive0",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/r_drive0.c",
+      "fileName": "r_drive0.c",
+      "mediaType": null,
+      "sizeBytes": 276,
+      "sha256": "ff628f2e0200aa9f5b1c32dc27cf9747bce7cf069f7446655001d186df36174d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c87603e7-3fd8-4102-a8b2-fd256d40fb8b"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-chapter01-pdf",
+  "title": "第 01 章课件",
+  "summary": "大学物理上课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 01 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter01.pdf",
+      "fileName": "chapter01.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 5276986,
+      "sha256": "0daf62888ca4bd8af783194845e18a461bb2451c976ef6250a3903638b9b38cc"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-chapter01-pdf"
+  ]
+}

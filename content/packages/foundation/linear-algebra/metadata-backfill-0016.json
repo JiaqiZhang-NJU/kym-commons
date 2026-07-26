@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0016",
+  "title": "23级微积分期中卷2023.11.12.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "23级微积分期中卷2023.11.12.pdf",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/midterms/23级微积分期中卷2023.11.12.pdf",
+      "fileName": "23级微积分期中卷2023.11.12.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 119969,
+      "sha256": "bb82e2795fb3b3db189703d7d6ced9e81a16627a91162bb04de638a32905890e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0016"
+  ]
+}

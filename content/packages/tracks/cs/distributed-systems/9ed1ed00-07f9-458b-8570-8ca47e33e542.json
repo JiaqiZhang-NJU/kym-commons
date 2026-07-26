@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "9ed1ed00-07f9-458b-8570-8ca47e33e542",
+  "title": "2020",
+  "summary": "来源于 分布式系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "distributed-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2020",
+    "sortKey": "2020-2020-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2020",
+      "role": "primary",
+      "href": "/files/tracks/cs/distributed-systems/materials/2020.pdf",
+      "fileName": "2020.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 392950,
+      "sha256": "26457867d8df20711828a1b52ac48d31fedb11e59bc281af2d62bc3e1ead9e6c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9ed1ed00-07f9-458b-8570-8ca47e33e542"
+  ]
+}

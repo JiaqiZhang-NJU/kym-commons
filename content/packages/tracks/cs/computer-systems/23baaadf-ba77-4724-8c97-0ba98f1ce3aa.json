@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "23baaadf-ba77-4724-8c97-0ba98f1ce3aa",
+  "title": "2013级试题答案",
+  "summary": "来源于 计算机系统基础 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2013级",
+    "sortKey": "2013-2013-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2013级试题答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-systems/materials/2013级试题答案.pdf",
+      "fileName": "2013级试题答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 292185,
+      "sha256": "ed93b3157577289165e39ad78e9ebb5d6928f74f6edacc3d8cf65aeef9becf30"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "23baaadf-ba77-4724-8c97-0ba98f1ce3aa"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-quiz061sol-pdf",
+  "title": "Quiz 06-1 参考解答（2016）",
+  "summary": "大学物理上随堂测验与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "quizzes",
+  "materialType": "随堂测验",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Quiz 06-1 参考解答（2016）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/quizzes/Quiz061sol.pdf",
+      "fileName": "Quiz061sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 68515,
+      "sha256": "a9ac91a373866f6098be0d5f5aa1ec57d980c099b25f49f5705275258970b0ab"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-quiz061sol-pdf"
+  ]
+}

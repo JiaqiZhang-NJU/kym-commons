@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "d14d7cad-ff1c-40cc-b283-eb76062f60e1",
+  "title": "期末试卷真题",
+  "summary": "来源于 离散数学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "discrete-mathematics"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末试卷真题",
+      "role": "primary",
+      "href": "/files/tracks/cs/discrete-mathematics/finals/期末试卷真题.pptx",
+      "fileName": "期末试卷真题.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 4538192,
+      "sha256": "2f526c14f3f0e27fb4cfd4db5b2c9622ef1cd3a963b73fc59f057b5a5aa2ae45"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "d14d7cad-ff1c-40cc-b283-eb76062f60e1"
+  ]
+}

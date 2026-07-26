@@ -1,4 +1,47 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "slug": "math",
+      "label": "数学",
+      "description": "数学方向课程资料",
+      "aliases": [],
+      "order": 1
+    },
+    {
+      "slug": "biochem",
+      "label": "生化",
+      "description": "生化方向课程资料",
+      "aliases": [],
+      "order": 2
+    },
+    {
+      "slug": "cs",
+      "label": "计算机",
+      "description": "计算机方向课程资料",
+      "aliases": [],
+      "order": 3
+    },
+    {
+      "slug": "physics",
+      "label": "物理",
+      "description": "物理方向课程资料",
+      "aliases": [],
+      "order": 4
+    },
+    {
+      "slug": "astronomy",
+      "label": "天文",
+      "description": "天文方向课程资料",
+      "aliases": [],
+      "order": 5
+    },
+    {
+      "slug": "other",
+      "label": "其他",
+      "description": "其他方向课程资料",
+      "aliases": [],
+      "order": 6
+    }
+  ]
 }

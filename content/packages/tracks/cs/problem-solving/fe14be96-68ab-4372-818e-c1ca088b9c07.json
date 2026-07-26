@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "fe14be96-68ab-4372-818e-c1ca088b9c07",
+  "title": "NOIP复习_图",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "NOIP复习_图",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/NOIP复习_图.pdf",
+      "fileName": "NOIP复习_图.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 290317,
+      "sha256": "08e25c906c905ee9c56451a81a9914d67a5e3bdfc7507c77bc45067c04fb8953"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fe14be96-68ab-4372-818e-c1ca088b9c07"
+  ]
+}

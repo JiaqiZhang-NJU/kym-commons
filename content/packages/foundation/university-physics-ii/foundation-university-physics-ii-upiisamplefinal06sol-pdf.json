@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-upiisamplefinal06sol-pdf",
+  "title": "期末样卷 06 解答",
+  "summary": "大学物理下期末样卷与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "final-samples",
+  "materialType": "期末样卷",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末样卷 06 解答",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/finals/UPIIsamplefinal06sol.pdf",
+      "fileName": "UPIIsamplefinal06sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 560713,
+      "sha256": "40b51b8f1bc6f78e9cd3e06cae0039afd90b6e0d1ca0615915b6e6aa65c9b967"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-upiisamplefinal06sol-pdf"
+  ]
+}

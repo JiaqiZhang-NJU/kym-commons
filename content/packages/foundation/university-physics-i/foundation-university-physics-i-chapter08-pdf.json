@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-chapter08-pdf",
+  "title": "第 08 章课件",
+  "summary": "大学物理上课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 08 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter08.pdf",
+      "fileName": "chapter08.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 6153884,
+      "sha256": "7c635a9b46cd199deef0c01c17865fcc1dbe3e991afbbb9197bb04dfda869fe0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-chapter08-pdf"
+  ]
+}

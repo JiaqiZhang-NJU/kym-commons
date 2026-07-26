@@ -1,4 +1,89 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "slug": "review",
+      "label": "复习资料",
+      "storageDirectory": "review",
+      "aliases": [],
+      "order": 1
+    },
+    {
+      "slug": "course-slides",
+      "label": "课程讲义",
+      "storageDirectory": "course-slides",
+      "aliases": [],
+      "order": 2
+    },
+    {
+      "slug": "assignment-solutions",
+      "label": "作业答案",
+      "storageDirectory": "assignment-solutions",
+      "aliases": [],
+      "order": 3
+    },
+    {
+      "slug": "quizzes",
+      "label": "随堂测验",
+      "storageDirectory": "quizzes",
+      "aliases": [],
+      "order": 4
+    },
+    {
+      "slug": "midterm-samples",
+      "label": "期中样卷",
+      "storageDirectory": "midterms",
+      "aliases": [],
+      "order": 5
+    },
+    {
+      "slug": "final-samples",
+      "label": "期末样卷",
+      "storageDirectory": "finals",
+      "aliases": [],
+      "order": 6
+    },
+    {
+      "slug": "topic-notes",
+      "label": "专题讲义",
+      "storageDirectory": "topic-notes",
+      "aliases": [],
+      "order": 7
+    },
+    {
+      "slug": "featured",
+      "label": "精选资料",
+      "storageDirectory": "materials",
+      "aliases": [],
+      "order": 8
+    },
+    {
+      "slug": "reference",
+      "label": "参考资料",
+      "storageDirectory": "materials",
+      "aliases": [],
+      "order": 9
+    },
+    {
+      "slug": "midterms",
+      "label": "期中试卷",
+      "storageDirectory": "midterms",
+      "aliases": [],
+      "order": 10
+    },
+    {
+      "slug": "finals",
+      "label": "期末试卷",
+      "storageDirectory": "finals",
+      "aliases": [],
+      "order": 11
+    },
+    {
+      "slug": "sample-exams",
+      "label": "样卷",
+      "storageDirectory": "sample-exams",
+      "aliases": [],
+      "order": 12
+    }
+  ]
 }

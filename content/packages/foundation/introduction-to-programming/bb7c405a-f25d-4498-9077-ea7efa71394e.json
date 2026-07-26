@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "bb7c405a-f25d-4498-9077-ea7efa71394e",
+  "title": "queue",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "queue",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/queue.c",
+      "fileName": "queue.c",
+      "mediaType": null,
+      "sizeBytes": 1772,
+      "sha256": "f54cd683804d9583c381401c8b64fd429eaf0eb5ed78c5e8533cf7ebcdbd146a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "bb7c405a-f25d-4498-9077-ea7efa71394e"
+  ]
+}

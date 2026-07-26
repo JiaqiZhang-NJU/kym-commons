@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0155",
+  "title": "图书借阅管理系统.zip",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "software-engineering"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "图书借阅管理系统.zip",
+      "role": "primary",
+      "href": "/files/tracks/cs/software-engineering/materials/图书借阅管理系统.zip",
+      "fileName": "图书借阅管理系统.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 2565185,
+      "sha256": "a4461970616d8fa8af31ac7965d4718b6cd50f15bd6d0d0faef441746f7686d7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0155"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "88a14945-0a0c-4ad8-a984-6ab00b9d77fd",
+  "title": "计网2026春回忆版",
+  "summary": "来源于 计网 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026春",
+    "sortKey": "2026-2026-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计网2026春回忆版",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/计网2026春回忆版.pdf",
+      "fileName": "计网2026春回忆版.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 217477,
+      "sha256": "d17e82255f035eb09bc96d329a5aa51c17d49630f1ff126bd464769075467aa9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "88a14945-0a0c-4ad8-a984-6ab00b9d77fd"
+  ]
+}

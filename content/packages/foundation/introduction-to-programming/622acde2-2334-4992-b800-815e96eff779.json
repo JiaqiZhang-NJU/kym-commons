@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "622acde2-2334-4992-b800-815e96eff779",
+  "title": "eatline",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "eatline",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/eatline.h",
+      "fileName": "eatline.h",
+      "mediaType": null,
+      "sizeBytes": 145,
+      "sha256": "40256b2c47537f68663333c9d8eb9524aa95aff2e9bc0d42a56e928e78b9b251"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "622acde2-2334-4992-b800-815e96eff779"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "0c0cbd2d-4d0c-44d9-adf5-34015aee1cf2",
+  "title": "variadic",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "variadic",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/variadic.c",
+      "fileName": "variadic.c",
+      "mediaType": null,
+      "sizeBytes": 289,
+      "sha256": "1ba3e8f819bd5bd0b79bb5774d2cc38381d46859225dcc6ce877f2d0a9fbd181"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0c0cbd2d-4d0c-44d9-adf5-34015aee1cf2"
+  ]
+}

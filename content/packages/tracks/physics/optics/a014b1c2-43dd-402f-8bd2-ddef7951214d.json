@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "a014b1c2-43dd-402f-8bd2-ddef7951214d",
+  "title": "2023级匡亚明学院光学期末考试试卷回忆版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "optics"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023级",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023级匡亚明学院光学期末考试试卷回忆版",
+      "role": "primary",
+      "href": "/files/tracks/physics/optics/finals/2023级匡亚明学院光学期末考试试卷回忆版.pdf",
+      "fileName": "2023级匡亚明学院光学期末考试试卷回忆版.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 72590,
+      "sha256": "7d374dc838d3ba9e962d31d27ce7992981e80ba7c36fade231c3c662be1be0be"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a014b1c2-43dd-402f-8bd2-ddef7951214d"
+  ]
+}

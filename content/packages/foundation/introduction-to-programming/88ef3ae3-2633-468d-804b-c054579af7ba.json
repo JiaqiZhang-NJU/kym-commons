@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "88ef3ae3-2633-468d-804b-c054579af7ba",
+  "title": "C Primer Plus原书配套代码",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "C Primer Plus原书配套代码",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/C Primer Plus原书配套代码.zip",
+      "fileName": "C Primer Plus原书配套代码.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 130008,
+      "sha256": "83a51a3cb2701809fd5db06035ae19a430076cb54a823cd952d808f1bf71d9cb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "88ef3ae3-2633-468d-804b-c054579af7ba"
+  ]
+}

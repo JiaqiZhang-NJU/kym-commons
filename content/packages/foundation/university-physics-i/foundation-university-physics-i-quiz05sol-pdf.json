@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-quiz05sol-pdf",
+  "title": "Quiz 05 参考解答（2016）",
+  "summary": "大学物理上随堂测验与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "quizzes",
+  "materialType": "随堂测验",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Quiz 05 参考解答（2016）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/quizzes/Quiz05sol.pdf",
+      "fileName": "Quiz05sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 48837,
+      "sha256": "b673a7ef44f01c9e33ed2cb2cd9dfe76743c161b58ac36eff3198c91108f8d51"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-quiz05sol-pdf"
+  ]
+}

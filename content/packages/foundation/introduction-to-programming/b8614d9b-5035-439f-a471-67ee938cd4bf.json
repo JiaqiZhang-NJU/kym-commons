@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "b8614d9b-5035-439f-a471-67ee938cd4bf",
+  "title": "swap2",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "swap2",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/swap2.c",
+      "fileName": "swap2.c",
+      "mediaType": null,
+      "sizeBytes": 472,
+      "sha256": "c65b27569ff5c5376ebcf92322dde6b0a9977f53a4b4a3dac749c922b3781c7b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b8614d9b-5035-439f-a471-67ee938cd4bf"
+  ]
+}

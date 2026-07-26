@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "d9f7f2ea-78ad-474c-b3bf-e1c8b8e00ec3",
+  "title": "2023 OS期末A-参考答案",
+  "summary": "来源于 操作系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023 OS期末A-参考答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-general/finals/2023 OS期末A-参考答案.pdf",
+      "fileName": "2023 OS期末A-参考答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 581125,
+      "sha256": "519507fa9312c108fcde3e4806434b74481a3c70ee035fbad9826ee90ccf30a5"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "d9f7f2ea-78ad-474c-b3bf-e1c8b8e00ec3"
+  ]
+}

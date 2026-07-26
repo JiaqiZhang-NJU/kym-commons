@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ca4fd35a-ef48-44a6-afa0-899ee28fb74a",
+  "title": "2025微积分II(一层次)期末详解",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2025微积分II(一层次)期末详解",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/finals/2025微积分II(一层次)期末详解.pdf",
+      "fileName": "2025微积分II(一层次)期末详解.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1349881,
+      "sha256": "f998751c3b3f98763a8429a1c6820ef0d80fbcb2cd1c9ab9798c65024e7ce49a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ca4fd35a-ef48-44a6-afa0-899ee28fb74a"
+  ]
+}

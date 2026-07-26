@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "7e1499ac-48b7-4933-8c54-f0f964a79776",
+  "title": "2011_Reading,_Writing,_and_Proving_-_A_Closer_Look_at_Mathematics",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "graph-theory"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2011",
+    "sortKey": "2011-2011-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2011_Reading,_Writing,_and_Proving_-_A_Closer_Look_at_Mathematics",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/2011_Reading,_Writing,_and_Proving_-_A_Closer_Look_at_Mathematics.pdf",
+      "fileName": "2011_Reading,_Writing,_and_Proving_-_A_Closer_Look_at_Mathematics.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 7845462,
+      "sha256": "05a362d1bc1db4706d16d962bc3b884d7d7ed445b28b96868c051f3acc5b1002"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7e1499ac-48b7-4933-8c54-f0f964a79776"
+  ]
+}

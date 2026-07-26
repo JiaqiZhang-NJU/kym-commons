@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ad7b0fd2-8065-4851-acd0-a00ca462fda6",
+  "title": "An_Introduction_to_the_Analysis_of_Algorithms_(2nd_Edition_Robert_Sedgewick,_Philippe_Flajolet)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "An_Introduction_to_the_Analysis_of_Algorithms_(2nd_Edition_Robert_Sedgewick,_Philippe_Flajolet)",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/An_Introduction_to_the_Analysis_of_Algorithms_(2nd_Edition_Robert_Sedgewick,_Philippe_Flajolet).pdf",
+      "fileName": "An_Introduction_to_the_Analysis_of_Algorithms_(2nd_Edition_Robert_Sedgewick,_Philippe_Flajolet).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 5833597,
+      "sha256": "a2235ee578246ac1ddcfbfeb2cf9f87d177e9249c2ceb112c57de8942d144b0e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ad7b0fd2-8065-4851-acd0-a00ca462fda6"
+  ]
+}

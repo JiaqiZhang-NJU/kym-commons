@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "7ebcf3d6-a09a-4423-9b6c-476e048df661",
+  "title": "2022+年秋匡院微积分+I(第一层次)+期中考试-范红军 (1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022+年秋匡院微积分+I(第一层次)+期中考试-范红军 (1)",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/midterms/2022+年秋匡院微积分+I(第一层次)+期中考试-范红军 (1).pdf",
+      "fileName": "2022+年秋匡院微积分+I(第一层次)+期中考试-范红军 (1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 44683,
+      "sha256": "860708def75b43b878d1312e6a519f66aff510669c38c9b0ca8fffe915862938"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7ebcf3d6-a09a-4423-9b6c-476e048df661"
+  ]
+}

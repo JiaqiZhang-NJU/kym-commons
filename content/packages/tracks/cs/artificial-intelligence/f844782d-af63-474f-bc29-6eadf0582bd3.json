@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "f844782d-af63-474f-bc29-6eadf0582bd3",
+  "title": "人工智能：复杂问题求解的结构和策略",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "人工智能：复杂问题求解的结构和策略",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/人工智能：复杂问题求解的结构和策略.pdf",
+      "fileName": "人工智能：复杂问题求解的结构和策略.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 22113013,
+      "sha256": "601e300999d36baf4123132bd6e1494f48fa6dc50ed87319ef9cc0d18b513765"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "f844782d-af63-474f-bc29-6eadf0582bd3"
+  ]
+}

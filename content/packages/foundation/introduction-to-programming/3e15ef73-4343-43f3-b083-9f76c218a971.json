@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "3e15ef73-4343-43f3-b083-9f76c218a971",
+  "title": "hotel",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "hotel",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/hotel.h",
+      "fileName": "hotel.h",
+      "mediaType": null,
+      "sizeBytes": 451,
+      "sha256": "a3dd3c4e0c007d062505151750d6422df60b5acd8409db51e5f8c81837f0b25f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3e15ef73-4343-43f3-b083-9f76c218a971"
+  ]
+}

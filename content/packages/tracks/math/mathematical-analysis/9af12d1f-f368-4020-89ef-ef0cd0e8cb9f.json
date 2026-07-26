@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "9af12d1f-f368-4020-89ef-ef0cd0e8cb9f",
+  "title": "分析-0 期末",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "math",
+    "courseSlug": "mathematical-analysis"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "分析-0 期末",
+      "role": "primary",
+      "href": "/files/tracks/math/mathematical-analysis/finals/分析-0 期末.pdf",
+      "fileName": "分析-0 期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 47777,
+      "sha256": "f9c621d0e60ca3ddd2e4c47a9c69bff40aa5326416a05f564f85dde667821ce0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9af12d1f-f368-4020-89ef-ef0cd0e8cb9f"
+  ]
+}

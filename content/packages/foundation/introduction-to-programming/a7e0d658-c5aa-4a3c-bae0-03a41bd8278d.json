@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "a7e0d658-c5aa-4a3c-bae0-03a41bd8278d",
+  "title": "defines",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "defines",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/defines.c",
+      "fileName": "defines.c",
+      "mediaType": null,
+      "sizeBytes": 619,
+      "sha256": "fcc2e5357f8aadc12457ad9de24bd625308bb9fc4888a37b88f003b7d6cd0e81"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a7e0d658-c5aa-4a3c-bae0-03a41bd8278d"
+  ]
+}

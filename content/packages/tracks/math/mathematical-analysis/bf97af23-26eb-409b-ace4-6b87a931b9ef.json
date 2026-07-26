@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "bf97af23-26eb-409b-ace4-6b87a931b9ef",
+  "title": "数学分析讲义（第二册） (程艺，陈卿，李平)pdf",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "math",
+    "courseSlug": "mathematical-analysis"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数学分析讲义（第二册） (程艺，陈卿，李平)pdf",
+      "role": "primary",
+      "href": "/files/tracks/math/mathematical-analysis/materials/数学分析讲义（第二册） (程艺，陈卿，李平)pdf.pdf",
+      "fileName": "数学分析讲义（第二册） (程艺，陈卿，李平)pdf.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3614926,
+      "sha256": "475e01d6f3179293dbf367166ca6a4e671409fb48ba1578a6a20d64414601a6b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "bf97af23-26eb-409b-ace4-6b87a931b9ef"
+  ]
+}

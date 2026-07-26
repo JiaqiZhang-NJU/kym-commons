@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "8f356491-96be-40c5-9ca2-dad827e5baae",
+  "title": "day_mon1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "day_mon1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/day_mon1.c",
+      "fileName": "day_mon1.c",
+      "mediaType": null,
+      "sizeBytes": 336,
+      "sha256": "1879e03a532662099542d87fb4c707ec522cdef8ecc44e4153422609987c4b7c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8f356491-96be-40c5-9ca2-dad827e5baae"
+  ]
+}

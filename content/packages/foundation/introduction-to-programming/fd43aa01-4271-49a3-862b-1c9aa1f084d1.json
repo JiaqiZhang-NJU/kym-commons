@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fd43aa01-4271-49a3-862b-1c9aa1f084d1",
+  "title": "menuette",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "menuette",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/menuette.c",
+      "fileName": "menuette.c",
+      "mediaType": null,
+      "sizeBytes": 1675,
+      "sha256": "845dfaea38ac48157880031f03b3fcc32e245f5c5e9d52d5ea20e0f6a273dc33"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fd43aa01-4271-49a3-862b-1c9aa1f084d1"
+  ]
+}

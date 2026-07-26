@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0950b353-3437-4894-a0df-b0329d0aa69c",
+  "title": "计网-2022春",
+  "summary": "来源于 计网 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022春",
+    "sortKey": "2022-2022-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计网-2022春",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/计网-2022春.pdf",
+      "fileName": "计网-2022春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 304350,
+      "sha256": "ea2b0292caedacf48266783b6d26bc3029c9ad52147c6ea89d5670c2a4f07381"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0950b353-3437-4894-a0df-b0329d0aa69c"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8a66a919-1042-4e8f-a3b6-091427f8b264",
+  "title": "计算机图形学作业三",
+  "summary": "来源于 图形学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-graphics"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计算机图形学作业三",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-graphics/assignments/计算机图形学作业三.pdf",
+      "fileName": "计算机图形学作业三.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 151897,
+      "sha256": "6dcd274523062d6fbc6a89a302fc4094de2619658e26c9578545ab30e14c4d0a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8a66a919-1042-4e8f-a3b6-091427f8b264"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "e2dd2e36-7209-4b29-81ed-6de7f0c626a9",
+  "title": "1603.05279",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "1603.05279",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/1603.05279.pdf",
+      "fileName": "1603.05279.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1354077,
+      "sha256": "7831adb5b3a8c0a75a41a6dbd94d80cc415b8b55b20e339c16942c45c7154246"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "e2dd2e36-7209-4b29-81ed-6de7f0c626a9"
+  ]
+}

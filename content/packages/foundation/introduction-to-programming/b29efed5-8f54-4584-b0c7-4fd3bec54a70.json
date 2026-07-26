@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "b29efed5-8f54-4584-b0c7-4fd3bec54a70",
+  "title": "count",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "count",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/count.c",
+      "fileName": "count.c",
+      "mediaType": null,
+      "sizeBytes": 706,
+      "sha256": "958418a57077dad9b694dc2437679f1d67201c7b598d83034fa682f04b7a0079"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b29efed5-8f54-4584-b0c7-4fd3bec54a70"
+  ]
+}

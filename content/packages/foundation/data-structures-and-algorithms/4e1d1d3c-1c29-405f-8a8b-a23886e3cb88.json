@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "4e1d1d3c-1c29-405f-8a8b-a23886e3cb88",
+  "title": "job9",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "job9",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job9.doc",
+      "fileName": "job9.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 351232,
+      "sha256": "140548a4193f91195a220046eb97886f732c60bcb2df0bc88d5f40012969bb10"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "4e1d1d3c-1c29-405f-8a8b-a23886e3cb88"
+  ]
+}

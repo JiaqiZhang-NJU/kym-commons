@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0072",
+  "title": "cache1.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "cache1.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/cache1.pdf",
+      "fileName": "cache1.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1019850,
+      "sha256": "3ac570d0dd90fd70cdfa24db2dc69e3a62dc23423ed7d83145d8f43f57b0748f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0072"
+  ]
+}

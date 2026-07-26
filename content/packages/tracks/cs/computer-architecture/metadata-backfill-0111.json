@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0111",
+  "title": "HarveyNotesC1-3.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "HarveyNotesC1-3.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/HarveyNotesC1-3.pdf",
+      "fileName": "HarveyNotesC1-3.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 156792,
+      "sha256": "21a94022bdbfb99a597135de7cac6acb344620480a6b9ff687d2b56026dc984f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0111"
+  ]
+}

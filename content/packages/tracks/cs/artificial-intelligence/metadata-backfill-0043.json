@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0043",
+  "title": "深度学习keras.zip",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "深度学习keras.zip",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/深度学习keras.zip",
+      "fileName": "深度学习keras.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 18174627,
+      "sha256": "0d30b30aedb458db2f6d1666cd6473c7cd36ea9e5f6e89196f3f1a4775187b08"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0043"
+  ]
+}

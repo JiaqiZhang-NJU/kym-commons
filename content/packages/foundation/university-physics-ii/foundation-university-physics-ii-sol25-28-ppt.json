@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-sol25-28-ppt",
+  "title": "sol25-28.ppt",
+  "summary": "大学物理下作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol25-28.ppt",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/assignment-solutions/sol25-28.ppt",
+      "fileName": "sol25-28.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 563200,
+      "sha256": "fa3be4483307a7fd317062fb39663c7240b169e5a6903caf9b78f27b1ad57d79"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-sol25-28-ppt"
+  ]
+}

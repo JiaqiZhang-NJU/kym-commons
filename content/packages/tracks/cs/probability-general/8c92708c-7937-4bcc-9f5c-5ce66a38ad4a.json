@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8c92708c-7937-4bcc-9f5c-5ce66a38ad4a",
+  "title": "2024秋概率论与数理统计期中试卷",
+  "summary": "来源于 （大班）概率论与数理统计 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-general"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024秋",
+    "sortKey": "2024-2024-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2024秋概率论与数理统计期中试卷",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-general/midterms/2024秋概率论与数理统计期中试卷.pptx",
+      "fileName": "2024秋概率论与数理统计期中试卷.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 304750,
+      "sha256": "39d8a67307bfe078b6af93ecc3fb90f8d9151a46777f1d62006f7cbbd738aa39"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8c92708c-7937-4bcc-9f5c-5ce66a38ad4a"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c74424d4-e0c3-496d-8a5e-7a2c16282c9a",
+  "title": "funds2",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "funds2",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/funds2.c",
+      "fileName": "funds2.c",
+      "mediaType": null,
+      "sizeBytes": 588,
+      "sha256": "0342774d14d9b6dbff260ebc2a830a9301544e34827edddd060b42ed064d63c4"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c74424d4-e0c3-496d-8a5e-7a2c16282c9a"
+  ]
+}

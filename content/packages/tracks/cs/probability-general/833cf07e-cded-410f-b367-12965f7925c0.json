@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "833cf07e-cded-410f-b367-12965f7925c0",
+  "title": "22-23概率论与数理统计期末考试",
+  "summary": "来源于 （大班）概率论与数理统计 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "22-23概率论与数理统计期末考试",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-general/finals/22-23概率论与数理统计期末考试.pdf",
+      "fileName": "22-23概率论与数理统计期末考试.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 310056,
+      "sha256": "d74e8a33a8dfb0af22f86c653edae6ed932057ae62dbdd202185b31399718002"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "833cf07e-cded-410f-b367-12965f7925c0"
+  ]
+}

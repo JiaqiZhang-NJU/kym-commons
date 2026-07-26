@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-upimidterm2015sol-pdf",
+  "title": "2015 期中卷解答",
+  "summary": "大学物理上期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2015 期中卷解答",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/midterms/UPImidterm2015sol.pdf",
+      "fileName": "UPImidterm2015sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 63500,
+      "sha256": "aa821285a195ce238098d8f8ef494456c85449bf1fde00b2f10d4a7cd420d6d1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-upimidterm2015sol-pdf"
+  ]
+}

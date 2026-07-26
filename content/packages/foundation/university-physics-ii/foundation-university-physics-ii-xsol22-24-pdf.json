@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-xsol22-24-pdf",
+  "title": "xsol22-24.pdf",
+  "summary": "大学物理下作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "xsol22-24.pdf",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/assignment-solutions/xsol22-24.pdf",
+      "fileName": "xsol22-24.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 106627,
+      "sha256": "c7b65fa38d1f30c192437c14c2039859486b13d138e0367731a291eaad39c761"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-xsol22-24-pdf"
+  ]
+}

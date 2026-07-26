@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-upisamplefinal09sol-pdf",
+  "title": "期末样卷 09 解答",
+  "summary": "大学物理上期末样卷与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "final-samples",
+  "materialType": "期末样卷",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末样卷 09 解答",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/finals/UPIsamplefinal09sol.pdf",
+      "fileName": "UPIsamplefinal09sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 450210,
+      "sha256": "b1743c598b6b054076ff8f11b91fd7bbbb87186f7907ca7b81aaca110fd7347e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-upisamplefinal09sol-pdf"
+  ]
+}

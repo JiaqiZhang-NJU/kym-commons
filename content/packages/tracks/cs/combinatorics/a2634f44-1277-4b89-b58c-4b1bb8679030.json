@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "a2634f44-1277-4b89-b58c-4b1bb8679030",
+  "title": "组合数学-2023春",
+  "summary": "来源于 组合数学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "combinatorics"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023春",
+    "sortKey": "2023-2023-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "组合数学-2023春",
+      "role": "primary",
+      "href": "/files/tracks/cs/combinatorics/materials/组合数学-2023春.pdf",
+      "fileName": "组合数学-2023春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 139410,
+      "sha256": "360597e745d545267e9bd9d4c1be5df0da723d708c03eb4b0cf379de66ca59ad"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a2634f44-1277-4b89-b58c-4b1bb8679030"
+  ]
+}

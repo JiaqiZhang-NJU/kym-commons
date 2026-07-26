@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-chapter18-pdf",
+  "title": "第 18 章课件",
+  "summary": "大学物理下课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 18 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/course-slides/chapter18.pdf",
+      "fileName": "chapter18.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 839433,
+      "sha256": "6da1d711fa0b2000ed06aeaef5d16701335421aeb15551991eb2ca5b7e66b432"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-chapter18-pdf"
+  ]
+}

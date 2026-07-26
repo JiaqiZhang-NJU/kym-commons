@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "314de77e-022d-4484-96d8-b8c0c38d45f1",
+  "title": "保研攻略2019级",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2019级",
+    "sortKey": "2019-2019-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "保研攻略2019级",
+      "role": "primary",
+      "href": "/files/tracks/other/general-resources/materials/保研攻略2019级.pdf",
+      "fileName": "保研攻略2019级.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 705633,
+      "sha256": "7e429280331c9ccc1804938fec1476a4ea15e85077a2c2ee1fd05eeebcd4f616"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "314de77e-022d-4484-96d8-b8c0c38d45f1"
+  ]
+}

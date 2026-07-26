@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "21e292a0-8c8e-47a9-a121-a4638393bded",
+  "title": "图论-2023春",
+  "summary": "来源于 图论 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "graph-theory"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023春",
+    "sortKey": "2023-2023-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "图论-2023春",
+      "role": "primary",
+      "href": "/files/tracks/cs/graph-theory/materials/图论-2023春.pdf",
+      "fileName": "图论-2023春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 71784,
+      "sha256": "add9af95e0ae8e0fa6d24caf1c57219bb3ce185beb877f2701a7b5feb1a1c5da"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "21e292a0-8c8e-47a9-a121-a4638393bded"
+  ]
+}

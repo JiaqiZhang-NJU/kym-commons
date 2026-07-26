@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "41471609-07d1-4fc3-93b4-dc753e1eb1f8",
+  "title": "挑战程序设计竞赛(第2版) 高清完整版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "挑战程序设计竞赛(第2版) 高清完整版",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/挑战程序设计竞赛(第2版) 高清完整版.pdf",
+      "fileName": "挑战程序设计竞赛(第2版) 高清完整版.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 60601471,
+      "sha256": "8a6e878a9cec9983735342a5ac53c1d6f95552a3e7bf2756d1cbdb8c0dda25e8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "41471609-07d1-4fc3-93b4-dc753e1eb1f8"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "2766cad5-699f-4f7a-b20b-6fc7c082d797",
+  "title": "2021",
+  "summary": "来源于 分布式系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "distributed-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2021",
+    "sortKey": "2021-2021-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2021",
+      "role": "primary",
+      "href": "/files/tracks/cs/distributed-systems/materials/2021.pdf",
+      "fileName": "2021.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 381487,
+      "sha256": "20bc9343fe54e4d2ec8965709e2e0087c2d230cbd7c6dc734158ab207aaa5dd2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "2766cad5-699f-4f7a-b20b-6fc7c082d797"
+  ]
+}

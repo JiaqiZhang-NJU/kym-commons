@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ed519f0e-394c-4ca6-aa80-df8e69d93b8d",
+  "title": "2016级匡院微积分一上期中试卷答案",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2016级",
+    "sortKey": "2016-2016-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2016级匡院微积分一上期中试卷答案",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/midterms/2016级匡院微积分一上期中试卷答案.docx",
+      "fileName": "2016级匡院微积分一上期中试卷答案.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 161956,
+      "sha256": "ae3181b7995e16168af37d89811980549652364c81c178d5b0ed9fa1d154c357"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ed519f0e-394c-4ca6-aa80-df8e69d93b8d"
+  ]
+}

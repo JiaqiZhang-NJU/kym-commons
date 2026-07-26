@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8a243374-455a-4077-b105-f068077a7182",
+  "title": "基础动规2_子序列与矩阵_helang",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "基础动规2_子序列与矩阵_helang",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规2_子序列与矩阵_helang.ppt",
+      "fileName": "基础动规2_子序列与矩阵_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 880128,
+      "sha256": "8c7b9186058b6b2b19428f1b935f830569e2c509989ee923fe74568ab8fe4f25"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8a243374-455a-4077-b105-f068077a7182"
+  ]
+}

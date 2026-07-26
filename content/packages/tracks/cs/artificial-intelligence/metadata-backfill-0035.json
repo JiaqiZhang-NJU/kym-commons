@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0035",
+  "title": "奇点临近.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "奇点临近.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/奇点临近.pdf",
+      "fileName": "奇点临近.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 58123003,
+      "sha256": "73470c8cfa67c858df527d61a5ab66b57ff7f92174c7924290da87d5280cec52"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0035"
+  ]
+}

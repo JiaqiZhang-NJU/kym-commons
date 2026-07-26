@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0741b6b0-11ae-4688-b72f-b9aa10f35ebe",
+  "title": "计网-2020秋(2)",
+  "summary": "来源于 计网 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2020秋",
+    "sortKey": "2020-2020-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计网-2020秋(2)",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/计网-2020秋(2).pdf",
+      "fileName": "计网-2020秋(2).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 258524,
+      "sha256": "96c17b689bc5241d70926ebe437b129ef3e6db7ddcd0f792253db58cd6e08037"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0741b6b0-11ae-4688-b72f-b9aa10f35ebe"
+  ]
+}

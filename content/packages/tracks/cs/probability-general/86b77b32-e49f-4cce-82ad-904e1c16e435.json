@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "86b77b32-e49f-4cce-82ad-904e1c16e435",
+  "title": "25-26概率论与数理统计期中考试答案",
+  "summary": "来源于 （大班）概率论与数理统计 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-general"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "25-26概率论与数理统计期中考试答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-general/midterms/25-26概率论与数理统计期中考试答案.pdf",
+      "fileName": "25-26概率论与数理统计期中考试答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 298616,
+      "sha256": "06ffa4b5a62f6ded5fea0a0efea6f65e7856f857d05aa2d0916968fdc1b14668"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "86b77b32-e49f-4cce-82ad-904e1c16e435"
+  ]
+}

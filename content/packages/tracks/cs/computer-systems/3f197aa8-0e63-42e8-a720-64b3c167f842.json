@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "3f197aa8-0e63-42e8-a720-64b3c167f842",
+  "title": "2015级试题答案",
+  "summary": "来源于 计算机系统基础 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2015级",
+    "sortKey": "2015-2015-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2015级试题答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-systems/materials/2015级试题答案.pdf",
+      "fileName": "2015级试题答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 331758,
+      "sha256": "b15d10cbcc8e466d1a7c46fae04a719e21a2ec613e2eafc7ee7f79042bec1a7f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3f197aa8-0e63-42e8-a720-64b3c167f842"
+  ]
+}

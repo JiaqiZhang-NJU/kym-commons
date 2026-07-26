@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "431bba4f-d67a-49b4-8df8-c78961867710",
+  "title": "编译原理-2025春",
+  "summary": "来源于 编译原理 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "compilers"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025春",
+    "sortKey": "2025-2025-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "编译原理-2025春",
+      "role": "primary",
+      "href": "/files/tracks/cs/compilers/materials/编译原理-2025春.pdf",
+      "fileName": "编译原理-2025春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 228292,
+      "sha256": "9e1bebef62123e00ef6af1665cfdc38c7e91d7797815658a7b887d4f17a30b79"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "431bba4f-d67a-49b4-8df8-c78961867710"
+  ]
+}

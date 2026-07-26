@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "45f17373-3fa9-4988-b88b-74af5c3282a6",
+  "title": "for_down",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "for_down",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/for_down.c",
+      "fileName": "for_down.c",
+      "mediaType": null,
+      "sizeBytes": 199,
+      "sha256": "591fee5525c92794ed6360b2f53cc1ebb75ad55ea22aab485a51c07cfe8c08d3"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "45f17373-3fa9-4988-b88b-74af5c3282a6"
+  ]
+}

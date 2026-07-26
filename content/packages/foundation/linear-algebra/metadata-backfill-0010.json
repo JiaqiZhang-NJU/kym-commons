@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0010",
+  "title": "高等代数（第五版） (北京大学数学系前代数小组，王萼芳，石生明) (Z-Library)(1).pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "高等代数（第五版） (北京大学数学系前代数小组，王萼芳，石生明) (Z-Library)(1).pdf",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/materials/高等代数（第五版） (北京大学数学系前代数小组，王萼芳，石生明) (Z-Library)(1).pdf",
+      "fileName": "高等代数（第五版） (北京大学数学系前代数小组，王萼芳，石生明) (Z-Library)(1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 61697510,
+      "sha256": "b0813dc8fcb86858783f1a78421c563ae58aa51d6b317d4a492f952122aa6aee"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0010"
+  ]
+}

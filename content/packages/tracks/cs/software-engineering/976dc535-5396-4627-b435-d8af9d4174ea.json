@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "976dc535-5396-4627-b435-d8af9d4174ea",
+  "title": "软工-2024秋",
+  "summary": "来源于 软件工程 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "software-engineering"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024秋",
+    "sortKey": "2024-2024-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "软工-2024秋",
+      "role": "primary",
+      "href": "/files/tracks/cs/software-engineering/materials/软工-2024秋.pdf",
+      "fileName": "软工-2024秋.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 182706,
+      "sha256": "c9e83236280846529ad7fc3fe47ae3ae28b004927803336243b6e11fa59c0b16"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "976dc535-5396-4627-b435-d8af9d4174ea"
+  ]
+}

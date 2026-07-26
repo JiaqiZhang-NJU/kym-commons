@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-pdf-4",
+  "title": "磁介质",
+  "summary": "大学物理下专题讲义与知识点梳理资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "topic-notes",
+  "materialType": "专题讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "磁介质",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/topic-notes/%E7%A3%81%E4%BB%8B%E8%B4%A8.pdf",
+      "fileName": "磁介质.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1017764,
+      "sha256": "f16e2d171e19f25c925ed7834fd0e2f58b5e3f1adc25dfe201b5c8dbe20a7740"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": []
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-quiz04sol-pdf",
+  "title": "Quiz 04 参考解答（2016）",
+  "summary": "大学物理上随堂测验与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "quizzes",
+  "materialType": "随堂测验",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Quiz 04 参考解答（2016）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/quizzes/Quiz04sol.pdf",
+      "fileName": "Quiz04sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 34610,
+      "sha256": "a1733220d96326392e7984ef499e774ffbc0b797b0d7083ac988d8814c1ed6ee"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-quiz04sol-pdf"
+  ]
+}

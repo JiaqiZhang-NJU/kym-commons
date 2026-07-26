@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0062",
+  "title": "PYTHON自然语言处理.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "PYTHON自然语言处理.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/PYTHON自然语言处理.pdf",
+      "fileName": "PYTHON自然语言处理.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3838370,
+      "sha256": "2204b428e93836b22b85943c3df3e13dbf4a88d52520c55e62950caef52ba6f0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0062"
+  ]
+}

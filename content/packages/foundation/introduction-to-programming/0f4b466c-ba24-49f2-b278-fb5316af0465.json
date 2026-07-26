@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "0f4b466c-ba24-49f2-b278-fb5316af0465",
+  "title": "strrtok",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "strrtok",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/strrtok.c",
+      "fileName": "strrtok.c",
+      "mediaType": null,
+      "sizeBytes": 464,
+      "sha256": "8b2f1caa4a8499f21ace1a8f1f13fad074e7d4bd27682174ec012731a577621c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0f4b466c-ba24-49f2-b278-fb5316af0465"
+  ]
+}

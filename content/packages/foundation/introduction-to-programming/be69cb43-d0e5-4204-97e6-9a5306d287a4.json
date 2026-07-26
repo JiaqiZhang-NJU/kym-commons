@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be69cb43-d0e5-4204-97e6-9a5306d287a4",
+  "title": "lesser",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "lesser",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/lesser.c",
+      "fileName": "lesser.c",
+      "mediaType": null,
+      "sizeBytes": 573,
+      "sha256": "ff5a94e554f13912dcf07988d56bb4960f3f9daf1cb08045adb35de1281c9c46"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "be69cb43-d0e5-4204-97e6-9a5306d287a4"
+  ]
+}

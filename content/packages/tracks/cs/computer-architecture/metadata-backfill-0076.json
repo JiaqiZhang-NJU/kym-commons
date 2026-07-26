@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0076",
+  "title": "Compiler_ Assembler_Linker_Loader.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Compiler_ Assembler_Linker_Loader.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/Compiler_ Assembler_Linker_Loader.pdf",
+      "fileName": "Compiler_ Assembler_Linker_Loader.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 8406067,
+      "sha256": "ce97a4f97f70107ef6dbc512ce0527adad6a44197bb9b4f889974c515b370297"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0076"
+  ]
+}

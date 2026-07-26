@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "937be6a3-6117-4fe1-b013-418512b62bd5",
+  "title": "匡亚明学院2025-2026秋季学期量子力学期中试题(1) (1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "quantum-mechanics"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025-2026",
+    "sortKey": "2025-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "匡亚明学院2025-2026秋季学期量子力学期中试题(1) (1)",
+      "role": "primary",
+      "href": "/files/tracks/physics/quantum-mechanics/midterms/匡亚明学院2025-2026秋季学期量子力学期中试题(1) (1).pdf",
+      "fileName": "匡亚明学院2025-2026秋季学期量子力学期中试题(1) (1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 71752,
+      "sha256": "0e3c2b007960a7fab59becd83a891d6d681c0d66648717f6e9c4d44bb6078cf6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "937be6a3-6117-4fe1-b013-418512b62bd5"
+  ]
+}

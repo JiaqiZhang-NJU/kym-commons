@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ab7879e6-a58d-440a-a27f-adea1d41db20",
+  "title": "2020期末",
+  "summary": "来源于 操作系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2020",
+    "sortKey": "2020-2020-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2020期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-general/finals/2020期末.pdf",
+      "fileName": "2020期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 218337,
+      "sha256": "cbf6c2782ce5f51b121769cbd0533dade8e5806f67dabe30aa8d4bb42a0fa4cd"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ab7879e6-a58d-440a-a27f-adea1d41db20"
+  ]
+}

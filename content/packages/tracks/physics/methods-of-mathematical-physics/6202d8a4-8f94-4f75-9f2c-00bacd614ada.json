@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "6202d8a4-8f94-4f75-9f2c-00bacd614ada",
+  "title": "2025-2026数学物理方法期末wsj",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "methods-of-mathematical-physics"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025-2026",
+    "sortKey": "2025-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2025-2026数学物理方法期末wsj",
+      "role": "primary",
+      "href": "/files/tracks/physics/methods-of-mathematical-physics/finals/2025-2026数学物理方法期末wsj.pdf",
+      "fileName": "2025-2026数学物理方法期末wsj.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 379770,
+      "sha256": "e365da21490fc4e817117042df8de654aa5dcceb7311a410eb15da5386cce820"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "6202d8a4-8f94-4f75-9f2c-00bacd614ada"
+  ]
+}

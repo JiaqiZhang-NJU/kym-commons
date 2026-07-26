@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "6d6f28e9-34fa-4214-b48c-65bacab94263",
+  "title": "配套难点解析及习题答案（前6章）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "配套难点解析及习题答案（前6章）",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/assignments/配套难点解析及习题答案（前6章）.pdf",
+      "fileName": "配套难点解析及习题答案（前6章）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 37438996,
+      "sha256": "7f6e0449c44f3cab5df5dbd95c6f854c1d70eadee4ecfcac79e9b3cfbd0b21a2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "6d6f28e9-34fa-4214-b48c-65bacab94263"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0006",
+  "title": "2025-名师导学课程考核.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "famous-teachers-guidance"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2025-名师导学课程考核.pdf",
+      "role": "primary",
+      "href": "/files/foundation/famous-teachers-guidance/materials/2025-名师导学课程考核.pdf",
+      "fileName": "2025-名师导学课程考核.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 283145,
+      "sha256": "c21009109902c6de3a4ba0c9da7f3245dd556c769da40d646753c5ec86de2107"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0006"
+  ]
+}

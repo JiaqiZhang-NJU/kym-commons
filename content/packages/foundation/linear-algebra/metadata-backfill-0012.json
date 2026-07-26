@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0012",
+  "title": "20级微积分上期中.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "20级微积分上期中.pdf",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/midterms/20级微积分上期中.pdf",
+      "fileName": "20级微积分上期中.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 292527,
+      "sha256": "e86cca67463776e0d487ba5dab043976fd6ceb5f30b128e2d506b76714ef9b94"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0012"
+  ]
+}

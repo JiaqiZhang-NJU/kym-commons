@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0132",
+  "title": "基于Coq的微内核操作系统程序验证方法研究.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "formal-semantics"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "基于Coq的微内核操作系统程序验证方法研究.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/formal-semantics/materials/基于Coq的微内核操作系统程序验证方法研究.pdf",
+      "fileName": "基于Coq的微内核操作系统程序验证方法研究.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 365870,
+      "sha256": "0159852a9830c0d1947da358e6d39101d9f331026f0b7f899398bc2e3bad151f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0132"
+  ]
+}

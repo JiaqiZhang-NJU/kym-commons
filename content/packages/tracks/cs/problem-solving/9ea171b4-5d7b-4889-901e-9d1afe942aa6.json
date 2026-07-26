@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "9ea171b4-5d7b-4889-901e-9d1afe942aa6",
+  "title": "第3讲_ 分治法与递归",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第3讲_ 分治法与递归",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/第3讲_ 分治法与递归.zip",
+      "fileName": "第3讲_ 分治法与递归.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 86218,
+      "sha256": "3776199893e0959f4536b21914e5ab6492b3321444e6c1fe3155d7a90ca9a4e5"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9ea171b4-5d7b-4889-901e-9d1afe942aa6"
+  ]
+}

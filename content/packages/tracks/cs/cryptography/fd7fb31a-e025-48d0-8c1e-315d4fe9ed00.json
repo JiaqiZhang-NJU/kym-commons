@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "fd7fb31a-e025-48d0-8c1e-315d4fe9ed00",
+  "title": "2019 crypto final solution",
+  "summary": "来源于 密码学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "cryptography"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2019",
+    "sortKey": "2019-2019-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2019 crypto final solution",
+      "role": "primary",
+      "href": "/files/tracks/cs/cryptography/materials/2019 crypto final solution.pdf",
+      "fileName": "2019 crypto final solution.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 46466,
+      "sha256": "c23f2d95a6f5d2c8942ec08e627bf0c03747e0c1ad1fb55fc06041127bab3886"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fd7fb31a-e025-48d0-8c1e-315d4fe9ed00"
+  ]
+}

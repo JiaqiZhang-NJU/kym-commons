@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "a7cf04c9-02f3-4d7a-997b-d27d7ec86c77",
+  "title": "The_Art_of_Computer_Programmin_Volume4A_Combinatorial_Algorithms",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "The_Art_of_Computer_Programmin_Volume4A_Combinatorial_Algorithms",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/The_Art_of_Computer_Programmin_Volume4A_Combinatorial_Algorithms.pdf",
+      "fileName": "The_Art_of_Computer_Programmin_Volume4A_Combinatorial_Algorithms.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 11832908,
+      "sha256": "c1c4d85a981b3bdd6177b313264d939d9c5f56e856c254d8a9616f0b50926a00"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a7cf04c9-02f3-4d7a-997b-d27d7ec86c77"
+  ]
+}

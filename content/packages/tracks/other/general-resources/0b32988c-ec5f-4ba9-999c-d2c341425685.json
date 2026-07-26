@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0b32988c-ec5f-4ba9-999c-d2c341425685",
+  "title": "25级匡院课表",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025级",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "25级匡院课表",
+      "role": "primary",
+      "href": "/files/tracks/other/general-resources/materials/25级匡院课表.pdf",
+      "fileName": "25级匡院课表.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 382473,
+      "sha256": "d1f98ef8bffccdb7dafdac8f531fc8d31ed951865695ae6b346ed5069bde7b36"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0b32988c-ec5f-4ba9-999c-d2c341425685"
+  ]
+}

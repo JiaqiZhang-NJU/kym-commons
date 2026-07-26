@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "9e78dc38-ba72-4fe8-b27c-e4919d275c59",
+  "title": "newguess",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "newguess",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/newguess.c",
+      "fileName": "newguess.c",
+      "mediaType": null,
+      "sizeBytes": 759,
+      "sha256": "fe1bdfa0ba52c0b252d9253a9239e197c4efe94b6c8747713a67e45ad6e77b13"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9e78dc38-ba72-4fe8-b27c-e4919d275c59"
+  ]
+}

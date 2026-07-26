@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "a23ed86e-a6fd-4b39-b885-17f0dfb01d35",
+  "title": "charcode",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "charcode",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/charcode.c",
+      "fileName": "charcode.c",
+      "mediaType": null,
+      "sizeBytes": 272,
+      "sha256": "8fbfa5679694107f2fa64a191584e85509c105d9adcbab6b3b89009d52726fad"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a23ed86e-a6fd-4b39-b885-17f0dfb01d35"
+  ]
+}

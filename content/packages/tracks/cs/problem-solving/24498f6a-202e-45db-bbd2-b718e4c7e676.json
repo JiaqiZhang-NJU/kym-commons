@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "24498f6a-202e-45db-bbd2-b718e4c7e676",
+  "title": "算法黑书",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法黑书",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/算法黑书.pdf",
+      "fileName": "算法黑书.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 11259374,
+      "sha256": "1353a97eda2593d9f18518254193c90243f2d4ced8905fcdb512c69044232102"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "24498f6a-202e-45db-bbd2-b718e4c7e676"
+  ]
+}

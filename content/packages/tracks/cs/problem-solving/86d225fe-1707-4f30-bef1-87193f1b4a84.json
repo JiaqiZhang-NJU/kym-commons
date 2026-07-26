@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "86d225fe-1707-4f30-bef1-87193f1b4a84",
+  "title": "Proofs_from_THE_BOOK_(Fifth_Edition_2014)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2014",
+    "sortKey": "2014-2014-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Proofs_from_THE_BOOK_(Fifth_Edition_2014)",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/Proofs_from_THE_BOOK_(Fifth_Edition_2014).pdf",
+      "fileName": "Proofs_from_THE_BOOK_(Fifth_Edition_2014).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 7587512,
+      "sha256": "379a46a3e9af18f47b4760f84c7e4cc040f8b3352a5562c7267ee1ae625d53f8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "86d225fe-1707-4f30-bef1-87193f1b4a84"
+  ]
+}

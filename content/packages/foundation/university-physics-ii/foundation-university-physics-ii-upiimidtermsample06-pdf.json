@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-upiimidtermsample06-pdf",
+  "title": "期中样卷 06",
+  "summary": "大学物理下期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期中样卷 06",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/midterms/UPIImidtermsample06.pdf",
+      "fileName": "UPIImidtermsample06.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 952784,
+      "sha256": "407c262594f3b6a69d40ec176a20be7ef314a241be17b23aa7334c1eed055296"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-upiimidtermsample06-pdf"
+  ]
+}

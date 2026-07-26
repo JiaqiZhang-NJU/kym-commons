@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "614ee067-b636-4a9b-957f-fa8a11825da2",
+  "title": "大学物理全英文考试核心词汇表",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "大学物理全英文考试核心词汇表",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/materials/大学物理全英文考试核心词汇表.pdf",
+      "fileName": "大学物理全英文考试核心词汇表.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 79570,
+      "sha256": "fdb030ed3a02cc2862d43c0b6e3f5d4084a3f605989d611151df13f11cc5c00a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "614ee067-b636-4a9b-957f-fa8a11825da2"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b9b29eef-bf93-4ace-9b01-290d3dea9ec3",
+  "title": "高精度乘高精度FFT优化",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "高精度乘高精度FFT优化",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/高精度乘高精度FFT优化.cpp",
+      "fileName": "高精度乘高精度FFT优化.cpp",
+      "mediaType": null,
+      "sizeBytes": 3435,
+      "sha256": "71f82a49ff2ff33576864a410ce95104abfb00f95bd71084cb1ca652496008dc"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b9b29eef-bf93-4ace-9b01-290d3dea9ec3"
+  ]
+}

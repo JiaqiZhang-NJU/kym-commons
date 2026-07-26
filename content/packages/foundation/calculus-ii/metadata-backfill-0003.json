@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0003",
+  "title": "2024春学期大一下微积分（二）期中试卷，匡亚明学院范红军卷 (1).pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-ii"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2024春学期大一下微积分（二）期中试卷，匡亚明学院范红军卷 (1).pdf",
+      "role": "primary",
+      "href": "/files/foundation/calculus-ii/midterms/2024春学期大一下微积分（二）期中试卷，匡亚明学院范红军卷 (1).pdf",
+      "fileName": "2024春学期大一下微积分（二）期中试卷，匡亚明学院范红军卷 (1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 10827157,
+      "sha256": "1080f60544c8120af09b8ea2a213e6fbfc1e692eb5e90576004890d2f5a002bc"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0003"
+  ]
+}

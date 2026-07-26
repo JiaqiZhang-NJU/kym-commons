@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "9e54d635-bb3f-4d60-864a-759fab7ea632",
+  "title": "数据结构2025秋期中",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025秋",
+    "sortKey": "2025-2025-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数据结构2025秋期中",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构2025秋期中.pdf",
+      "fileName": "数据结构2025秋期中.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1471872,
+      "sha256": "0cff0f187516f11b97f50e154210e7d7be2e7d53ec988eac64c8d0afc550771e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9e54d635-bb3f-4d60-864a-759fab7ea632"
+  ]
+}

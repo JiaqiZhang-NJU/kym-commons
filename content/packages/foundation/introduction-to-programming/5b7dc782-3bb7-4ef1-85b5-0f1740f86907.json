@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "5b7dc782-3bb7-4ef1-85b5-0f1740f86907",
+  "title": "strcnvt",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "strcnvt",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/strcnvt.c",
+      "fileName": "strcnvt.c",
+      "mediaType": null,
+      "sizeBytes": 1095,
+      "sha256": "51a5d22910d640e0569cd78f8e24980b01835a92518587188614a6b594cbeeb3"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5b7dc782-3bb7-4ef1-85b5-0f1740f86907"
+  ]
+}

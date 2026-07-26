@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "06b0b714-924e-4af5-9003-44ad37596c8f",
+  "title": "README",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "README",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/README.pdf",
+      "fileName": "README.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 150029,
+      "sha256": "5b2593611fe031f43812ef42bfc0be06d25a16ae53e3fae900d75705b8ee2234"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "06b0b714-924e-4af5-9003-44ad37596c8f"
+  ]
+}

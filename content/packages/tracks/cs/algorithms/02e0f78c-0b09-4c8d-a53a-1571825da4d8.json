@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "02e0f78c-0b09-4c8d-a53a-1571825da4d8",
+  "title": "算法-2022春期末",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022春",
+    "sortKey": "2022-2022-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法-2022春期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/finals/算法-2022春期末.pdf",
+      "fileName": "算法-2022春期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 120571,
+      "sha256": "7524224e4574f55e9d8f3d9b0827737e5bb8ea9ed24af844c339d7d167eb2f32"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "02e0f78c-0b09-4c8d-a53a-1571825da4d8"
+  ]
+}

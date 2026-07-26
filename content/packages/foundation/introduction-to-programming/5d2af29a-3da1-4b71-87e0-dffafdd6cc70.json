@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "5d2af29a-3da1-4b71-87e0-dffafdd6cc70",
+  "title": "rand0",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "rand0",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/rand0.c",
+      "fileName": "rand0.c",
+      "mediaType": null,
+      "sizeBytes": 332,
+      "sha256": "e3209d173051059c6f3df1102b6ad8f55df88970e559cacf03ef533101a95706"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5d2af29a-3da1-4b71-87e0-dffafdd6cc70"
+  ]
+}

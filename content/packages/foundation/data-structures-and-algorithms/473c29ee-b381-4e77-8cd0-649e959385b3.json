@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "473c29ee-b381-4e77-8cd0-649e959385b3",
+  "title": "数据结构第9章",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数据结构第9章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第9章.doc",
+      "fileName": "数据结构第9章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 678400,
+      "sha256": "81ac26f8b414dac6d132d20405eac24f540ea89387dcf7e91dd452ece9523e12"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "473c29ee-b381-4e77-8cd0-649e959385b3"
+  ]
+}

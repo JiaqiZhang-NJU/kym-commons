@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0122",
+  "title": "RISC-V.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "RISC-V.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/RISC-V.pdf",
+      "fileName": "RISC-V.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 8497764,
+      "sha256": "788b8818d8bc76569477fb7e19e0e0da8167fd8407d5980f267d3ab0c43b942f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0122"
+  ]
+}

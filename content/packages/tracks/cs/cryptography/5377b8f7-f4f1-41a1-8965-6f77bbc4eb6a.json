@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "5377b8f7-f4f1-41a1-8965-6f77bbc4eb6a",
+  "title": "2022FallCryptoFinal",
+  "summary": "来源于 密码学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "cryptography"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022FallCryptoFinal",
+      "role": "primary",
+      "href": "/files/tracks/cs/cryptography/materials/2022FallCryptoFinal.pdf",
+      "fileName": "2022FallCryptoFinal.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 387306,
+      "sha256": "e1b0af22446b3e56b9b598eb26af17c60b29caf0c2e074b6303fdd02ba71adba"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5377b8f7-f4f1-41a1-8965-6f77bbc4eb6a"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "d4783fe9-2678-4d20-9cd2-7a2317fe8bda",
+  "title": "bases",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "bases",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/bases.c",
+      "fileName": "bases.c",
+      "mediaType": null,
+      "sizeBytes": 248,
+      "sha256": "740f821506ca4911bace84c6b300db41dec45bb9f96c88064bcb2d97c4094dc3"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "d4783fe9-2678-4d20-9cd2-7a2317fe8bda"
+  ]
+}

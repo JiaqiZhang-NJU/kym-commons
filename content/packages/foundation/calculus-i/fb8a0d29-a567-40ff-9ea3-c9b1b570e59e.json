@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fb8a0d29-a567-40ff-9ea3-c9b1b570e59e",
+  "title": "2022+年秋匡院微积分+I(第一层次)+期末考试-邱华",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022+年秋匡院微积分+I(第一层次)+期末考试-邱华",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/finals/2022+年秋匡院微积分+I(第一层次)+期末考试-邱华.pdf",
+      "fileName": "2022+年秋匡院微积分+I(第一层次)+期末考试-邱华.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 43656,
+      "sha256": "dee634a41ab54df9b4624fbb3a6d1b0eaced2497b62a686113524901341daeb2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fb8a0d29-a567-40ff-9ea3-c9b1b570e59e"
+  ]
+}

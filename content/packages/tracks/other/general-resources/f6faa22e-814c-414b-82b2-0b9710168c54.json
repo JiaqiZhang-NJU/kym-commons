@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "f6faa22e-814c-414b-82b2-0b9710168c54",
+  "title": "保研攻略2016级",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2016级",
+    "sortKey": "2016-2016-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "保研攻略2016级",
+      "role": "primary",
+      "href": "/files/tracks/other/general-resources/materials/保研攻略2016级.pdf",
+      "fileName": "保研攻略2016级.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1062549,
+      "sha256": "a836fddf653c1741d2982ce0c38d3d0ec56ac3a3f0079b0a5676b87f5793f857"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "f6faa22e-814c-414b-82b2-0b9710168c54"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0052",
+  "title": "心智社会：从细胞到人工智能，人类思维的优雅解读.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "心智社会：从细胞到人工智能，人类思维的优雅解读.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/心智社会：从细胞到人工智能，人类思维的优雅解读.pdf",
+      "fileName": "心智社会：从细胞到人工智能，人类思维的优雅解读.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 6666002,
+      "sha256": "29954d101221577e63c220cc7b126d91cd2bdbfa745ce185c4850d567636bb63"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0052"
+  ]
+}

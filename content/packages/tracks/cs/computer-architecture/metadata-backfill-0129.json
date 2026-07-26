@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0129",
+  "title": "WSCBarrosoHolzle.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "WSCBarrosoHolzle.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/WSCBarrosoHolzle.pdf",
+      "fileName": "WSCBarrosoHolzle.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2897031,
+      "sha256": "76a1601dbe4db5b9700030677b43bb4e7e6883e61dd39e29be5a8eba14b8321e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0129"
+  ]
+}

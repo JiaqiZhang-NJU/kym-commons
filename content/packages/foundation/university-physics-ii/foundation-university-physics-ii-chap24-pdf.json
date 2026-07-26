@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-chap24-pdf",
+  "title": "Chapter 24 专题讲义",
+  "summary": "大学物理下专题讲义与知识点梳理资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "topic-notes",
+  "materialType": "专题讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Chapter 24 专题讲义",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/topic-notes/Chap24.pdf",
+      "fileName": "Chap24.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 409566,
+      "sha256": "1f48807f469a58dfa8f9d73c06912dc7a5a7a7dadd86e13261ab9f61f20ce013"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-chap24-pdf"
+  ]
+}

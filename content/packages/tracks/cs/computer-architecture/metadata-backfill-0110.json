@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0110",
+  "title": "floating points.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "floating points.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/floating points.pdf",
+      "fileName": "floating points.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3312863,
+      "sha256": "d595769f1835db50248cf0ca01ac5d9aaf48af2494a98752a3925d5c8abbee99"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0110"
+  ]
+}

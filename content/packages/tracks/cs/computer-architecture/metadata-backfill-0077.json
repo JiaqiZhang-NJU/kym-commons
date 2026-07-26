@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0077",
+  "title": "control&pipeline.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "control&pipeline.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/control&pipeline.pdf",
+      "fileName": "control&pipeline.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 6094293,
+      "sha256": "d7700746430770a0aab6f38cee0408e78b1a03e3927fcca8b3b38972cc7d7ce4"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0077"
+  ]
+}

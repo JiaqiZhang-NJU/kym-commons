@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-chapter10-pdf",
+  "title": "第 10 章课件",
+  "summary": "大学物理上课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 10 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter10.pdf",
+      "fileName": "chapter10.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1166128,
+      "sha256": "b3c7a3bd83d2860c7026c38a6970218a29c23747c7c510d08cb414c3ca2b0ee3"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-chapter10-pdf"
+  ]
+}

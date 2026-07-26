@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-quiz02sol-pdf",
+  "title": "Quiz 02 参考解答（2016）",
+  "summary": "大学物理上随堂测验与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "quizzes",
+  "materialType": "随堂测验",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Quiz 02 参考解答（2016）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/quizzes/Quiz02sol.pdf",
+      "fileName": "Quiz02sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 59326,
+      "sha256": "9ad2b7c4ff6e6653fb951bd559780bfaab919a43663d7e9b8369b2b3da93e3bf"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-quiz02sol-pdf"
+  ]
+}

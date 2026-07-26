@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0127",
+  "title": "VM.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "VM.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/VM.pdf",
+      "fileName": "VM.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3496829,
+      "sha256": "a6ea192ad7aa8bbcf09adc59a2b2edc4b82f8ff7d494028de81cc2b8945a86e9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0127"
+  ]
+}

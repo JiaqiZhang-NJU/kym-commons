@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "70542dea-c8b7-4c1a-bd81-7fdc41c2ec6d",
+  "title": "2021-2022 计算机图形学 A卷 答案",
+  "summary": "来源于 图形学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-graphics"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2021",
+    "sortKey": "2021-2021-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2021-2022 计算机图形学 A卷 答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-graphics/materials/2021-2022 计算机图形学 A卷 答案.pdf",
+      "fileName": "2021-2022 计算机图形学 A卷 答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 442704,
+      "sha256": "089ff97f1f3990e2208a88c511fac5bf5a5f7081a4b54a347f03c39bc3d5ed9b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "70542dea-c8b7-4c1a-bd81-7fdc41c2ec6d"
+  ]
+}

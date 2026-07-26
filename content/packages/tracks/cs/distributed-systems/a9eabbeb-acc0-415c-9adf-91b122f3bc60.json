@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "a9eabbeb-acc0-415c-9adf-91b122f3bc60",
+  "title": "5",
+  "summary": "来源于 分布式系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "distributed-systems"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "5",
+      "role": "primary",
+      "href": "/files/tracks/cs/distributed-systems/assignments/5.jpg",
+      "fileName": "5.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1948839,
+      "sha256": "661c104cad5ce52a0e87a9afa4d5065714dfb3797fc143c40d9032c7fb670236"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a9eabbeb-acc0-415c-9adf-91b122f3bc60"
+  ]
+}

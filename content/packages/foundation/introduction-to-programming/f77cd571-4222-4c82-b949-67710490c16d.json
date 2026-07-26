@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "f77cd571-4222-4c82-b949-67710490c16d",
+  "title": "do_while",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "do_while",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/do_while.c",
+      "fileName": "do_while.c",
+      "mediaType": null,
+      "sizeBytes": 420,
+      "sha256": "ae22a5a3da974c86a0c6ad34cba183d7548955d0f1282a2da059d681a33538d0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "f77cd571-4222-4c82-b949-67710490c16d"
+  ]
+}

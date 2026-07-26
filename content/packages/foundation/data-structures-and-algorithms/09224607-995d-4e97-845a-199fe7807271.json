@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "09224607-995d-4e97-845a-199fe7807271",
+  "title": "2007年数据结构期末试卷参考答案",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2007年",
+    "sortKey": "2007-2007-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2007年数据结构期末试卷参考答案",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2007年数据结构期末试卷参考答案.doc",
+      "fileName": "2007年数据结构期末试卷参考答案.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 35840,
+      "sha256": "721ec9619a9e64912f133b923d5d7248fe0fcfac629dbcfbe6040e0c794327c0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "09224607-995d-4e97-845a-199fe7807271"
+  ]
+}

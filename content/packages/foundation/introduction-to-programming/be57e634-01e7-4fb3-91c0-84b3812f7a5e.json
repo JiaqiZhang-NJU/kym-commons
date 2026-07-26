@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be57e634-01e7-4fb3-91c0-84b3812f7a5e",
+  "title": "compare",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "compare",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/compare.c",
+      "fileName": "compare.c",
+      "mediaType": null,
+      "sizeBytes": 838,
+      "sha256": "545eddd22780e24bc5d7c0dc843e7128635a4edd86e34b4acd7425388f305a6a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "be57e634-01e7-4fb3-91c0-84b3812f7a5e"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ca16c8e1-1342-483b-b775-04799ae64521",
+  "title": "匡亚明学院2025-2026秋季学期电动力学期中试题",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electrodynamics"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025-2026",
+    "sortKey": "2025-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "匡亚明学院2025-2026秋季学期电动力学期中试题",
+      "role": "primary",
+      "href": "/files/tracks/physics/electrodynamics/midterms/匡亚明学院2025-2026秋季学期电动力学期中试题.pdf",
+      "fileName": "匡亚明学院2025-2026秋季学期电动力学期中试题.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 601906,
+      "sha256": "8e759e049428eac5d0bff3de0db5af7bb701bdab5aa7efa747a58f496a5c6f82"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ca16c8e1-1342-483b-b775-04799ae64521"
+  ]
+}

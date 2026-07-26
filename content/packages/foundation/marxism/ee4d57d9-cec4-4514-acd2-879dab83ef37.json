@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ee4d57d9-cec4-4514-acd2-879dab83ef37",
+  "title": "马原提纲 by  rekrats(1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "marxism"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "马原提纲 by  rekrats(1)",
+      "role": "primary",
+      "href": "/files/foundation/marxism/materials/马原提纲 by  rekrats(1).docx",
+      "fileName": "马原提纲 by  rekrats(1).docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 24284,
+      "sha256": "3b2a27e57753f5daf062f7f05ce51390354e332203f8e50f9714ba2b28a92027"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ee4d57d9-cec4-4514-acd2-879dab83ef37"
+  ]
+}

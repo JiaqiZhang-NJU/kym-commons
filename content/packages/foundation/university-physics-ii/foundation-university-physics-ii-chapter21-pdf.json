@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-chapter21-pdf",
+  "title": "第 21 章课件",
+  "summary": "大学物理下课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 21 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/course-slides/chapter21.pdf",
+      "fileName": "chapter21.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1526256,
+      "sha256": "0d56935d61655545d33b34ee651388e5b7c3c7fb5b82a0f76ad52d135d47afa8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-chapter21-pdf"
+  ]
+}

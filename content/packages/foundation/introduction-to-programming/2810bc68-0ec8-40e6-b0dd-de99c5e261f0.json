@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "2810bc68-0ec8-40e6-b0dd-de99c5e261f0",
+  "title": "fields",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "fields",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/fields.c",
+      "fileName": "fields.c",
+      "mediaType": null,
+      "sizeBytes": 1975,
+      "sha256": "fd144b63d337d6438223cc102f6bb96e6e3bbbb8c4b3c6b8853a5ee4e14070f8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "2810bc68-0ec8-40e6-b0dd-de99c5e261f0"
+  ]
+}

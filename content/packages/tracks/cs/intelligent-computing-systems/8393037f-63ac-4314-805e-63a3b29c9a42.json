@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8393037f-63ac-4314-805e-63a3b29c9a42",
+  "title": "智能计算系统-2022秋",
+  "summary": "来源于 智能计算系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "intelligent-computing-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022秋",
+    "sortKey": "2022-2022-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "智能计算系统-2022秋",
+      "role": "primary",
+      "href": "/files/tracks/cs/intelligent-computing-systems/materials/智能计算系统-2022秋.pdf",
+      "fileName": "智能计算系统-2022秋.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 150115,
+      "sha256": "05fdb58f4e9aff5c35b284cc4d795165bd604e6f03de0529c818cf7f468de073"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8393037f-63ac-4314-805e-63a3b29c9a42"
+  ]
+}

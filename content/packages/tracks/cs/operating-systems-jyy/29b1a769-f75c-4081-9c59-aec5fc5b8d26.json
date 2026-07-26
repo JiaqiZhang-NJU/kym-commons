@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "29b1a769-f75c-4081-9c59-aec5fc5b8d26",
+  "title": "jyyos2023期末回忆版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-jyy"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "jyyos2023期末回忆版",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-jyy/finals/jyyos2023期末回忆版.md",
+      "fileName": "jyyos2023期末回忆版.md",
+      "mediaType": "text/markdown",
+      "sizeBytes": 2616,
+      "sha256": "9f24484167941628a9e8beaf790fbcd3549bfb2e686c89f2b60496223206cdd7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "29b1a769-f75c-4081-9c59-aec5fc5b8d26"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fc140b2d-a08a-4c52-bedd-32632113406b",
+  "title": "addemup",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "addemup",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/addemup.c",
+      "fileName": "addemup.c",
+      "mediaType": null,
+      "sizeBytes": 613,
+      "sha256": "461ed8331304be04a10975d4553c2800b0f2704e9fe368d7349940e4b782e281"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fc140b2d-a08a-4c52-bedd-32632113406b"
+  ]
+}

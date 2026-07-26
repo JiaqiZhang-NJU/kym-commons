@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "2f2b0087-075b-4c94-bd27-0993a8ed7d06",
+  "title": "zeno",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "zeno",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/zeno.c",
+      "fileName": "zeno.c",
+      "mediaType": null,
+      "sizeBytes": 458,
+      "sha256": "a1d8ca6846a84b195ef44be940b9d7ba332594c857ae8b185491eccc87ee1aae"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "2f2b0087-075b-4c94-bd27-0993a8ed7d06"
+  ]
+}

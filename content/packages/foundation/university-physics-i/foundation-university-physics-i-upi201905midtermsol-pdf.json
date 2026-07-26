@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-upi201905midtermsol-pdf",
+  "title": "2019-05 期中卷解答",
+  "summary": "大学物理上期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2019-05 期中卷解答",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/midterms/UPI201905midtermsol.pdf",
+      "fileName": "UPI201905midtermsol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 458974,
+      "sha256": "1797bb5771c7216784f96d7e3f30bdb974d5a2f5e8e130108bc04fba67666247"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-upi201905midtermsol-pdf"
+  ]
+}

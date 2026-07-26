@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-chapter05-pdf",
+  "title": "第 05 章课件",
+  "summary": "大学物理上课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 05 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter05.pdf",
+      "fileName": "chapter05.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3778782,
+      "sha256": "f5f6f1d6f7426f9c4bfd1caf09511677481a90429c25424b24886d87f90dee6b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-chapter05-pdf"
+  ]
+}

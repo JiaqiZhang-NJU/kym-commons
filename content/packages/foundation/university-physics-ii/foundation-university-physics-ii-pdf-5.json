@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-pdf-5",
+  "title": "电磁感应",
+  "summary": "大学物理下专题讲义与知识点梳理资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "topic-notes",
+  "materialType": "专题讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "电磁感应",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/topic-notes/%E7%94%B5%E7%A3%81%E6%84%9F%E5%BA%94.pdf",
+      "fileName": "电磁感应.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 5915002,
+      "sha256": "8d5352e5763819be94dbae58bc46d75e748ce85f77a9d51eae0fbbb7a440217e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": []
+}

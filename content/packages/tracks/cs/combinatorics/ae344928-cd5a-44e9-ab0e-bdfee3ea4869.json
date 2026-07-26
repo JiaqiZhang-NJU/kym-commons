@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ae344928-cd5a-44e9-ab0e-bdfee3ea4869",
+  "title": "组合数学(2025)回忆版",
+  "summary": "来源于 组合数学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "combinatorics"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "组合数学(2025)回忆版",
+      "role": "primary",
+      "href": "/files/tracks/cs/combinatorics/materials/组合数学(2025)回忆版.pdf",
+      "fileName": "组合数学(2025)回忆版.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 69702,
+      "sha256": "dfa9beb554ddfeca650ec336b6fabb0cfbe5fdc8191f359a3ddcdd6484cf62d5"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ae344928-cd5a-44e9-ab0e-bdfee3ea4869"
+  ]
+}

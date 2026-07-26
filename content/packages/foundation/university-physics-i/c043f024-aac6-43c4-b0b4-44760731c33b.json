@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c043f024-aac6-43c4-b0b4-44760731c33b",
+  "title": "大物上2026期中回忆",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026",
+    "sortKey": "2026-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "大物上2026期中回忆",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/midterms/大物上2026期中回忆.docx",
+      "fileName": "大物上2026期中回忆.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 17923,
+      "sha256": "760856111e1c5102c6cb5a52f4fd10689887a402955b1ba9044ccacd3a17b05e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c043f024-aac6-43c4-b0b4-44760731c33b"
+  ]
+}

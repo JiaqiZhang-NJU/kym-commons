@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-upimidterm2017-pdf",
+  "title": "2017 期中卷",
+  "summary": "大学物理上期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2017 期中卷",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/midterms/UPImidterm2017.pdf",
+      "fileName": "UPImidterm2017.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 393083,
+      "sha256": "d2e03edf277b6dcdd355e2dff38f198d32eb3f0b5b0fc134a0da388be0a5b887"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-upimidterm2017-pdf"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0083",
+  "title": "disc01.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "disc01.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/disc01.pdf",
+      "fileName": "disc01.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 204849,
+      "sha256": "0b099e98c1332979384418ac46308ff092186cac42827ce03370e5dbff688213"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0083"
+  ]
+}

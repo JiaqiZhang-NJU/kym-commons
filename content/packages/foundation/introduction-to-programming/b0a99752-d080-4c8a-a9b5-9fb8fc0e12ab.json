@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "b0a99752-d080-4c8a-a9b5-9fb8fc0e12ab",
+  "title": "partb",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "partb",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/partb.c",
+      "fileName": "partb.c",
+      "mediaType": null,
+      "sizeBytes": 584,
+      "sha256": "95f4714b1243dfa65a885af3f0f374f56f8f65c320cef7df139b758b56b7c452"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b0a99752-d080-4c8a-a9b5-9fb8fc0e12ab"
+  ]
+}

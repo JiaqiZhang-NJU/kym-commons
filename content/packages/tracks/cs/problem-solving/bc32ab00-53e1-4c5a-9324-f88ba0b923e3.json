@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "bc32ab00-53e1-4c5a-9324-f88ba0b923e3",
+  "title": "CLRS_Introduction_to_Algorithms_(3rd_Edition,_2009)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2009",
+    "sortKey": "2009-2009-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "CLRS_Introduction_to_Algorithms_(3rd_Edition,_2009)",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/CLRS_Introduction_to_Algorithms_(3rd_Edition,_2009).pdf",
+      "fileName": "CLRS_Introduction_to_Algorithms_(3rd_Edition,_2009).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 5076764,
+      "sha256": "780800adc787535f1aba5083d71cf42384fbb80d40a4e2aea68e827092a6e32e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "bc32ab00-53e1-4c5a-9324-f88ba0b923e3"
+  ]
+}

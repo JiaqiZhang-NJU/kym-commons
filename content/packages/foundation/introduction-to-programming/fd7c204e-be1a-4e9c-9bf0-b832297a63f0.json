@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fd7c204e-be1a-4e9c-9bf0-b832297a63f0",
+  "title": "complex",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "complex",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/complex.c",
+      "fileName": "complex.c",
+      "mediaType": null,
+      "sizeBytes": 860,
+      "sha256": "d7105644932dacfafeab2498a02ba22d35479db15989544d43fd6eaaa2570845"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fd7c204e-be1a-4e9c-9bf0-b832297a63f0"
+  ]
+}

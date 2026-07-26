@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0045",
+  "title": "神经网络计算机 N脑 - 副本.docx",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "神经网络计算机 N脑 - 副本.docx",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/神经网络计算机 N脑 - 副本.docx",
+      "fileName": "神经网络计算机 N脑 - 副本.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 5029320,
+      "sha256": "bd5454087be2df5f9e3748e9783c35c61ca1b6873e0ae74a111696ef9cb49e09"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0045"
+  ]
+}

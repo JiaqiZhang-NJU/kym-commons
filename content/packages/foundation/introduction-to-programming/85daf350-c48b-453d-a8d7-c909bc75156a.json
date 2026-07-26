@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "85daf350-c48b-453d-a8d7-c909bc75156a",
+  "title": "while1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "while1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/while1.c",
+      "fileName": "while1.c",
+      "mediaType": null,
+      "sizeBytes": 266,
+      "sha256": "0b5963e61c9253f5f7dcb72d7958b1d61700b369846ea2e2f89dc1cdba742091"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "85daf350-c48b-453d-a8d7-c909bc75156a"
+  ]
+}

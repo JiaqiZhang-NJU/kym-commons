@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0154",
+  "title": "点餐系统.rar",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "software-engineering"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "点餐系统.rar",
+      "role": "primary",
+      "href": "/files/tracks/cs/software-engineering/materials/点餐系统.rar",
+      "fileName": "点餐系统.rar",
+      "mediaType": "application/vnd.rar",
+      "sizeBytes": 10130875,
+      "sha256": "b7c9650782533c3e64f22f06c3f5fc0b28f27dafdb1470114984398094f4c4d1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0154"
+  ]
+}

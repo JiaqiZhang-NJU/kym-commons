@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "e57b0c4a-c315-416e-8749-6dbcad96bc84",
+  "title": "zippo1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "zippo1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/zippo1.c",
+      "fileName": "zippo1.c",
+      "mediaType": null,
+      "sizeBytes": 659,
+      "sha256": "25228a68bd53cd66a47062d905cf91a4d6afa76f836d7a8753912abe98963e75"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "e57b0c4a-c315-416e-8749-6dbcad96bc84"
+  ]
+}

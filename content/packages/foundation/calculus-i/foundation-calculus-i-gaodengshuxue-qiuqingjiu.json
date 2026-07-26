@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-calculus-i-gaodengshuxue-qiuqingjiu",
+  "title": "高等数学 仇庆久编(1)",
+  "summary": "来源: 常用教材整理",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "高等数学 仇庆久编(1)",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/materials/高等数学 仇庆久编(1).pdf",
+      "fileName": "高等数学 仇庆久编(1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 21608550,
+      "sha256": "c27882057a5d7911c24c237ac2a3d7c45eb8edd0407c479f78943bd80face62a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-calculus-i-gaodengshuxue-qiuqingjiu"
+  ]
+}

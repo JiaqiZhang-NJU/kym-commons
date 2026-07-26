@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-chapter28-pdf",
+  "title": "第 28 章课件",
+  "summary": "大学物理下课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 28 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/course-slides/chapter28.pdf",
+      "fileName": "chapter28.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2189948,
+      "sha256": "44e722f7d818cecbbaea5c5d52dd3e647aa63b30e6deebdf3cb6a960f782f020"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-chapter28-pdf"
+  ]
+}

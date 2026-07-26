@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-xsol25-27-pdf",
+  "title": "xsol25-27.pdf",
+  "summary": "大学物理下作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "xsol25-27.pdf",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/assignment-solutions/xsol25-27.pdf",
+      "fileName": "xsol25-27.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 108582,
+      "sha256": "cb2620103370f8e2252016aa73970fb7bbfdc72da89de8129e575958ddbf76e2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-xsol25-27-pdf"
+  ]
+}

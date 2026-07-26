@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "8cca3aa8-5cea-4762-b83c-dba66aeaa378",
+  "title": "rain",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "rain",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/rain.c",
+      "fileName": "rain.c",
+      "mediaType": null,
+      "sizeBytes": 1564,
+      "sha256": "aa97d83971c3088fef31504282e6399a2f2d873ca84bfece962dfbb7ffef3aa8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8cca3aa8-5cea-4762-b83c-dba66aeaa378"
+  ]
+}

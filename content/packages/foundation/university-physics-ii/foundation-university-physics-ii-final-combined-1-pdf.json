@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-final-combined-1-pdf",
+  "title": "期末试卷组合 1",
+  "summary": "大学物理下期末样卷与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "final-samples",
+  "materialType": "期末样卷",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末试卷组合 1",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/finals/final-combined-1.pdf",
+      "fileName": "final-combined-1.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1640149,
+      "sha256": "4a1f916bd1fad450b91bf9e4614f4a60a3eb1dfe83888ab6722b770e7f65273b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-final-combined-1-pdf"
+  ]
+}

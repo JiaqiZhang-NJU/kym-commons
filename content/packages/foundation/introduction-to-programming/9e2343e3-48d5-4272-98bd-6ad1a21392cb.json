@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "9e2343e3-48d5-4272-98bd-6ad1a21392cb",
+  "title": "randbin",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "randbin",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/randbin.c",
+      "fileName": "randbin.c",
+      "mediaType": null,
+      "sizeBytes": 1358,
+      "sha256": "7f66fed11287e1ec0cee2815c4708739f157ea0943271290286bb6e79ddf91bb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9e2343e3-48d5-4272-98bd-6ad1a21392cb"
+  ]
+}

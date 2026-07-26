@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b9244be5-9c18-4d86-8bd5-a7a1c181b477",
+  "title": "数理逻辑-2025春-期末（回忆版）",
+  "summary": "来源于 数理逻辑 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "mathematical-logic"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025春",
+    "sortKey": "2025-2025-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数理逻辑-2025春-期末（回忆版）",
+      "role": "primary",
+      "href": "/files/tracks/cs/mathematical-logic/finals/数理逻辑-2025春-期末（回忆版）.pdf",
+      "fileName": "数理逻辑-2025春-期末（回忆版）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 69088,
+      "sha256": "6d4fc68112214260d13f7a85a6a0a8f0c0c93e4eea1325fdb5342b091e0ec716"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b9244be5-9c18-4d86-8bd5-a7a1c181b477"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "d636f7c2-f276-4562-b61a-6be4dbb524bf",
+  "title": "体系结构-2022春",
+  "summary": "来源于 体系结构 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022春",
+    "sortKey": "2022-2022-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "体系结构-2022春",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/体系结构-2022春.pdf",
+      "fileName": "体系结构-2022春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 284384,
+      "sha256": "930aaf277d7bdc05439f8788becf76d7314afe7c3a5da9ed8dbebd117d1c3209"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "d636f7c2-f276-4562-b61a-6be4dbb524bf"
+  ]
+}

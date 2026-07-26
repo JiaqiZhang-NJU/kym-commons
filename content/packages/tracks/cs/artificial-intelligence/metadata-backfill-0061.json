@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0061",
+  "title": "Pattern Recognition and Machine Learning.zip",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Pattern Recognition and Machine Learning.zip",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/Pattern Recognition and Machine Learning.zip",
+      "fileName": "Pattern Recognition and Machine Learning.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 29579056,
+      "sha256": "736d8f6acb6532d09267f9ccb194a2d878a3ad82f98fc1db807289fc9d7771c9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0061"
+  ]
+}

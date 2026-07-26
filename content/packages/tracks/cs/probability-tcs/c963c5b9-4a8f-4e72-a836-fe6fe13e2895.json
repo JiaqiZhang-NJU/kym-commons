@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "c963c5b9-4a8f-4e72-a836-fe6fe13e2895",
+  "title": "尹一通概率论2026sp期末",
+  "summary": "来源: 用户上传补充资料（尹一通）",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-tcs"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026",
+    "sortKey": "2026-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "尹一通概率论2026sp期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-tcs/finals/尹一通概率论2026sp期末.pdf",
+      "fileName": "尹一通概率论2026sp期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 79201,
+      "sha256": "524d12e9c2820eca56cd902ac2800142dcf903759f25ddb0606c5ebdd09788ac"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c963c5b9-4a8f-4e72-a836-fe6fe13e2895"
+  ]
+}

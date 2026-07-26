@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-experiment-supplement-2025-spring",
+  "title": "大学物理实验一2025春季补充材料 (1)",
+  "summary": "来源: 常用教材整理",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-experiment"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "大学物理实验一2025春季补充材料 (1)",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-experiment/materials/大学物理实验一2025春季补充材料 (1).pdf",
+      "fileName": "大学物理实验一2025春季补充材料 (1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 4901366,
+      "sha256": "4bb62df196fc0ff04c93d840d58b73071141507d06673c6f41f93fd7b23e5b60"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-experiment-supplement-2025-spring"
+  ]
+}

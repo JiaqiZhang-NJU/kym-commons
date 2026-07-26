@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "03d4c876-6e16-4c2f-b2cb-5fc4a2e685fb",
+  "title": "2024-2025 春季学期匡亚明学院数学物理方法期末试",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "methods-of-mathematical-physics"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024-2025",
+    "sortKey": "2024-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2024-2025 春季学期匡亚明学院数学物理方法期末试",
+      "role": "primary",
+      "href": "/files/tracks/physics/methods-of-mathematical-physics/finals/2024-2025 春季学期匡亚明学院数学物理方法期末试.pdf",
+      "fileName": "2024-2025 春季学期匡亚明学院数学物理方法期末试.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 58858,
+      "sha256": "62cc0bfac67f031c288af631eacac8738bbbbbc9a6edcfb6d5b199b56b4d3551"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "03d4c876-6e16-4c2f-b2cb-5fc4a2e685fb"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "279fe597-34be-43ed-8682-4bcc3f16770a",
+  "title": "varargs",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "varargs",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/varargs.c",
+      "fileName": "varargs.c",
+      "mediaType": null,
+      "sizeBytes": 809,
+      "sha256": "302471f4f88c97cf26adfded05e9337f2abf54583a5a5c086381e34ec1b49271"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "279fe597-34be-43ed-8682-4bcc3f16770a"
+  ]
+}

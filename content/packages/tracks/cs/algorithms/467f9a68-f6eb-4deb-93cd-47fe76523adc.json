@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "467f9a68-f6eb-4deb-93cd-47fe76523adc",
+  "title": "算法-2026春期末回忆",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026春",
+    "sortKey": "2026-2026-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法-2026春期末回忆",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/finals/算法-2026春期末回忆.pdf",
+      "fileName": "算法-2026春期末回忆.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 146391,
+      "sha256": "90689a5f94820f929e73ce22eb40adb216e5ce9793672ab417fe4e97bdf8f37d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "467f9a68-f6eb-4deb-93cd-47fe76523adc"
+  ]
+}

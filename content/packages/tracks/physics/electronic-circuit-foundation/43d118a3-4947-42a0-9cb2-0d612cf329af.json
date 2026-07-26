@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "43d118a3-4947-42a0-9cb2-0d612cf329af",
+  "title": "电子电路基础07-存储",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electronic-circuit-foundation"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "电子电路基础07-存储",
+      "role": "primary",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础07-存储.pptx",
+      "fileName": "电子电路基础07-存储.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1404908,
+      "sha256": "73c3b81ad6828d596249fd3ad30db74ea46d9498a8dfb46e1a90e82950345c9b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "43d118a3-4947-42a0-9cb2-0d612cf329af"
+  ]
+}

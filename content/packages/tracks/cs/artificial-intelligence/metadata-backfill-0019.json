@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0019",
+  "title": "《深度学习Deep Learning 》中文版 高清完整PDF版.zip",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "《深度学习Deep Learning 》中文版 高清完整PDF版.zip",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/《深度学习Deep Learning 》中文版 高清完整PDF版.zip",
+      "fileName": "《深度学习Deep Learning 》中文版 高清完整PDF版.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 27768037,
+      "sha256": "0e22dd4c6c854f96a0942f102632e591e2fda08712c2a5aaa8c32d508e00504a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0019"
+  ]
+}

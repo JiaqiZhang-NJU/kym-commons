@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "2a8bbe36-b591-41c1-bdd2-784bc1c9f27c",
+  "title": "计网2025回忆版",
+  "summary": "来源于 计网 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计网2025回忆版",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/计网2025回忆版.docx",
+      "fileName": "计网2025回忆版.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 17502,
+      "sha256": "1eef5d54e7b8c4f27b53887e548c7d80c7836dac1c4f12394036f8f134743147"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "2a8bbe36-b591-41c1-bdd2-784bc1c9f27c"
+  ]
+}

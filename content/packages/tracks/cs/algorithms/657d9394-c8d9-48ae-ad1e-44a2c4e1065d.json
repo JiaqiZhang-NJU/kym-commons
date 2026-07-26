@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "657d9394-c8d9-48ae-ad1e-44a2c4e1065d",
+  "title": "2024",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024",
+    "sortKey": "2024-2024-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2024",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/materials/2024.docx",
+      "fileName": "2024.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 11801,
+      "sha256": "32afc08b1bc8880af3d6e1d9547f7c0e7f533e13721d68dd6d48e0a5290dc1bb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "657d9394-c8d9-48ae-ad1e-44a2c4e1065d"
+  ]
+}

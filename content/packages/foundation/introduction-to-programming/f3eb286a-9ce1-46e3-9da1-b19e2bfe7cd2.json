@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "f3eb286a-9ce1-46e3-9da1-b19e2bfe7cd2",
+  "title": "format",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "format",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/format.c",
+      "fileName": "format.c",
+      "mediaType": null,
+      "sizeBytes": 883,
+      "sha256": "301b9ef300cec1c77702bbe8f16ba1cca792fcdd64eaaca9f38b810d27932fa0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "f3eb286a-9ce1-46e3-9da1-b19e2bfe7cd2"
+  ]
+}

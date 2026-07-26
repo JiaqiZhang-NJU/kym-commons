@@ -15,7 +15,8 @@
     "typecheck": "tsc",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
-    "catalog:validate": "node scripts/catalog/validate.mjs"
+    "catalog:validate": "node scripts/catalog/validate.mjs",
+    "catalog:migrate": "node scripts/catalog/migrate-legacy.mjs --force"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",

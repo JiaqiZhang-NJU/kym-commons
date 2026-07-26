@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0046",
+  "title": "神经网络与机器学习（第3版）.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "神经网络与机器学习（第3版）.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/神经网络与机器学习（第3版）.pdf",
+      "fileName": "神经网络与机器学习（第3版）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 66064619,
+      "sha256": "dc07ea49035cb5f5a57155987f0f4a1ea09c774cb83682b523e34b8364a393ed"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0046"
+  ]
+}

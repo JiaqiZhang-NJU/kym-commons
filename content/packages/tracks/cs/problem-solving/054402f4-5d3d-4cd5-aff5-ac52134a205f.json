@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "054402f4-5d3d-4cd5-aff5-ac52134a205f",
+  "title": "基础动规1_1_入门_helang",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "基础动规1_1_入门_helang",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规1_1_入门_helang.ppt",
+      "fileName": "基础动规1_1_入门_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1006592,
+      "sha256": "127c78303b014cf8ee779bc55184b59762c0a11cd2bed562fdf0ff4931522a90"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "054402f4-5d3d-4cd5-aff5-ac52134a205f"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "97966dbc-e537-4b28-bf6d-aff3273c3c30",
+  "title": "pnt_add",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "pnt_add",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/pnt_add.c",
+      "fileName": "pnt_add.c",
+      "mediaType": null,
+      "sizeBytes": 469,
+      "sha256": "6646a5e2dff107551f41dbac3b715329203fcfa4697b3cefaebceb713763bc09"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "97966dbc-e537-4b28-bf6d-aff3273c3c30"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "79f5babb-1b6c-4bf8-a584-139d89a5ed5d",
+  "title": "23概率论",
+  "summary": "来源于 （大班）概率论与数理统计 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "23概率论",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-general/finals/23概率论.docx",
+      "fileName": "23概率论.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 597139,
+      "sha256": "bf4d9e8bbd592995b4e5dad98e93141aaaebb971ca227644953768236738e3a0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "79f5babb-1b6c-4bf8-a584-139d89a5ed5d"
+  ]
+}

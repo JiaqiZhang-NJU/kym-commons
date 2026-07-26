@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "30888f32-8250-4309-8a1d-e43952316cb0",
+  "title": "wordy",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "wordy",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/wordy",
+      "fileName": "wordy",
+      "mediaType": null,
+      "sizeBytes": 44,
+      "sha256": "06cee75dcb8d7732507a8e6e7a53a3f7c3f399c0e86557e98dc40d7aab36532c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "30888f32-8250-4309-8a1d-e43952316cb0"
+  ]
+}

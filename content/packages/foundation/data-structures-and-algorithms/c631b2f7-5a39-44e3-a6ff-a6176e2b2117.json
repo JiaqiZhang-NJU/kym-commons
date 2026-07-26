@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c631b2f7-5a39-44e3-a6ff-a6176e2b2117",
+  "title": "2019数据结构期中",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2019",
+    "sortKey": "2019-2019-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2019数据结构期中",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/2019数据结构期中.pdf",
+      "fileName": "2019数据结构期中.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 204348,
+      "sha256": "dd3e7d69bedf8a06f644364b47fd516d2410271af7d7f110ee3e75d21810ab87"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c631b2f7-5a39-44e3-a6ff-a6176e2b2117"
+  ]
+}

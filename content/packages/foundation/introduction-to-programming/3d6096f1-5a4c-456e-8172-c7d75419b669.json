@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "3d6096f1-5a4c-456e-8172-c7d75419b669",
+  "title": "glue",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "glue",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/glue.c",
+      "fileName": "glue.c",
+      "mediaType": null,
+      "sizeBytes": 457,
+      "sha256": "2b42e8f186852a2ff46d9f5fa12f7d105ebe9afe7d1e6f25378ef7595e2d74f3"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3d6096f1-5a4c-456e-8172-c7d75419b669"
+  ]
+}

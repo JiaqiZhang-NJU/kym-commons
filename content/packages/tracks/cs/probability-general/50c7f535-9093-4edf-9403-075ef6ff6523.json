@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "50c7f535-9093-4edf-9403-075ef6ff6523",
+  "title": "期末样卷答案",
+  "summary": "来源于 （大班）概率论与数理统计 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末样卷答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-general/finals/期末样卷答案.pdf",
+      "fileName": "期末样卷答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2639703,
+      "sha256": "5110837aeecb5a479b8bad38435b293aae98d28c96526fdb9ccf32a788f0dcc2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "50c7f535-9093-4edf-9403-075ef6ff6523"
+  ]
+}

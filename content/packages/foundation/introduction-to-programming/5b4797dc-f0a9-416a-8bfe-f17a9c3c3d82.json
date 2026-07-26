@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "5b4797dc-f0a9-416a-8bfe-f17a9c3c3d82",
+  "title": "break",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "break",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/break.c",
+      "fileName": "break.c",
+      "mediaType": null,
+      "sizeBytes": 545,
+      "sha256": "512edd7701818147ed271e3bc08cf3d76fd0591f9b0bd02a1d31e318cd5a6239"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5b4797dc-f0a9-416a-8bfe-f17a9c3c3d82"
+  ]
+}

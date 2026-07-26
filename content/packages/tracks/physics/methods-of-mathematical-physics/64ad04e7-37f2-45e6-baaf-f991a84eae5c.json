@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "64ad04e7-37f2-45e6-baaf-f991a84eae5c",
+  "title": "2023-2024春季学期匡亚明学院数学物理方法期中试卷",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "methods-of-mathematical-physics"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023-2024",
+    "sortKey": "2023-2024-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023-2024春季学期匡亚明学院数学物理方法期中试卷",
+      "role": "primary",
+      "href": "/files/tracks/physics/methods-of-mathematical-physics/midterms/2023-2024春季学期匡亚明学院数学物理方法期中试卷.pdf",
+      "fileName": "2023-2024春季学期匡亚明学院数学物理方法期中试卷.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 318293,
+      "sha256": "b773e7ffb5294ec712f1c07b49f060ca2e4eb5bde058da9d402f3ee90d44804b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "64ad04e7-37f2-45e6-baaf-f991a84eae5c"
+  ]
+}

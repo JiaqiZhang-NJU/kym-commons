@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-sol12-14-pdf",
+  "title": "sol12-14.pdf",
+  "summary": "大学物理上作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol12-14.pdf",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/assignment-solutions/sol12-14.pdf",
+      "fileName": "sol12-14.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 435189,
+      "sha256": "ec235dd4bc5879d65b04aa259f94f79179dff601dacc73337ef80727839bb1cc"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-sol12-14-pdf"
+  ]
+}

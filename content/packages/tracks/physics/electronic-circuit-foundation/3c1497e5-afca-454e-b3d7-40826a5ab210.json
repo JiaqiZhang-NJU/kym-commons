@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "3c1497e5-afca-454e-b3d7-40826a5ab210",
+  "title": "电子电路基础20-2-FG",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electronic-circuit-foundation"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "电子电路基础20-2-FG",
+      "role": "primary",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础20-2-FG.pptx",
+      "fileName": "电子电路基础20-2-FG.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 2075488,
+      "sha256": "a01e13a8a7787761c59a90aa66ff1f507681fb200b2ca34b8234027c7673569b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3c1497e5-afca-454e-b3d7-40826a5ab210"
+  ]
+}

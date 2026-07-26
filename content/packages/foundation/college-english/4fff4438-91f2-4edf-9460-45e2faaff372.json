@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "4fff4438-91f2-4edf-9460-45e2faaff372",
+  "title": "南京大学大学英语期末考试样卷",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "college-english"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "南京大学大学英语期末考试样卷",
+      "role": "primary",
+      "href": "/files/foundation/college-english/finals/南京大学大学英语期末考试样卷.pdf",
+      "fileName": "南京大学大学英语期末考试样卷.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1531874,
+      "sha256": "abe314dbdf86061868bbe2b124309bbed091a0c6887bccb07d2a696c4face669"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "4fff4438-91f2-4edf-9460-45e2faaff372"
+  ]
+}

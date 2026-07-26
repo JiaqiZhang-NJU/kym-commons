@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "2fed3c5e-1569-4d1e-92b1-32a2146d1380",
+  "title": "马克思主义基本原理 (2)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "marxism"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "马克思主义基本原理 (2)",
+      "role": "primary",
+      "href": "/files/foundation/marxism/materials/马克思主义基本原理 (2).pdf",
+      "fileName": "马克思主义基本原理 (2).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 512167,
+      "sha256": "2c3ccf7369132d13ae9361a359fa482b66b7e0c555553b9b7c30eab4128d6e09"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "2fed3c5e-1569-4d1e-92b1-32a2146d1380"
+  ]
+}

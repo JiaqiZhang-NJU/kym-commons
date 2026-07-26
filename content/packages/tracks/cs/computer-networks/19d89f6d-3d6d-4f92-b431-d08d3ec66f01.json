@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "19d89f6d-3d6d-4f92-b431-d08d3ec66f01",
+  "title": "计网-2018春",
+  "summary": "来源于 计网 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2018春",
+    "sortKey": "2018-2018-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计网-2018春",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/计网-2018春.pdf",
+      "fileName": "计网-2018春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 809386,
+      "sha256": "a5b7af4ef24e246fe418afd538a22d3ec995a57e89e6f49709d16fcdb1ada147"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "19d89f6d-3d6d-4f92-b431-d08d3ec66f01"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "8839839a-9986-4f59-8401-de12af21631f",
+  "title": "25秋微积分I期中（范）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025秋",
+    "sortKey": "2025-2025-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "25秋微积分I期中（范）",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/midterms/25秋微积分I期中（范）.pdf",
+      "fileName": "25秋微积分I期中（范）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 73381,
+      "sha256": "60098655d8cea77f07dd4e6b89dd81f50bb56290e8af4500877f1d0b8b756bf5"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8839839a-9986-4f59-8401-de12af21631f"
+  ]
+}

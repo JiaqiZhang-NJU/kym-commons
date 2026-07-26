@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "953a01bc-7339-4574-9544-a8a27fbf65c9",
+  "title": "manydice",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "manydice",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/manydice.c",
+      "fileName": "manydice.c",
+      "mediaType": null,
+      "sizeBytes": 1556,
+      "sha256": "b656f9401605f3459b98c3d5f17a206aef19b409297d47e75999a7e60e071718"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "953a01bc-7339-4574-9544-a8a27fbf65c9"
+  ]
+}

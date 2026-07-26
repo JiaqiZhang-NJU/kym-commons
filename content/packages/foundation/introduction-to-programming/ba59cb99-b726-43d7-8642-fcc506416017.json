@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ba59cb99-b726-43d7-8642-fcc506416017",
+  "title": "two_func",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "two_func",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/two_func.c",
+      "fileName": "two_func.c",
+      "mediaType": null,
+      "sizeBytes": 404,
+      "sha256": "fda1a90802a94207a4c79c282082a2f9190e60783580d6f7954cd8f3b256096f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ba59cb99-b726-43d7-8642-fcc506416017"
+  ]
+}

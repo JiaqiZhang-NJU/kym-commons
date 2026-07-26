@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0013",
+  "title": "21级微积分上期中.docx",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "21级微积分上期中.docx",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/midterms/21级微积分上期中.docx",
+      "fileName": "21级微积分上期中.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 1759602,
+      "sha256": "0ea8e50a724885f7594aeeea8f42eb2c5f4d9d248173b01e1b0ee46873d5263c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0013"
+  ]
+}

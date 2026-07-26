@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "55c25381-db91-4c62-a47b-406b1e63600c",
+  "title": "colddays",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "colddays",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/colddays.c",
+      "fileName": "colddays.c",
+      "mediaType": null,
+      "sizeBytes": 672,
+      "sha256": "0e00b1cf93171b53442a8842c07741c7aae41432eb307a608f625a20dfbe04c7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "55c25381-db91-4c62-a47b-406b1e63600c"
+  ]
+}

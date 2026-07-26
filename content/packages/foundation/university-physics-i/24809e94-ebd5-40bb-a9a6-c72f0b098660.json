@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "24809e94-ebd5-40bb-a9a6-c72f0b098660",
+  "title": "UP1_26final",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "UP1_26final",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/finals/UP1_26final.pdf",
+      "fileName": "UP1_26final.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 82994,
+      "sha256": "1dca03cbfacf664be55e744b4e7df7950f199d83152d09000c81778c9e44aa79"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "24809e94-ebd5-40bb-a9a6-c72f0b098660"
+  ]
+}

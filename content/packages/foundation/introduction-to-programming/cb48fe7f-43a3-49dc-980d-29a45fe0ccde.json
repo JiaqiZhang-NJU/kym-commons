@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "cb48fe7f-43a3-49dc-980d-29a45fe0ccde",
+  "title": "bottles",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "bottles",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/bottles.c",
+      "fileName": "bottles.c",
+      "mediaType": null,
+      "sizeBytes": 373,
+      "sha256": "14b3bb09c12f7928ad7f7a3cecad592e26bb506d8b5112b7106c90a2f13a92b1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "cb48fe7f-43a3-49dc-980d-29a45fe0ccde"
+  ]
+}

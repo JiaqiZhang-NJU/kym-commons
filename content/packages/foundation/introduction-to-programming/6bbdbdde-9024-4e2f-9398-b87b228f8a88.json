@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "6bbdbdde-9024-4e2f-9398-b87b228f8a88",
+  "title": "funds3",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "funds3",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/funds3.c",
+      "fileName": "funds3.c",
+      "mediaType": null,
+      "sizeBytes": 568,
+      "sha256": "443fcf25239f1bcea89a587bda0139141a48a00c93411c1809be784ff8c19694"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "6bbdbdde-9024-4e2f-9398-b87b228f8a88"
+  ]
+}

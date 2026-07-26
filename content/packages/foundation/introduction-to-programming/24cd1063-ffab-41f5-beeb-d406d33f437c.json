@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "24cd1063-ffab-41f5-beeb-d406d33f437c",
+  "title": "异步社区e读版电子书和在线编程练习环境领取方式",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "异步社区e读版电子书和在线编程练习环境领取方式",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/异步社区e读版电子书和在线编程练习环境领取方式.pdf",
+      "fileName": "异步社区e读版电子书和在线编程练习环境领取方式.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 393131,
+      "sha256": "e9399de271009af984aa73c3dc65834da7ebea5aa10ff2dc3e244e84b4c6d8a8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "24cd1063-ffab-41f5-beeb-d406d33f437c"
+  ]
+}

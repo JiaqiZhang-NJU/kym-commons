@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "29bddad9-04c4-414b-bcee-5eecd07d8dd2",
+  "title": "2013_软件学院_数据库技术试卷",
+  "summary": "来源于 数据库概论 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "database-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2013",
+    "sortKey": "2013-2013-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2013_软件学院_数据库技术试卷",
+      "role": "primary",
+      "href": "/files/tracks/cs/database-systems/materials/2013_软件学院_数据库技术试卷.pdf",
+      "fileName": "2013_软件学院_数据库技术试卷.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 387019,
+      "sha256": "6bf59fee8e5a77b028b4ffe36d8a84349899ac0cd53cdbd6f938a0a18a2b1c2d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "29bddad9-04c4-414b-bcee-5eecd07d8dd2"
+  ]
+}

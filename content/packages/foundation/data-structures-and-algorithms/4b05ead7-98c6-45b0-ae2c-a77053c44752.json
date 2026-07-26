@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "4b05ead7-98c6-45b0-ae2c-a77053c44752",
+  "title": "2008年数据结构期末试卷",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2008年",
+    "sortKey": "2008-2008-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2008年数据结构期末试卷",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/2008年数据结构期末试卷.doc",
+      "fileName": "2008年数据结构期末试卷.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 61440,
+      "sha256": "08ebd32167709628fba6be7a147e30c42b1bead8d99166e9fe9a0e066a732f1a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "4b05ead7-98c6-45b0-ae2c-a77053c44752"
+  ]
+}

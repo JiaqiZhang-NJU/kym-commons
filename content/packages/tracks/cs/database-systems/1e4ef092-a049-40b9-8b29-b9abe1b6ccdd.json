@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "1e4ef092-a049-40b9-8b29-b9abe1b6ccdd",
+  "title": "2024数据库样卷",
+  "summary": "来源于 数据库概论 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "database-systems"
+  },
+  "categorySlug": "sample-exams",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024",
+    "sortKey": "2024-2024-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2024数据库样卷",
+      "role": "primary",
+      "href": "/files/tracks/cs/database-systems/sample-exams/2024数据库样卷.pdf",
+      "fileName": "2024数据库样卷.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 379665,
+      "sha256": "ee10683ae2e58fcddde9bc4ba588939ef9a87c6b7c0fd6f429fad5897b4c592e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "1e4ef092-a049-40b9-8b29-b9abe1b6ccdd"
+  ]
+}

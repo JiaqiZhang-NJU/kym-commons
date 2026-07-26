@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0053",
+  "title": "蚁群算法.rar",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "蚁群算法.rar",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/蚁群算法.rar",
+      "fileName": "蚁群算法.rar",
+      "mediaType": "application/vnd.rar",
+      "sizeBytes": 4649846,
+      "sha256": "479a5691a9182a83a033df512734c31dcecf916d0a46004dbfd64cf569fe99fa"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0053"
+  ]
+}

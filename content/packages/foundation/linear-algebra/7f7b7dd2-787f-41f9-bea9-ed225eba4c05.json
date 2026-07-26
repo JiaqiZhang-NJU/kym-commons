@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "7f7b7dd2-787f-41f9-bea9-ed225eba4c05",
+  "title": "2022-2023第一学期线代期末试卷及答案复习版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022-2023",
+    "sortKey": "2022-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022-2023第一学期线代期末试卷及答案复习版",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/finals/2022-2023第一学期线代期末试卷及答案复习版.pdf",
+      "fileName": "2022-2023第一学期线代期末试卷及答案复习版.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 482662,
+      "sha256": "d9da451014f5f212eda82f00adaa759d97dc4210ad250d07ad99dd4690387d29"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7f7b7dd2-787f-41f9-bea9-ed225eba4c05"
+  ]
+}

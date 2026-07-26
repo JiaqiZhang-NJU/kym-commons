@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b68b0712-5c03-4355-a780-a14e9d55e5de",
+  "title": "电子电路基础10-模引",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electronic-circuit-foundation"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "电子电路基础10-模引",
+      "role": "primary",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/电子电路基础10-模引.pptx",
+      "fileName": "电子电路基础10-模引.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1618553,
+      "sha256": "0966a7e999cf391288ce6986bd8dc2878019bde495b4f91002918b6cbe2541a0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b68b0712-5c03-4355-a780-a14e9d55e5de"
+  ]
+}

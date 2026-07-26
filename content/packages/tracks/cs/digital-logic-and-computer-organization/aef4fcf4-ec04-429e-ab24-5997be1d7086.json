@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "aef4fcf4-ec04-429e-ab24-5997be1d7086",
+  "title": "数字逻辑与计算机组成 习题解答与实验教程 (袁春风 等主编) (Z-Library)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "digital-logic-and-computer-organization"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数字逻辑与计算机组成 习题解答与实验教程 (袁春风 等主编) (Z-Library)",
+      "role": "primary",
+      "href": "/files/tracks/cs/digital-logic-and-computer-organization/assignments/数字逻辑与计算机组成 习题解答与实验教程 (袁春风 等主编) (Z-Library).pdf",
+      "fileName": "数字逻辑与计算机组成 习题解答与实验教程 (袁春风 等主编) (Z-Library).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 67252677,
+      "sha256": "58260d1b4a2bfc3142cec9eeec6918e2269ee92ec9ccb79cfa92c88b89e716bb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "aef4fcf4-ec04-429e-ab24-5997be1d7086"
+  ]
+}

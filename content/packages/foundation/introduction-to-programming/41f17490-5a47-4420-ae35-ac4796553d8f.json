@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "41f17490-5a47-4420-ae35-ac4796553d8f",
+  "title": "postage",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "postage",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/postage.c",
+      "fileName": "postage.c",
+      "mediaType": null,
+      "sizeBytes": 379,
+      "sha256": "445bc33ed22d9ebc1d0e0d1ef2e9e7d833af977d6dfd5329413b02fda4d5dfbf"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "41f17490-5a47-4420-ae35-ac4796553d8f"
+  ]
+}

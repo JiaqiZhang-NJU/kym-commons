@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "e34922fb-2b44-4d4c-9c86-953be8c5f193",
+  "title": "4Catalan数_helang",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "4Catalan数_helang",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/4Catalan数_helang.ppt",
+      "fileName": "4Catalan数_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 572416,
+      "sha256": "9d522694a8fa4108d0b98057687673149c370e7d8a10f063086a9eb31675aa52"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "e34922fb-2b44-4d4c-9c86-953be8c5f193"
+  ]
+}

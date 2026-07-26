@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "9690fcc7-6139-4f18-bfb3-1abc7274ef3e",
+  "title": "匡亚明学院2025级1-3学期课程清单",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "other",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025级",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "匡亚明学院2025级1-3学期课程清单",
+      "role": "primary",
+      "href": "/files/tracks/other/general-resources/materials/匡亚明学院2025级1-3学期课程清单.pdf",
+      "fileName": "匡亚明学院2025级1-3学期课程清单.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 48159,
+      "sha256": "bec4344546ccb25deb87fb2d2ecb708ef03a5dc8e6a8572cd16848ece8c1579f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9690fcc7-6139-4f18-bfb3-1abc7274ef3e"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "8032d3e8-cf25-4835-9372-397b12550937",
+  "title": "南京大学大学英语期末考试大纲样卷.听力录音 (1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "college-english"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "南京大学大学英语期末考试大纲样卷.听力录音 (1)",
+      "role": "primary",
+      "href": "/files/foundation/college-english/finals/南京大学大学英语期末考试大纲样卷.听力录音 (1).mp3",
+      "fileName": "南京大学大学英语期末考试大纲样卷.听力录音 (1).mp3",
+      "mediaType": "audio/mpeg",
+      "sizeBytes": 7956817,
+      "sha256": "8c7c3d015e22651e116579974e233001e0a8218b76606943200f13e030dcf2e8"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8032d3e8-cf25-4835-9372-397b12550937"
+  ]
+}

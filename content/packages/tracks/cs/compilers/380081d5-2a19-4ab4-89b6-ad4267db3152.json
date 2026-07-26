@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "380081d5-2a19-4ab4-89b6-ad4267db3152",
+  "title": "编译原理-2023春",
+  "summary": "来源于 编译原理 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "compilers"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023春",
+    "sortKey": "2023-2023-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "编译原理-2023春",
+      "role": "primary",
+      "href": "/files/tracks/cs/compilers/materials/编译原理-2023春.pdf",
+      "fileName": "编译原理-2023春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 149613,
+      "sha256": "fe642c0e91162a0658c753887542d4965fc3b38ad97d27a401bad5189a8bbf59"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "380081d5-2a19-4ab4-89b6-ad4267db3152"
+  ]
+}

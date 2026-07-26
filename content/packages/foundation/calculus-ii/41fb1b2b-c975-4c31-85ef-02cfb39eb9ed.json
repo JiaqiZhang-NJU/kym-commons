@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "41fb1b2b-c975-4c31-85ef-02cfb39eb9ed",
+  "title": "微积分二复习参考",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-ii"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "微积分二复习参考",
+      "role": "primary",
+      "href": "/files/foundation/calculus-ii/materials/微积分二复习参考.txt",
+      "fileName": "微积分二复习参考.txt",
+      "mediaType": "text/plain",
+      "sizeBytes": 780,
+      "sha256": "46694f39f3b2f23af433e4dcfb91273733eaf238c99a65e21bef53bc2f0c7835"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "41fb1b2b-c975-4c31-85ef-02cfb39eb9ed"
+  ]
+}

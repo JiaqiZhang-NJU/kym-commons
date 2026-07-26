@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0022",
+  "title": "贝叶斯方法  概率编程与贝叶斯推断.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "贝叶斯方法  概率编程与贝叶斯推断.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/贝叶斯方法  概率编程与贝叶斯推断.pdf",
+      "fileName": "贝叶斯方法  概率编程与贝叶斯推断.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 36129777,
+      "sha256": "9f35fd6c5db7b75f56f317e5705da8426abf01a6c02baa2793c1a0c9283ab366"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0022"
+  ]
+}

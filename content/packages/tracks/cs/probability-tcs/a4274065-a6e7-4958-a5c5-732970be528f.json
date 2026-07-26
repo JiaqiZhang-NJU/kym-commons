@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "a4274065-a6e7-4958-a5c5-732970be528f",
+  "title": "概率论与数理统计-2024春-期末",
+  "summary": "来源于 （TCS）概率论与数理统计 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "probability-tcs"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024春",
+    "sortKey": "2024-2024-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "概率论与数理统计-2024春-期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/probability-tcs/finals/概率论与数理统计-2024春-期末.pdf",
+      "fileName": "概率论与数理统计-2024春-期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 243911,
+      "sha256": "f8bc785fe71310c67e4d08f5ac641ac3ab47c9726d70638322212072acc22ef7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a4274065-a6e7-4958-a5c5-732970be528f"
+  ]
+}

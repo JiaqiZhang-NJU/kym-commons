@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "95aaf82b-a738-4557-827b-b5be104fb264",
+  "title": "Computational_Thinking_What_and_Why",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Computational_Thinking_What_and_Why",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/Computational_Thinking_What_and_Why.pdf",
+      "fileName": "Computational_Thinking_What_and_Why.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 50915,
+      "sha256": "08dcc8e58bd3af166d7d5fa0a273936e669015932ceb98ada34ece82b9f135d1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "95aaf82b-a738-4557-827b-b5be104fb264"
+  ]
+}

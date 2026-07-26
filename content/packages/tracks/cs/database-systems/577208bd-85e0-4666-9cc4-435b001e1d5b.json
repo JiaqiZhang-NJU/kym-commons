@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "577208bd-85e0-4666-9cc4-435b001e1d5b",
+  "title": "2018-2019_南京大学计算机系数据库期末考试_参考答案",
+  "summary": "来源于 数据库概论 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "database-systems"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2018",
+    "sortKey": "2018-2018-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2018-2019_南京大学计算机系数据库期末考试_参考答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/database-systems/finals/2018-2019_南京大学计算机系数据库期末考试_参考答案.pdf",
+      "fileName": "2018-2019_南京大学计算机系数据库期末考试_参考答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 270359,
+      "sha256": "cdb42a9a5e7da5c339d1f7204f3f856d40d30cf023c0f78819fe85d54bbe0ce0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "577208bd-85e0-4666-9cc4-435b001e1d5b"
+  ]
+}

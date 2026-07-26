@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0148",
+  "title": "信息论基础（原书第二版）.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "information-theory"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "信息论基础（原书第二版）.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/information-theory/materials/信息论基础（原书第二版）.pdf",
+      "fileName": "信息论基础（原书第二版）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 44547512,
+      "sha256": "ff7ff26a75a0254c6c8d8adb370acd4162247ce0953563898e4f7d70528f1c95"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0148"
+  ]
+}

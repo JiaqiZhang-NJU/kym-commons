@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "0c9da625-c09a-49a2-8df2-ea169ef86beb",
+  "title": "vowels",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "vowels",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/vowels.c",
+      "fileName": "vowels.c",
+      "mediaType": null,
+      "sizeBytes": 987,
+      "sha256": "ec10da1f8989aeda94552a31b0a8f0e10b3b42d62e95f017f9111432f5c00c88"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0c9da625-c09a-49a2-8df2-ea169ef86beb"
+  ]
+}

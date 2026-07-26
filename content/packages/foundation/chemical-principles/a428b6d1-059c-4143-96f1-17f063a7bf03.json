@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "a428b6d1-059c-4143-96f1-17f063a7bf03",
+  "title": "化学原理上 印永嘉 姚天扬 习题解答",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "chemical-principles"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "化学原理上 印永嘉 姚天扬 习题解答",
+      "role": "primary",
+      "href": "/files/foundation/chemical-principles/assignments/化学原理上 印永嘉 姚天扬 习题解答.md",
+      "fileName": "化学原理上 印永嘉 姚天扬 习题解答.md",
+      "mediaType": "text/markdown",
+      "sizeBytes": 39513,
+      "sha256": "838730cad34c415c3d821542e9bacc7f3724df29e980cce2c1de2ecf5402701a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a428b6d1-059c-4143-96f1-17f063a7bf03"
+  ]
+}

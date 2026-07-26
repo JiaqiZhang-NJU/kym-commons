@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "42d5dccc-d521-4cfd-b5a1-0a75450b0561",
+  "title": "编译原理-2025春-实验班",
+  "summary": "来源于 编译原理 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "compilers"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025春",
+    "sortKey": "2025-2025-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "编译原理-2025春-实验班",
+      "role": "primary",
+      "href": "/files/tracks/cs/compilers/materials/编译原理-2025春-实验班.pdf",
+      "fileName": "编译原理-2025春-实验班.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 95589,
+      "sha256": "c08d5758558a992b4b1f8b17656924cfa5d47eeb7ccc18e4e2caf03bce315f61"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "42d5dccc-d521-4cfd-b5a1-0a75450b0561"
+  ]
+}

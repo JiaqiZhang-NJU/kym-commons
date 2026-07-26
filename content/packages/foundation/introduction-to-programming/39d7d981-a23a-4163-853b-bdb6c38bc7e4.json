@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "39d7d981-a23a-4163-853b-bdb6c38bc7e4",
+  "title": "friend",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "friend",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/friend.c",
+      "fileName": "friend.c",
+      "mediaType": null,
+      "sizeBytes": 1237,
+      "sha256": "7aae42ff691fc90f27af07faef6521a304adb721b3e81bfeac378191a61c6f2d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "39d7d981-a23a-4163-853b-bdb6c38bc7e4"
+  ]
+}

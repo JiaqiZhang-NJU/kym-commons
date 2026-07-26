@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "78a2ca17-8378-4498-bf15-99f3f7cfc7e0",
+  "title": "qsorter",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "qsorter",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/qsorter.c",
+      "fileName": "qsorter.c",
+      "mediaType": null,
+      "sizeBytes": 1231,
+      "sha256": "793289fcd27a811d372a12350157006271fb807e3461bef3a421fd5155a0a0e5"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "78a2ca17-8378-4498-bf15-99f3f7cfc7e0"
+  ]
+}

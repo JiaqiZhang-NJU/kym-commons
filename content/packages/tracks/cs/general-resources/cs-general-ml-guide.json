@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "cs-general-ml-guide",
+  "title": "机器学习入门资源整理",
+  "summary": "适合方向入门的课程、教材和工具资源总览。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "featured",
+  "materialType": "科研入门",
+  "term": {
+    "label": "2026 Spring",
+    "sortKey": "2026-2026-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "机器学习入门资源整理",
+      "role": "primary",
+      "href": "https://example.com/cs/ml-guide",
+      "fileName": null,
+      "mediaType": null,
+      "sizeBytes": null,
+      "sha256": null
+    }
+  ],
+  "source": {
+    "kind": "external",
+    "originalUrl": "https://example.com/cs/ml-guide"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "cs-general-ml-guide"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "df97b1df-c21a-4254-b2a6-69e4882a9d37",
+  "title": "匡院25级计算机专业课程清单",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "general-resources"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025级",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "匡院25级计算机专业课程清单",
+      "role": "primary",
+      "href": "/files/tracks/cs/general-resources/materials/匡院25级计算机专业课程清单.xlsx",
+      "fileName": "匡院25级计算机专业课程清单.xlsx",
+      "mediaType": null,
+      "sizeBytes": 10259,
+      "sha256": "e20429f015ac4d9e0f3c1436391229fed63d7f744c1eebc9f63cb38ef49ae612"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "df97b1df-c21a-4254-b2a6-69e4882a9d37"
+  ]
+}

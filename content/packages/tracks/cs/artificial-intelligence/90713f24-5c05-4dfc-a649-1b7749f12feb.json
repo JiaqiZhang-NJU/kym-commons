@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "90713f24-5c05-4dfc-a649-1b7749f12feb",
+  "title": "HDR and LDR Images（高动态范围图像及对应的低动态范围图像）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "HDR and LDR Images（高动态范围图像及对应的低动态范围图像）",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/HDR and LDR Images（高动态范围图像及对应的低动态范围图像）.zip",
+      "fileName": "HDR and LDR Images（高动态范围图像及对应的低动态范围图像）.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 52323738,
+      "sha256": "f822cea5389554b2ed2313d3a8919c59924b668ef1fd9064da17b33f7ca61293"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "90713f24-5c05-4dfc-a649-1b7749f12feb"
+  ]
+}

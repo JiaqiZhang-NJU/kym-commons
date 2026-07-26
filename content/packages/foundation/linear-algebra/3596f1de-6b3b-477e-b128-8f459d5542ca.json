@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "3596f1de-6b3b-477e-b128-8f459d5542ca",
+  "title": "20241116线性代数期中李耀文班80份- (1)(1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024",
+    "sortKey": "2024-2024-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "20241116线性代数期中李耀文班80份- (1)(1)",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/midterms/20241116线性代数期中李耀文班80份- (1)(1).pdf",
+      "fileName": "20241116线性代数期中李耀文班80份- (1)(1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 178582,
+      "sha256": "4cfab244a8d6c135172755ee52e4d18e57799ba08e1da915999e96b96e5e5a7b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "3596f1de-6b3b-477e-b128-8f459d5542ca"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "bc60e5e5-075f-496d-83fb-68faab5316ba",
+  "title": "2011年数据结构期末试卷及参考答案",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2011年",
+    "sortKey": "2011-2011-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2011年数据结构期末试卷及参考答案",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2011年数据结构期末试卷及参考答案.ppt",
+      "fileName": "2011年数据结构期末试卷及参考答案.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 163328,
+      "sha256": "05808c07f50b215908e574222efebedfeeaffe1640c432ce1d4a5cfd59aa8502"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "bc60e5e5-075f-496d-83fb-68faab5316ba"
+  ]
+}

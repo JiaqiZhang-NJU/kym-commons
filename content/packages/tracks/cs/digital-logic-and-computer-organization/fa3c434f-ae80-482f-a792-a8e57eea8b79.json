@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "fa3c434f-ae80-482f-a792-a8e57eea8b79",
+  "title": "数字逻辑与计算机组成 (袁春风 主编) (Z-Library)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "digital-logic-and-computer-organization"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数字逻辑与计算机组成 (袁春风 主编) (Z-Library)",
+      "role": "primary",
+      "href": "/files/tracks/cs/digital-logic-and-computer-organization/materials/数字逻辑与计算机组成 (袁春风 主编) (Z-Library).pdf",
+      "fileName": "数字逻辑与计算机组成 (袁春风 主编) (Z-Library).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 65808168,
+      "sha256": "8d43922056e28dc6ecbfdf6c9b79d4f73ca07a779a9bda2bd5fd36e6a4afd5ff"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fa3c434f-ae80-482f-a792-a8e57eea8b79"
+  ]
+}

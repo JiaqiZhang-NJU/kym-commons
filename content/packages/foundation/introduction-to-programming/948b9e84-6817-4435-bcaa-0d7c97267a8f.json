@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "948b9e84-6817-4435-bcaa-0d7c97267a8f",
+  "title": "doubleincl",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "doubleincl",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/doubleincl.c",
+      "fileName": "doubleincl.c",
+      "mediaType": null,
+      "sizeBytes": 273,
+      "sha256": "e324fc44c17826c48483d7ac6479425b88489edc3d9f820bafdab973136ce4fd"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "948b9e84-6817-4435-bcaa-0d7c97267a8f"
+  ]
+}

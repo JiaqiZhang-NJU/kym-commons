@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "96e1030a-bc78-4880-a901-2a1a16abbcb5",
+  "title": "factor",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "factor",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/factor.c",
+      "fileName": "factor.c",
+      "mediaType": null,
+      "sizeBytes": 1077,
+      "sha256": "459b7012c98f56a214b18000824968631eb9b7b4afafe250567cf1029aad42f3"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "96e1030a-bc78-4880-a901-2a1a16abbcb5"
+  ]
+}

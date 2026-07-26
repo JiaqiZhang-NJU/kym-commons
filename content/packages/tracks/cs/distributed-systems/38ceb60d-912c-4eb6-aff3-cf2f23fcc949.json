@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "38ceb60d-912c-4eb6-aff3-cf2f23fcc949",
+  "title": "6_m4的P2为接受段",
+  "summary": "来源于 分布式系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "distributed-systems"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "6_m4的P2为接受段",
+      "role": "primary",
+      "href": "/files/tracks/cs/distributed-systems/assignments/6_m4的P2为接受段.jpg",
+      "fileName": "6_m4的P2为接受段.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1775942,
+      "sha256": "6fe499c21b98d8ed913550d54b4d349fb354c30c8447ad4888aa2204adfc747c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "38ceb60d-912c-4eb6-aff3-cf2f23fcc949"
+  ]
+}

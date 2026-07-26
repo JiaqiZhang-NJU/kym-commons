@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "cs-data-structures-review",
+  "title": "数据结构期末复习提要",
+  "summary": "包含链表、树、图与复杂度分析的复习框架。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "data-structures"
+  },
+  "categorySlug": "featured",
+  "materialType": "参考资料",
+  "term": {
+    "label": "2025 Fall",
+    "sortKey": "2025-2025-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "数据结构期末复习提要",
+      "role": "primary",
+      "href": "https://example.com/cs/data-structures-review",
+      "fileName": null,
+      "mediaType": null,
+      "sizeBytes": null,
+      "sha256": null
+    }
+  ],
+  "source": {
+    "kind": "external",
+    "originalUrl": "https://example.com/cs/data-structures-review"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "cs-data-structures-review"
+  ]
+}

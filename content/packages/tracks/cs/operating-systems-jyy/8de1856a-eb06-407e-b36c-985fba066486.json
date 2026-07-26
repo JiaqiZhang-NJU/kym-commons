@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8de1856a-eb06-407e-b36c-985fba066486",
+  "title": "jyyos 2025期末",
+  "summary": "来源于 操作系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-jyy"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "jyyos 2025期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-jyy/finals/jyyos 2025期末.pdf",
+      "fileName": "jyyos 2025期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 302091,
+      "sha256": "d781425a06a86787e9ebc4c2cd408c95e4193330c6afa284ffbf6d4c290c8973"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8de1856a-eb06-407e-b36c-985fba066486"
+  ]
+}

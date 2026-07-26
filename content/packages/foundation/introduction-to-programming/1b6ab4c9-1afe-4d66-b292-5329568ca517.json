@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "1b6ab4c9-1afe-4d66-b292-5329568ca517",
+  "title": "lethead1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "lethead1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/lethead1.c",
+      "fileName": "lethead1.c",
+      "mediaType": null,
+      "sizeBytes": 555,
+      "sha256": "6035e847a851b937d2cf37535463506852ddc35a00064ef630fb58dfd897e4b4"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "1b6ab4c9-1afe-4d66-b292-5329568ca517"
+  ]
+}

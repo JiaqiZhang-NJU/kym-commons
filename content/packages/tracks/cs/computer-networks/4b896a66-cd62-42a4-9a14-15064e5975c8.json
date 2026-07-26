@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "4b896a66-cd62-42a4-9a14-15064e5975c8",
+  "title": "UNIX网络编程(卷一)（第三版）（高清带目录）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "UNIX网络编程(卷一)（第三版）（高清带目录）",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/UNIX网络编程(卷一)（第三版）（高清带目录）.zip",
+      "fileName": "UNIX网络编程(卷一)（第三版）（高清带目录）.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 92029740,
+      "sha256": "265c9bce9a981e8cbc63ad6c9097e48aa0710a0872ae32d8e9026c908e10c861"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "4b896a66-cd62-42a4-9a14-15064e5975c8"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "befb6715-52eb-4af6-8a84-3d16c0e1fde2",
+  "title": "2023_Solutions_to_Crypto_Midterm",
+  "summary": "来源于 密码学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "cryptography"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023_Solutions_to_Crypto_Midterm",
+      "role": "primary",
+      "href": "/files/tracks/cs/cryptography/materials/2023_Solutions_to_Crypto_Midterm.pdf",
+      "fileName": "2023_Solutions_to_Crypto_Midterm.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 333602,
+      "sha256": "93dcb4b06bf0b966107f0616b4852069f74079721d73e23afa4e63094a28fe77"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "befb6715-52eb-4af6-8a84-3d16c0e1fde2"
+  ]
+}

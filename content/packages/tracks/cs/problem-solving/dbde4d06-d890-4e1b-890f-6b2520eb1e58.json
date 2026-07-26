@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "dbde4d06-d890-4e1b-890f-6b2520eb1e58",
+  "title": "2066",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2066",
+    "sortKey": "2066-2066-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2066",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/2066.cpp",
+      "fileName": "2066.cpp",
+      "mediaType": null,
+      "sizeBytes": 729,
+      "sha256": "526a8551fdc1a0775b2ea7fbfe5e8dfecac5c8fc3beb34d5eca29de33a273622"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "dbde4d06-d890-4e1b-890f-6b2520eb1e58"
+  ]
+}

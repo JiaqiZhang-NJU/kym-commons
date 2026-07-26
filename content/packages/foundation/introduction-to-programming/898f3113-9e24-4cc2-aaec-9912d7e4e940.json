@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "898f3113-9e24-4cc2-aaec-9912d7e4e940",
+  "title": "tree",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "tree",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/tree.h",
+      "fileName": "tree.h",
+      "mediaType": null,
+      "sizeBytes": 3561,
+      "sha256": "88c499db59dfee73052f1dc723e76b229a53538cdd8f9e8a425ebf0e23dac2bd"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "898f3113-9e24-4cc2-aaec-9912d7e4e940"
+  ]
+}

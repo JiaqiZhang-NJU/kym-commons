@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0c52e1c9-39e9-44be-9eed-0bf44edeab6f",
+  "title": "2023-2024春季学期匡亚明学院数学物理方法期末试题（吴盛俊）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "methods-of-mathematical-physics"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023-2024",
+    "sortKey": "2023-2024-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023-2024春季学期匡亚明学院数学物理方法期末试题（吴盛俊）",
+      "role": "primary",
+      "href": "/files/tracks/physics/methods-of-mathematical-physics/finals/2023-2024春季学期匡亚明学院数学物理方法期末试题（吴盛俊）.pdf",
+      "fileName": "2023-2024春季学期匡亚明学院数学物理方法期末试题（吴盛俊）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 85135,
+      "sha256": "5b5f167b8ffc6d99f32b10c704794ee00305c0c4af3839bb3dbfb22cbef1e4b6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0c52e1c9-39e9-44be-9eed-0bf44edeab6f"
+  ]
+}

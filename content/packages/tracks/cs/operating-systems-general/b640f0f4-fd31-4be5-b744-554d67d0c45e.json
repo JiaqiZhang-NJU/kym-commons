@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b640f0f4-fd31-4be5-b744-554d67d0c45e",
+  "title": "2019期末",
+  "summary": "来源于 操作系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-general"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2019",
+    "sortKey": "2019-2019-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2019期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-general/finals/2019期末.pdf",
+      "fileName": "2019期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 370867,
+      "sha256": "7175ccbc16efc402316106be90c957351e8bb7e99d6235ced1de47bc52cf2fdb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b640f0f4-fd31-4be5-b744-554d67d0c45e"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "32a74e9c-4a39-4b68-86c4-44bcb077d123",
+  "title": "大学数学典型题解析（高等数学分册）陈仲 范红军",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-i"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "大学数学典型题解析（高等数学分册）陈仲 范红军",
+      "role": "primary",
+      "href": "/files/foundation/calculus-i/materials/大学数学典型题解析（高等数学分册）陈仲 范红军.pdf",
+      "fileName": "大学数学典型题解析（高等数学分册）陈仲 范红军.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 22630434,
+      "sha256": "2b0577731f90ebe2f339235b36f550cdd5e3e9f52ab5ea13bb5ccd3563986dbf"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "32a74e9c-4a39-4b68-86c4-44bcb077d123"
+  ]
+}

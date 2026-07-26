@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-review-notes-1-pdf",
+  "title": "大物复习（上）",
+  "summary": "大学物理上复习提要与课程复习资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "review",
+  "materialType": "复习资料",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "大物复习（上）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/review/review-notes-1.pdf",
+      "fileName": "review-notes-1.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 6088332,
+      "sha256": "d48cd1bedf93babcd8d7b9f44a7572dc8074b3170f8d5f03b526113a3116bf5e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-review-notes-1-pdf"
+  ]
+}

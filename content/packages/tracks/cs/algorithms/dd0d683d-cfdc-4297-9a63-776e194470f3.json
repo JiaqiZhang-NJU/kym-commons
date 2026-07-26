@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "dd0d683d-cfdc-4297-9a63-776e194470f3",
+  "title": "2023年春算法",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023年",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023年春算法",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/materials/2023年春算法.pdf",
+      "fileName": "2023年春算法.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2903449,
+      "sha256": "cd862f081f1e0600c57057fe231c16540cada6f1040062a008c90c10e6073a3c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "dd0d683d-cfdc-4297-9a63-776e194470f3"
+  ]
+}

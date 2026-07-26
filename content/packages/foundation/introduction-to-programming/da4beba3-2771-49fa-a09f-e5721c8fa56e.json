@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "da4beba3-2771-49fa-a09f-e5721c8fa56e",
+  "title": "sweetie1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sweetie1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/sweetie1.c",
+      "fileName": "sweetie1.c",
+      "mediaType": null,
+      "sizeBytes": 342,
+      "sha256": "308db2b30ed74c1d989f6e5cb058f1baacbc840f922f957070f29224f210941b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "da4beba3-2771-49fa-a09f-e5721c8fa56e"
+  ]
+}

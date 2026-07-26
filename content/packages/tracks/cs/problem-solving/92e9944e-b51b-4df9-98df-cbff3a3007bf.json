@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "92e9944e-b51b-4df9-98df-cbff3a3007bf",
+  "title": "基础搜索2_基本剪枝",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "基础搜索2_基本剪枝",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/基础搜索2_基本剪枝.ppt",
+      "fileName": "基础搜索2_基本剪枝.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 898560,
+      "sha256": "bd6f39b3eb327fd3afbd26fd87e554fdcd06cb80e691848aee07ac8a6b9eb80b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "92e9944e-b51b-4df9-98df-cbff3a3007bf"
+  ]
+}

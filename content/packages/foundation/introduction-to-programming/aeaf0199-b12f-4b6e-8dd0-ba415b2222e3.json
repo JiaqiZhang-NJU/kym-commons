@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "aeaf0199-b12f-4b6e-8dd0-ba415b2222e3",
+  "title": "reducto",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "reducto",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/reducto.c",
+      "fileName": "reducto.c",
+      "mediaType": null,
+      "sizeBytes": 1287,
+      "sha256": "c5271b2a381781fe1bb6b880a1603ed7d991919d1a0ab1f176539f57b1911cc6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "aeaf0199-b12f-4b6e-8dd0-ba415b2222e3"
+  ]
+}

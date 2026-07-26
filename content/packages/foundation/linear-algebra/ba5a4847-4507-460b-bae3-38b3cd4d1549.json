@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ba5a4847-4507-460b-bae3-38b3cd4d1549",
+  "title": "21级线代期中",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2021级",
+    "sortKey": "2021-2021-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "21级线代期中",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/midterms/21级线代期中.pdf",
+      "fileName": "21级线代期中.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 221704,
+      "sha256": "91dc0e22266462d8b61aefeee46c7485fa4cec95b9b2539d81855741d3bb45f6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "ba5a4847-4507-460b-bae3-38b3cd4d1549"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0130",
+  "title": "夏宇闻-Verilog经典教程.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "digital-logic-and-computer-organization"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "夏宇闻-Verilog经典教程.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/digital-logic-and-computer-organization/materials/夏宇闻-Verilog经典教程.pdf",
+      "fileName": "夏宇闻-Verilog经典教程.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1813830,
+      "sha256": "2c9fcad30c0d788b9c8ba70586c9bfa7fcede3c2b6d1caa6fbe387b2ced1c55f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0130"
+  ]
+}

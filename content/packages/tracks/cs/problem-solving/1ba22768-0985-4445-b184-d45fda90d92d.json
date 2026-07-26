@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "1ba22768-0985-4445-b184-d45fda90d92d",
+  "title": "树形结构1_树的概念",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "树形结构1_树的概念",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/树形结构1_树的概念.ppt",
+      "fileName": "树形结构1_树的概念.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1256448,
+      "sha256": "e73c37637106ad02aece46be4e7fb27f5d45036b5fff691c258f088f575824d9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "1ba22768-0985-4445-b184-d45fda90d92d"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0075",
+  "title": "caches.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "caches.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/caches.pdf",
+      "fileName": "caches.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 170064,
+      "sha256": "2160ec0f77c3c70a5a7a8ca00e67a47d58427d83cf60e550736ce063df403f98"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0075"
+  ]
+}

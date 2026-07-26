@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "219d65ff-0bc4-4d91-896e-1fea31d9c9ea",
+  "title": "sum_arr1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sum_arr1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/sum_arr1.c",
+      "fileName": "sum_arr1.c",
+      "mediaType": null,
+      "sizeBytes": 654,
+      "sha256": "38eeefd50f52459459477af5991d50b2a7a69ca2dcdc6abc7dee589c00be05ba"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "219d65ff-0bc4-4d91-896e-1fea31d9c9ea"
+  ]
+}

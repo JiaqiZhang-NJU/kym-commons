@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0d70ac5e-2e00-4b1e-a3e2-5133d22ea135",
+  "title": "计网-2023秋-国际班",
+  "summary": "来源于 计网 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-networks"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023秋",
+    "sortKey": "2023-2023-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "计网-2023秋-国际班",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-networks/materials/计网-2023秋-国际班.pdf",
+      "fileName": "计网-2023秋-国际班.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 519263,
+      "sha256": "f3b998e9b6dda12ddc829676a131a013848a3963d89f00dd257328cc02cc685d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0d70ac5e-2e00-4b1e-a3e2-5133d22ea135"
+  ]
+}

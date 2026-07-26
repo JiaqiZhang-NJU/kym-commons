@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0161",
+  "title": "模拟电路.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "electronic-circuit-foundation"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "模拟电路.pdf",
+      "role": "primary",
+      "href": "/files/tracks/physics/electronic-circuit-foundation/materials/模拟电路.pdf",
+      "fileName": "模拟电路.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 77869548,
+      "sha256": "3124c6dc75f0231d0b973a04ea53c5d981122a9ed6bd91af4187db0524e9a99a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0161"
+  ]
+}

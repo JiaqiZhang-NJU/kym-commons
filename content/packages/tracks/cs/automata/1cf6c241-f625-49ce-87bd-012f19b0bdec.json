@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "1cf6c241-f625-49ce-87bd-012f19b0bdec",
+  "title": "Solution2022",
+  "summary": "来源于 自动机 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "automata"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Solution2022",
+      "role": "primary",
+      "href": "/files/tracks/cs/automata/materials/Solution2022.pdf",
+      "fileName": "Solution2022.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 227230,
+      "sha256": "cd800dcf3f6a212dc46d20b5bb4c62b7a2951457430dc898727f25eae0b4ad45"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "1cf6c241-f625-49ce-87bd-012f19b0bdec"
+  ]
+}

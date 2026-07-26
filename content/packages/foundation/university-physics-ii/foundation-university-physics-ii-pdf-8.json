@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-pdf-8",
+  "title": "角动量理论",
+  "summary": "大学物理下专题讲义与知识点梳理资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "topic-notes",
+  "materialType": "专题讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "角动量理论",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/topic-notes/%E8%A7%92%E5%8A%A8%E9%87%8F%E7%90%86%E8%AE%BA.pdf",
+      "fileName": "角动量理论.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 195551,
+      "sha256": "c56c94af0405ecbd8490e370b576d55e344297bc48026120bb535e7902970696"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": []
+}

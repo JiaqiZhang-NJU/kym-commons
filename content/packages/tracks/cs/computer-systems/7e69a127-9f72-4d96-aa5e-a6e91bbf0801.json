@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "7e69a127-9f72-4d96-aa5e-a6e91bbf0801",
+  "title": "2018级试题答案",
+  "summary": "来源于 计算机系统基础 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2018级",
+    "sortKey": "2018-2018-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2018级试题答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-systems/materials/2018级试题答案.pdf",
+      "fileName": "2018级试题答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 4639714,
+      "sha256": "cf50f58f97635516283c235a5e464ffff6a814ec31de1b1ca7c6b05b35681a16"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7e69a127-9f72-4d96-aa5e-a6e91bbf0801"
+  ]
+}

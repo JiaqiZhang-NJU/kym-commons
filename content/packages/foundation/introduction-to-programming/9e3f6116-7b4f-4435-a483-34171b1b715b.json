@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "9e3f6116-7b4f-4435-a483-34171b1b715b",
+  "title": "min_sec",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "min_sec",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/min_sec.c",
+      "fileName": "min_sec.c",
+      "mediaType": null,
+      "sizeBytes": 731,
+      "sha256": "8f6ebe745710d39493e812b2c381501fdf476451ba330bca6245bf4aba785b08"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9e3f6116-7b4f-4435-a483-34171b1b715b"
+  ]
+}

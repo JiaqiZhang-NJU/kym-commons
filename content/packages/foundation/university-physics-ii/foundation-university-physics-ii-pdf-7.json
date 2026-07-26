@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-pdf-7",
+  "title": "场论分析",
+  "summary": "大学物理下专题讲义与知识点梳理资料。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "topic-notes",
+  "materialType": "专题讲义",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "场论分析",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/topic-notes/%E5%9C%BA%E8%AE%BA%E5%88%86%E6%9E%90.pdf",
+      "fileName": "场论分析.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 754182,
+      "sha256": "11f896998f11783973abb848efb53576670a40cf17ff9e1efab76e6c78afc3e2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": []
+}

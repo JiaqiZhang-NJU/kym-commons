@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "6e82fddc-9926-4c43-a978-41a7b3d378bd",
+  "title": "predef",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "predef",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/predef.c",
+      "fileName": "predef.c",
+      "mediaType": null,
+      "sizeBytes": 506,
+      "sha256": "2287f12d2ded47786bd5e14bc6aab792d4ba584ae114f53c508950976871a4d7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "6e82fddc-9926-4c43-a978-41a7b3d378bd"
+  ]
+}

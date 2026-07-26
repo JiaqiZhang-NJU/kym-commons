@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-upisamplefinal07-pdf",
+  "title": "期末样卷 07",
+  "summary": "大学物理上期末样卷与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "final-samples",
+  "materialType": "期末样卷",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "期末样卷 07",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/finals/UPIsamplefinal07.pdf",
+      "fileName": "UPIsamplefinal07.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 366067,
+      "sha256": "af42b3ee85b63a7b6a05bcc888fe83838030ea8c050532bdcefb0eacccac712e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-upisamplefinal07-pdf"
+  ]
+}

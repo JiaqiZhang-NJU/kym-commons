@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "d160306f-7d63-45a8-9585-28894aa4f684",
+  "title": "cmpflt",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "cmpflt",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/cmpflt.c",
+      "fileName": "cmpflt.c",
+      "mediaType": null,
+      "sizeBytes": 402,
+      "sha256": "f4f4164cdcf8e51712d8ddbe6320826ca7e2d1fd6db1abf3f7dd904ca36ae689"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "d160306f-7d63-45a8-9585-28894aa4f684"
+  ]
+}

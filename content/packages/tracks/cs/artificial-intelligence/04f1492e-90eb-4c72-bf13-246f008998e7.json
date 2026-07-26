@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "04f1492e-90eb-4c72-bf13-246f008998e7",
+  "title": "matconvnet用户手册",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "matconvnet用户手册",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/matconvnet用户手册.pdf",
+      "fileName": "matconvnet用户手册.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1253959,
+      "sha256": "985d0f9cea2951631c58284c35d17fa54c808992021bde7733035bef0f9d07a9"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "04f1492e-90eb-4c72-bf13-246f008998e7"
+  ]
+}

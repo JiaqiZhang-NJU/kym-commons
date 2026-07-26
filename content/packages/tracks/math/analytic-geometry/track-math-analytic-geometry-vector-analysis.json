@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "track-math-analytic-geometry-vector-analysis",
+  "title": "矢量代数与分析",
+  "summary": "来源: 常用教材整理",
+  "placement": {
+    "section": "track",
+    "trackSlug": "math",
+    "courseSlug": "analytic-geometry"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "矢量代数与分析",
+      "role": "primary",
+      "href": "/files/tracks/math/analytic-geometry/materials/矢量代数与分析.pdf",
+      "fileName": "矢量代数与分析.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 9686993,
+      "sha256": "13c5aea709988e18b43f6f224a771913d8fa236fdb62959d06baa3e770122995"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "track-math-analytic-geometry-vector-analysis"
+  ]
+}

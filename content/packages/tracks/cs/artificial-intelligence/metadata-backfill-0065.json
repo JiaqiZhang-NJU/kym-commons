@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0065",
+  "title": "Sprnger机器人手册.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Sprnger机器人手册.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/Sprnger机器人手册.pdf",
+      "fileName": "Sprnger机器人手册.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 89318130,
+      "sha256": "4b73a6847b40995683440c536b014105ceece5cba2dd78bfc8bdab710c6f7927"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0065"
+  ]
+}

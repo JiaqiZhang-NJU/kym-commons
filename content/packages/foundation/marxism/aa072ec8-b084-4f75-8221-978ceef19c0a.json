@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "aa072ec8-b084-4f75-8221-978ceef19c0a",
+  "title": "马原",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "marxism"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "马原",
+      "role": "primary",
+      "href": "/files/foundation/marxism/materials/马原.pdf",
+      "fileName": "马原.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 394765,
+      "sha256": "b5d1787c5c882fb69a9c258bd434cf9db2329a9df3807bbddcd3d6a8d94f54c1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "aa072ec8-b084-4f75-8221-978ceef19c0a"
+  ]
+}

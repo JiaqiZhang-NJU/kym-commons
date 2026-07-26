@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-experiment-introduction-202503",
+  "title": "物理实验（一）绪论202503",
+  "summary": "来源: 常用教材整理",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-experiment"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "物理实验（一）绪论202503",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-experiment/materials/物理实验（一）绪论202503.pdf",
+      "fileName": "物理实验（一）绪论202503.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1989644,
+      "sha256": "81bbf0aabe5084b5a03a42b8dfadc159af43d0fe6b28ee06aac897e55c870760"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-experiment-introduction-202503"
+  ]
+}

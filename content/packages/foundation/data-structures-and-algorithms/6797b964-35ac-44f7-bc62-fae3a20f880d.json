@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "6797b964-35ac-44f7-bc62-fae3a20f880d",
+  "title": "2023年数据结构期末回忆xbf",
+  "summary": "来源于 数据结构 整理资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023年",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2023年数据结构期末回忆xbf",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2023年数据结构期末回忆xbf.docx",
+      "fileName": "2023年数据结构期末回忆xbf.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 33202,
+      "sha256": "7c43cc55c48839c6e81ca3899d48922689d4692a5d7a353aae271bc3dd66f860"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "6797b964-35ac-44f7-bc62-fae3a20f880d"
+  ]
+}

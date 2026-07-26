@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-xsol29-30-pdf",
+  "title": "xsol29-30.pdf",
+  "summary": "大学物理下作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "xsol29-30.pdf",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/assignment-solutions/xsol29-30.pdf",
+      "fileName": "xsol29-30.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 69161,
+      "sha256": "1b536541df6d62ee50ef72ce33e657c7f7c7f763b8b06ead692b3adc2d7a01fe"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-xsol29-30-pdf"
+  ]
+}

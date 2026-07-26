@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "79a195a0-f104-42cd-ab38-de768504e8dd",
+  "title": "算法-2022春期中",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022春",
+    "sortKey": "2022-2022-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法-2022春期中",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/midterms/算法-2022春期中.pdf",
+      "fileName": "算法-2022春期中.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1545953,
+      "sha256": "92cbd72aa9e1e754c1f39570ebdee6367814bb975d40c06a4dc7e62ab60a75a6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "79a195a0-f104-42cd-ab38-de768504e8dd"
+  ]
+}

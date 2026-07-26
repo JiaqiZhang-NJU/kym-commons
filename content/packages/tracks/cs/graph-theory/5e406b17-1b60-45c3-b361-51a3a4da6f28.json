@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "5e406b17-1b60-45c3-b361-51a3a4da6f28",
+  "title": "图论-2022春",
+  "summary": "来源于 图论 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "graph-theory"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022春",
+    "sortKey": "2022-2022-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "图论-2022春",
+      "role": "primary",
+      "href": "/files/tracks/cs/graph-theory/materials/图论-2022春.pdf",
+      "fileName": "图论-2022春.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 59885,
+      "sha256": "1486145ab244f04173b4a47557271c0c65db4cb25afe8c21428e7463886010ff"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5e406b17-1b60-45c3-b361-51a3a4da6f28"
+  ]
+}

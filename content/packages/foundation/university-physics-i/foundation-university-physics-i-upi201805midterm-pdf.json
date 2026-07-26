@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-upi201805midterm-pdf",
+  "title": "2018-05 期中卷",
+  "summary": "大学物理上期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2018-05 期中卷",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/midterms/UPI201805midterm.pdf",
+      "fileName": "UPI201805midterm.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 357784,
+      "sha256": "5a2ef4953517df37bbdd16cd2568664a276ce97a2d11c64219c12d9842a6c84c"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-upi201805midterm-pdf"
+  ]
+}

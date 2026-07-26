@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "a0780017-49b4-41e0-958a-652b44ebf7ea",
+  "title": "list",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "list",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/list.h",
+      "fileName": "list.h",
+      "mediaType": null,
+      "sizeBytes": 2780,
+      "sha256": "8afd123b24d6b0e15984de48d103e6394053b934c7b8746fae952120e3410b02"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a0780017-49b4-41e0-958a-652b44ebf7ea"
+  ]
+}

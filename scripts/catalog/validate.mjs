@@ -3,8 +3,10 @@ import { loadCatalog, validateCatalog } from "./catalog.mjs";
 const catalog = loadCatalog();
 const result = validateCatalog(catalog, { requireAssetMetadata: true });
 
-for (const warning of result.warnings) {
-  console.warn(`warning: ${warning}`);
+if (process.argv.includes("--verbose")) {
+  for (const warning of result.warnings) {
+    console.warn(`warning: ${warning}`);
+  }
 }
 
 if (result.errors.length > 0) {

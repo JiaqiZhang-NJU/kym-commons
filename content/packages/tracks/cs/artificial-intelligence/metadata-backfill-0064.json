@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0064",
+  "title": "sanet.cd_Machine Learning A Constraint-Based Approach.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "artificial-intelligence"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sanet.cd_Machine Learning A Constraint-Based Approach.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/artificial-intelligence/materials/sanet.cd_Machine Learning A Constraint-Based Approach.pdf",
+      "fileName": "sanet.cd_Machine Learning A Constraint-Based Approach.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 7000844,
+      "sha256": "f1623f736a3de9fb648c2f7142851e38a7ccd09453403dbc2886822a48c8ace1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0064"
+  ]
+}

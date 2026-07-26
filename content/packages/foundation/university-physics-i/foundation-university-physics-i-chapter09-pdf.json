@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-chapter09-pdf",
+  "title": "第 09 章课件",
+  "summary": "大学物理上课程讲义与章节课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程讲义",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "第 09 章课件",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter09.pdf",
+      "fileName": "chapter09.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2892777,
+      "sha256": "5de2c43c10f8a96d5b5051e282055a1d4eda3268ad3a34d3e2005a7579c86f65"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-chapter09-pdf"
+  ]
+}

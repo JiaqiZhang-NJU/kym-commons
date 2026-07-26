@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "0cf7b0a5-56f4-41b6-8fd4-9e5e657e784a",
+  "title": "自动机-2022秋",
+  "summary": "来源于 自动机 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "automata"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022秋",
+    "sortKey": "2022-2022-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "自动机-2022秋",
+      "role": "primary",
+      "href": "/files/tracks/cs/automata/materials/自动机-2022秋.pdf",
+      "fileName": "自动机-2022秋.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 150436,
+      "sha256": "a1a0be88ce82ae08e39b2b2d841d9aa9827d933810af69d50a06487d77375faa"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0cf7b0a5-56f4-41b6-8fd4-9e5e657e784a"
+  ]
+}

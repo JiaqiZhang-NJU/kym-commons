@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8d43029c-e05e-4a62-a963-399f80a9187a",
+  "title": "2014级试题答案",
+  "summary": "来源于 计算机系统基础 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-systems"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2014级",
+    "sortKey": "2014-2014-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2014级试题答案",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-systems/materials/2014级试题答案.pdf",
+      "fileName": "2014级试题答案.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 442284,
+      "sha256": "ea5891cda1b3c7c0cd53edc6afe6f3982294d885c02a934acded5f0ee15a0496"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8d43029c-e05e-4a62-a963-399f80a9187a"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-201711upiimidterm-pdf",
+  "title": "2017-11 期中卷",
+  "summary": "大学物理下期中样卷与历年卷解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "midterm-samples",
+  "materialType": "期中样卷",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2017-11 期中卷",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/midterms/201711UPIImidterm.pdf",
+      "fileName": "201711UPIImidterm.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 392121,
+      "sha256": "6b709acd68e5b5d58c17286f4cfd8542f722186dcc9206ff51a52295b894b285"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-201711upiimidterm-pdf"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fcd3b667-b731-4d9c-b1e3-77d8767ad4af",
+  "title": "binary",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "binary",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/binary.c",
+      "fileName": "binary.c",
+      "mediaType": null,
+      "sizeBytes": 614,
+      "sha256": "f91032089c702f99451a2bdb02b6103667225b5036bbf3e3848e3b8cc1dfe13f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "fcd3b667-b731-4d9c-b1e3-77d8767ad4af"
+  ]
+}

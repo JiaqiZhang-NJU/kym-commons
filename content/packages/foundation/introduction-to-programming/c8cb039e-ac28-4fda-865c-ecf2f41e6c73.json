@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "c8cb039e-ac28-4fda-865c-ecf2f41e6c73",
+  "title": "C Primer Plus中文版思维导图",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "C Primer Plus中文版思维导图",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/C Primer Plus中文版思维导图.pdf",
+      "fileName": "C Primer Plus中文版思维导图.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 463183,
+      "sha256": "261271b04033560cd561ad649604c2a3f2df4989555c96ff6a296b608075b4eb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c8cb039e-ac28-4fda-865c-ecf2f41e6c73"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "e2f2712c-7fc0-47ed-815a-4d6c5d5d5a17",
+  "title": "shoes1",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "shoes1",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/shoes1.c",
+      "fileName": "shoes1.c",
+      "mediaType": null,
+      "sizeBytes": 420,
+      "sha256": "04043ae887f4242fedc96dd26514f107f8f9299d0252a398836cb16dda360ab2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "e2f2712c-7fc0-47ed-815a-4d6c5d5d5a17"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-sol01-03-pdf",
+  "title": "sol01-03.pdf",
+  "summary": "大学物理上作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol01-03.pdf",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/assignment-solutions/sol01-03.pdf",
+      "fileName": "sol01-03.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 250023,
+      "sha256": "09943c811098ee5fbdd5b836cdb2fea5fe3f05361f61f5ee733550a8a31f068d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-sol01-03-pdf"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "77e75b35-5d7b-4cc8-ae00-b705734ecd6c",
+  "title": "ifdef",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "ifdef",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/ifdef.c",
+      "fileName": "ifdef.c",
+      "mediaType": null,
+      "sizeBytes": 371,
+      "sha256": "0cb729e5417cea7939a966e77fdddfb1da17be2aad8b481705a82c75fc47890d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "77e75b35-5d7b-4cc8-ae00-b705734ecd6c"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "aa9faa3d-18e3-4a8f-8054-f48b6660c613",
+  "title": "inform",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "inform",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/inform.c",
+      "fileName": "inform.c",
+      "mediaType": null,
+      "sizeBytes": 116,
+      "sha256": "124b19f84e56298ac31c43431efbad919fcd09bd48f4668248cba773f301c38a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "aa9faa3d-18e3-4a8f-8054-f48b6660c613"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "9be1ddaa-85ad-43fa-b8b7-8052659bb6eb",
+  "title": "Crypto_Midterm_2023Fall",
+  "summary": "来源于 密码学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "cryptography"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2023",
+    "sortKey": "2023-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Crypto_Midterm_2023Fall",
+      "role": "primary",
+      "href": "/files/tracks/cs/cryptography/materials/Crypto_Midterm_2023Fall.pdf",
+      "fileName": "Crypto_Midterm_2023Fall.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 123756,
+      "sha256": "6366303dff0ac5429c1f83ad8f329db8ae1bde5dc2f8e5063bc0fae424bb7314"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "9be1ddaa-85ad-43fa-b8b7-8052659bb6eb"
+  ]
+}

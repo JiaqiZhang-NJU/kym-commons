@@ -1,4 +1,593 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "slug": "calculus-i",
+      "title": "微积分一",
+      "aliases": [],
+      "section": "foundation",
+      "description": "微积分一课程资料",
+      "order": 1,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "calculus-ii",
+      "title": "微积分二",
+      "aliases": [],
+      "section": "foundation",
+      "description": "微积分二课程资料",
+      "order": 2,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "university-physics-i",
+      "title": "大学物理上",
+      "aliases": [],
+      "section": "foundation",
+      "description": "大学物理上课程资料",
+      "order": 3,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "university-physics-ii",
+      "title": "大学物理下",
+      "aliases": [],
+      "section": "foundation",
+      "description": "大学物理下课程资料",
+      "order": 4,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "university-physics-experiment",
+      "title": "大学物理实验",
+      "aliases": [],
+      "section": "foundation",
+      "description": "大学物理实验课程资料",
+      "order": 5,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "linear-algebra",
+      "title": "线性代数",
+      "aliases": [],
+      "section": "foundation",
+      "description": "线性代数课程资料",
+      "order": 6,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "chemical-principles",
+      "title": "化学原理",
+      "aliases": [],
+      "section": "foundation",
+      "description": "化学原理课程资料",
+      "order": 7,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "introduction-to-programming",
+      "title": "程序设计基础",
+      "aliases": [],
+      "section": "foundation",
+      "description": "程序设计基础课程资料",
+      "order": 8,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "data-structures-and-algorithms",
+      "title": "数据结构与算法分析",
+      "aliases": [],
+      "section": "foundation",
+      "description": "数据结构与算法分析课程资料",
+      "order": 9,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "marxism",
+      "title": "马克思主义基本原理",
+      "aliases": [],
+      "section": "foundation",
+      "description": "马克思主义基本原理课程资料",
+      "order": 10,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "college-english",
+      "title": "大学英语",
+      "aliases": [],
+      "section": "foundation",
+      "description": "大学英语课程资料",
+      "order": 11,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "famous-teachers-guidance",
+      "title": "名师导学",
+      "aliases": [],
+      "section": "foundation",
+      "description": "名师导学课程资料",
+      "order": 12,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "mathematical-analysis",
+      "title": "数学分析",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "math",
+      "description": "数学分析课程资料",
+      "order": 1,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "analytic-geometry",
+      "title": "解析几何",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "math",
+      "description": "解析几何课程资料",
+      "order": 2,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "modern-applied-mathematics",
+      "title": "近代应用数学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "math",
+      "description": "近代应用数学课程资料",
+      "order": 3,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "general-resources",
+      "title": "General Resources",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "math",
+      "description": "数学方向通用资料",
+      "order": 4,
+      "isGeneralResources": true
+    },
+    {
+      "slug": "general-resources",
+      "title": "General Resources",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "biochem",
+      "description": "生化方向通用资料",
+      "order": 1,
+      "isGeneralResources": true
+    },
+    {
+      "slug": "artificial-intelligence",
+      "title": "人工智能",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "人工智能课程资料",
+      "order": 1,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "machine-learning",
+      "title": "机器学习",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "机器学习课程资料",
+      "order": 2,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "computer-architecture",
+      "title": "计算机体系结构",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "计算机体系结构课程资料",
+      "order": 3,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "operating-systems-general",
+      "title": "操作系统（大班）",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "操作系统（大班）课程资料",
+      "order": 4,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "operating-systems-jyy",
+      "title": "操作系统（蒋炎岩）",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "操作系统（蒋炎岩）课程资料",
+      "order": 5,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "computer-networks",
+      "title": "计算机网络",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "计算机网络课程资料",
+      "order": 6,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "compilers",
+      "title": "编译原理",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "编译原理课程资料",
+      "order": 7,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "information-theory",
+      "title": "信息论基础",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "信息论基础课程资料",
+      "order": 8,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "distributed-systems",
+      "title": "分布式系统",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "分布式系统课程资料",
+      "order": 9,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "computer-graphics",
+      "title": "计算机图形学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "计算机图形学课程资料",
+      "order": 10,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "graph-theory",
+      "title": "图论",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "图论课程资料",
+      "order": 11,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "big-data",
+      "title": "大数据处理",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "大数据处理课程资料",
+      "order": 12,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "cryptography",
+      "title": "密码学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "密码学课程资料",
+      "order": 13,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "database-systems",
+      "title": "数据库概论",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "数据库概论课程资料",
+      "order": 14,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "mathematical-logic",
+      "title": "数理逻辑",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "数理逻辑课程资料",
+      "order": 15,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "intelligent-computing-systems",
+      "title": "智能计算系统",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "智能计算系统课程资料",
+      "order": 16,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "discrete-mathematics",
+      "title": "离散数学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "离散数学课程资料",
+      "order": 17,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "formal-semantics",
+      "title": "程序设计语言的形式语义",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "程序设计语言的形式语义课程资料",
+      "order": 18,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "algorithms",
+      "title": "算法设计与分析",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "算法设计与分析课程资料",
+      "order": 19,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "combinatorics",
+      "title": "组合数学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "组合数学课程资料",
+      "order": 20,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "automata",
+      "title": "形式语言与自动机",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "形式语言与自动机课程资料",
+      "order": 21,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "computer-systems",
+      "title": "计算机系统基础",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "计算机系统基础课程资料",
+      "order": 22,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "software-analysis",
+      "title": "软件分析",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "软件分析课程资料",
+      "order": 23,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "software-engineering",
+      "title": "软件工程",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "软件工程课程资料",
+      "order": 24,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "problem-solving",
+      "title": "问题求解",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "问题求解课程资料",
+      "order": 25,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "probability-tcs",
+      "title": "概率论与数理统计（尹一通）",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "概率论与数理统计（尹一通）课程资料",
+      "order": 26,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "probability-general",
+      "title": "概率论与数理统计",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "概率论与数理统计课程资料",
+      "order": 27,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "digital-logic-and-computer-organization",
+      "title": "数字逻辑与计算机组成",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "数字逻辑与计算机组成课程资料",
+      "order": 28,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "general-resources",
+      "title": "General Resources",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "计算机方向通用资料",
+      "order": 29,
+      "isGeneralResources": true
+    },
+    {
+      "slug": "theoretical-mechanics",
+      "title": "理论力学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "理论力学课程资料",
+      "order": 1,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "optics",
+      "title": "光学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "光学课程资料",
+      "order": 2,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "methods-of-mathematical-physics",
+      "title": "数学物理方法",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "数学物理方法课程资料",
+      "order": 3,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "solid-state-physics",
+      "title": "固体物理",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "固体物理课程资料",
+      "order": 4,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "electrodynamics",
+      "title": "电动力学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "电动力学课程资料",
+      "order": 5,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "quantum-mechanics",
+      "title": "量子力学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "量子力学课程资料",
+      "order": 6,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "computational-physics",
+      "title": "计算物理",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "计算物理课程资料",
+      "order": 7,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "thermodynamics-and-statistical-physics",
+      "title": "热力学与统计物理",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "热力学与统计物理课程资料",
+      "order": 8,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "electronic-circuit-foundation",
+      "title": "电子电路基础",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "电子电路基础课程资料",
+      "order": 9,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "general-resources",
+      "title": "General Resources",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "physics",
+      "description": "物理方向通用资料",
+      "order": 10,
+      "isGeneralResources": true
+    },
+    {
+      "slug": "quantum-mechanics",
+      "title": "量子力学",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "astronomy",
+      "description": "量子力学课程资料",
+      "order": 1,
+      "isGeneralResources": false
+    },
+    {
+      "slug": "general-resources",
+      "title": "General Resources",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "astronomy",
+      "description": "天文方向通用资料",
+      "order": 2,
+      "isGeneralResources": true
+    },
+    {
+      "slug": "general-resources",
+      "title": "General Resources",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "other",
+      "description": "其他方向通用资料",
+      "order": 1,
+      "isGeneralResources": true
+    },
+    {
+      "slug": "data-structures",
+      "title": "数据结构",
+      "aliases": [],
+      "section": "track",
+      "trackSlug": "cs",
+      "description": "数据结构课程资料",
+      "order": 30,
+      "isGeneralResources": false
+    }
+  ]
 }

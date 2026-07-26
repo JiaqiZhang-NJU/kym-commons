@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "cae222eb-edf3-4504-8001-c4253d42308b",
+  "title": "2022-2023第一学期线性代数期中试卷-答案 (1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "linear-algebra"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022-2023",
+    "sortKey": "2022-2023-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022-2023第一学期线性代数期中试卷-答案 (1)",
+      "role": "primary",
+      "href": "/files/foundation/linear-algebra/midterms/2022-2023第一学期线性代数期中试卷-答案 (1).pdf",
+      "fileName": "2022-2023第一学期线性代数期中试卷-答案 (1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 398798,
+      "sha256": "44c8b8c3f7788e90987af07afe60716903b65c21466bb0a7e10fe67169314b67"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "cae222eb-edf3-4504-8001-c4253d42308b"
+  ]
+}

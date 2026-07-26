@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "40457d2b-0990-4278-8b0b-7f63d9669a83",
+  "title": "chcount",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "chcount",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/chcount.c",
+      "fileName": "chcount.c",
+      "mediaType": null,
+      "sizeBytes": 336,
+      "sha256": "249f572fac7a22ef211955cf537e5720dc1ea5c8b4bb0e28aacc7f67b6319f4b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "40457d2b-0990-4278-8b0b-7f63d9669a83"
+  ]
+}

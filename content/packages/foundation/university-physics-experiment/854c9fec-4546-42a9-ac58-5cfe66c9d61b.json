@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "854c9fec-4546-42a9-ac58-5cfe66c9d61b",
+  "title": "15126222_大学物理实验-基础与提高篇",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-experiment"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "15126222_大学物理实验-基础与提高篇",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-experiment/materials/15126222_大学物理实验-基础与提高篇.pdf",
+      "fileName": "15126222_大学物理实验-基础与提高篇.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 41787271,
+      "sha256": "fce8dbeed88c24d0702459772889c258074f90662b2c683e6d07a854673ca6ed"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "854c9fec-4546-42a9-ac58-5cfe66c9d61b"
+  ]
+}

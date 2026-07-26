@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "13d8b53a-5df0-460b-9700-db50990ff84e",
+  "title": "floats",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "floats",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/floats.c",
+      "fileName": "floats.c",
+      "mediaType": null,
+      "sizeBytes": 416,
+      "sha256": "6fb702798688777b59bd78e8ac09ef5b60ecc394919ef8e22bddfa25e0a9f09e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "13d8b53a-5df0-460b-9700-db50990ff84e"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0069",
+  "title": "C memory management.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "C memory management.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/C memory management.pdf",
+      "fileName": "C memory management.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3559168,
+      "sha256": "1e5bedf94b2def97f71a1bdb3fdf79e320c88e05b9c799c246ebdfa9b5dc75b1"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0069"
+  ]
+}

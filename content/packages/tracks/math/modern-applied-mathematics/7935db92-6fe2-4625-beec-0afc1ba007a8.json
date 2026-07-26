@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "7935db92-6fe2-4625-beec-0afc1ba007a8",
+  "title": "2025-2026近代应用数学期末试卷（回忆版）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "math",
+    "courseSlug": "modern-applied-mathematics"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025-2026",
+    "sortKey": "2025-2026-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2025-2026近代应用数学期末试卷（回忆版）",
+      "role": "primary",
+      "href": "/files/tracks/math/modern-applied-mathematics/finals/2025-2026近代应用数学期末试卷（回忆版）.pdf",
+      "fileName": "2025-2026近代应用数学期末试卷（回忆版）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2050960,
+      "sha256": "99a561728041f3e52b106100801531daae8501bf297ec5a63a3f71a1c6268c4f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "7935db92-6fe2-4625-beec-0afc1ba007a8"
+  ]
+}

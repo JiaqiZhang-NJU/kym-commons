@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "bc880f47-03dc-4111-93ec-1129cbe890f4",
+  "title": "Solution for 2024 Midterm ",
+  "summary": "来源于 密码学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "cryptography"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024",
+    "sortKey": "2024-2024-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Solution for 2024 Midterm ",
+      "role": "primary",
+      "href": "/files/tracks/cs/cryptography/materials/Solution for 2024 Midterm .pdf",
+      "fileName": "Solution for 2024 Midterm .pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 126320,
+      "sha256": "53cfee550bd464864926db4e7688d0a54fd0d108f4125a788f01a0f79ccc8095"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "bc880f47-03dc-4111-93ec-1129cbe890f4"
+  ]
+}

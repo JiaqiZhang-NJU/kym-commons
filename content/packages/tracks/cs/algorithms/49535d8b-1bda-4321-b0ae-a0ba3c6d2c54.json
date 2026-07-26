@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "49535d8b-1bda-4321-b0ae-a0ba3c6d2c54",
+  "title": "算法-2024秋期末",
+  "summary": "来源于 算法 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2024秋",
+    "sortKey": "2024-2024-2"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "算法-2024秋期末",
+      "role": "primary",
+      "href": "/files/tracks/cs/algorithms/finals/算法-2024秋期末.pdf",
+      "fileName": "算法-2024秋期末.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 136506,
+      "sha256": "b505564677e70b7e5d86cf209a86badc0140b86d95a0c0d511b897832af07093"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "49535d8b-1bda-4321-b0ae-a0ba3c6d2c54"
+  ]
+}

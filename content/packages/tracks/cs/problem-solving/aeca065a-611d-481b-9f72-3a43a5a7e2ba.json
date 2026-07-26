@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "aeca065a-611d-481b-9f72-3a43a5a7e2ba",
+  "title": "二分法2 _题目讨论",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "二分法2 _题目讨论",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法2 _题目讨论.ppt",
+      "fileName": "二分法2 _题目讨论.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 263680,
+      "sha256": "e167bef5607225945dc9b7f516d7958ab48a635ec97b534a08e87b2e897e975f"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "aeca065a-611d-481b-9f72-3a43a5a7e2ba"
+  ]
+}

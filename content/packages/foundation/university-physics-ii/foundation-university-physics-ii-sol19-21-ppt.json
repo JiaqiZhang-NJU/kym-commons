@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-ii-sol19-21-ppt",
+  "title": "sol19-21.ppt",
+  "summary": "大学物理下作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-ii"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理下",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol19-21.ppt",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-ii/assignment-solutions/sol19-21.ppt",
+      "fileName": "sol19-21.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 567808,
+      "sha256": "a053f5d98cf45d63f7e3baa9b33461cb8c7c751a22c13476e277e52dcd616b63"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-ii-sol19-21-ppt"
+  ]
+}

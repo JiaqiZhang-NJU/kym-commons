@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-sol15-16-ppt",
+  "title": "sol15-16.ppt",
+  "summary": "大学物理上作业答案与习题讲解。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "作业答案",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "sol15-16.ppt",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/assignment-solutions/sol15-16.ppt",
+      "fileName": "sol15-16.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 586752,
+      "sha256": "b83cbe884bf3c4123d7bf6c00168ff5cfe7ebc7c31af6c843127de1d7ddea3cd"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-sol15-16-ppt"
+  ]
+}

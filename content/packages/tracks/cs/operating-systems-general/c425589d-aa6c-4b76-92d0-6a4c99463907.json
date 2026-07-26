@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "c425589d-aa6c-4b76-92d0-6a4c99463907",
+  "title": "南京大学 操作系统（2026春 大班）期中试卷（整理版）",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "operating-systems-general"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2026春",
+    "sortKey": "2026-2026-1"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "南京大学 操作系统（2026春 大班）期中试卷（整理版）",
+      "role": "primary",
+      "href": "/files/tracks/cs/operating-systems-general/midterms/南京大学 操作系统（2026春 大班）期中试卷（整理版）.pdf",
+      "fileName": "南京大学 操作系统（2026春 大班）期中试卷（整理版）.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 851856,
+      "sha256": "81720f2f00cfbf2fae2c726712c4818d08370d7a8cdda621373e1d23b2f52e74"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "c425589d-aa6c-4b76-92d0-6a4c99463907"
+  ]
+}

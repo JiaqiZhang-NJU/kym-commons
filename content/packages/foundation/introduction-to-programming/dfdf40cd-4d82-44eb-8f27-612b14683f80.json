@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "dfdf40cd-4d82-44eb-8f27-612b14683f80",
+  "title": "wheat",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "wheat",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/wheat.c",
+      "fileName": "wheat.c",
+      "mediaType": null,
+      "sizeBytes": 904,
+      "sha256": "a21c939b20efdad06a9469d2b937b9d33bc0bad0a862fedcf85df598f2c0833e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "dfdf40cd-4d82-44eb-8f27-612b14683f80"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b30be6d4-e9ee-4f61-912f-1b3c37b79094",
+  "title": "理论力学笔记 zyc",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "theoretical-mechanics"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "理论力学笔记 zyc",
+      "role": "primary",
+      "href": "/files/tracks/physics/theoretical-mechanics/materials/理论力学笔记 zyc.pdf",
+      "fileName": "理论力学笔记 zyc.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 63166157,
+      "sha256": "f8c49bdb0b245ef73e9bf60a2ecbae75e65f8c47614f4f4f5a212c2bceb60371"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b30be6d4-e9ee-4f61-912f-1b3c37b79094"
+  ]
+}

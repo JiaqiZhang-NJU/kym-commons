@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "8469026c-dea6-4af2-8d48-381257ed8583",
+  "title": "2022期中 参考解答与评分标准",
+  "summary": "来源于 离散数学 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "discrete-mathematics"
+  },
+  "categorySlug": "midterms",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2022",
+    "sortKey": "2022-2022-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2022期中 参考解答与评分标准",
+      "role": "primary",
+      "href": "/files/tracks/cs/discrete-mathematics/midterms/2022期中 参考解答与评分标准.pdf",
+      "fileName": "2022期中 参考解答与评分标准.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 354258,
+      "sha256": "adc3d49f5a9fc1ab85f7f765554e4cacaae259504f5bb9220438b7ed3d91d10d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "8469026c-dea6-4af2-8d48-381257ed8583"
+  ]
+}

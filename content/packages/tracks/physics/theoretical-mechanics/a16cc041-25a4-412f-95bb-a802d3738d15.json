@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "a16cc041-25a4-412f-95bb-a802d3738d15",
+  "title": "25_26学年上半期理论力学半期试题_jgx_ (1)",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "physics",
+    "courseSlug": "theoretical-mechanics"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "25_26学年上半期理论力学半期试题_jgx_ (1)",
+      "role": "primary",
+      "href": "/files/tracks/physics/theoretical-mechanics/materials/25_26学年上半期理论力学半期试题_jgx_ (1).pdf",
+      "fileName": "25_26学年上半期理论力学半期试题_jgx_ (1).pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 94008,
+      "sha256": "a627fe9c3d610245db196e41dc33119be9fa4edcbf08aecde437c42d75ede559"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "a16cc041-25a4-412f-95bb-a802d3738d15"
+  ]
+}

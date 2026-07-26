@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "b7ebe356-4dc7-4053-984a-522ae4b8ecd5",
+  "title": "2025PS2_Final",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "graph-theory"
+  },
+  "categorySlug": "finals",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2025",
+    "sortKey": "2025-2025-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "2025PS2_Final",
+      "role": "primary",
+      "href": "/files/tracks/cs/problem-solving/finals/2025PS2_Final.md",
+      "fileName": "2025PS2_Final.md",
+      "mediaType": "text/markdown",
+      "sizeBytes": 29048,
+      "sha256": "033fe0a3a15d215138885cfbce6be7e63edc051d5cfa92e00b087d86e63e45f2"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "b7ebe356-4dc7-4053-984a-522ae4b8ecd5"
+  ]
+}

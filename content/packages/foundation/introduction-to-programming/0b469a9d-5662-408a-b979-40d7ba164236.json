@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "0b469a9d-5662-408a-b979-40d7ba164236",
+  "title": "附录-2021-11-24版",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "2021",
+    "sortKey": "2021-2021-0"
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "附录-2021-11-24版",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/附录-2021-11-24版.pdf",
+      "fileName": "附录-2021-11-24版.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 49832197,
+      "sha256": "0d92b96523837122e72165e17212986cc32a3014aeac083fddcd09b5024ec559"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0b469a9d-5662-408a-b979-40d7ba164236"
+  ]
+}

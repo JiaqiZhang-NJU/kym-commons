@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-an-alternative-solution-to-prob-3-of-quiz02-pdf",
+  "title": "Quiz 02 第 3 题另一种解法（2016）",
+  "summary": "大学物理上随堂测验与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "quizzes",
+  "materialType": "随堂测验",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Quiz 02 第 3 题另一种解法（2016）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/quizzes/An%20alternative%20solution%20to%20prob.3%20of%20Quiz02.pdf",
+      "fileName": "An alternative solution to prob.3 of Quiz02.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 30729,
+      "sha256": "71338f9578a6241b8a0f3fb335c17558eff86b9afa1b5d04bd948d6494dfad6e"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-an-alternative-solution-to-prob-3-of-quiz02-pdf"
+  ]
+}

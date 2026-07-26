@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "5eb76cb0-e0ba-4229-9b40-f100c3756471",
+  "title": "之前讲座_大数据系统问题1",
+  "summary": "来源于 分布式系统 整理资料",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "distributed-systems"
+  },
+  "categorySlug": "assignment-solutions",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "之前讲座_大数据系统问题1",
+      "role": "primary",
+      "href": "/files/tracks/cs/distributed-systems/assignments/之前讲座_大数据系统问题1.jpg",
+      "fileName": "之前讲座_大数据系统问题1.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 1685542,
+      "sha256": "ad83790de82e168cae58dd170de375670e056f0bafdb8a068e96a471e18848bf"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "5eb76cb0-e0ba-4229-9b40-f100c3756471"
+  ]
+}

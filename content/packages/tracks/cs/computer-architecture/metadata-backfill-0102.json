@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "metadata-backfill-0102",
+  "title": "disc11_sol.pdf",
+  "summary": "来源: 文件目录补录",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "参考资料",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "disc11_sol.pdf",
+      "role": "primary",
+      "href": "/files/tracks/cs/computer-architecture/materials/disc11_sol.pdf",
+      "fileName": "disc11_sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 204250,
+      "sha256": "397e762e91a6c527aa6d5ef42fe07420596f9e8d9841cd7d1612c52adc3e26ee"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0102"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "76811293-75a0-4f5b-ac23-600bd8aba7f7",
+  "title": "高等数学（下）仇庆久",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "calculus-ii"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "高等数学（下）仇庆久",
+      "role": "primary",
+      "href": "/files/foundation/calculus-ii/materials/高等数学（下）仇庆久.pdf",
+      "fileName": "高等数学（下）仇庆久.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 13624053,
+      "sha256": "14185bf5a9e9f7fab2cc5f98fde7e96d108a2a182a37f7542c7ab7ab4fc5fa78"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "76811293-75a0-4f5b-ac23-600bd8aba7f7"
+  ]
+}

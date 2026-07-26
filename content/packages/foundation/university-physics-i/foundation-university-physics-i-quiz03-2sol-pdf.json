@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-quiz03-2sol-pdf",
+  "title": "Quiz 03-2 参考解答（2018）",
+  "summary": "大学物理上随堂测验与参考解答。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "quizzes",
+  "materialType": "随堂测验",
+  "term": {
+    "label": "大学物理上",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "Quiz 03-2 参考解答（2018）",
+      "role": "primary",
+      "href": "/files/foundation/university-physics-i/quizzes/Quiz03-2sol.pdf",
+      "fileName": "Quiz03-2sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 285223,
+      "sha256": "76df3933eef5ec1191f7acaead99754cc0622506061303e35e6dc994e4c12088"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-quiz03-2sol-pdf"
+  ]
+}

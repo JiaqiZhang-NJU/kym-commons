@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "75c6a17e-a1d2-4eec-9afa-2904b2669261",
+  "title": "ptr_ops",
+  "summary": "来源: 用户上传补充资料",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "introduction-to-programming"
+  },
+  "categorySlug": "reference",
+  "materialType": "历年题/回忆",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-1",
+      "label": "ptr_ops",
+      "role": "primary",
+      "href": "/files/foundation/introduction-to-programming/materials/ptr_ops.c",
+      "fileName": "ptr_ops.c",
+      "mediaType": null,
+      "sizeBytes": 1560,
+      "sha256": "ce70649c9a355f48eaca7a36aef7a29c3860bc419383a15cb41d113547ab84d0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "75c6a17e-a1d2-4eec-9afa-2904b2669261"
+  ]
+}
