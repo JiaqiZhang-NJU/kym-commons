@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-03",
+  "title": "数据结构第 3 章练习与作业",
+  "summary": "数据结构第 3 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 3 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "数据结构第3章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第3章.doc",
+      "fileName": "数据结构第3章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 244736,
+      "sha256": "4a9c47c5e792eeb4277364511a6176f1c45d69c1fd0ec7ddf9cac17e60dd2171"
+    },
+    {
+      "id": "asset-02",
+      "label": "job3",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job3.doc",
+      "fileName": "job3.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 74752,
+      "sha256": "4f3378624289c5e462421761214118d3b0b4064d3b564031bdd8b97c71e24975"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-03",
+    "1ac512ac-8df7-45fe-93a8-d364e99ed5df",
+    "3af567f9-51e4-47ca-9f64-7930812288bc"
+  ]
+}

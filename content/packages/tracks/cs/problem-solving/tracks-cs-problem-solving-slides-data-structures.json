@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-data-structures",
+  "title": "问题求解：数据结构与 STL 课件",
+  "summary": "线段树、树状数组、单调队列、树形结构、STL 与容器使用专题课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "差分数组",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/差分数组.ppt",
+      "fileName": "差分数组.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 695808,
+      "sha256": "44c2d9e1117631ee8b7d8cd45b2759f3958e3ec3abf9a7e24a275915b5ace183"
+    },
+    {
+      "id": "asset-002",
+      "label": "单调队列1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/单调队列1.ppt",
+      "fileName": "单调队列1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1255424,
+      "sha256": "d24a5c5c6647add33e3354576273f6a372798f2f20ed078fe5e21d8741a94527"
+    },
+    {
+      "id": "asset-003",
+      "label": "树形结构1_树的概念",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/树形结构1_树的概念.ppt",
+      "fileName": "树形结构1_树的概念.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1256448,
+      "sha256": "e73c37637106ad02aece46be4e7fb27f5d45036b5fff691c258f088f575824d9"
+    },
+    {
+      "id": "asset-004",
+      "label": "树形结构2_堆1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/树形结构2_堆1.ppt",
+      "fileName": "树形结构2_堆1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 845312,
+      "sha256": "c046de7d84cbd3e166e3b9bc8f86318bed623002b6e88464083aed02ee9062ec"
+    },
+    {
+      "id": "asset-005",
+      "label": "树形结构2_堆2_应用",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/树形结构2_堆2_应用.ppt",
+      "fileName": "树形结构2_堆2_应用.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 621568,
+      "sha256": "f804a2dc3b349aabe7a26e76b5e76c7817f19d8ff4110ea3f552ccb83daca319"
+    },
+    {
+      "id": "asset-006",
+      "label": "树状数组 _helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/树状数组 _helang.ppt",
+      "fileName": "树状数组 _helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 5788672,
+      "sha256": "d2ee5fb777228317a3ae02eefa9adf61a7333c7d2cf4fda2b0db4a543416080d"
+    },
+    {
+      "id": "asset-007",
+      "label": "线段树1点修改_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/线段树1点修改_helang.ppt",
+      "fileName": "线段树1点修改_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 704000,
+      "sha256": "7eec81ca44405752a7118927446a8e1583993676899af3415e94972dc2f6e312"
+    },
+    {
+      "id": "asset-008",
+      "label": "线段树2区间修改_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/线段树2区间修改_helang.ppt",
+      "fileName": "线段树2区间修改_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 687616,
+      "sha256": "1b5b3665a0d67a4ec454c5089827896bc95e4c73c62143745cf847010f075393"
+    },
+    {
+      "id": "asset-009",
+      "label": "线段树3连续区间_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/线段树3连续区间_helang.ppt",
+      "fileName": "线段树3连续区间_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 850944,
+      "sha256": "438cfc67de7fedf37475891795a98c1cb264210eae918fa536e333d4d8cc636e"
+    },
+    {
+      "id": "asset-010",
+      "label": "线段树4思维难题_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/线段树4思维难题_helang.ppt",
+      "fileName": "线段树4思维难题_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1648128,
+      "sha256": "57795e8c0535d947ead7e86a52d074b8250fd17ddd27db76782da3dc866b7d23"
+    },
+    {
+      "id": "asset-011",
+      "label": "STL_for NOIP(重庆八中)",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/STL_for NOIP(重庆八中).ppt",
+      "fileName": "STL_for NOIP(重庆八中).ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 567296,
+      "sha256": "2d3081516b988c0c1dc3e5727b8db3b82484bf929344776efb2bf8949b188e56"
+    },
+    {
+      "id": "asset-012",
+      "label": "STL_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/STL_helang.ppt",
+      "fileName": "STL_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 859136,
+      "sha256": "c74a0da5e5a41fd4ba9442d7579b573a976850920297d5a3917336ea07ecf56a"
+    },
+    {
+      "id": "asset-013",
+      "label": "STL详解(北京大学)",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/STL详解(北京大学).ppt",
+      "fileName": "STL详解(北京大学).ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 457728,
+      "sha256": "d87978fe6dc1fbe9d0a004a74a56f0798f28938fe6b9d31a3092e949f4f159a0"
+    },
+    {
+      "id": "asset-014",
+      "label": "vector",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/vector.ppt",
+      "fileName": "vector.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 234496,
+      "sha256": "3c1643c3e650962ee69848fe8da9bdd4a349bbcacea7a4e62e619c4cb0f5849b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "09bbe156-c1b4-44a8-b07b-60c7019d3e78",
+    "0df0fbc3-1ed6-4241-8ea8-44a1643d3586",
+    "1ba22768-0985-4445-b184-d45fda90d92d",
+    "388e68d3-caf7-4d9f-9a63-1d3989fde402",
+    "3aa70da0-06f1-44d1-93ea-5e094fb1707a",
+    "487cbace-43e1-4c30-a8cf-74cc159aa3e8",
+    "4bbffd45-d4e1-4bd6-b0ef-bd0830d3b3d9",
+    "595550fe-81ac-40ca-9435-815ca0fc4f0f",
+    "765f3aee-547c-471d-9664-33ab60660724",
+    "8cbf9e75-c23f-4298-8e0b-c43c876c1879",
+    "ab203d22-3977-4684-bc55-fb7557e12e01",
+    "b2cc82fe-ede1-405b-b3d8-843ddafc0c6b",
+    "b4915a86-dd74-4a25-893a-40f3893bd316",
+    "bd8d7db0-2572-4c9b-aab6-686f6e842dc9"
+  ]
+}

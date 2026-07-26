@@ -23,7 +23,8 @@
     "catalog:deduplicate": "node scripts/catalog/deduplicate-assets.mjs",
     "catalog:consolidate-related": "node scripts/catalog/consolidate-related-materials.mjs",
     "catalog:pair-solutions": "node scripts/catalog/pair-question-solutions.mjs",
-    "catalog:check": "npm run catalog:validate && node scripts/catalog/classify-packages.mjs --check && node scripts/catalog/deduplicate-assets.mjs --check && node scripts/catalog/consolidate-programming-examples.mjs --check && node scripts/catalog/consolidate-related-materials.mjs --check && node scripts/catalog/pair-question-solutions.mjs --check && node scripts/catalog/generate-runtime.mjs --check",
+    "catalog:organize-data-structures": "node scripts/catalog/organize-data-structures.mjs",
+    "catalog:check": "npm run catalog:validate && node scripts/catalog/classify-packages.mjs --check && node scripts/catalog/deduplicate-assets.mjs --check && node scripts/catalog/consolidate-programming-examples.mjs --check && node scripts/catalog/consolidate-related-materials.mjs --check && node scripts/catalog/pair-question-solutions.mjs --check && node scripts/catalog/organize-data-structures.mjs --check && node scripts/catalog/generate-runtime.mjs --check",
     "catalog:migrate": "node scripts/catalog/migrate-legacy.mjs --force"
   },
   "dependencies": {

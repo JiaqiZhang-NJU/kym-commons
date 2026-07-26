@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-university-physics-i-course-slides",
+  "title": "大学物理 I 课程课件",
+  "summary": "大学物理 I 第 01–14 章连续课程课件。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "university-physics-i"
+  },
+  "categorySlug": "course-slides",
+  "materialType": "课程课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "大学物理 I",
+    "课程课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "第 01 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter01.pdf",
+      "fileName": "chapter01.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 5276986,
+      "sha256": "0daf62888ca4bd8af783194845e18a461bb2451c976ef6250a3903638b9b38cc"
+    },
+    {
+      "id": "asset-002",
+      "label": "第 02 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter02.pdf",
+      "fileName": "chapter02.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 8424537,
+      "sha256": "8d169e3bb088de695f7d917bd5c2fdc6d13ea15eff5395fe6afa1a0cebe9727b"
+    },
+    {
+      "id": "asset-003",
+      "label": "第 03 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter03.pdf",
+      "fileName": "chapter03.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2921043,
+      "sha256": "5886ab6ed3891bddf688ab31560e6a4d277b7c40f4654b9375b68a57a625985e"
+    },
+    {
+      "id": "asset-004",
+      "label": "第 04 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter04.pdf",
+      "fileName": "chapter04.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 4893484,
+      "sha256": "7d19a04ebb39a2943ec27e461473e72e2bf70651f32c1cc8040e82f781386908"
+    },
+    {
+      "id": "asset-005",
+      "label": "第 05 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter05.pdf",
+      "fileName": "chapter05.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3778782,
+      "sha256": "f5f6f1d6f7426f9c4bfd1caf09511677481a90429c25424b24886d87f90dee6b"
+    },
+    {
+      "id": "asset-006",
+      "label": "第 06 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter06.pdf",
+      "fileName": "chapter06.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2597609,
+      "sha256": "1a93150a2abfea2b0df7f257cf9af2c7260f350594bb34a8eff7c37ff9fa15d8"
+    },
+    {
+      "id": "asset-007",
+      "label": "第 07 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter07.pdf",
+      "fileName": "chapter07.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 4348533,
+      "sha256": "b0373c1e8979985ae496db12755978c9b364c5e9619524d1839e2f6cdae2f787"
+    },
+    {
+      "id": "asset-008",
+      "label": "第 08 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter08.pdf",
+      "fileName": "chapter08.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 6153884,
+      "sha256": "7c635a9b46cd199deef0c01c17865fcc1dbe3e991afbbb9197bb04dfda869fe0"
+    },
+    {
+      "id": "asset-009",
+      "label": "第 09 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter09.pdf",
+      "fileName": "chapter09.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 2892777,
+      "sha256": "5de2c43c10f8a96d5b5051e282055a1d4eda3268ad3a34d3e2005a7579c86f65"
+    },
+    {
+      "id": "asset-010",
+      "label": "第 10 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter10.pdf",
+      "fileName": "chapter10.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1166128,
+      "sha256": "b3c7a3bd83d2860c7026c38a6970218a29c23747c7c510d08cb414c3ca2b0ee3"
+    },
+    {
+      "id": "asset-011",
+      "label": "第 11 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter11.pdf",
+      "fileName": "chapter11.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1679088,
+      "sha256": "65feb28dbb91c41a250bdd33aa2f8730504154d1c3cc47d25d49f3afed95bbd4"
+    },
+    {
+      "id": "asset-012",
+      "label": "第 12 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter12.pdf",
+      "fileName": "chapter12.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1989264,
+      "sha256": "a68d3b257a726f74584a84dd181f6761a332d2d9b11f1953372306fba8d3ee7b"
+    },
+    {
+      "id": "asset-013",
+      "label": "第 13 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter13.pdf",
+      "fileName": "chapter13.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 1659880,
+      "sha256": "19a4c2b84c523298942fb4a6566394bcf1f36a01791041599bdb32748f4f863b"
+    },
+    {
+      "id": "asset-014",
+      "label": "第 14 章课件",
+      "role": "supplement",
+      "href": "/files/foundation/university-physics-i/course-slides/chapter14.pdf",
+      "fileName": "chapter14.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 3916922,
+      "sha256": "34fd7fac2ce07fcdc7c60dd172ddc3689ceea6f8f66e3e3a4a4bde0202d631ed"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-university-physics-i-chapter01-pdf",
+    "foundation-university-physics-i-chapter02-pdf",
+    "foundation-university-physics-i-chapter03-pdf",
+    "foundation-university-physics-i-chapter04-pdf",
+    "foundation-university-physics-i-chapter05-pdf",
+    "foundation-university-physics-i-chapter06-pdf",
+    "foundation-university-physics-i-chapter07-pdf",
+    "foundation-university-physics-i-chapter08-pdf",
+    "foundation-university-physics-i-chapter09-pdf",
+    "foundation-university-physics-i-chapter10-pdf",
+    "foundation-university-physics-i-chapter11-pdf",
+    "foundation-university-physics-i-chapter12-pdf",
+    "foundation-university-physics-i-chapter13-pdf",
+    "foundation-university-physics-i-chapter14-pdf"
+  ]
+}

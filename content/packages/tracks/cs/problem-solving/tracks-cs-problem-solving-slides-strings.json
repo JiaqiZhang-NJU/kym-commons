@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-strings",
+  "title": "问题求解：字符串算法课件",
+  "summary": "Trie、KMP、回文树、字符串表示及哈希等字符串算法专题课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "1最小表示法_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/1最小表示法_helang.ppt",
+      "fileName": "1最小表示法_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 536064,
+      "sha256": "c2528091a9a753ec009f538c8dfe57e32f6694fc7decab2c7b1285a8213c3e4f"
+    },
+    {
+      "id": "asset-002",
+      "label": "2Trie_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/2Trie_helang.ppt",
+      "fileName": "2Trie_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 434176,
+      "sha256": "8b1567dfb03e69b2f44db60cb35147b1db668678f18998c0faf48357ccbb01d1"
+    },
+    {
+      "id": "asset-003",
+      "label": "3KMP算法",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/3KMP算法.ppt",
+      "fileName": "3KMP算法.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 4085248,
+      "sha256": "845ed66eaf5805e4aea87bd7d202146c07e29c162f25c85512fdfd66d7f8e7aa"
+    },
+    {
+      "id": "asset-004",
+      "label": "回文树_spark",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/回文树_spark.pptx",
+      "fileName": "回文树_spark.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 877002,
+      "sha256": "20b5f62ee2eb42786ff5efe72cd1e0d98579d5cbc2c7ea9515811d4fb341801a"
+    },
+    {
+      "id": "asset-005",
+      "label": "字符串算法小复习_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/字符串算法小复习_helang.ppt",
+      "fileName": "字符串算法小复习_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 349696,
+      "sha256": "bb73b61fa284f32208b60eddb42eaa9f4103352997136a23a4fb404b7a98a9ac"
+    },
+    {
+      "id": "asset-006",
+      "label": "Trie1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/Trie1.ppt",
+      "fileName": "Trie1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 434176,
+      "sha256": "e4eb09c522caee9127b55e6301c1cad50b99c5656010d87ceca097b3d7cc6970"
+    },
+    {
+      "id": "asset-007",
+      "label": "Trie2_习题",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/Trie2_习题.ppt",
+      "fileName": "Trie2_习题.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 95232,
+      "sha256": "cf2c42806cb3d2f2f4fc66e55ed80f05cbf6e46d5bcabd5ff39fc98bc8452092"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "1b94b796-5bfc-488d-99e5-de8b50404b8a",
+    "6d777b18-6553-4eb5-af45-2b681617e245",
+    "854e6b4c-252e-450e-ad19-5c63ecc72ad6",
+    "999bc4f4-5b4d-430b-bf05-63b25dc55525",
+    "aec3f468-0ff8-418c-a8eb-01fc6812dd3f",
+    "c312d756-cc81-4cda-8c1e-f26539850f49",
+    "d53961c9-4e24-48a5-8e19-f769cb60631f"
+  ]
+}

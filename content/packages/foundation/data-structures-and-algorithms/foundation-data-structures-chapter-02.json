@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-02",
+  "title": "数据结构第 2 章练习与作业",
+  "summary": "数据结构第 2 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 2 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "数据结构第2章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第2章.doc",
+      "fileName": "数据结构第2章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 259072,
+      "sha256": "f85109323e5f61e064532e5e5291eea0b95a54ca799627d4b4bf37dc0b253363"
+    },
+    {
+      "id": "asset-02",
+      "label": "job2",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job2.doc",
+      "fileName": "job2.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 78336,
+      "sha256": "4a595397344cf6b969da28213d1c635d53672e030f33a277ff956e8da73f1316"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-02",
+    "022e92f2-70d8-48b7-a815-59daa2887e00",
+    "3c993520-baf3-44b4-bbfa-bf549b209ea7"
+  ]
+}

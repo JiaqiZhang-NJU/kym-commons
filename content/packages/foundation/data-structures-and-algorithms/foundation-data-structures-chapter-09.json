@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-09",
+  "title": "数据结构第 9 章练习与作业",
+  "summary": "数据结构第 9 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 9 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "数据结构第9章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第9章.doc",
+      "fileName": "数据结构第9章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 678400,
+      "sha256": "81ac26f8b414dac6d132d20405eac24f540ea89387dcf7e91dd452ece9523e12"
+    },
+    {
+      "id": "asset-02",
+      "label": "job9",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job9.doc",
+      "fileName": "job9.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 351232,
+      "sha256": "140548a4193f91195a220046eb97886f732c60bcb2df0bc88d5f40012969bb10"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-09",
+    "473c29ee-b381-4e77-8cd0-649e959385b3",
+    "4e1d1d3c-1c29-405f-8a8b-a23886e3cb88"
+  ]
+}

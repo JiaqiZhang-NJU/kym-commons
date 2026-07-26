@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-search-and-divide",
+  "title": "问题求解：搜索、分治与二分课件",
+  "summary": "深度与广度优先搜索、剪枝、启发式搜索、二分、三分和分治专题课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "二分法1 _二分思想",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法1 _二分思想.ppt",
+      "fileName": "二分法1 _二分思想.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 2414080,
+      "sha256": "b43e25398ce75efb08890da346f28930d424a29868042781bfc5532033692fc6"
+    },
+    {
+      "id": "asset-002",
+      "label": "二分法2 _题目讨论",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法2 _题目讨论.ppt",
+      "fileName": "二分法2 _题目讨论.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 263680,
+      "sha256": "e167bef5607225945dc9b7f516d7958ab48a635ec97b534a08e87b2e897e975f"
+    },
+    {
+      "id": "asset-003",
+      "label": "二分法3_快速幂",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法3_快速幂-1.ppt",
+      "fileName": "二分法3_快速幂-1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 249856,
+      "sha256": "3c5f6fcf368658055c752a3da9e751d799a4d3130d165b01e64a27af3102be91"
+    },
+    {
+      "id": "asset-004",
+      "label": "二分法3_快速幂",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法3_快速幂.ppt",
+      "fileName": "二分法3_快速幂.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 249856,
+      "sha256": "d35569a4bd994cb8ef91bb68d61d26fedb8485f2f42aaf9bf30e7250c0d4e472"
+    },
+    {
+      "id": "asset-005",
+      "label": "二分法4 _ 二分答案",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/assignments/二分法4 _ 二分答案.ppt",
+      "fileName": "二分法4 _ 二分答案.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1127424,
+      "sha256": "f92013bcbeae0ccec56d34aba405c59ffde7b4b4619a05c3379414568696074a"
+    },
+    {
+      "id": "asset-006",
+      "label": "二分法5_ 二分习题",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法5_ 二分习题.ppt",
+      "fileName": "二分法5_ 二分习题.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 613888,
+      "sha256": "d9642a2dcb5bb201665225e1b5addadc2cfdb8e0ab514370a7a573cb11f57199"
+    },
+    {
+      "id": "asset-007",
+      "label": "二分法6 _三分查找",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法6 _三分查找.ppt",
+      "fileName": "二分法6 _三分查找.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 422912,
+      "sha256": "b1103a7856422ba87ce803956d0e9b7cb1175b1c57115dd78d597fd1ca65e59c"
+    },
+    {
+      "id": "asset-008",
+      "label": "二分法7_总结",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/二分法7_总结.ppt",
+      "fileName": "二分法7_总结.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 276480,
+      "sha256": "e0e3a1b846dbc4304f30f8cf45ed496b42d49ef3d9fb308e05160f0a02b069e6"
+    },
+    {
+      "id": "asset-009",
+      "label": "分治复习题讲评",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/分治复习题讲评.pptx",
+      "fileName": "分治复习题讲评.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 129236,
+      "sha256": "a458c0e12e670cf4823c86c90164dfda3cc7a485524a9343b976534b97563447"
+    },
+    {
+      "id": "asset-010",
+      "label": "基础搜索2_基本剪枝",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础搜索2_基本剪枝.ppt",
+      "fileName": "基础搜索2_基本剪枝.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 898560,
+      "sha256": "bd6f39b3eb327fd3afbd26fd87e554fdcd06cb80e691848aee07ac8a6b9eb80b"
+    },
+    {
+      "id": "asset-011",
+      "label": "基础搜索3_习题讲解1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础搜索3_习题讲解1.ppt",
+      "fileName": "基础搜索3_习题讲解1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 445952,
+      "sha256": "720ca5c0505349feff0dc7b7dd11b16d26589b4edbbe04d762c81568be847d56"
+    },
+    {
+      "id": "asset-012",
+      "label": "基础搜索4_习题讲解2",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础搜索4_习题讲解2.ppt",
+      "fileName": "基础搜索4_习题讲解2.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 633344,
+      "sha256": "fe81b5ecfa0018840e2abc91daf2fb301d7be36b158b75033c22a9b857ebc1de"
+    },
+    {
+      "id": "asset-013",
+      "label": "记忆化搜索",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/记忆化搜索.ppt",
+      "fileName": "记忆化搜索.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 861696,
+      "sha256": "fc120a0aa85cd7d4c18ea4b06fbe94a7eceb4cbfb4259e5f1567429997d73da2"
+    },
+    {
+      "id": "asset-014",
+      "label": "搜索基础_BFS1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索基础_BFS1.ppt",
+      "fileName": "搜索基础_BFS1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 3118592,
+      "sha256": "539d8eb43d93884c674b1da2e49ce2c0710836dfe779a178ab6e005802461628"
+    },
+    {
+      "id": "asset-015",
+      "label": "搜索基础1_DFS",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索基础1_DFS.ppt",
+      "fileName": "搜索基础1_DFS.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 2206720,
+      "sha256": "e742e8cb81a21bd990bb423ca5a9fdfb820cd9b81d6b50ff2991fb852cb3adb8"
+    },
+    {
+      "id": "asset-016",
+      "label": "搜索进阶第1课_双向宽搜",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索进阶第1课_双向宽搜.ppt",
+      "fileName": "搜索进阶第1课_双向宽搜.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 4103168,
+      "sha256": "fbcdc353a17404dd08ce5b6cf35036becc1070e988576dd8711161c05c1701b4"
+    },
+    {
+      "id": "asset-017",
+      "label": "搜索进阶第2课_康托展开与字符hash",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索进阶第2课_康托展开与字符hash.ppt",
+      "fileName": "搜索进阶第2课_康托展开与字符hash.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 3505664,
+      "sha256": "daa600883476c6e7c861354b1d9248c1cda02a042acd54a7a031605a9527a52f"
+    },
+    {
+      "id": "asset-018",
+      "label": "搜索进阶第3课_启发式搜索",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索进阶第3课_启发式搜索.ppt",
+      "fileName": "搜索进阶第3课_启发式搜索.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 7592960,
+      "sha256": "47926303ecd1a835422a3a564cbe166febaa4e9e069a0a8c1492549b155c2dfb"
+    },
+    {
+      "id": "asset-019",
+      "label": "搜索进阶第4课_迭代加深",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索进阶第4课_迭代加深.ppt",
+      "fileName": "搜索进阶第4课_迭代加深.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 849920,
+      "sha256": "add80b9a0ce5ab8f75746ea4aec791f543d08c226dd94a3b9121f5226acf3bbd"
+    },
+    {
+      "id": "asset-020",
+      "label": "搜索进阶第5课_记忆化搜索",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索进阶第5课_记忆化搜索.ppt",
+      "fileName": "搜索进阶第5课_记忆化搜索.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 861696,
+      "sha256": "e7eaf114d1c37e4e7b9bc8cee9df63b79356b27cf66d4dd1fb88b6b524c8cda1"
+    },
+    {
+      "id": "asset-021",
+      "label": "搜索进阶第6课_搜索题目选讲",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/搜索进阶第6课_搜索题目选讲.ppt",
+      "fileName": "搜索进阶第6课_搜索题目选讲.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 518144,
+      "sha256": "316207903f676fcd3e09b764278b201e12e22f36b42ea310ed80542db0e45264"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "0649db88-8c6f-4b63-9fe8-d438a90e54c3",
+    "2dbd92a1-260d-4fc3-ac6e-df536adc83d7",
+    "3885ee60-71a4-4182-a3be-4a1b38b83125",
+    "3f21e78c-f9e5-462f-af3c-5cfcbca78711",
+    "3fd64edc-b0e9-4bca-ab9e-9eb2892a082d",
+    "4374cc37-9626-449d-89a6-3b9f65784ef8",
+    "4619fc14-0fca-4421-9546-4e23db69ec27",
+    "7c267b29-bd36-46d6-8e01-29a212cdce77",
+    "83616742-c450-4906-9dc6-8ff5baf1b883",
+    "916a3de5-3c11-4e32-80f0-186297d98f22",
+    "92e9944e-b51b-4df9-98df-cbff3a3007bf",
+    "9e5e411f-8880-4535-82fe-7afe9cfc5721",
+    "a0781bd8-6d1b-4555-984b-f1907bb2ce63",
+    "a1eda36f-ebb7-4033-9507-27564959c2dd",
+    "a3bd9dff-e822-46bd-8d2a-7a7eaee79647",
+    "a8bc7554-ff22-4ee7-ae51-a8fee0886c93",
+    "aeca065a-611d-481b-9f72-3a43a5a7e2ba",
+    "be23e9dd-02bd-4714-810e-18371319f4a5",
+    "c5f8f522-4154-4e7b-88fe-b6097725f796",
+    "caf23ef1-67c5-480d-9cf9-63dcd872ca91",
+    "fadce7f0-a2b8-49c2-9c82-8232a7de4e68"
+  ]
+}

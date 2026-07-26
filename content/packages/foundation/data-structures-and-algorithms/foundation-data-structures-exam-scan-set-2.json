@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-exam-scan-set-2",
+  "title": "数据结构与算法试卷扫描件（第 2 组）",
+  "summary": "数据结构与算法试卷扫描件（第 2 组），按原始页码顺序集中提供。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "sample-exams",
+  "materialType": "试卷扫描件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "试卷",
+    "扫描件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "HP0026",
+      "role": "question",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/HP0026.jpg",
+      "fileName": "HP0026.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 258974,
+      "sha256": "b4194fbf4814ca7182e048710fc800bd23475360a3c0a550ac62541eb803cc92"
+    },
+    {
+      "id": "asset-02",
+      "label": "HP0028",
+      "role": "question",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/HP0028.jpg",
+      "fileName": "HP0028.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 183118,
+      "sha256": "117776448466f2e85ab3c847fc9119b5a794c82f557482c4d9ff3eeff790ecf2"
+    },
+    {
+      "id": "asset-03",
+      "label": "HP0027",
+      "role": "question",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/HP0027.jpg",
+      "fileName": "HP0027.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 189241,
+      "sha256": "f804de3246315abb3207744892add7da7f84c07c6de86ca8e45acd6695d367dc"
+    },
+    {
+      "id": "asset-04",
+      "label": "HP0025",
+      "role": "question",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/HP0025.jpg",
+      "fileName": "HP0025.jpg",
+      "mediaType": "image/jpeg",
+      "sizeBytes": 340798,
+      "sha256": "4052cd974cfb50a6aa199548ca87fa16d08b370f4d99998eef815b4dd0917ec0"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-exam-scan-set-2",
+    "09530d90-84c4-4d5a-a295-4eaa943d8b25",
+    "e61eb511-c8e7-41e0-a053-eede26020c11",
+    "475711d8-7a24-424f-a47a-59314839f10d",
+    "b3036bd3-dd5c-45c4-972e-33b0afb76475",
+    "51ecafc6-033e-4cf7-b346-86364addb1e7",
+    "d6ecf6ed-c918-4d93-9749-2781058460c2",
+    "8bfd38d6-16a7-460d-9e90-157726daa003",
+    "c473ca0c-e3e0-44db-8ffa-211061483e51"
+  ]
+}

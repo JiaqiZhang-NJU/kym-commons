@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-2007-final-with-solutions",
+  "title": "2007 年数据结构期末试卷（含答案）",
+  "summary": "2007 年数据结构期末试卷及参考答案。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "试卷与解答",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "2007",
+    "期末考试"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "2007年数据结构期末试卷参考答案",
+      "role": "solution",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2007年数据结构期末试卷参考答案.doc",
+      "fileName": "2007年数据结构期末试卷参考答案.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 35840,
+      "sha256": "721ec9619a9e64912f133b923d5d7248fe0fcfac629dbcfbe6040e0c794327c0"
+    },
+    {
+      "id": "asset-02",
+      "label": "2007年数据结构期末试卷",
+      "role": "question",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2007年数据结构期末试卷.doc",
+      "fileName": "2007年数据结构期末试卷.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 51200,
+      "sha256": "1dee41b863ad6d3d54f39e3e918db03a8b9d5d9e60732fa991ecadd0185568bb"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-2007-final-with-solutions",
+    "09224607-995d-4e97-845a-199fe7807271",
+    "25af0b03-9479-48d4-95c0-29e237a96c26",
+    "5654f392-9275-44e6-b50d-cf0a938965c1",
+    "e956a297-25ce-49e6-b75a-957773bd5b3b"
+  ]
+}

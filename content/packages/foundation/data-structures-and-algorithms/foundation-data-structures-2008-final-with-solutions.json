@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-2008-final-with-solutions",
+  "title": "2008 年数据结构期末试卷（含答案）",
+  "summary": "2008 年数据结构期末试卷及参考答案。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "finals",
+  "materialType": "试卷与解答",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "2008",
+    "期末考试"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "2008年数据结构期末试卷参考答案",
+      "role": "solution",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2008年数据结构期末试卷参考答案.doc",
+      "fileName": "2008年数据结构期末试卷参考答案.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 63488,
+      "sha256": "7627c4abcce2656bf32956009b794fa992be538b5bcb429c8353f3ee0a4c2064"
+    },
+    {
+      "id": "asset-02",
+      "label": "2008年数据结构期末试卷",
+      "role": "question",
+      "href": "/files/foundation/data-structures-and-algorithms/finals/2008年数据结构期末试卷.doc",
+      "fileName": "2008年数据结构期末试卷.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 61440,
+      "sha256": "08ebd32167709628fba6be7a147e30c42b1bead8d99166e9fe9a0e066a732f1a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-2008-final-with-solutions",
+    "1e500003-ab53-475a-ab82-4e7756a46e04",
+    "39cc5d45-8a43-4330-bde0-1cbb5d643bf0",
+    "9028af53-a235-4604-9854-e51e573f430c",
+    "4b05ead7-98c6-45b0-ae2c-a77053c44752"
+  ]
+}

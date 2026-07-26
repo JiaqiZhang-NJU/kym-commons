@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-graph",
+  "title": "问题求解：图论算法课件",
+  "summary": "图论、最短路、生成树、网络流、匹配、连通性与图上数据结构专题课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "并查集1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/并查集1.ppt",
+      "fileName": "并查集1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 586240,
+      "sha256": "fbbd40ee6314e7fe79a82ec70756d2bccf8c9dd4cd7e6ff59e5d39c9a66719bb"
+    },
+    {
+      "id": "asset-002",
+      "label": "并查集2_带权",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/并查集2_带权.ppt",
+      "fileName": "并查集2_带权.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 288256,
+      "sha256": "22455789f687a5a47247211cfcc359e123c633299552ff29c81e38bfb95d9005"
+    },
+    {
+      "id": "asset-003",
+      "label": "补充1_分层图 最短路",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/补充1_分层图 最短路.ppt",
+      "fileName": "补充1_分层图 最短路.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 269312,
+      "sha256": "f3adcc9af006a691641941aa6c6332d3030ea6f50041c2ac5211f16c6cb947e0"
+    },
+    {
+      "id": "asset-004",
+      "label": "补充2_最小生成树_最小度限制生成树",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/补充2_最小生成树_最小度限制生成树.ppt",
+      "fileName": "补充2_最小生成树_最小度限制生成树.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 241664,
+      "sha256": "9efd99809f31d89f31dddb042332225599acf7dbfd5a867809ae5e6876bb8b58"
+    },
+    {
+      "id": "asset-005",
+      "label": "补充3_floyd求最小环",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/补充3_floyd求最小环.pptx",
+      "fileName": "补充3_floyd求最小环.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 41625,
+      "sha256": "981e1f0b79aa60c9c8789e7f2eccf0e3efd220786def8b28c67ea7e2fb2109a3"
+    },
+    {
+      "id": "asset-006",
+      "label": "差分约束系统1_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/差分约束系统1_helang.ppt",
+      "fileName": "差分约束系统1_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1257984,
+      "sha256": "a46a648e3213426c62ef568fc41f3fed74e3f1218803d1a59c331de7aa875cc9"
+    },
+    {
+      "id": "asset-007",
+      "label": "差分约束系统2_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/差分约束系统2_helang.ppt",
+      "fileName": "差分约束系统2_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 297984,
+      "sha256": "9b2ab6acccb2836fb08e2e0dbd9d7bcee3b635a97ef7fcfbc415fc09d4288cd7"
+    },
+    {
+      "id": "asset-008",
+      "label": "次短路",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/次短路.ppt",
+      "fileName": "次短路.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 179200,
+      "sha256": "ff1ed92193bd1b591aee979dc359c43284e3eaa229c56cc301cb4d526c6d54c1"
+    },
+    {
+      "id": "asset-009",
+      "label": "第k短路",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第k短路.ppt",
+      "fileName": "第k短路.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 143360,
+      "sha256": "b9a28bf2306bd09bbb9334dd81b886b2dca9bead9af27667fd84167206e0e87e"
+    },
+    {
+      "id": "asset-010",
+      "label": "平面图的欧拉公式_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/平面图的欧拉公式_helang.pptx",
+      "fileName": "平面图的欧拉公式_helang.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 99901,
+      "sha256": "eee0b815a3e86a8075b189d3edffa950776c1dd3eb7fcd3736f1709f1daf9c11"
+    },
+    {
+      "id": "asset-011",
+      "label": "拓扑排序",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/拓扑排序.ppt",
+      "fileName": "拓扑排序.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1538560,
+      "sha256": "0bdc39d7a9d3f9147ab52d54dfdabccf689d4ba487ef940e4da32b91081c6721"
+    },
+    {
+      "id": "asset-012",
+      "label": "图的存储方法",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/图的存储方法.ppt",
+      "fileName": "图的存储方法.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 572928,
+      "sha256": "632fc44f8c5fcf8b4904a70f9cdcf05bfcf69d3dea8c7f63da1296dff2b72054"
+    },
+    {
+      "id": "asset-013",
+      "label": "图的连通1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/图的连通1.ppt",
+      "fileName": "图的连通1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1781760,
+      "sha256": "af857c7147172e13a98370b08e638a9c52d2cc3f4823caaad15e5d99518bf762"
+    },
+    {
+      "id": "asset-014",
+      "label": "网络流1_最大流",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/网络流1_最大流.ppt",
+      "fileName": "网络流1_最大流.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1436160,
+      "sha256": "b3e41b6079d1df82bc9b2aa642896e2e8abe4031041a100f100f00f75cb54ff5"
+    },
+    {
+      "id": "asset-015",
+      "label": "网络流2_SAP",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/网络流2_SAP.ppt",
+      "fileName": "网络流2_SAP.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 508928,
+      "sha256": "fabde2cb314dfaf1d671ecf9543b77e4fb0ec1530f38f154b1861179005da197"
+    },
+    {
+      "id": "asset-016",
+      "label": "网络流3_最小割",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/网络流3_最小割.ppt",
+      "fileName": "网络流3_最小割.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 592896,
+      "sha256": "0565e0b385b65999a32c078ff414c4016f447df22ff4aa5266abd2aeea1a36f3"
+    },
+    {
+      "id": "asset-017",
+      "label": "网络流4_费用流",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/网络流4_费用流.ppt",
+      "fileName": "网络流4_费用流.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 183808,
+      "sha256": "ae76e8bc4ce4e6736e9bd7430913a992f7f5cac3b486b5c34554f225522f51ee"
+    },
+    {
+      "id": "asset-018",
+      "label": "网络流5_题目选讲",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/网络流5_题目选讲.ppt",
+      "fileName": "网络流5_题目选讲.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 304128,
+      "sha256": "981448c278d4df044690f62382cf4acede3a106c9720a614d119f025b619ac29"
+    },
+    {
+      "id": "asset-019",
+      "label": "匈牙利算法1 基础_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/匈牙利算法1 基础_helang.ppt",
+      "fileName": "匈牙利算法1 基础_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1645568,
+      "sha256": "cde5a8018257af4c1870219c6219a0411abc139f18753dbf8cac4bd60a13a0dc"
+    },
+    {
+      "id": "asset-020",
+      "label": "匈牙利算法2 扩展_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/匈牙利算法2 扩展_helang.ppt",
+      "fileName": "匈牙利算法2 扩展_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 576512,
+      "sha256": "a08784f780a702e2eb5e4990341cc07c6a724215fd237f1ecaac1d1ac0baaa82"
+    },
+    {
+      "id": "asset-021",
+      "label": "匈牙利算法3 习题_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/匈牙利算法3 习题_helang.ppt",
+      "fileName": "匈牙利算法3 习题_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 550400,
+      "sha256": "739c621b6418d4920cda264049ebd86451814ffd73c5790c1ecc783a0731138a"
+    },
+    {
+      "id": "asset-022",
+      "label": "最短路算法",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/最短路算法.ppt",
+      "fileName": "最短路算法.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 5832704,
+      "sha256": "aee10bd062b6a98f7fa4fa815236a2a27b818afa46bbc97af67d714531da98dc"
+    },
+    {
+      "id": "asset-023",
+      "label": "最小生成树1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/最小生成树1.ppt",
+      "fileName": "最小生成树1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 507904,
+      "sha256": "5b6b12daa3bf933e381c43fa6feca5b39f91adc28ea5360a99507b95d099c00d"
+    },
+    {
+      "id": "asset-024",
+      "label": "最小生成树2",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/最小生成树2.ppt",
+      "fileName": "最小生成树2.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 262144,
+      "sha256": "3bc1b86bc1640ad17db27e7f0f1f4e1ff2dd19eb6a1c6a349aa4f09e9038e3d9"
+    },
+    {
+      "id": "asset-025",
+      "label": "Dijkstra加堆",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/Dijkstra加堆.ppt",
+      "fileName": "Dijkstra加堆.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 196096,
+      "sha256": "5a12c7724b81d7e7eae5077eb8294767c40485d5beb8caa340ceab5e4dcadc6a"
+    },
+    {
+      "id": "asset-026",
+      "label": "LCA与倍增_Helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/LCA与倍增_Helang.ppt",
+      "fileName": "LCA与倍增_Helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 378880,
+      "sha256": "0d02b4ffc78c48559050aef9b9c3763cb3b36c4f04fecb4254286497a12a6d48"
+    },
+    {
+      "id": "asset-027",
+      "label": "SPFA",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/SPFA.ppt",
+      "fileName": "SPFA.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 500736,
+      "sha256": "da39c1c4128c43e8416698faea96643236b921faa861de408e201a49c8e6dde6"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "00bffc7a-4287-4511-b6f0-0a55ffe7b946",
+    "05ae070a-7a56-4e8e-958a-eb19211a3b7a",
+    "0633365e-a8cf-4210-bff3-3c12d655336e",
+    "07a7f416-514b-49bc-abdd-2e0b866d7d62",
+    "156de1e5-51cf-46f2-a836-d5904df064a1",
+    "2738d138-ebc2-49ad-825b-24c43e25b0da",
+    "2d4166e4-1197-42d9-ab65-75322a642d7d",
+    "2e26a791-9de5-46a4-8425-0e357c881ce3",
+    "33787b07-e529-435a-936f-7bc45ed7a6a1",
+    "391689a3-7341-4864-b088-0f713fadf2c0",
+    "3b66b512-7d4e-4b2d-b800-03a5548c85eb",
+    "3c1da669-e70d-462a-b945-58135d753790",
+    "4a1232a9-8255-43a8-bf6e-445067535a2f",
+    "4f033a3f-0461-4bfd-8342-0065fbd7e635",
+    "5220307d-f5f2-469f-a490-a6ed264c3ecb",
+    "01aee418-2826-45e2-a1e8-adeb4201838e",
+    "5c2c8a28-f792-45e1-b75a-23a5a2c58c70",
+    "5f580576-390b-4ec5-af10-0c3e713b6c92",
+    "8cc6c6cf-6644-4433-97e9-1ac1f0463436",
+    "978e8368-0f20-4120-8d3c-34fb34200049",
+    "980e9f15-5a95-473d-ab7a-64ab42ee7f64",
+    "a582bec2-7271-49ad-a417-695b5a2748a2",
+    "aa09f89d-effd-4751-bc72-9887286f3fcf",
+    "ce819bbf-9a7c-4e9e-a92d-74929556b684",
+    "b5142784-c2c0-4c4c-8bd9-fc3d64fbb365",
+    "bd6985ec-d578-4dc2-87b2-292e168a3ad0",
+    "013127bd-86b0-4af4-9d56-b98e94d72c27",
+    "d24ce664-ff68-447e-b773-2f01ffaff6d0",
+    "d9fdf004-42b8-4b80-8d6c-f37b9d9cbbc2",
+    "dc3d020e-6ee0-4c2e-89aa-41a7353967d5"
+  ]
+}

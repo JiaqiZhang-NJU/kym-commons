@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-07",
+  "title": "数据结构第 7 章练习与作业",
+  "summary": "数据结构第 7 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 7 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "job7",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job7.doc",
+      "fileName": "job7.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 296960,
+      "sha256": "35e5ca07daf5e1d78ae057d6920ca86d8904dcb2ac46a740423330f9cf1dd43c"
+    },
+    {
+      "id": "asset-02",
+      "label": "数据结构第7章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第7章.doc",
+      "fileName": "数据结构第7章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 388608,
+      "sha256": "b208f4c71acacff8d8dcd3358a56e19afa533726350239e5a6f7ed79fc346894"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-07",
+    "0f7b105e-bd9b-4605-93a3-e38d09725c8d",
+    "f7149497-75b4-469d-9c66-85bc0f2c9e44"
+  ]
+}

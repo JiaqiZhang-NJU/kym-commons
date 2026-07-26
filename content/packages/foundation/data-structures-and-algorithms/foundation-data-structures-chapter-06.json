@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-06",
+  "title": "数据结构第 6 章练习与作业",
+  "summary": "数据结构第 6 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 6 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "数据结构第6章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第6章.doc",
+      "fileName": "数据结构第6章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 392704,
+      "sha256": "d094cf3af9e145ea98c6a73ee77e77f1a6c8dd25e4730105404f9ec24634be59"
+    },
+    {
+      "id": "asset-02",
+      "label": "job6",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job6.doc",
+      "fileName": "job6.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 228864,
+      "sha256": "c1522ef4158a0612181a4ab90f4aff48627dbf6fd555a7966adf98fbef0a0dcd"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-06",
+    "9b712b7e-38d1-4043-a3b0-a277ec6dff8b",
+    "e45b25d6-4f01-4c61-a8a0-cbf21517b655"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-knowledge-index",
+  "title": "数据结构知识目录",
+  "summary": "数据结构知识目录的 PDF 与 DOCX 版本。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "知识目录",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "知识目录"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "数据结构 知识目录",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/materials/数据结构 知识目录.docx",
+      "fileName": "数据结构 知识目录.docx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "sizeBytes": 13611,
+      "sha256": "b8a25772cfa9bc34d3c0d2c1ee689721fcf01404e1d9e93163e731f0c902caa6"
+    },
+    {
+      "id": "asset-02",
+      "label": "数据结构 知识目录",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/materials/数据结构 知识目录.pdf",
+      "fileName": "数据结构 知识目录.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 69942,
+      "sha256": "0e2256a4f4cc7dc97b97141e9a8960dd992cefd811df04b80065e75ea172e24a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "4907ec4a-1b18-4f39-92b3-05893663c76a",
+    "b71b5c18-b78d-4da2-b2ba-1077e0056e61"
+  ]
+}

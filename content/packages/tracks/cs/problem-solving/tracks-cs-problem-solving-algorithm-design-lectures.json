@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-algorithm-design-lectures",
+  "title": "问题求解：算法设计课程讲义",
+  "summary": "算法问题、复杂度、组合计数、分治、概率、排序、数据结构、动态规划、贪心与线性规划等系列讲义。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "系列讲义",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法设计",
+    "系列讲义"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "第1讲_ 算法问题与解题的正确性",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第1讲_ 算法问题与解题的正确性.zip",
+      "fileName": "第1讲_ 算法问题与解题的正确性.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 84242,
+      "sha256": "2698f68fb7b57fb4f2389927b6931122390449e576ed0ff2aced35c2c9d8b97b"
+    },
+    {
+      "id": "asset-002",
+      "label": "第2讲_ 算法的效率",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第2讲_ 算法的效率.zip",
+      "fileName": "第2讲_ 算法的效率.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 81611,
+      "sha256": "4eb4df0a5f7a19a0d434bb4e231d6bd0f8c33337ea11f2c31a81f0b4ebf09c70"
+    },
+    {
+      "id": "asset-003",
+      "label": "第2讲_ 组合与计数",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第2讲_ 组合与计数.zip",
+      "fileName": "第2讲_ 组合与计数.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 95869,
+      "sha256": "4b3422ab67e6283c95b0ee80e1c5008b53969f62976d341bbe3d24039938f2b4"
+    },
+    {
+      "id": "asset-004",
+      "label": "第3讲_ 分治法与递归",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第3讲_ 分治法与递归.zip",
+      "fileName": "第3讲_ 分治法与递归.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 86218,
+      "sha256": "3776199893e0959f4536b21914e5ab6492b3321444e6c1fe3155d7a90ca9a4e5"
+    },
+    {
+      "id": "asset-005",
+      "label": "第4讲_ 递归及其数学基础",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第4讲_ 递归及其数学基础.zip",
+      "fileName": "第4讲_ 递归及其数学基础.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 93770,
+      "sha256": "7e68c11a686dfa94a28ef27ba7f19cd96ccbdc88560f7ee68ad4fcd7ddfc8024"
+    },
+    {
+      "id": "asset-006",
+      "label": "第5讲_ 离散概率基础",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第5讲_ 离散概率基础.zip",
+      "fileName": "第5讲_ 离散概率基础.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 89771,
+      "sha256": "fe1e303324fc9280cf6e71f6dec62a7c27aa9ddc1192f99998cfc895bfff3116"
+    },
+    {
+      "id": "asset-007",
+      "label": "第6讲_ 概率分析与随机算法",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第6讲_ 概率分析与随机算法.zip",
+      "fileName": "第6讲_ 概率分析与随机算法.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 94219,
+      "sha256": "3b03901bb9d95e6932e2a63eecbfecd9a3983811d9dcee557d125a1fe6c2a37f"
+    },
+    {
+      "id": "asset-008",
+      "label": "第7讲_ 排序",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第7讲_ 排序.zip",
+      "fileName": "第7讲_ 排序.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 81259,
+      "sha256": "3afd44b6987baaa78fd5a4673cbab88720b1c0f587c62ab6aac0744fdddbe6f5"
+    },
+    {
+      "id": "asset-009",
+      "label": "第8讲_ 选择",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第8讲_ 选择.zip",
+      "fileName": "第8讲_ 选择.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 78312,
+      "sha256": "3603706d5b1f796f0cb9946f9910c0245ebd0b3d34f4154b206e9b0016837900"
+    },
+    {
+      "id": "asset-010",
+      "label": "第9讲_ 基础数据结构",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第9讲_ 基础数据结构.zip",
+      "fileName": "第9讲_ 基础数据结构.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 83889,
+      "sha256": "a812a322a19ace3bdc44272e392b53e49c4c5515bc10f6f98c3992313869547e"
+    },
+    {
+      "id": "asset-011",
+      "label": "第10讲_ 堆与堆排序",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第10讲_ 堆与堆排序.zip",
+      "fileName": "第10讲_ 堆与堆排序.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 90263,
+      "sha256": "f8d3c452b7245d78bb412ef3ebb50ccc6e0958d1d053b88db941554dcddcc8e6"
+    },
+    {
+      "id": "asset-012",
+      "label": "第11讲_ 搜索树和红黑树",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第11讲_ 搜索树和红黑树.zip",
+      "fileName": "第11讲_ 搜索树和红黑树.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 83834,
+      "sha256": "fb2dc0cc9229ffbf63aa1f787186afb39928f7e80c437d19a9f060cf05db49e6"
+    },
+    {
+      "id": "asset-013",
+      "label": "第12讲_ 哈希",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第12讲_ 哈希.zip",
+      "fileName": "第12讲_ 哈希.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 82870,
+      "sha256": "8cf80a09df11448f15f4446a882947308938ab08e2d3d4a4feef159c938b7bcc"
+    },
+    {
+      "id": "asset-014",
+      "label": "第13讲_ 动态规划",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第13讲_ 动态规划.zip",
+      "fileName": "第13讲_ 动态规划.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 84810,
+      "sha256": "a2d1c8036eb1a8baf3a850e4d6370ece71a4660f2a63a1d59c9361fe2282af2c"
+    },
+    {
+      "id": "asset-015",
+      "label": "第14讲_ 贪心算法",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第14讲_ 贪心算法.zip",
+      "fileName": "第14讲_ 贪心算法.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 82595,
+      "sha256": "2c06ae070812c8e1fb143b27afa01d39364401d615151e8f287840e70e7d7e17"
+    },
+    {
+      "id": "asset-016",
+      "label": "第15讲_ 用于动态等价关系的数据结构与均摊分析",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第15讲_ 用于动态等价关系的数据结构与均摊分析.zip",
+      "fileName": "第15讲_ 用于动态等价关系的数据结构与均摊分析.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 89892,
+      "sha256": "421de0d6173598c70d9da35b5bfcd338ebc50cd74f9e3e7e71440c1834f765c4"
+    },
+    {
+      "id": "asset-017",
+      "label": "第16讲_ 线性规划",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/第16讲_ 线性规划.zip",
+      "fileName": "第16讲_ 线性规划.zip",
+      "mediaType": "application/zip",
+      "sizeBytes": 83103,
+      "sha256": "4d26c548deb5dd552c8e700f1f384f7500bf627c4867e1d10d29a094b4abf90a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "07d3d22b-822f-447f-ac30-660efdc2a88a",
+    "40becb33-c014-44a5-a193-3ab122db1160",
+    "45159f53-f19e-4ac0-b459-07e94ea5cc9d",
+    "5bdf1168-6fd4-4084-a243-b49c8b0c13d0",
+    "5c68dd85-2276-48fe-a253-915d6869b77b",
+    "6e8c7229-bebe-40f5-a1ed-4c346a16b0c1",
+    "791fdea0-8ed0-4e27-ac5e-8fbfc6ec8d6c",
+    "85fc0560-146f-41c8-b09e-95ac3c944776",
+    "8dbe78b5-390c-4dd1-934b-a9fd9c171347",
+    "9ea171b4-5d7b-4889-901e-9d1afe942aa6",
+    "a729f435-2c38-491a-a7e4-729410ff5152",
+    "ab49c48b-5fb1-477d-8736-561eb4ecc085",
+    "ac4edfb3-0cd2-4891-8597-1850c50cf4d4",
+    "ae26661c-23b6-4bd4-a8a0-1eb79c4cb3d1",
+    "aebf3d54-cdee-4fe9-ad43-30fc21eeea9f",
+    "c1305d93-df03-470c-8933-eba4891d53fa",
+    "f938f29c-9dcf-443f-a0d4-06c794a2a0a2"
+  ]
+}

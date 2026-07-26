@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-05",
+  "title": "数据结构第 5 章练习与作业",
+  "summary": "数据结构第 5 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 5 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "job5",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job5.doc",
+      "fileName": "job5.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 179712,
+      "sha256": "5b7e576043c3c54fccede527c4c1dc9ec92bb76858a31a78a8d4148b1d2c07c5"
+    },
+    {
+      "id": "asset-02",
+      "label": "数据结构第5章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第5章.doc",
+      "fileName": "数据结构第5章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 217600,
+      "sha256": "62b2f9d3c66416d846ca790c8d4ce9b9e91bba9b30f8220d2c5a76cc61f6b933"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-05",
+    "4f60caaa-21d7-48bf-85fe-0a4bf3df87d0",
+    "a47c89df-ce34-4879-a834-aab1458eef4f"
+  ]
+}

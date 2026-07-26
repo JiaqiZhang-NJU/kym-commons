@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "foundation-data-structures-chapter-08",
+  "title": "数据结构第 8 章练习与作业",
+  "summary": "数据结构第 8 章章节资料与配套作业。",
+  "placement": {
+    "section": "foundation",
+    "courseSlug": "data-structures-and-algorithms"
+  },
+  "categorySlug": "reference",
+  "materialType": "章节练习",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "数据结构与算法",
+    "第 8 章",
+    "章节练习"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-01",
+      "label": "job8",
+      "role": "supplement",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/job8.doc",
+      "fileName": "job8.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 65024,
+      "sha256": "3776bebdaec914b161e079461228ec697fcc64432050904f6a48385146cf4370"
+    },
+    {
+      "id": "asset-02",
+      "label": "数据结构第8章",
+      "role": "primary",
+      "href": "/files/foundation/data-structures-and-algorithms/midterms/数据结构第8章.doc",
+      "fileName": "数据结构第8章.doc",
+      "mediaType": "application/msword",
+      "sizeBytes": 320512,
+      "sha256": "89c662d2cc3331d310328907bab8f70b4b4379c33f59a7dfab3592754fb64482"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "foundation-data-structures-chapter-08",
+    "228350a3-f292-4fed-9763-512fabbd57f6",
+    "b35e4fdb-2653-4a8b-b0d3-2e989e9a3a0f"
+  ]
+}

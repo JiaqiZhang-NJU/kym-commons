@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-dynamic-programming",
+  "title": "问题求解：动态规划课件",
+  "summary": "基础、区间、树形、单调队列优化、状态压缩与滚动数组等动态规划专题课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "单调队列优化dp1_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/单调队列优化dp1_helang-1.ppt",
+      "fileName": "单调队列优化dp1_helang-1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 141312,
+      "sha256": "e0919b618c3d53a4342880c815c476c65cb333041804b8933e05a95b47ae9ac4"
+    },
+    {
+      "id": "asset-002",
+      "label": "单调队列优化dp1_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/单调队列优化dp1_helang.ppt",
+      "fileName": "单调队列优化dp1_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 141312,
+      "sha256": "f651f727db90f293ad44fb3d8fd4bdcc4fc6a5281ab403f87eb7353f479cf1ac"
+    },
+    {
+      "id": "asset-003",
+      "label": "单调队列优化dp2_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/单调队列优化dp2_helang-1.ppt",
+      "fileName": "单调队列优化dp2_helang-1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 181760,
+      "sha256": "eb35ac93e35de01e1884bde0440ff31e40074f769dae8be95d017e06c99a3758"
+    },
+    {
+      "id": "asset-004",
+      "label": "单调队列优化dp2_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/单调队列优化dp2_helang.ppt",
+      "fileName": "单调队列优化dp2_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 181760,
+      "sha256": "4f4e88849733596be3766e2f3189e34ff6a640d692e3963f54ee52453f024a47"
+    },
+    {
+      "id": "asset-005",
+      "label": "费用提前计算",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/费用提前计算.ppt",
+      "fileName": "费用提前计算.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 6480896,
+      "sha256": "34710083aeec696e4d74da7d2cd7353026f96740a94d27eef024523755258fd8"
+    },
+    {
+      "id": "asset-006",
+      "label": "滚动数组1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/滚动数组1.ppt",
+      "fileName": "滚动数组1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 494080,
+      "sha256": "861a643c9d0c38b1c4abaa83f95374ebfa782bce4f1344fd0db47131e9026136"
+    },
+    {
+      "id": "asset-007",
+      "label": "滚动数组2",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/滚动数组2.ppt",
+      "fileName": "滚动数组2.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 389120,
+      "sha256": "7ab588d911c227305fa43af07c9524ca202ceefe392128849ef0d147fb005362"
+    },
+    {
+      "id": "asset-008",
+      "label": "基础动规1_1_入门_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规1_1_入门_helang.ppt",
+      "fileName": "基础动规1_1_入门_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1006592,
+      "sha256": "127c78303b014cf8ee779bc55184b59762c0a11cd2bed562fdf0ff4931522a90"
+    },
+    {
+      "id": "asset-009",
+      "label": "基础动规1_2_习题讲评",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规1_2_习题讲评.ppt",
+      "fileName": "基础动规1_2_习题讲评.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 204288,
+      "sha256": "726c968b440d0a59194f7414baa1b617f2e9cd601b704c5087a1ac3df7f13239"
+    },
+    {
+      "id": "asset-010",
+      "label": "基础动规1_背包_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规1_背包_helang.ppt",
+      "fileName": "基础动规1_背包_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 814080,
+      "sha256": "0ce0ea3b18685ea24b09715bfc85bd73bf3a03b6ea10487a1fcb95d6f2162c21"
+    },
+    {
+      "id": "asset-011",
+      "label": "基础动规2_背包习题1_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规2_背包习题1_helang.ppt",
+      "fileName": "基础动规2_背包习题1_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 377856,
+      "sha256": "38a4fa9de265aeb0d929000f87c2cf269819ab208d78e82ccebf1efaa6903316"
+    },
+    {
+      "id": "asset-012",
+      "label": "基础动规2_子序列与矩阵_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规2_子序列与矩阵_helang.ppt",
+      "fileName": "基础动规2_子序列与矩阵_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 880128,
+      "sha256": "8c7b9186058b6b2b19428f1b935f830569e2c509989ee923fe74568ab8fe4f25"
+    },
+    {
+      "id": "asset-013",
+      "label": "基础动规3_背包习题2_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规3_背包习题2_helang.ppt",
+      "fileName": "基础动规3_背包习题2_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 673792,
+      "sha256": "5ec5679e7cfd712cf409ae3a886ce208d5de7cebe5fd9a6d758b95cc51c25e90"
+    },
+    {
+      "id": "asset-014",
+      "label": "基础动规3_习题讲评_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规3_习题讲评_helang.ppt",
+      "fileName": "基础动规3_习题讲评_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 214528,
+      "sha256": "3b0150bcbc7214d13e4cec56b00dff0b6c0cceff96e3da8a95203a1d3a356b9e"
+    },
+    {
+      "id": "asset-015",
+      "label": "基础动规6_经典题目_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/基础动规6_经典题目_helang.ppt",
+      "fileName": "基础动规6_经典题目_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 610304,
+      "sha256": "6c94ae65b00bbe05a1d97bdd86fb0a46ad541f9ef22a8357c225f7ae768c6762"
+    },
+    {
+      "id": "asset-016",
+      "label": "区间动规1_区间_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/区间动规1_区间_helang.ppt",
+      "fileName": "区间动规1_区间_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 919552,
+      "sha256": "bf106006a4fa07af8aef63f124a09b927f2b9c219f7453b01e03ffeedd88461c"
+    },
+    {
+      "id": "asset-017",
+      "label": "区间动规2_三角剖分",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/区间动规2_三角剖分.ppt",
+      "fileName": "区间动规2_三角剖分.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 316928,
+      "sha256": "72ee125c893711e5d0c04bb7c2b331e72801248ab70381a1c1d6a2596d0b5450"
+    },
+    {
+      "id": "asset-018",
+      "label": "树形动规1",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/树形动规1.ppt",
+      "fileName": "树形动规1.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 670208,
+      "sha256": "d8730b86be1bd0519aa28382b0a9949a904a3036cac05a6014398f795dff97fe"
+    },
+    {
+      "id": "asset-019",
+      "label": "树形动规2",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/树形动规2.ppt",
+      "fileName": "树形动规2.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 730624,
+      "sha256": "2ad7f41caa396950d8001055664bcff2a0b2b79a0565697d780193c9ab56a0ed"
+    },
+    {
+      "id": "asset-020",
+      "label": "状态压缩1_nodgd",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/状态压缩1_nodgd.pptx",
+      "fileName": "状态压缩1_nodgd.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 1346443,
+      "sha256": "af26eb400c79fa01ab3ab193201ce4a586e605a51b6738e285cb9010b20a0980"
+    },
+    {
+      "id": "asset-021",
+      "label": "状态压缩2_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/状态压缩2_helang.ppt",
+      "fileName": "状态压缩2_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 486400,
+      "sha256": "87f35fb61f76cbe95a0af0a31d16733078c87a3569fd506940b0bb06e9c585d7"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "041d98f4-9479-4a2a-97ef-fe7bf57beb98",
+    "054402f4-5d3d-4cd5-aff5-ac52134a205f",
+    "05932ecd-789c-42aa-ace4-acac636e7c46",
+    "0c6dcec5-856f-422f-bdff-b3913c4aa7bc",
+    "1b4324f5-f990-4604-9054-5970255d9e99",
+    "248cb6ae-16b8-4ecc-b2df-6af3c1b9627a",
+    "28e22711-1156-4731-b63f-6392ad1aa857",
+    "2ee4c85d-b89e-44c1-9e63-0aacf22ef158",
+    "3898efe2-5144-40be-a0e3-4376d8ec7d04",
+    "3cf093be-356a-48b6-83c7-27c7b859de2c",
+    "4e35783a-57fb-4ce0-9d5a-c37dd832d2b5",
+    "530d8fa9-2e8a-4b47-aa11-a8b94c905ac2",
+    "690fb77f-0ebe-477a-a8f1-bda57be388eb",
+    "6b105dd2-1e63-4647-8036-46e3838474af",
+    "8a243374-455a-4077-b105-f068077a7182",
+    "9dfe351b-5ea6-4244-9cdd-5958dad38f56",
+    "9eb50655-8c77-4c63-922e-22ab243bae3f",
+    "aa69fed9-c30a-4d09-9393-fb91633ad4ee",
+    "c831feaf-8635-404f-9888-c8eff3dd3505",
+    "d0fddf13-e4ee-4298-99d3-2e071f273b1f",
+    "d714a943-424e-41aa-8edf-e5119eff56e7"
+  ]
+}

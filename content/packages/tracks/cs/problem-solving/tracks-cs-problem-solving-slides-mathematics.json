@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-mathematics",
+  "title": "问题求解：数学与组合课件",
+  "summary": "数论、组合计数、矩阵、同余、筛法及常用数学知识专题课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "1扩展欧几里德算法_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/1扩展欧几里德算法_helang.ppt",
+      "fileName": "1扩展欧几里德算法_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 465920,
+      "sha256": "ec68a5f5806d63e4a6ebe108997bcd2df90a379b6ff2bb401e28e84ebf3afe79"
+    },
+    {
+      "id": "asset-002",
+      "label": "2扩展欧几里德算法_题目讲评",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/2扩展欧几里德算法_题目讲评.ppt",
+      "fileName": "2扩展欧几里德算法_题目讲评.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 465920,
+      "sha256": "5f1de626abee0faa6762fe9cc80f19ee7499ffd7387e6b006296c83b433356af"
+    },
+    {
+      "id": "asset-003",
+      "label": "3中国剩余定理_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/3中国剩余定理_helang.ppt",
+      "fileName": "3中国剩余定理_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 275456,
+      "sha256": "736f5438ea037bf7f4ecdfe3d51087471d7d5f8f8cb1ad6650d5413b497c59a0"
+    },
+    {
+      "id": "asset-004",
+      "label": "4Catalan数_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/4Catalan数_helang.ppt",
+      "fileName": "4Catalan数_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 572416,
+      "sha256": "9d522694a8fa4108d0b98057687673149c370e7d8a10f063086a9eb31675aa52"
+    },
+    {
+      "id": "asset-005",
+      "label": "5容斥原理 _helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/5容斥原理 _helang.ppt",
+      "fileName": "5容斥原理 _helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 408064,
+      "sha256": "bf6f4ed8a2f9598f9fc6009bc9c5b5bfc23ae93e3d39af80e9a35589d731176b"
+    },
+    {
+      "id": "asset-006",
+      "label": "6欧拉和费马_题目讲评",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/6欧拉和费马_题目讲评.ppt",
+      "fileName": "6欧拉和费马_题目讲评.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 348160,
+      "sha256": "e3bb36c5736e19a81d194b5ecd6e7737cec392b7a8dda5b09635f8dcf14d9f6a"
+    },
+    {
+      "id": "asset-007",
+      "label": "6欧拉和费马_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/6欧拉和费马_helang.ppt",
+      "fileName": "6欧拉和费马_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1352192,
+      "sha256": "0bdc627aeea90b9e6d548c38c0e99586ff4826fe9b1e8da4eb73d8923f3e2afd"
+    },
+    {
+      "id": "asset-008",
+      "label": "10中位数_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/10中位数_helang.ppt",
+      "fileName": "10中位数_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 295936,
+      "sha256": "c4c9c8913e868f00e06016e46c26d477bbdaea55e0b602944b1a956b284f0bb9"
+    },
+    {
+      "id": "asset-009",
+      "label": "多维_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/多维_helang.ppt",
+      "fileName": "多维_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 722944,
+      "sha256": "de5d2c98be62ce45dfb87e658102c2b8d120f63b0968eb55361cfa37ed0ce268"
+    },
+    {
+      "id": "asset-010",
+      "label": "矩阵乘法1_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/矩阵乘法1_helang.ppt",
+      "fileName": "矩阵乘法1_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 1093632,
+      "sha256": "12ad687415cd886a3ef73bd1f4f9196c9678923ab4362c0014d03f5542c7893b"
+    },
+    {
+      "id": "asset-011",
+      "label": "矩阵乘法2_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/矩阵乘法2_helang.ppt",
+      "fileName": "矩阵乘法2_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 3302912,
+      "sha256": "04465d933be33f672efc192c1755a62c826d9f1b7d2a47f7c027ef9b0b81f934"
+    },
+    {
+      "id": "asset-012",
+      "label": "数学复习题讲评",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/数学复习题讲评.pptx",
+      "fileName": "数学复习题讲评.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 163952,
+      "sha256": "3f63638164f2ea0eda43e516a0d1e2d8ae485d6503310a951916d7e98de4a44d"
+    },
+    {
+      "id": "asset-013",
+      "label": "数学知识小总结_helang",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/数学知识小总结_helang.ppt",
+      "fileName": "数学知识小总结_helang.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 401408,
+      "sha256": "21e5172512c86ad917af5207686cda2dd78445aeeaf6dc08a893ed6d51d37295"
+    },
+    {
+      "id": "asset-014",
+      "label": "杨辉三角与二项式定理",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/杨辉三角与二项式定理.ppt",
+      "fileName": "杨辉三角与二项式定理.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 564224,
+      "sha256": "4477573c6efe93668cb3d2b28f8096b16ba29b1f70760fb0a64c66384a2353fc"
+    },
+    {
+      "id": "asset-015",
+      "label": "质数 线性筛 组合数取模",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/质数 线性筛 组合数取模.pptx",
+      "fileName": "质数 线性筛 组合数取模.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 93658,
+      "sha256": "59a9f0f87edd7843596745d0e2e1585f2d015127c9dea39904d7f4b60c6f01eb"
+    },
+    {
+      "id": "asset-016",
+      "label": "BSGS算法",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/BSGS算法.ppt",
+      "fileName": "BSGS算法.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 456704,
+      "sha256": "dbd498b5f3ab8f058bafd02d8cb631ec6426f27c7b2b4bc682cd9e461b4bcd1a"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "05e6cf6d-efa2-4b77-8677-9b4067f2728c",
+    "397cb7c6-7c90-44aa-b58f-1ab0d54a8453",
+    "3dab7555-ff22-437d-9679-579b2a6419af",
+    "48f50aac-c806-4eeb-90b3-6827e56b9935",
+    "4e7b7fd9-bb2c-4a4d-9181-c793ada184bf",
+    "4e9c86e1-322f-49e6-8d41-8f7732e7b2b5",
+    "788ef271-fc4b-42eb-8896-e6126460bdd4",
+    "87e12be9-8665-4248-833e-67b53ed60d92",
+    "bf9aa110-9e9c-4ade-8065-ba611cb81baf",
+    "c25e1ba9-4aca-47db-b2f0-df88d7fe9e28",
+    "e34922fb-2b44-4d4c-9c86-953be8c5f193",
+    "f113fbae-45f9-44f9-83c5-fa2f31c30bf9",
+    "f2f7c179-aa3e-4a40-ae01-e32e4489282d",
+    "f4b4594f-2be9-423a-907e-2ba35e22ff2d",
+    "fbb70f86-cf3c-4aaf-b3c3-dcc60cd482bd",
+    "fff9d733-ad83-4dd4-874c-03d5088269d8"
+  ]
+}

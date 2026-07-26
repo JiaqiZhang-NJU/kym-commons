@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-problem-solving-slides-general-training",
+  "title": "问题求解：综合训练课件",
+  "summary": "未归入单一算法主题的复习、讲评与综合训练课件。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "problem-solving"
+  },
+  "categorySlug": "reference",
+  "materialType": "专题课件",
+  "term": {
+    "label": "未标注",
+    "sortKey": null
+  },
+  "tags": [
+    "问题求解",
+    "算法",
+    "专题课件"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "asset-001",
+      "label": "动态规划复习题讲评",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/动态规划复习题讲评.pptx",
+      "fileName": "动态规划复习题讲评.pptx",
+      "mediaType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "sizeBytes": 147113,
+      "sha256": "908535bfb40fa896b1399a182b51714f8182b4e6514b9055543e60198d7cc02d"
+    },
+    {
+      "id": "asset-002",
+      "label": "欧拉路与欧拉回路",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/欧拉路与欧拉回路.ppt",
+      "fileName": "欧拉路与欧拉回路.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 533504,
+      "sha256": "6194ee873611735a0c9d82b8ce4c8a9a2ce8bbd94742e4bf6854b378f87ca2cb"
+    },
+    {
+      "id": "asset-003",
+      "label": "抢答",
+      "role": "supplement",
+      "href": "/files/tracks/cs/problem-solving/materials/抢答.ppt",
+      "fileName": "抢答.ppt",
+      "mediaType": "application/vnd.ms-powerpoint",
+      "sizeBytes": 117248,
+      "sha256": "202e46813419f8af3d69337b783ee9c0f60fd8e5f87d137b17a1afb6e32533ef"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "30cc6a15-5cc2-4f3d-a565-16b969a77f2f",
+    "71c2358d-6970-4bb5-9123-8a34d932830e",
+    "f483b116-6afa-4eeb-b3f7-4ceb2d2de45e"
+  ]
+}
