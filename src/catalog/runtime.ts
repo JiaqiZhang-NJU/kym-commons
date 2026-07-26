@@ -50,7 +50,10 @@ export function getPackagesForCourse(input: {
 }
 
 export function getPackage(packageId: string): MaterialPackage | undefined {
-  return catalogPackages.find((materialPackage) => materialPackage.id === packageId);
+  return catalogPackages.find(
+    (materialPackage) =>
+      materialPackage.id === packageId || materialPackage.legacyIds.includes(packageId)
+  );
 }
 
 export function buildCanonicalCoursePath(input: {

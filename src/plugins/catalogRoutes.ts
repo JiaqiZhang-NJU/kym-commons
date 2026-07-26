@@ -10,6 +10,7 @@ type CatalogCourse = {
 
 type MaterialPackage = {
   id: string;
+  legacyIds: string[];
   placement: { section: "foundation"; courseSlug: string } | { section: "track"; trackSlug: string; courseSlug: string };
 };
 
@@ -39,11 +40,16 @@ export default function catalogRoutesPlugin(context: LoadContext): Plugin<void> 
       }
 
       for (const materialPackage of catalog.packages) {
-        addRoute({
-          path: withBaseUrl(context.baseUrl, `/materials/${materialPackage.id}/`),
-          component: "@site/src/pages/material-package-route.tsx",
-          exact: true,
-        });
+        for (const packageId of new Set([
+          materialPackage.id,
+          ...materialPackage.legacyIds,
+        ])) {
+          addRoute({
+            path: withBaseUrl(context.baseUrl, `/materials/${packageId}/`),
+            component: "@site/src/pages/material-package-route.tsx",
+            exact: true,
+          });
+        }
       }
     },
   };
