@@ -24,8 +24,51 @@
 
 .searchActions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  gap: 0.75rem;
   margin-top: 1rem;
+}
+
+.facets {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  margin: 1.5rem 0 1rem;
+  padding: 0.75rem 0;
+}
+
+.facetGroup {
+  align-items: flex-start;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  padding: 0.5rem 0;
+}
+
+.facetOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.facetButton {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.facetButton:hover,
+.facetButtonActive {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.facetButtonActive {
+  background: var(--ifm-color-primary-lightest);
 }
 
 .favoriteFilter {
@@ -139,6 +182,13 @@
 }
 
 @media screen and (max-width: 576px) {
+  .facetGroup {
+    display: block;
+  }
+
+  .facetOptions {
+    margin-top: 0.45rem;
+  }
   .pagination {
     gap: 0.75rem;
   }
