@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-ii-upiimidtermsample03-pdf",
-  "title": "期中样卷 03",
-  "summary": "大学物理下期中样卷与历年卷解答。",
+  "title": "期中样卷 03（含解答）",
+  "summary": "期中样卷 03及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-ii"
   },
   "categorySlug": "midterm-samples",
-  "materialType": "期中样卷",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理下",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 II",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "期中样卷 03",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-ii/midterms/UPIImidtermsample03.pdf",
       "fileName": "UPIImidtermsample03.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 210847,
       "sha256": "9523e5309724c9f36d922dd149e5681eb272d72c8b66d9742eef7a0ba2693d45"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-ii/midterms/UPIImidtermsample03sol.pdf",
+      "fileName": "UPIImidtermsample03sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 116618,
+      "sha256": "79b15bc6c747141a6cc5b69c3ac5cf7ca222811b9d76e955ac8650a582154f52"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-ii-upiimidtermsample03-pdf"
+    "foundation-university-physics-ii-upiimidtermsample03-pdf",
+    "foundation-university-physics-ii-upiimidtermsample03sol-pdf"
   ]
 }

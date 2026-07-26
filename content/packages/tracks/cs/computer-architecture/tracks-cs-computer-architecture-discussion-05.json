@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-computer-architecture-discussion-05",
+  "title": "计算机组成讨论题 05（含解答）",
+  "summary": "计算机组成课程第 05 组讨论题及配套参考解答。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "讨论题与解答",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [
+    "计算机组成",
+    "讨论题",
+    "参考解答"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "question",
+      "label": "试题",
+      "role": "question",
+      "href": "/files/tracks/cs/computer-architecture/materials/disc05.pdf",
+      "fileName": "disc05.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 104212,
+      "sha256": "07256b947e7e4286db805047023fc306bbfcb5fe79f93a6ab9afbd456df1af7b"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/tracks/cs/computer-architecture/materials/disc05_sol.pdf",
+      "fileName": "disc05_sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 152538,
+      "sha256": "9acabb892cea7444f2d3c89eea29f2d9f31d5b4316af61328069c5dca081415d"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0091",
+    "metadata-backfill-0090"
+  ]
+}

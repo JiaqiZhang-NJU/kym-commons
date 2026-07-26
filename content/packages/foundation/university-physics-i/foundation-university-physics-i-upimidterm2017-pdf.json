@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-i-upimidterm2017-pdf",
-  "title": "2017 期中卷",
-  "summary": "大学物理上期中样卷与历年卷解答。",
+  "title": "2017 期中卷（含解答）",
+  "summary": "2017 期中卷及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-i"
   },
-  "categorySlug": "midterm-samples",
-  "materialType": "期中样卷",
+  "categorySlug": "midterms",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理上",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 I",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "2017 期中卷",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-i/midterms/UPImidterm2017.pdf",
       "fileName": "UPImidterm2017.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 393083,
       "sha256": "d2e03edf277b6dcdd355e2dff38f198d32eb3f0b5b0fc134a0da388be0a5b887"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-i/midterms/UPImidterm2017sol.pdf",
+      "fileName": "UPImidterm2017sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 444420,
+      "sha256": "6cef6343b1aec786361fa2b9d025c8a3884285f3fea4a8f016e70867dbfce777"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-i-upimidterm2017-pdf"
+    "foundation-university-physics-i-upimidterm2017-pdf",
+    "foundation-university-physics-i-upimidterm2017sol-pdf"
   ]
 }

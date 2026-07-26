@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-ii-upiisamplefinal09-pdf",
-  "title": "期末样卷 09",
-  "summary": "大学物理下期末样卷与参考解答。",
+  "title": "期末样卷 09（含解答）",
+  "summary": "期末样卷 09及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-ii"
   },
   "categorySlug": "final-samples",
-  "materialType": "期末样卷",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理下",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 II",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "期末样卷 09",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-ii/finals/UPIIsamplefinal09.pdf",
       "fileName": "UPIIsamplefinal09.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 263000,
       "sha256": "a12f2626e8c78a8cd965a47325788ee400585d6934e3ddc79177dcca0d47ebc9"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-ii/finals/UPIIsamplefinal09sol.pdf",
+      "fileName": "UPIIsamplefinal09sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 510357,
+      "sha256": "ff3acd754c93e79a5e940a9348a37a7b9111a04c4d6bda0ca1266c53949913d5"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-ii-upiisamplefinal09-pdf"
+    "foundation-university-physics-ii-upiisamplefinal09-pdf",
+    "foundation-university-physics-ii-upiisamplefinal09sol-pdf"
   ]
 }

@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-i-upi201805midterm-pdf",
-  "title": "2018-05 期中卷",
-  "summary": "大学物理上期中样卷与历年卷解答。",
+  "title": "2018-05 期中卷（含解答）",
+  "summary": "2018-05 期中卷及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-i"
   },
-  "categorySlug": "midterm-samples",
-  "materialType": "期中样卷",
+  "categorySlug": "midterms",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理上",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 I",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "2018-05 期中卷",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-i/midterms/UPI201805midterm.pdf",
       "fileName": "UPI201805midterm.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 357784,
       "sha256": "5a2ef4953517df37bbdd16cd2568664a276ce97a2d11c64219c12d9842a6c84c"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-i/midterms/UPI201805midtermsol.pdf",
+      "fileName": "UPI201805midtermsol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 494030,
+      "sha256": "4ddacd88496c8bbc5723a89802a906ce8da642dc96f1c8150722ffe2779c3abb"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-i-upi201805midterm-pdf"
+    "foundation-university-physics-i-upi201805midterm-pdf",
+    "foundation-university-physics-i-upi201805midtermsol-pdf"
   ]
 }

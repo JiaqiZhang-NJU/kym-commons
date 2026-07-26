@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "tracks-cs-computer-architecture-discussion-13",
+  "title": "计算机组成讨论题 13（含解答）",
+  "summary": "计算机组成课程第 13 组讨论题及配套参考解答。",
+  "placement": {
+    "section": "track",
+    "trackSlug": "cs",
+    "courseSlug": "computer-architecture"
+  },
+  "categorySlug": "reference",
+  "materialType": "讨论题与解答",
+  "term": {
+    "label": "未知",
+    "sortKey": null
+  },
+  "tags": [
+    "计算机组成",
+    "讨论题",
+    "参考解答"
+  ],
+  "aliases": [],
+  "assets": [
+    {
+      "id": "question",
+      "label": "试题",
+      "role": "question",
+      "href": "/files/tracks/cs/computer-architecture/materials/disc13.pdf",
+      "fileName": "disc13.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 171382,
+      "sha256": "3c0b96f5f24ce751d12ceeedd0d4d741f277882c72415dfe7dccca971babe461"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/tracks/cs/computer-architecture/materials/disc13_sol.pdf",
+      "fileName": "disc13_sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 184891,
+      "sha256": "5696a652e9d341b622dd80c0d9d7c5876707ef28517547e54ceda819ad81526b"
+    }
+  ],
+  "source": {
+    "kind": "repository"
+  },
+  "publishedAt": null,
+  "updatedAt": null,
+  "legacyIds": [
+    "metadata-backfill-0107",
+    "metadata-backfill-0106"
+  ]
+}

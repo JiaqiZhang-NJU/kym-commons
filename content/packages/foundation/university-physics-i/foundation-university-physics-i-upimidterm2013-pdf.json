@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-i-upimidterm2013-pdf",
-  "title": "2013 期中卷",
-  "summary": "大学物理上期中样卷与历年卷解答。",
+  "title": "2013 期中卷（含解答）",
+  "summary": "2013 期中卷及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-i"
   },
-  "categorySlug": "midterm-samples",
-  "materialType": "期中样卷",
+  "categorySlug": "midterms",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理上",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 I",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "2013 期中卷",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-i/midterms/UPImidterm2013.pdf",
       "fileName": "UPImidterm2013.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 187252,
       "sha256": "a4fdfef0586af54e57ae14579d844dfc2dba13520ee54af0ffa83a9a6dc9cc17"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-i/midterms/UPImidterm2013sol.pdf",
+      "fileName": "UPImidterm2013sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 229316,
+      "sha256": "be412397d85dc633d2158ec773c68bc5837350add8f6ff66bb004a7acb0a21ea"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-i-upimidterm2013-pdf"
+    "foundation-university-physics-i-upimidterm2013-pdf",
+    "foundation-university-physics-i-upimidterm2013sol-pdf"
   ]
 }

@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-ii-201711upiimidterm-pdf",
-  "title": "2017-11 期中卷",
-  "summary": "大学物理下期中样卷与历年卷解答。",
+  "title": "2017-11 期中卷（含解答）",
+  "summary": "2017-11 期中卷及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-ii"
   },
-  "categorySlug": "midterm-samples",
-  "materialType": "期中样卷",
+  "categorySlug": "midterms",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理下",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 II",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "2017-11 期中卷",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-ii/midterms/201711UPIImidterm.pdf",
       "fileName": "201711UPIImidterm.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 392121,
       "sha256": "6b709acd68e5b5d58c17286f4cfd8542f722186dcc9206ff51a52295b894b285"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-ii/midterms/201711UPIImidtermsol.pdf",
+      "fileName": "201711UPIImidtermsol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 423072,
+      "sha256": "42b88b4473573b51a62e4521d1d03c817cb56ce7583b7afd81bd17b397c13969"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-ii-201711upiimidterm-pdf"
+    "foundation-university-physics-ii-201711upiimidterm-pdf",
+    "foundation-university-physics-ii-201711upiimidtermsol-pdf"
   ]
 }

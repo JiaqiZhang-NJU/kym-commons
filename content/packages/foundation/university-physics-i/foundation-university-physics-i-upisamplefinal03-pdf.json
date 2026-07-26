@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-i-upisamplefinal03-pdf",
-  "title": "期末样卷 03",
-  "summary": "大学物理上期末样卷与参考解答。",
+  "title": "期末样卷 03（含解答）",
+  "summary": "期末样卷 03及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-i"
   },
   "categorySlug": "final-samples",
-  "materialType": "期末样卷",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理上",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 I",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "期末样卷 03",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-i/finals/UPIsamplefinal03.pdf",
       "fileName": "UPIsamplefinal03.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 50687,
       "sha256": "0aae5e7f28f82b30d0809fd2c2550f185450d34bdc47c5ebb24f8163da1fcb7b"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-i/finals/UPIsamplefinal03sol.pdf",
+      "fileName": "UPIsamplefinal03sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 65351,
+      "sha256": "7708c11bf77a99453c2a13e42954a539f0f8df832dbf960fda9c4f29347d2135"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-i-upisamplefinal03-pdf"
+    "foundation-university-physics-i-upisamplefinal03-pdf",
+    "foundation-university-physics-i-upisamplefinal03sol-pdf"
   ]
 }

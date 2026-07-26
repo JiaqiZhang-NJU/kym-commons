@@ -1,30 +1,44 @@
 {
   "schemaVersion": 1,
   "id": "foundation-university-physics-i-upimidterm2015-pdf",
-  "title": "2015 期中卷",
-  "summary": "大学物理上期中样卷与历年卷解答。",
+  "title": "2015 期中卷（含解答）",
+  "summary": "2015 期中卷及配套参考解答。",
   "placement": {
     "section": "foundation",
     "courseSlug": "university-physics-i"
   },
-  "categorySlug": "midterm-samples",
-  "materialType": "期中样卷",
+  "categorySlug": "midterms",
+  "materialType": "试卷与解答",
   "term": {
     "label": "大学物理上",
     "sortKey": null
   },
-  "tags": [],
+  "tags": [
+    "大学物理 I",
+    "试卷",
+    "参考解答"
+  ],
   "aliases": [],
   "assets": [
     {
-      "id": "asset-1",
-      "label": "2015 期中卷",
-      "role": "primary",
+      "id": "question",
+      "label": "试题",
+      "role": "question",
       "href": "/files/foundation/university-physics-i/midterms/UPImidterm2015.pdf",
       "fileName": "UPImidterm2015.pdf",
       "mediaType": "application/pdf",
       "sizeBytes": 362969,
       "sha256": "569a2b99a8651512295280ffd9bfbb7b791932327944c39ab4a1a776bdf9e541"
+    },
+    {
+      "id": "solution",
+      "label": "参考解答",
+      "role": "solution",
+      "href": "/files/foundation/university-physics-i/midterms/UPImidterm2015sol.pdf",
+      "fileName": "UPImidterm2015sol.pdf",
+      "mediaType": "application/pdf",
+      "sizeBytes": 63500,
+      "sha256": "aa821285a195ce238098d8f8ef494456c85449bf1fde00b2f10d4a7cd420d6d1"
     }
   ],
   "source": {
@@ -33,6 +47,7 @@
   "publishedAt": null,
   "updatedAt": null,
   "legacyIds": [
-    "foundation-university-physics-i-upimidterm2015-pdf"
+    "foundation-university-physics-i-upimidterm2015-pdf",
+    "foundation-university-physics-i-upimidterm2015sol-pdf"
   ]
 }
