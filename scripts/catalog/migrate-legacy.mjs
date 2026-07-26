@@ -6,6 +6,7 @@ import ts from "typescript";
 
 import { getFileSha256 } from "./catalog.mjs";
 import { inferCategorySlug } from "./classification.mjs";
+import { consolidateProgrammingExamples } from "./consolidate-programming-examples.mjs";
 
 const root = process.cwd();
 const packagesRoot = path.join(root, "content", "packages");
@@ -250,6 +251,9 @@ function runMigration() {
     if (repositoryAsset) repositoryAssetOwners.set(record.href, id.id);
     writtenPackages += 1;
   }
+
+  const exampleConsolidation = consolidateProgrammingExamples({ root });
+  writtenPackages -= exampleConsolidation.mergedPackages;
 
   writeJson(path.join(root, "content/catalog/migration-report.json"), {
     sourceRecordCount: legacy.materials.length,
