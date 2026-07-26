@@ -5,6 +5,7 @@ import vm from "node:vm";
 import ts from "typescript";
 
 import { getFileSha256 } from "./catalog.mjs";
+import { inferCategorySlug } from "./classification.mjs";
 
 const root = process.cwd();
 const packagesRoot = path.join(root, "content", "packages");
@@ -244,6 +245,7 @@ function runMigration() {
       updatedAt: null,
       legacyIds: id.legacyIds,
     };
+    materialPackage.categorySlug = inferCategorySlug(materialPackage);
     writeJson(getPackagePath(record, id.id), materialPackage);
     if (repositoryAsset) repositoryAssetOwners.set(record.href, id.id);
     writtenPackages += 1;

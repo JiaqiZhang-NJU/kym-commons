@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 
+import { inferCategorySlug } from "../catalog/classification.mjs";
+
 export function parseSubmissionManifest(body) {
   const match = body.match(/<!--\s*kym-submission:v2\s*\n([\s\S]*?)\n\s*-->/);
   if (!match) throw new Error("Missing kym-submission:v2 manifest.");
@@ -75,13 +77,15 @@ export function createPackage({ manifest, assets, issueNumber }) {
   const sourceAssets = manifest.sourceMode === "external-link" ? [{ href: manifest.externalLink, label: "External material", role: "primary" }] : assets;
   if (!sourceAssets.length || sourceAssets.some((asset) => !asset.href)) throw new Error("A verified external link or GitHub Issue attachment is required.");
   const id = `submission-${issueNumber}-${slugify(manifest.title)}`;
-  return {
+  const materialPackage = {
     schemaVersion: 1, id, title: manifest.title, summary: manifest.summary,
     placement: manifest.scope === "foundation-course" ? { section: "foundation", courseSlug: manifest.courseSlug } : { section: "track", trackSlug: manifest.trackSlug, courseSlug: manifest.courseSlug },
     categorySlug: "reference", materialType: manifest.materialType, term: { label: manifest.term, sortKey: null }, tags: [], aliases: [],
     assets: sourceAssets.map((asset, index) => ({ id: `asset-${index + 1}`, label: asset.label ?? `Asset ${index + 1}`, role: asset.role ?? "primary", href: asset.href, fileName: asset.fileName ?? null, mediaType: asset.mediaType ?? null, sizeBytes: asset.sizeBytes ?? null, sha256: asset.sha256 ?? null })),
     source: { kind: "github-submission", issueNumber }, publishedAt: null, updatedAt: new Date().toISOString().slice(0, 10), legacyIds: [],
   };
+  materialPackage.categorySlug = inferCategorySlug(materialPackage);
+  return materialPackage;
 }
 
 export function outputPath(root, materialPackage) {

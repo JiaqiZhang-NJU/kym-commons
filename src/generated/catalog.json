@@ -1641,7 +1641,7 @@
         "section": "foundation",
         "courseSlug": "college-english"
       },
-      "categorySlug": "finals",
+      "categorySlug": "final-samples",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
@@ -1679,7 +1679,7 @@
         "section": "foundation",
         "courseSlug": "college-english"
       },
-      "categorySlug": "finals",
+      "categorySlug": "final-samples",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
@@ -1755,7 +1755,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2006年",
@@ -2363,7 +2363,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2007年",
@@ -2477,7 +2477,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2008年",
@@ -2819,7 +2819,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2008年",
@@ -3009,7 +3009,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2011年",
@@ -4149,7 +4149,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "midterm-samples",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
@@ -4377,7 +4377,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2007年",
@@ -4491,7 +4491,7 @@
         "section": "foundation",
         "courseSlug": "data-structures-and-algorithms"
       },
-      "categorySlug": "midterms",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2006年",
@@ -28204,7 +28204,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2025",
@@ -28243,7 +28243,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "midterms",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2025",
@@ -28282,7 +28282,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
@@ -28321,7 +28321,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2019",
@@ -28360,7 +28360,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
@@ -28438,7 +28438,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "midterms",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2023",
@@ -28477,7 +28477,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "midterms",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2023",
@@ -28516,7 +28516,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "midterms",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2024",
@@ -28555,7 +28555,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "midterms",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2023",
@@ -28633,7 +28633,7 @@
         "trackSlug": "cs",
         "courseSlug": "cryptography"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2019",
@@ -31872,7 +31872,7 @@
         "trackSlug": "cs",
         "courseSlug": "operating-systems-general"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2024",
@@ -31950,7 +31950,7 @@
         "trackSlug": "cs",
         "courseSlug": "operating-systems-general"
       },
-      "categorySlug": "reference",
+      "categorySlug": "finals",
       "materialType": "历年题/回忆",
       "term": {
         "label": "2024",
@@ -32418,7 +32418,7 @@
         "trackSlug": "cs",
         "courseSlug": "probability-general"
       },
-      "categorySlug": "finals",
+      "categorySlug": "final-samples",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
@@ -32457,7 +32457,7 @@
         "trackSlug": "cs",
         "courseSlug": "probability-general"
       },
-      "categorySlug": "finals",
+      "categorySlug": "final-samples",
       "materialType": "历年题/回忆",
       "term": {
         "label": "未知",
