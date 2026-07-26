@@ -3,15 +3,18 @@ import { useLocation } from "@docusaurus/router";
 import Link from "@docusaurus/Link";
 
 import { getCourse } from "../catalog/runtime";
+import { parseCourseRoute } from "../catalog/routeParsing";
 import CatalogCoursePage from "../components/CatalogCoursePage";
 
 export default function CatalogCourseRoute() {
   const { pathname } = useLocation();
-  const segments = pathname.replace(/^\/+|\/+$/g, "").split("/");
+  const route = parseCourseRoute(pathname);
   const course =
-    segments[0] === "foundation"
-      ? getCourse({ section: "foundation", courseSlug: segments[1] ?? "" })
-      : getCourse({ section: "track", trackSlug: segments[1] ?? "", courseSlug: segments[2] ?? "" });
+    route?.section === "foundation"
+      ? getCourse(route)
+      : route?.section === "track"
+        ? getCourse(route)
+        : undefined;
 
   if (course) return <CatalogCoursePage course={course} />;
 
