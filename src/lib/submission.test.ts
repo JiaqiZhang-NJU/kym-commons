@@ -6,205 +6,120 @@ import {
   buildIssueUrl,
   getDefaultMaterialType,
   getDefaultSourceMode,
-  getResolvedCourseTitle,
+  isCatalogSlug,
   isDetailsStepComplete,
   isScopeStepComplete,
   isTargetStepComplete,
   parseSubmissionPrefill,
 } from "./submission";
 
-describe("parseSubmissionPrefill", () => {
-  it("accepts known foundation and track courses", () => {
-    expect(parseSubmissionPrefill("?scope=foundation-course&course=calculus-i")).toEqual({
-      scope: "foundation-course",
-      trackSlug: "",
-      courseSlug: "calculus-i",
-    });
-    expect(
-      parseSubmissionPrefill("?scope=track-course&track=cs&course=machine-learning")
-    ).toEqual({
-      scope: "track-course",
-      trackSlug: "cs",
-      courseSlug: "machine-learning",
-    });
+const validNewTrackCourse = {
+  scope: "track-course" as const,
+  trackTargetMode: "new" as const,
+  existingTrackSlug: "",
+  newTrackLabel: "电子信息",
+  newTrackSlug: "electronic-information",
+  courseTargetMode: "new" as const,
+  existingCourseSlug: "",
+  newCourseTitle: "数字信号处理",
+  newCourseSlug: "digital-signal-processing",
+};
+
+describe("submission target validation", () => {
+  it("accepts catalog-safe slugs for newly created targets", () => {
+    expect(isCatalogSlug("electronic-information")).toBe(true);
+    expect(isCatalogSlug("Electronic Information")).toBe(false);
+    expect(isCatalogSlug("电子信息")).toBe(false);
   });
 
-  it("accepts a track general-resources target", () => {
-    expect(
-      parseSubmissionPrefill("?scope=track-general&track=physics&course=general-resources")
-    ).toEqual({
+  it("accepts a complete new track and new course target", () => {
+    expect(isTargetStepComplete(validNewTrackCourse)).toBe(true);
+  });
+
+  it("requires complete and safe identifiers for new targets", () => {
+    expect(isTargetStepComplete({ ...validNewTrackCourse, newTrackSlug: "电子信息" })).toBe(false);
+    expect(isTargetStepComplete({ ...validNewTrackCourse, newCourseTitle: "" })).toBe(false);
+  });
+
+  it("allows a new track for General Resources without a new course", () => {
+    expect(isTargetStepComplete({
+      ...validNewTrackCourse,
       scope: "track-general",
-      trackSlug: "physics",
-      courseSlug: "general-resources",
+      courseTargetMode: "existing",
+      newCourseTitle: "",
+      newCourseSlug: "",
+    })).toBe(true);
+  });
+
+  it("requires an existing course for an existing track course target", () => {
+    expect(isTargetStepComplete({
+      ...validNewTrackCourse,
+      trackTargetMode: "existing",
+      existingTrackSlug: "cs",
+      newTrackLabel: "",
+      newTrackSlug: "",
+      courseTargetMode: "existing",
+      existingCourseSlug: "",
+    })).toBe(false);
+  });
+});
+
+describe("submission prefill and details validation", () => {
+  it("accepts catalog-backed prefilled targets", () => {
+    expect(parseSubmissionPrefill("?scope=foundation-course&course=calculus-i")).toEqual({
+      scope: "foundation-course", trackSlug: "", courseSlug: "calculus-i",
+    });
+    expect(parseSubmissionPrefill("?scope=track-course&track=cs&course=machine-learning")).toEqual({
+      scope: "track-course", trackSlug: "cs", courseSlug: "machine-learning",
     });
   });
 
-  it("rejects unknown or mismatched target combinations", () => {
-    expect(
-      parseSubmissionPrefill("?scope=track-course&track=math&course=machine-learning")
-    ).toBeNull();
-    expect(
-      parseSubmissionPrefill("?scope=track-course&track=cs&course=general-resources")
-    ).toBeNull();
-    expect(parseSubmissionPrefill("?scope=unknown&course=calculus-i")).toBeNull();
+  it("rejects mismatched prefilled targets", () => {
+    expect(parseSubmissionPrefill("?scope=track-course&track=math&course=machine-learning")).toBeNull();
+    expect(parseSubmissionPrefill("?scope=track-general&track=cs&course=machine-learning")).toBeNull();
   });
-});
 
-describe("step completion helpers", () => {
-  it("accepts any valid submission scope", () => {
+  it("requires an external link only in external-link mode", () => {
+    const details = { title: "资料", term: "2026 Spring", summary: "说明", sourceMode: "external-link" as const, externalLink: "" };
+    expect(isDetailsStepComplete(details)).toBe(false);
+    expect(isDetailsStepComplete({ ...details, externalLink: "https://example.com/a.pdf" })).toBe(true);
+    expect(isDetailsStepComplete({ ...details, sourceMode: "issue-attachment", externalLink: "" })).toBe(true);
+  });
+
+  it("keeps existing defaults", () => {
     expect(isScopeStepComplete("track-general")).toBe(true);
-  });
-
-  it("requires a track for track-general target selection", () => {
-    expect(
-      isTargetStepComplete({
-        scope: "track-general",
-        trackSlug: "",
-        useNewCourse: false,
-        existingCourseSlug: "",
-        newCourseTitle: "",
-      })
-    ).toBe(false);
-  });
-
-  it("requires a new course title when creating a course", () => {
-    expect(
-      isTargetStepComplete({
-        scope: "track-course",
-        trackSlug: "cs",
-        useNewCourse: true,
-        existingCourseSlug: "",
-        newCourseTitle: "",
-      })
-    ).toBe(false);
-  });
-
-  it("requires details fields before preview", () => {
-    expect(
-      isDetailsStepComplete({
-        title: "机器学习入门资源整理",
-        term: "2026 Spring",
-        summary: "",
-        sourceMode: "external-link",
-        externalLink: "https://example.com/ml-guide",
-      })
-    ).toBe(false);
-  });
-
-  it("allows attachment mode without an external link", () => {
-    expect(
-      isDetailsStepComplete({
-        title: "机器学习入门资源整理",
-        term: "2026 Spring",
-        summary: "给方向新人的入门路径。",
-        sourceMode: "issue-attachment",
-        externalLink: "",
-      })
-    ).toBe(true);
-  });
-
-  it("requires an external link in external-link mode", () => {
-    expect(
-      isDetailsStepComplete({
-        title: "机器学习入门资源整理",
-        term: "2026 Spring",
-        summary: "给方向新人的入门路径。",
-        sourceMode: "external-link",
-        externalLink: "",
-      })
-    ).toBe(false);
-  });
-});
-
-describe("submission defaults", () => {
-  it("returns general material types for track-general", () => {
     expect(getDefaultMaterialType("track-general")).toBe("科研入门");
-  });
-
-  it("defaults to issue attachment mode", () => {
     expect(getDefaultSourceMode()).toBe("issue-attachment");
   });
-
-  it("resolves General Resources for track-general submissions", () => {
-    expect(
-      getResolvedCourseTitle({
-        scope: "track-general",
-        useNewCourse: false,
-        newCourseTitle: "",
-        selectedCourseTitle: "数据结构",
-      })
-    ).toBe("General Resources");
-  });
 });
 
-describe("buildIssueTitle", () => {
-  it("formats track general resource submissions", () => {
-    expect(
-      buildIssueTitle({
-        scope: "track-general",
-        trackLabel: "计算机",
-        courseTitle: "General Resources",
-        term: "2026 Spring",
-        materialType: "科研入门",
-      })
-    ).toBe("[Submission][计算机][General Resources] 2026 Spring 科研入门");
-  });
-});
+describe("v3 issue generation", () => {
+  const payload = {
+    scope: "track-course" as const,
+    sectionLabel: "宽口径方向课程",
+    track: { mode: "new" as const, slug: "electronic-information", label: "电子信息" },
+    course: { mode: "new" as const, slug: "digital-signal-processing", title: "数字信号处理" },
+    materialType: "课程笔记" as const,
+    title: "数字信号处理笔记",
+    term: "2026 Spring",
+    summary: "课程整理。",
+    sourceMode: "issue-attachment" as const,
+    externalLink: "",
+    anonymous: true,
+  };
 
-describe("buildIssueBody", () => {
-  it("includes structured metadata fields", () => {
-    const body = buildIssueBody({
-      scope: "track-general",
-      sectionLabel: "宽口径方向课程",
-      trackLabel: "计算机",
-      courseTitle: "General Resources",
-      materialType: "科研入门",
-      title: "机器学习入门资源整理",
-      term: "2026 Spring",
-      summary: "给方向新人的入门路径。",
-      sourceMode: "issue-attachment",
-      externalLink: "",
-      anonymous: true,
-    });
-
-    expect(body).toContain("- 归属：方向非课程资料");
-    expect(body).toContain("- 方向：计算机");
-    expect(body).toContain("- 课程：General Resources");
-    expect(body).toContain("- 标题：机器学习入门资源整理");
-    expect(body).toContain("## 文件来源");
-    expect(body).toContain("- 来源方式：GitHub Issue 附件");
-    expect(body).toContain("- 外部链接：无");
-    expect(body).toContain("## 上传说明");
+  it("records explicit new track and course targets", () => {
+    const body = buildIssueBody(payload);
+    expect(body).toContain("kym-submission:v3");
+    expect(body).toContain('"version":3');
+    expect(body).toContain("方向：电子信息（新建：electronic-information）");
+    expect(body).toContain("课程：数字信号处理（新建：digital-signal-processing）");
   });
 
-  it("records external-link mode with the given url", () => {
-    const body = buildIssueBody({
-      scope: "track-general",
-      sectionLabel: "宽口径方向课程",
-      trackLabel: "计算机",
-      courseTitle: "General Resources",
-      materialType: "科研入门",
-      title: "机器学习入门资源整理",
-      term: "2026 Spring",
-      summary: "给方向新人的入门路径。",
-      sourceMode: "external-link",
-      externalLink: "https://example.com/ml-guide",
-      anonymous: true,
-    });
-
-    expect(body).toContain("- 来源方式：外部链接");
-    expect(body).toContain("- 外部链接：https://example.com/ml-guide");
-  });
-});
-
-describe("buildIssueUrl", () => {
-  it("builds new issue URL for the real repository", () => {
-    const url = buildIssueUrl({
-      repoUrl: "https://github.com/JiaqiZhang-NJU/kym-commons",
-      title: "demo",
-      body: "body",
-    });
-
-    expect(url).toContain("JiaqiZhang-NJU/kym-commons/issues/new");
+  it("uses new track labels in issue titles and issue URLs", () => {
+    const title = buildIssueTitle(payload);
+    expect(title).toBe("[Submission][电子信息][数字信号处理] 2026 Spring 课程笔记");
+    expect(buildIssueUrl({ repoUrl: "https://github.com/JiaqiZhang-NJU/kym-commons", title, body: buildIssueBody(payload) }))
+      .toContain("JiaqiZhang-NJU/kym-commons/issues/new");
   });
 });

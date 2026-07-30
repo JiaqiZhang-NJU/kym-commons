@@ -1,7 +1,7 @@
 import Layout from "@theme/Layout";
 
 import SectionCard from "../components/SectionCard";
-import { TRACKS } from "../data/site";
+import { runtimeCatalog } from "../catalog/runtime";
 
 export default function TracksPage() {
   return (
@@ -10,11 +10,11 @@ export default function TracksPage() {
         <h1>Tracks</h1>
         <p>按宽口径方向查看课程与方向公共资源。</p>
         <div className="row">
-          {TRACKS.map((track) => (
+          {runtimeCatalog.tracks.map((track) => (
             <div className="col col--4 margin-bottom--md" key={track.slug}>
               <SectionCard
                 title={track.label}
-                description="课程与 General Resources"
+                description={track.description}
                 to={`/tracks/${track.slug}`}
               />
             </div>

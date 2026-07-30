@@ -32,6 +32,12 @@ export function parsePackageRoute(pathname: string): string | null {
   return materialsIndex >= 0 ? segments[materialsIndex + 1] ?? null : null;
 }
 
+export function parseTrackRoute(pathname: string): string | null {
+  const segments = getPathSegments(pathname);
+  const tracksIndex = segments.indexOf("tracks");
+  return tracksIndex >= 0 && segments.length === tracksIndex + 2 ? segments[tracksIndex + 1] ?? null : null;
+}
+
 function getPathSegments(pathname: string): string[] {
   return pathname
     .split("/")

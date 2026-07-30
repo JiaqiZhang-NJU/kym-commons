@@ -15,6 +15,7 @@ type MaterialPackage = {
 };
 
 type RuntimeCatalog = {
+  tracks: { slug: string }[];
   courses: CatalogCourse[];
   packages: MaterialPackage[];
 };
@@ -26,6 +27,14 @@ export default function catalogRoutesPlugin(context: LoadContext): Plugin<void> 
       const catalogPath = path.join(context.siteDir, "src", "generated", "catalog.json");
       const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8")) as RuntimeCatalog;
       const { addRoute } = actions;
+
+      for (const track of catalog.tracks) {
+        addRoute({
+          path: withBaseUrl(context.baseUrl, `/tracks/${track.slug}/`),
+          component: "@site/src/pages/catalog-track-route.tsx",
+          exact: true,
+        });
+      }
 
       for (const course of catalog.courses) {
         const routePath =

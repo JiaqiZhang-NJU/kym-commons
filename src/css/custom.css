@@ -74,7 +74,7 @@ body {
   text-decoration: none;
 }
 
-input,
+input:not([type='checkbox']):not([type='radio']),
 select,
 textarea {
   width: 100%;
@@ -83,6 +83,12 @@ textarea {
   background: var(--kym-input-surface);
   color: var(--kym-input-text);
   padding: 0.75rem 0.875rem;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  width: auto;
+  padding: 0;
 }
 
 input::placeholder,
