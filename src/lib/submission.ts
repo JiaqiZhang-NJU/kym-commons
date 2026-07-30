@@ -1,8 +1,16 @@
-import { FOUNDATION_COURSES, TRACK_COURSES } from "../data/courses";
+import { getCourse, getFoundationCourses, getTrackCourses, runtimeCatalog } from "../catalog/runtime";
 import { GENERAL_RESOURCES_SLUG } from "./materials";
 
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
 export type FileSourceMode = "issue-attachment" | "external-link";
+export type TrackTargetMode = "existing" | "new";
+export type CourseTargetMode = "existing" | "new";
+
+const catalogSlugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+export function isCatalogSlug(value: string) {
+  return catalogSlugPattern.test(value);
+}
 
 export type SubmissionPrefill = {
   scope: SubmissionScope;
@@ -12,11 +20,23 @@ export type SubmissionPrefill = {
 
 export type TargetStepState = {
   scope: SubmissionScope;
-  trackSlug: string;
-  useNewCourse: boolean;
+  trackTargetMode: TrackTargetMode;
+  existingTrackSlug: string;
+  newTrackLabel: string;
+  newTrackSlug: string;
+  courseTargetMode: CourseTargetMode;
   existingCourseSlug: string;
   newCourseTitle: string;
+  newCourseSlug: string;
 };
+
+export type TargetTrack =
+  | { mode: "existing"; slug: string; label: string }
+  | { mode: "new"; slug: string; label: string };
+
+export type TargetCourse =
+  | { mode: "existing"; slug: string; title: string }
+  | { mode: "new"; slug: string; title: string };
 
 export type DetailStepState = {
   title: string;
@@ -34,11 +54,9 @@ export type MaterialType = CourseMaterialType | GeneralMaterialType;
 
 export type SubmissionPayload = {
   scope: SubmissionScope;
-  trackSlug?: string;
-  courseSlug?: string;
   sectionLabel: string;
-  trackLabel: string | null;
-  courseTitle: string;
+  track: TargetTrack | null;
+  course: TargetCourse;
   materialType: MaterialType;
   title: string;
   term: string;
@@ -55,26 +73,21 @@ export function parseSubmissionPrefill(search: string): SubmissionPrefill | null
   const courseSlug = params.get("course") ?? "";
 
   if (scope === "foundation-course") {
-    const courseExists = FOUNDATION_COURSES.some((course) => course.slug === courseSlug);
-    return courseExists ? { scope, trackSlug: "", courseSlug } : null;
+    return getCourse({ section: "foundation", courseSlug }) ? { scope, trackSlug: "", courseSlug } : null;
   }
 
-  if (!Object.prototype.hasOwnProperty.call(TRACK_COURSES, trackSlug)) {
-    return null;
-  }
+  const trackExists = runtimeCatalog.tracks.some((track) => track.slug === trackSlug);
+  if (!trackExists) return null;
 
   if (scope === "track-general") {
-    return courseSlug === GENERAL_RESOURCES_SLUG
+    return getCourse({ section: "track", trackSlug, courseSlug })?.isGeneralResources
       ? { scope, trackSlug, courseSlug }
       : null;
   }
 
   if (scope === "track-course") {
-    const courses = TRACK_COURSES[trackSlug as keyof typeof TRACK_COURSES];
-    const courseExists = courses.some(
-      (course) => course.slug === courseSlug && !course.isGeneral
-    );
-    return courseExists ? { scope, trackSlug, courseSlug } : null;
+    const course = getCourse({ section: "track", trackSlug, courseSlug });
+    return course && !course.isGeneralResources ? { scope, trackSlug, courseSlug } : null;
   }
 
   return null;
@@ -88,21 +101,10 @@ export function getDefaultSourceMode(): FileSourceMode {
   return "issue-attachment";
 }
 
-export function getResolvedCourseTitle(input: {
-  scope: SubmissionScope;
-  useNewCourse: boolean;
-  newCourseTitle: string;
-  selectedCourseTitle: string;
-}) {
-  if (input.scope === "track-general") {
-    return "General Resources";
-  }
-
-  if (input.useNewCourse) {
-    return input.newCourseTitle.trim() || "新课程";
-  }
-
-  return input.selectedCourseTitle;
+export function getFirstExistingCourseSlug(scope: SubmissionScope, trackSlug: string) {
+  if (scope === "foundation-course") return getFoundationCourses()[0]?.slug ?? "";
+  if (scope === "track-general") return GENERAL_RESOURCES_SLUG;
+  return getTrackCourses(trackSlug).find((course) => !course.isGeneralResources)?.slug ?? "";
 }
 
 export function isScopeStepComplete(scope: SubmissionScope | "") {
@@ -110,62 +112,42 @@ export function isScopeStepComplete(scope: SubmissionScope | "") {
 }
 
 export function isTargetStepComplete(input: TargetStepState) {
-  if (input.scope === "track-general") {
-    return input.trackSlug.trim().length > 0;
-  }
-
+  const newCourseComplete = input.newCourseTitle.trim().length > 0 && isCatalogSlug(input.newCourseSlug.trim());
   if (input.scope === "foundation-course") {
-    return input.useNewCourse
-      ? input.newCourseTitle.trim().length > 0
-      : input.existingCourseSlug.trim().length > 0;
+    return input.courseTargetMode === "new" ? newCourseComplete : input.existingCourseSlug.trim().length > 0;
   }
 
-  if (input.useNewCourse) {
-    return input.trackSlug.trim().length > 0 && input.newCourseTitle.trim().length > 0;
-  }
-
-  return input.trackSlug.trim().length > 0 && input.existingCourseSlug.trim().length > 0;
+  const trackComplete = input.trackTargetMode === "new"
+    ? input.newTrackLabel.trim().length > 0 && isCatalogSlug(input.newTrackSlug.trim())
+    : input.existingTrackSlug.trim().length > 0;
+  if (!trackComplete) return false;
+  if (input.scope === "track-general") return true;
+  return input.trackTargetMode === "new" || input.courseTargetMode === "new"
+    ? newCourseComplete
+    : input.existingCourseSlug.trim().length > 0;
 }
 
 export function isDetailsStepComplete(input: DetailStepState) {
-  const baseComplete =
-    input.title.trim().length > 0 &&
-    input.term.trim().length > 0 &&
-    input.summary.trim().length > 0 &&
-    input.sourceMode.length > 0;
-
-  if (!baseComplete) {
-    return false;
-  }
-
-  if (input.sourceMode === "external-link") {
-    return input.externalLink.trim().length > 0;
-  }
-
-  return true;
+  const baseComplete = input.title.trim().length > 0 && input.term.trim().length > 0 && input.summary.trim().length > 0;
+  return baseComplete && (input.sourceMode === "issue-attachment" || input.externalLink.trim().length > 0);
 }
 
-export function buildIssueTitle(
-  payload: Pick<SubmissionPayload, "scope" | "trackLabel" | "courseTitle" | "term" | "materialType">
-) {
-  const bucket = payload.trackLabel ?? "Foundation";
-  return `[Submission][${bucket}][${payload.courseTitle}] ${payload.term} ${payload.materialType}`;
+export function buildIssueTitle(payload: Pick<SubmissionPayload, "track" | "course" | "term" | "materialType">) {
+  return `[Submission][${payload.track?.label ?? "Foundation"}][${payload.course.title}] ${payload.term} ${payload.materialType}`;
 }
 
 export function buildIssueBody(payload: SubmissionPayload) {
   const scopeLabel = payload.scope === "track-general" ? "方向非课程资料" : payload.sectionLabel;
   const sourceLabel = payload.sourceMode === "issue-attachment" ? "GitHub Issue 附件" : "外部链接";
-  const externalLinkLabel = payload.externalLink.trim().length > 0 ? payload.externalLink : "无";
-  const uploadSection =
-    payload.sourceMode === "issue-attachment"
-      ? ["", "## 上传说明", "- [ ] 我会在创建 Issue 后上传资料附件"]
-      : [];
-
+  const externalLinkLabel = payload.externalLink.trim() || "无";
+  const uploadSection = payload.sourceMode === "issue-attachment"
+    ? ["", "## 上传说明", "- [ ] 我会在创建 Issue 后上传资料附件"]
+    : [];
   const manifest = {
-    version: 2,
+    version: 3,
     scope: payload.scope,
-    trackSlug: payload.trackSlug || null,
-    courseSlug: payload.courseSlug || "",
+    track: payload.track,
+    course: payload.course,
     title: payload.title.trim(),
     term: payload.term.trim(),
     materialType: payload.materialType,
@@ -174,22 +156,26 @@ export function buildIssueBody(payload: SubmissionPayload) {
     externalLink: payload.externalLink.trim() || null,
     anonymous: payload.anonymous,
   };
+  const trackLine = payload.track
+    ? `- 方向：${payload.track.label}${payload.track.mode === "new" ? `（新建：${payload.track.slug}）` : ""}`
+    : "- 方向：无";
+  const courseLine = `- 课程：${payload.course.title}${payload.course.mode === "new" ? `（新建：${payload.course.slug}）` : ""}`;
 
   return [
-    "<!-- kym-submission:v2",
+    "<!-- kym-submission:v3",
     JSON.stringify(manifest),
     "-->",
     "",
     "## 基本信息",
     `- 归属：${scopeLabel}`,
-    `- 方向：${payload.trackLabel ?? "无"}`,
-    `- 课程：${payload.courseTitle}`,
+    trackLine,
+    courseLine,
     `- 类型：${payload.materialType}`,
-    `- 标题：${payload.title}`,
-    `- 学期：${payload.term}`,
+    `- 标题：${payload.title.trim()}`,
+    `- 学期：${payload.term.trim()}`,
     "",
     "## 资料说明",
-    payload.summary,
+    payload.summary.trim(),
     "",
     "## 文件来源",
     `- 来源方式：${sourceLabel}`,
@@ -206,15 +192,7 @@ export function buildIssueBody(payload: SubmissionPayload) {
   ].join("\n");
 }
 
-export function buildIssueUrl({
-  repoUrl,
-  title,
-  body,
-}: {
-  repoUrl: string;
-  title: string;
-  body: string;
-}) {
+export function buildIssueUrl({ repoUrl, title, body }: { repoUrl: string; title: string; body: string }) {
   const url = new URL(`${repoUrl.replace(/\/$/, "")}/issues/new`);
   url.searchParams.set("title", title);
   url.searchParams.set("body", body);

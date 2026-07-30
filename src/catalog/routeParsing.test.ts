@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { parseCourseRoute, parsePackageRoute } from "./routeParsing";
+import { parseCourseRoute, parsePackageRoute, parseTrackRoute } from "./routeParsing";
 
 describe("catalog route parsing", () => {
   it.each([
@@ -17,5 +17,13 @@ describe("catalog route parsing", () => {
     ["/kym-commons/materials/package-1/", "package-1"],
   ])("parses package route %s", (pathname, expected) => {
     expect(parsePackageRoute(pathname)).toBe(expected);
+  });
+
+  it.each([
+    ["/tracks/cs/", "cs"],
+    ["/kym-commons/tracks/cs/", "cs"],
+    ["/tracks/cs/machine-learning/", null],
+  ])("parses track route %s", (pathname, expected) => {
+    expect(parseTrackRoute(pathname)).toBe(expected);
   });
 });

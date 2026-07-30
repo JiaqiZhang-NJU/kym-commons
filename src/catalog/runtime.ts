@@ -5,6 +5,10 @@ import type { Catalog, CatalogCourse, MaterialPackage } from "./types";
 export const runtimeCatalog = catalogJson as Catalog;
 export const catalogPackages = runtimeCatalog.packages;
 
+export function getTrack(trackSlug: string) {
+  return runtimeCatalog.tracks.find((track) => track.slug === trackSlug);
+}
+
 export function getFoundationCourses(): CatalogCourse[] {
   return runtimeCatalog.courses.filter((course) => course.section === "foundation");
 }

@@ -86,6 +86,58 @@
   border: 0;
 }
 
+.fieldsetReset + .fieldsetReset {
+  margin-top: 1.5rem;
+}
+
+.fieldsetReset legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.modeGroup {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 0.5rem 0 1rem;
+}
+
+.modeOption {
+  align-items: flex-start;
+  border: 1px solid var(--kym-border);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.85rem;
+}
+
+.modeOptionActive {
+  border-color: var(--ifm-color-primary);
+  background: var(--kym-surface-emphasis);
+}
+
+.modeOption input {
+  flex: 0 0 auto;
+  margin: 0.25rem 0 0;
+}
+
+.modeOption span {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.modeOption small,
+.fieldHint {
+  color: var(--kym-muted-text);
+}
+
+.targetFields {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .muted {
   color: var(--kym-muted-text);
 }
