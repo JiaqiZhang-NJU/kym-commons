@@ -67,7 +67,7 @@ npm run start
 
 如果已有完整备份，先恢复到一个**尚不存在的新目录**，再设置 `KYM_DATA_DIR` 并运行 `npm run catalog:generate`。测试和类型检查前应先生成目录；`build` 和 `start` 的前置脚本也会读取外部数据。
 
-`npm run start` 提供网页开发服务器。原生投稿和后台审核还需要同源的 API 服务与反向代理；只启动 Docusaurus 时不能完成投稿。服务配置参考 [.env.example](.env.example) 和 [运维与迁移说明](docs/operations.md)。
+`npm run start` 提供网页开发服务器。原生投稿和后台审核还需要同源的 API 服务与反向代理；只启动 Docusaurus 时不能完成投稿。服务配置参考 [.env.example](.env.example) 和 [运维与迁移说明](maintenance/operations.md)。
 
 `KYM_SITE_URL` 指定站点来源，如 `https://your-domain.example`；`KYM_BASE_URL` 指定路径前缀，独立域名通常使用 `/`。更换域名后按新配置重新构建，并同步 API 与 Nginx 配置。
 
@@ -81,12 +81,13 @@ node scripts/data/backup.mjs restore --archive /path/to/backup.tar.gz --data-dir
 
 备份包含数据库快照、已存储的文件、历史数据版本、待审投稿、审核状态、校验清单和源码版本信息。恢复目标必须尚不存在，工具不会覆盖正在使用的数据目录。备份属于私有数据，应放在仓库外并限制访问。
 
-恢复时使用备份 `manifest.json` 中对应的源码 commit 和支持的 Node.js 24 环境，不依赖旧服务器。管理员密码不在数据备份中，需要在新服务器重新配置。具体部署、备份保留、恢复演练与回滚操作见 [运维与迁移说明](docs/operations.md)。
+恢复时使用备份 `manifest.json` 中对应的源码 commit 和支持的 Node.js 24 环境，不依赖旧服务器。管理员密码不在数据备份中，需要在新服务器重新配置。具体部署、备份保留、恢复演练与回滚操作见 [运维与迁移说明](maintenance/operations.md)；切换前按 [迁移验收清单](maintenance/migration-checklist.md) 核对。这些维护文档仅在源码仓库提供，不发布到站点。
 
 ## 项目结构
 
 ```text
-docs/                  站点说明、规则和运维文档
+docs/                  站点说明与投稿规则
+maintenance/           仓库中的运维、备份与迁移文档，不发布到站点
 src/components/        阅读、检索、投稿等界面
 src/pages/             网站页面与管理入口
 src/lib/               前端业务函数和测试
