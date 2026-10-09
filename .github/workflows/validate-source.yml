@@ -13,7 +13,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     env:
-      KYM_DATA_DIR: ${{ runner.temp }}/kym-fixture
+      KYM_DATA_DIR: ${{ github.workspace }}/.local-data/ci-fixture
       KYM_SITE_URL: https://fixture.example
       KYM_BASE_URL: /
     steps:
