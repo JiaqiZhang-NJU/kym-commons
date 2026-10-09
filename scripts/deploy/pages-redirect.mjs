@@ -5,7 +5,7 @@ import { isMainModule } from '../../server/cli.mjs';
 /** Use pathname assignment so a suffix beginning with // cannot change hosts. */
 export function redirectDestination(location, options = {}) {
   const sourcePrefix = options.sourcePrefix ?? '/kym-commons/';
-  const destination = new URL(options.targetUrl ?? 'https://jqzhang.top/kymcommon/');
+  const destination = new URL(options.targetUrl ?? 'https://kymcommons.jqzhang.top/');
   if (!/^\/(?:[a-zA-Z0-9_-]+\/)+$/.test(sourcePrefix)) throw new Error('Invalid old Pages prefix.');
   if (destination.protocol !== 'https:' || destination.username || destination.password || destination.search || destination.hash || !destination.pathname.endsWith('/')) {
     throw new Error('Destination must be an HTTPS directory URL without credentials, query or hash.');
@@ -29,7 +29,7 @@ function escapeHtml(value) {
 }
 
 export function renderRedirectHtml(options = {}) {
-  const config = { sourcePrefix: options.sourcePrefix ?? '/kym-commons/', targetUrl: options.targetUrl ?? 'https://jqzhang.top/kymcommon/' };
+  const config = { sourcePrefix: options.sourcePrefix ?? '/kym-commons/', targetUrl: options.targetUrl ?? 'https://kymcommons.jqzhang.top/' };
   const fallback = redirectDestination({ pathname: config.sourcePrefix, search: '', hash: '' }, config);
   const serialized = JSON.stringify(config).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
   return `<!doctype html>

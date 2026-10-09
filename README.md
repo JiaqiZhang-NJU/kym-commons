@@ -4,6 +4,8 @@
 
 KYM Commons 是面向匡院学习共同体的资料站。访客可以按课程、方向和分类查找资料，也可以在网站上传资料，由维护者审核发布。
 
+正式站点：[kymcommons.jqzhang.top](https://kymcommons.jqzhang.top/)。原 GitHub Pages 和 `jqzhang.top/kymcommon/` 链接会跳转到新地址。
+
 GitHub 仓库保存源码、测试和部署配置。正式资料的目录、元数据和审核状态保存在服务器 SQLite 数据库中，文件保存在独立数据目录中。数据库和文件一起导出为完整备份包，换服务器时使用备份包与对应源码版本恢复。
 
 ## 找资料

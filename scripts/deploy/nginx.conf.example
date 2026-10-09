@@ -1,10 +1,26 @@
-# Replace the hostname and add certbot TLS after its A/AAAA record resolves.
+# Use the HTTP block first to obtain the certificate; enable HTTPS afterwards.
+# When moving servers/domains, replace server_name and both certificate paths.
 server {
     listen 80;
     listen [::]:80;
-    server_name your-domain.example;
+    server_name kymcommons.jqzhang.top;
+    location ^~ /.well-known/acme-challenge/ { root /var/www/letsencrypt; }
+    location / { return 308 https://kymcommons.jqzhang.top$request_uri; }
+}
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name kymcommons.jqzhang.top;
+    ssl_certificate /etc/letsencrypt/live/kymcommons.jqzhang.top/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/kymcommons.jqzhang.top/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_cache shared:kym_tls:10m;
+    ssl_session_timeout 1d;
+    ssl_session_tickets off;
     root /opt/kym-commons/current/site;
     index index.html;
+    charset utf-8;
+    access_log off;
     client_max_body_size 128m;
     client_body_timeout 600s;
     add_header X-Content-Type-Options nosniff always;

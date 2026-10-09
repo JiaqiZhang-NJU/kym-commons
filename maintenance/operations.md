@@ -1,6 +1,16 @@
 # 运维与迁移
 
-本页说明服务器部署、完整备份和换服务器恢复的方法。命令中的域名示例需要替换为实际域名；这里不表示域名或 HTTPS 已配置完成。
+本页说明服务器部署、完整备份和换服务器恢复的方法。当前正式入口为 `https://kymcommons.jqzhang.top/`，站点和 API 均部署在域名根目录。换服务器或域名时仍可通过环境配置指定新的来源与路径。
+
+## 当前域名配置
+
+- DNS：`kymcommons.jqzhang.top` 的 A 记录指向当前服务器 `117.72.210.148`；换服务器时更新该记录。
+- 服务：`KYM_SITE_URL=https://kymcommons.jqzhang.top`，`KYM_BASE_URL=/`。网页、投稿 API 来源检查与管理员 Cookie 路径必须使用同一配置。
+- Nginx：配置见 [nginx.conf.example](../scripts/deploy/nginx.conf.example)。仅通过现有 80/443 端口公开站点，API 的 3210 端口保持本机监听。
+- HTTPS：DNS 生效后，使用 `/var/www/letsencrypt` 的 webroot 为新域名签发证书；已有 certbot 定时器与 Nginx 重载 hook 负责续期。
+- 旧入口：GitHub Pages 跳转目标由 `scripts/deploy/pages-redirect.mjs` 定义；主域名仅将 `/kymcommon` 与 `/kymcommon/` 下的旧链接跳转到新站，保留后续路径与查询参数。主域名个人页面仍单独提供。
+
+更换域名时先准备证书与新的发布版本，再同步切换 Nginx、服务环境与 `current`；确认首页、资料下载、投稿配置、后台登录和旧链接跳转后保留旧版本用于回滚。只改变 DNS 或 Nginx 而不重新构建，会留下错误的资源路径或站点来源。
 
 ## 目录与配置
 
