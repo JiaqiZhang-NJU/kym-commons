@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
 import { openStore } from "../../server/store.mjs";
+import { isMainModule } from "../../server/cli.mjs";
 import { hashFile, materializeFileView, renameWithRetry, validateRevisionCatalog, verifyBlob } from "../../server/storage.mjs";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -127,7 +128,7 @@ function argumentsOf(argv) {
   }
   return result;
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try { console.log(JSON.stringify(await prepareBuild(argumentsOf(process.argv.slice(2))))); }
   catch (error) { console.error(error.message); process.exitCode = 1; }
 }

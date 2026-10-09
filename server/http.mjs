@@ -2,6 +2,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isMainModule } from './cli.mjs';
 import { pipeline } from 'node:stream/promises';
 import { openStore } from './store.mjs';
 import { blobPath } from './storage.mjs';
@@ -156,7 +157,7 @@ export function createApplication(config, dependencies = {}) {
   };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     const config = configFromEnv();
     const application = createApplication(config, { onError: (error) => console.error(`API error: ${error.code ?? error.name}`) });

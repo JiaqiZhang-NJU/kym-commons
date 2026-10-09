@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { openStore } from '../../server/store.mjs';
+import { isMainModule } from '../../server/cli.mjs';
 import { putStreamBlob } from '../../server/storage.mjs';
 
 export async function createFixture(dataDir) {
@@ -31,7 +31,7 @@ export async function createFixture(dataDir) {
     return { dataDir, revisionId: revision.id };
   } finally { store.close(); }
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     if (process.argv[2] !== '--data-dir' || !process.argv[3]) throw new Error('Usage: create-fixture.mjs --data-dir NEW_DIRECTORY');
     console.log(JSON.stringify(await createFixture(process.argv[3])));

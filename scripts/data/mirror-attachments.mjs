@@ -1,5 +1,4 @@
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { isMainModule } from '../../server/cli.mjs';
 import { openStore } from '../../server/store.mjs';
 import { putStreamBlob, safeRelativePath } from '../../server/storage.mjs';
 
@@ -29,7 +28,7 @@ export async function mirrorAttachments(dataDir) {
     return { mirrored, revisionId: revision.id, files: files.length };
   } finally { store.close(); }
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     if (process.argv[2] !== '--data-dir' || !process.argv[3]) throw new Error('Usage: mirror-attachments.mjs --data-dir DIRECTORY');
     console.log(JSON.stringify(await mirrorAttachments(process.argv[3])));

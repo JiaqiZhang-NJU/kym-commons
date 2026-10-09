@@ -5,6 +5,7 @@ import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { randomUUID } from 'node:crypto';
+import { isMainModule } from '../../server/cli.mjs';
 
 const execute = promisify(execFile);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -58,7 +59,7 @@ export async function packSource(destination, archive) {
   return { destination, archive, sourceCommit: commit, workingTreeDirty, sourceTreeSha256, sourceFiles: checksums.length };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     if (process.argv[2] !== '--directory' || !process.argv[3] || process.argv[4] !== '--archive' || !process.argv[5]) throw new Error('Use pack-source.mjs --directory NEW_DIR --archive FILE.');
     console.log(JSON.stringify(await packSource(process.argv[3], process.argv[5])));

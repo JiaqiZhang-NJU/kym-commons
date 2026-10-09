@@ -29,6 +29,8 @@ describe('recoverable source provenance', () => {
     await fs.mkdir(path.join(repository, 'scripts/deploy'), { recursive: true });
     const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
     await fs.copyFile(path.join(project, 'scripts/deploy/pack-source.mjs'), path.join(repository, 'scripts/deploy/pack-source.mjs'));
+    await fs.mkdir(path.join(repository, 'server'));
+    await fs.copyFile(path.join(project, 'server/cli.mjs'), path.join(repository, 'server/cli.mjs'));
     await fs.writeFile(path.join(repository, 'code.mjs'), 'export const value = 1;\n');
     await fs.mkdir(path.join(repository, 'content'));
     await fs.writeFile(path.join(repository, 'content/fixture.json'), '{"fixture":true}');

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isMainModule } from '../../server/cli.mjs';
 import { openStore } from '../../server/store.mjs';
 import { acquirePublishLock, recoverPublication, publishRevision } from '../../server/publisher.mjs';
 
@@ -49,7 +50,7 @@ export async function release(options = {}) {
   }
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try { console.log(JSON.stringify(await release(parseReleaseArguments(process.argv.slice(2))))); }
   catch (error) { console.error(error.message); process.exitCode = 1; }
 }

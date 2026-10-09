@@ -87,16 +87,27 @@ describe('complete archive recovery', () => {
     const { root, dataDir } = await fixture();
     const source = path.join(root, 'packed-source');
     const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-    for (const relative of ['scripts/data/backup.mjs', 'server/store.mjs', 'server/storage.mjs', 'server/source-identity.mjs']) {
+    for (const relative of ['scripts/data/backup.mjs', 'scripts/data/create-fixture.mjs', 'scripts/data/prepare-build.mjs', 'server/store.mjs', 'server/storage.mjs', 'server/source-identity.mjs', 'server/cli.mjs']) {
       await fs.mkdir(path.dirname(path.join(source, relative)), { recursive: true });
       await fs.copyFile(path.join(project, relative), path.join(source, relative));
     }
     await fs.writeFile(path.join(source, 'SOURCE_COMMIT'), '');
     await fs.writeFile(path.join(source, 'SOURCE_METADATA.json'), JSON.stringify({ workingTreeDirty: true, parentCommit: 'b'.repeat(40), sourceTreeSha256: 'c'.repeat(64) }));
+    const linked = path.join(root, 'current-source');
+    await fs.symlink(source, linked, process.platform === 'win32' ? 'junction' : 'dir');
     const output = path.join(root, 'dirty-source.tar.gz');
-    const result = await execute(process.execPath, [path.join(source, 'scripts/data/backup.mjs'), 'export', '--data-dir', dataDir, '--output', output], { env: { ...process.env, KYM_SOURCE_COMMIT: 'a'.repeat(40) } });
+    const result = await execute(process.execPath, [path.join(linked, 'scripts/data/backup.mjs'), 'export', '--data-dir', dataDir, '--output', output], { env: { ...process.env, KYM_SOURCE_COMMIT: 'a'.repeat(40) } });
     expect(JSON.parse(result.stdout)).toMatchObject({ sourceCommit: null, workingTreeDirty: true, parentCommit: 'b'.repeat(40), dataSourceCommit: null });
-    expect(await verifyBackup({ archive: output, temporaryParent: root })).toMatchObject({ verified: true, sourceCommit: null, workingTreeDirty: true });
+    const verified = await execute(process.execPath, [path.join(linked, 'scripts/data/backup.mjs'), 'verify', '--archive', output, '--temporary-parent', root]);
+    expect(JSON.parse(verified.stdout)).toMatchObject({ verified: true, sourceCommit: null, workingTreeDirty: true });
+    const restored = path.join(root, 'restored-from-linked-cli');
+    const recovery = await execute(process.execPath, [path.join(linked, 'scripts/data/backup.mjs'), 'restore', '--archive', output, '--data-dir', restored]);
+    expect(JSON.parse(recovery.stdout)).toMatchObject({ restored: true, dataDir: restored });
+    const fixtureData = path.join(root, 'linked-cli-fixture');
+    const fixtureResult = await execute(process.execPath, [path.join(linked, 'scripts/data/create-fixture.mjs'), '--data-dir', fixtureData]);
+    expect(JSON.parse(fixtureResult.stdout)).toMatchObject({ dataDir: fixtureData, revisionId: 'fixture-1' });
+    const prepared = await execute(process.execPath, [path.join(linked, 'scripts/data/prepare-build.mjs'), '--data-dir', fixtureData]);
+    expect(JSON.parse(prepared.stdout)).toMatchObject({ revisionId: 'fixture-1', fileCount: 1 });
   });
 
   it('restores unindexed binary files and the private pending review queue', async () => {

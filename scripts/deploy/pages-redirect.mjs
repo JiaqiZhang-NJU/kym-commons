@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { isMainModule } from '../../server/cli.mjs';
 
 /** Use pathname assignment so a suffix beginning with // cannot change hosts. */
 export function redirectDestination(location, options = {}) {
@@ -84,7 +84,7 @@ function argumentsOf(argv) {
   return result;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try { console.log(JSON.stringify(await generatePagesRedirect(argumentsOf(process.argv.slice(2))))); }
   catch (error) { console.error(error.message); process.exitCode = 1; }
 }

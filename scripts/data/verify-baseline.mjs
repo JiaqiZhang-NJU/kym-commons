@@ -1,6 +1,5 @@
 import fs from 'node:fs/promises';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { isMainModule } from '../../server/cli.mjs';
 import { openStore } from '../../server/store.mjs';
 import { verifyBlob } from '../../server/storage.mjs';
 
@@ -23,7 +22,7 @@ export async function verifyBaseline({ dataDir, catalogFile, inventoryFile, revi
   }
   return { verified: true, revisionId: revision.id, tracks: revision.catalog.tracks.length, courses: revision.catalog.courses.length, categories: revision.catalog.categories.length, packages: revision.catalog.packages.length, files: inventory.length, uniqueBlobs: checked.size, bytes: inventory.reduce((sum, file) => sum + file.sizeBytes, 0) };
 }
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     const args = process.argv.slice(2); const values = {};
     for (let i = 0; i < args.length; i += 2) values[args[i].replace(/^--/, '')] = args[i + 1];

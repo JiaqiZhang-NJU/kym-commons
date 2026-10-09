@@ -5,6 +5,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { openStore } from "../../server/store.mjs";
+import { isMainModule } from "../../server/cli.mjs";
 import { putBlob, safeRelativePath, validateRevisionCatalog } from "../../server/storage.mjs";
 
 async function walkFiles(root, current = root) {
@@ -105,7 +106,7 @@ function argumentsOf(argv) {
   return result;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     const report = await importLegacy(argumentsOf(process.argv.slice(2)));
     console.log(JSON.stringify({ revisionId: report.revisionId, fileCount: report.fileCount, totalBytes: report.totalBytes, unindexedFileCount: report.unindexedFiles.length }));

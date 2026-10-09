@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { openStore } from '../../server/store.mjs';
 import { blobPath, hashFile, safeRelativePath } from '../../server/storage.mjs';
 import { resolveSourceIdentity } from '../../server/source-identity.mjs';
+import { isMainModule } from '../../server/cli.mjs';
 
 const execute = promisify(execFile);
 const sourceRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -18,11 +19,35 @@ async function jsonFile(file, value) {
   await fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 });
 }
 
-async function cleanOwned(directory, parent, prefix) {
+function ownedDirectory(directory, parent, prefix) {
   const resolved = path.resolve(directory);
   if (path.dirname(resolved) !== path.resolve(parent) || !path.basename(resolved).startsWith(prefix)) {
     throw new Error('Refusing to remove a directory outside the operation workspace.');
   }
+  return resolved;
+}
+
+async function accessibleOwnedTree(directory, parent, prefix, { normalizeFiles = false } = {}) {
+  const resolved = ownedDirectory(directory, parent, prefix);
+  if (process.platform === 'win32') return;
+  const pending = [resolved];
+  while (pending.length) {
+    const target = pending.pop();
+    const stat = await fs.lstat(target).catch((error) => { if (error.code === 'ENOENT') return null; throw error; });
+    // Never follow archive links or modify a file outside the private operation tree.
+    if (!stat || !stat.isDirectory() || stat.isSymbolicLink()) continue;
+    await fs.chmod(target, 0o700);
+    for (const entry of await fs.readdir(target, { withFileTypes: true })) {
+      const child = path.join(target, entry.name);
+      if (entry.isDirectory() && !entry.isSymbolicLink()) pending.push(child);
+      else if (normalizeFiles && entry.isFile() && !entry.isSymbolicLink()) await fs.chmod(child, 0o600);
+    }
+  }
+}
+
+async function cleanOwned(directory, parent, prefix) {
+  const resolved = ownedDirectory(directory, parent, prefix);
+  await accessibleOwnedTree(resolved, parent, prefix);
   await fs.rm(resolved, { recursive: true, force: true });
 }
 
@@ -166,6 +191,9 @@ async function unpackAndVerify(archive, parent) {
   let store;
   try {
     await execute('tar', ['-xzf', archive, '-C', working, '--no-same-owner', '--no-same-permissions'], { maxBuffer: 1024 * 1024 });
+    // Archive modes are untrusted. A directory without owner execute permission
+    // must not prevent validation or hide its original error during cleanup.
+    await accessibleOwnedTree(working, parent, '.kym-restore-', { normalizeFiles: true });
     const read = async (name) => JSON.parse(await fs.readFile(path.join(working, name), 'utf8'));
     const manifest = await read('manifest.json');
     if (manifest.format !== format || manifest.formatVersion !== 1 || manifest.schemaVersion !== 1) throw new Error('Unsupported backup format or database schema.');
@@ -181,6 +209,7 @@ async function unpackAndVerify(archive, parent) {
     for (const file of checksums) {
       const measured = await hashFile(path.join(working, 'files', file.sha256));
       if (measured.sha256 !== file.sha256 || measured.sizeBytes !== file.sizeBytes) throw new Error(`File checksum mismatch: ${file.sha256}`);
+      if (process.platform !== 'win32') await fs.chmod(path.join(working, 'files', file.sha256), 0o444);
     }
     const data = path.join(working, '.data');
     await fs.mkdir(data);
@@ -229,7 +258,7 @@ function options(args) {
   return parsed;
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (isMainModule(import.meta.url)) {
   try {
     const [operation, ...args] = process.argv.slice(2);
     const values = options(args);
