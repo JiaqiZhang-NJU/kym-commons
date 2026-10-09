@@ -6,7 +6,8 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "prebuild": "npm run catalog:check",
+    "prebuild": "node scripts/data/prepare-build.mjs",
+    "prestart": "node scripts/data/prepare-build.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -16,16 +17,16 @@
     "typecheck": "tsc",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
-    "catalog:validate": "node scripts/catalog/validate.mjs",
-    "catalog:generate": "node scripts/catalog/generate-runtime.mjs",
-    "catalog:classify": "node scripts/catalog/classify-packages.mjs",
-    "catalog:consolidate": "node scripts/catalog/consolidate-programming-examples.mjs",
-    "catalog:deduplicate": "node scripts/catalog/deduplicate-assets.mjs",
-    "catalog:consolidate-related": "node scripts/catalog/consolidate-related-materials.mjs",
-    "catalog:pair-solutions": "node scripts/catalog/pair-question-solutions.mjs",
-    "catalog:organize-data-structures": "node scripts/catalog/organize-data-structures.mjs",
-    "catalog:check": "npm run catalog:validate && node scripts/catalog/classify-packages.mjs --check && node scripts/catalog/deduplicate-assets.mjs --check && node scripts/catalog/consolidate-programming-examples.mjs --check && node scripts/catalog/consolidate-related-materials.mjs --check && node scripts/catalog/pair-question-solutions.mjs --check && node scripts/catalog/organize-data-structures.mjs --check && node scripts/catalog/generate-runtime.mjs --check",
-    "catalog:migrate": "node scripts/catalog/migrate-legacy.mjs --force"
+    "catalog:validate": "node scripts/data/prepare-build.mjs",
+    "catalog:generate": "node scripts/data/prepare-build.mjs",
+    "catalog:check": "node scripts/data/prepare-build.mjs",
+    "data:import-legacy": "node scripts/data/import-legacy.mjs",
+    "data:fixture": "node scripts/data/create-fixture.mjs",
+    "data:export": "node scripts/data/backup.mjs export",
+    "data:verify": "node scripts/data/backup.mjs verify",
+    "data:restore": "node scripts/data/backup.mjs restore",
+    "server": "node server/http.mjs",
+    "release": "node scripts/deploy/release.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",
@@ -58,6 +59,10 @@
     ]
   },
   "engines": {
-    "node": ">=20.0"
+    "node": ">=24 <25"
+  },
+  "overrides": {
+    "serialize-javascript": "7.1.2",
+    "tinypool": "2.1.2"
   }
 }

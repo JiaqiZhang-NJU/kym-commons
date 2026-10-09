@@ -1,23 +1,29 @@
 import {
   COURSE_TYPES,
   GENERAL_TYPES,
-  type FileSourceMode,
+  formatFileSize,
+  type NativeFileSourceMode,
   type MaterialType,
   type SubmissionScope,
+  type SubmissionLimits,
 } from "../../lib/submission";
 import styles from "./submit.module.css";
 
 type Props = {
   scope: SubmissionScope;
   materialType: MaterialType;
-  sourceMode: FileSourceMode;
+  sourceMode: NativeFileSourceMode;
   title: string;
   term: string;
   summary: string;
   externalLink: string;
   anonymous: boolean;
+  files: File[];
+  limits?: SubmissionLimits;
+  fileError: string;
   onMaterialTypeChange: (value: MaterialType) => void;
-  onSourceModeChange: (value: FileSourceMode) => void;
+  onSourceModeChange: (value: NativeFileSourceMode) => void;
+  onFilesChange: (value: File[]) => void;
   onTitleChange: (value: string) => void;
   onTermChange: (value: string) => void;
   onSummaryChange: (value: string) => void;
@@ -46,18 +52,19 @@ export default function SubmitStepDetails(props: Props) {
 
       <label className={styles.field}>
         <span>资料标题</span>
-        <input value={props.title} onChange={(event) => props.onTitleChange(event.target.value)} placeholder="例如：机器学习入门资源整理" />
+        <input maxLength={200} value={props.title} onChange={(event) => props.onTitleChange(event.target.value)} placeholder="例如：机器学习入门资源整理" />
       </label>
 
       <label className={styles.field}>
         <span>学期或时间</span>
-        <input value={props.term} onChange={(event) => props.onTermChange(event.target.value)} placeholder="2026 Spring" />
+        <input maxLength={100} value={props.term} onChange={(event) => props.onTermChange(event.target.value)} placeholder="例如：2026 秋季" />
       </label>
 
       <label className={styles.field}>
         <span>简介</span>
         <textarea
           rows={6}
+          maxLength={8000}
           value={props.summary}
           onChange={(event) => props.onSummaryChange(event.target.value)}
           placeholder="简要说明资料内容、适用人群和使用建议"
@@ -68,12 +75,12 @@ export default function SubmitStepDetails(props: Props) {
         <legend>文件来源</legend>
         <div className={styles.choiceGrid}>
           <button
-            className={`${styles.choiceButton} ${props.sourceMode === "issue-attachment" ? styles.choiceButtonActive : ""}`}
-            onClick={() => props.onSourceModeChange("issue-attachment")}
+            className={`${styles.choiceButton} ${props.sourceMode === "upload" ? styles.choiceButtonActive : ""}`}
+            onClick={() => props.onSourceModeChange("upload")}
             type="button"
           >
-            <strong>GitHub Issue 附件</strong>
-            <div className={styles.muted}>推荐。提交到 GitHub Issue 后再上传本地文件附件。</div>
+            <strong>上传文件</strong>
+            <div className={styles.muted}>选择本地资料，提交后由维护者审核发布。</div>
           </button>
           <button
             className={`${styles.choiceButton} ${props.sourceMode === "external-link" ? styles.choiceButtonActive : ""}`}
@@ -86,15 +93,26 @@ export default function SubmitStepDetails(props: Props) {
         </div>
       </fieldset>
 
-      {props.sourceMode === "issue-attachment" ? (
-        <div className={styles.helperBox}>提交到 GitHub Issue 后，请将文件拖拽上传到 Issue 描述区或评论区。</div>
+      {props.sourceMode === "upload" ? (
+        <div className={styles.field}>
+          <label>
+            <span>资料文件（可多选）</span>
+            <input type="file" multiple onChange={(event) => { props.onFilesChange(Array.from(event.target.files ?? [])); event.target.value = ""; }} />
+          </label>
+          {props.files.length > 0 && <ul className={styles.fileList}>{props.files.map((file, index) => <li key={`${file.name}-${index}`}><span>{file.name} <small>（{formatFileSize(file.size)}）</small></span><button type="button" className="button button--secondary button--sm" onClick={() => props.onFilesChange(props.files.filter((_, itemIndex) => itemIndex !== index))}>移除</button></li>)}</ul>}
+          <small className={styles.fieldHint}>文件将在最后确认后上传。请勿上传含姓名、学号、联系方式等个人信息的材料。</small>
+          {props.limits && <small className={styles.fieldHint}>一次最多 {props.limits.maxFiles} 个文件，单个文件不超过 {formatFileSize(props.limits.maxFileBytes)}，总大小不超过 {formatFileSize(props.limits.maxSubmissionBytes)}。</small>}
+          {props.files.length > 0 && props.fileError && <p className={styles.error} role="alert">{props.fileError}</p>}
+        </div>
       ) : (
         <label className={styles.field}>
           <span>外部链接</span>
           <input
             value={props.externalLink}
             onChange={(event) => props.onExternalLinkChange(event.target.value)}
-            placeholder="https://..."
+            type="url"
+            maxLength={4096}
+            placeholder="https://...（仅支持 HTTPS）"
           />
         </label>
       )}

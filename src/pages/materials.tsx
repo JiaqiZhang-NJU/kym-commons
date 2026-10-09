@@ -2,6 +2,7 @@ import { useLocation } from "@docusaurus/router";
 import Head from "@docusaurus/Head";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import { useEffect, useMemo } from "react";
 
 import { buildCanonicalCoursePath, getCourse } from "../catalog/runtime";
@@ -10,10 +11,11 @@ import { buildCanonicalCoursePath, getCourse } from "../catalog/runtime";
 export default function LegacyMaterialsRoute() {
   const { search } = useLocation();
   const target = useMemo(() => getLegacyTarget(search), [search]);
+  const redirectTarget = useBaseUrl(target ?? "/");
 
   useEffect(() => {
-    if (target) window.location.replace(target);
-  }, [target]);
+    if (target) window.location.replace(redirectTarget);
+  }, [target, redirectTarget]);
 
   return (
     <Layout title="课程资料已迁移">

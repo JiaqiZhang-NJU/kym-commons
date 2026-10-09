@@ -1,14 +1,10 @@
+import { runtimeCatalog } from "../catalog/runtime";
 import type { MaterialRecord } from "../data/materials";
 
 export const GENERAL_RESOURCES_SLUG = "general-resources";
-export const TRACK_LABELS: Readonly<Record<string, string>> = {
-  math: "数学",
-  biochem: "生化",
-  cs: "计算机",
-  physics: "物理",
-  astronomy: "天文",
-  other: "其他",
-} as const;
+export const TRACK_LABELS: Readonly<Record<string, string>> = Object.fromEntries(
+  runtimeCatalog.tracks.map(({ slug, label }) => [slug, label])
+);
 
 export type SectionKey = "foundation" | "track";
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";

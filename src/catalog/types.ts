@@ -48,6 +48,7 @@ export type CatalogAsset = {
   mediaType: string | null;
   sizeBytes: number | null;
   sha256: string | null;
+  originalUrl?: string;
 };
 
 export type MaterialPackage = {
@@ -65,7 +66,9 @@ export type MaterialPackage = {
   aliases: string[];
   assets: CatalogAsset[];
   source: {
-    kind: "repository" | "external" | "github-submission";
+    kind: "repository" | "external" | "github-submission" | "website-submission";
+    submissionId?: string;
+    anonymous?: boolean;
     issueNumber?: number;
     intakePullRequestNumber?: number;
     intakeRevisionCommentId?: number;

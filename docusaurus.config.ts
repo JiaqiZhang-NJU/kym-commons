@@ -6,7 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const projectName = 'kym-commons';
 const organizationName = process.env.GITHUB_REPOSITORY_OWNER ?? 'JiaqiZhang-NJU';
-const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
+const siteUrl = process.env.KYM_SITE_URL ?? 'http://localhost:3000';
+const baseUrl = process.env.KYM_BASE_URL ?? '/';
 
 const config: Config = {
   title: 'KYM Commons',
@@ -18,8 +19,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: isGithubActions ? `https://${organizationName}.github.io` : 'http://localhost:3000',
-  baseUrl: isGithubActions ? `/${projectName}/` : '/',
+  url: siteUrl,
+  baseUrl,
   organizationName,
   projectName,
 

@@ -12,10 +12,10 @@ export default function SubmitPage() {
   );
 
   return (
-    <Layout title="Submit">
+    <Layout title="资料投稿">
       <main className="container margin-vert--lg">
-        <h1>Submit Materials</h1>
-        <p>按步骤整理投稿信息，预览生成内容后再跳转到 GitHub Issue 完成提交。</p>
+        <h1>资料投稿</h1>
+        <p>选择归属位置，填写说明并上传资料。维护者审核通过后会发布到网站。</p>
         <SubmitWizard key={location.search} initialTarget={initialTarget} />
       </main>
     </Layout>

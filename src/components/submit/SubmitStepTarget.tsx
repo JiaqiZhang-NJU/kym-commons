@@ -59,8 +59,8 @@ export default function SubmitStepTarget(props: Props) {
             <label className={styles.field}><span>选择方向</span><select value={props.existingTrackSlug} onChange={(event) => props.onExistingTrackChange(event.target.value)}>{tracks.map((track) => <option key={track.slug} value={track.slug}>{track.label}</option>)}</select></label>
           ) : (
             <div className={styles.targetFields}>
-              <label className={styles.field}><span>方向名称</span><input value={props.newTrackLabel} onChange={(event) => props.onNewTrackLabelChange(event.target.value)} placeholder="例如：电子信息" /></label>
-              <label className={styles.field}><span>方向 slug</span><input value={props.newTrackSlug} onChange={(event) => props.onNewTrackSlugChange(event.target.value)} placeholder="例如：electronic-information" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
+              <label className={styles.field}><span>方向名称</span><input maxLength={200} value={props.newTrackLabel} onChange={(event) => props.onNewTrackLabelChange(event.target.value)} placeholder="例如：电子信息" /></label>
+              <label className={styles.field}><span>方向 slug</span><input maxLength={100} value={props.newTrackSlug} onChange={(event) => props.onNewTrackSlugChange(event.target.value)} placeholder="例如：electronic-information" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
             </div>
           )}
         </fieldset>
@@ -80,8 +80,8 @@ export default function SubmitStepTarget(props: Props) {
             <label className={styles.field}><span>选择课程</span><select value={props.existingCourseSlug} onChange={(event) => props.onExistingCourseChange(event.target.value)}>{selectableCourses.length === 0 && <option value="">暂无已有课程</option>}{selectableCourses.map((course) => <option key={course.slug} value={course.slug}>{course.title}</option>)}</select></label>
           ) : (
             <div className={styles.targetFields}>
-              <label className={styles.field}><span>课程名称</span><input value={props.newCourseTitle} onChange={(event) => props.onNewCourseTitleChange(event.target.value)} placeholder="例如：数字信号处理" /></label>
-              <label className={styles.field}><span>课程 slug</span><input value={props.newCourseSlug} onChange={(event) => props.onNewCourseSlugChange(event.target.value)} placeholder="例如：digital-signal-processing" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
+              <label className={styles.field}><span>课程名称</span><input maxLength={200} value={props.newCourseTitle} onChange={(event) => props.onNewCourseTitleChange(event.target.value)} placeholder="例如：数字信号处理" /></label>
+              <label className={styles.field}><span>课程 slug</span><input maxLength={100} value={props.newCourseSlug} onChange={(event) => props.onNewCourseSlugChange(event.target.value)} placeholder="例如：digital-signal-processing" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
             </div>
           )}
         </fieldset>

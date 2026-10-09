@@ -1,0 +1,32 @@
+[Unit]
+Description=KYM Commons submissions and publication worker
+After=network.target
+
+[Service]
+Type=simple
+User=kym-commons
+Group=www-data
+WorkingDirectory=/opt/kym-commons/source
+EnvironmentFile=/etc/kym-commons/environment
+Environment=NODE_OPTIONS=--max-old-space-size=2048
+Environment=NPM_CONFIG_CACHE=/var/cache/kym-commons/npm
+Environment=PATH=/opt/kym-commons/runtime/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/opt/kym-commons/runtime/bin/node /opt/kym-commons/source/server/http.mjs
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=960
+KillMode=control-group
+UMask=0027
+Nice=5
+MemoryHigh=2500M
+MemoryMax=3000M
+TasksMax=256
+LimitNOFILE=8192
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kym-commons /opt/kym-commons /var/cache/kym-commons
+
+[Install]
+WantedBy=multi-user.target

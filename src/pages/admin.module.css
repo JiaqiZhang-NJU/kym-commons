@@ -1,0 +1,22 @@
+.shell { max-width: 1100px; }
+.login, .record { border: 1px solid var(--kym-border); border-radius: 16px; background: var(--kym-surface); padding: 1.5rem; }
+.login { max-width: 420px; display: grid; gap: 1rem; }
+.login label, .reason { display: grid; gap: 0.5rem; }
+.toolbar, .actions, .recordHeading { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.toolbar, .recordHeading { justify-content: space-between; }
+.toolbar label { display: flex; gap: 0.75rem; align-items: center; }
+.recordHeading h2 { margin: 0; font-size: 1.4rem; overflow-wrap: anywhere; }
+.records { display: grid; gap: 1.5rem; }
+.details { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 0.65rem 1rem; }
+.details dt { font-weight: 600; }
+.details dd { margin: 0; overflow-wrap: anywhere; }
+.summary { white-space: pre-wrap; }
+.files { list-style: none; padding: 0; display: grid; gap: 0.5rem; }
+.files li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem 1rem; overflow-wrap: anywhere; }
+.reason { margin: 1rem 0; }
+.reason textarea { width: 100%; }
+.muted { color: var(--kym-muted-text); }
+.error { color: var(--ifm-color-danger-dark); overflow-wrap: anywhere; }
+.notice { padding: 0.8rem 1rem; background: var(--kym-surface-emphasis); border-left: 3px solid var(--ifm-color-primary); border-radius: 8px; }
+.badge { padding: 0.35rem 0.6rem; background: var(--kym-surface-emphasis); border-radius: 8px; }
+@media (max-width: 600px) { .details { grid-template-columns: 1fr; gap: 0.3rem; } .details dd { margin-bottom: 0.65rem; } .toolbar label { display: grid; } }

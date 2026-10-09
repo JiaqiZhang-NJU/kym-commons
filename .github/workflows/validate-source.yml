@@ -1,0 +1,35 @@
+name: Validate source
+
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      KYM_DATA_DIR: ${{ runner.temp }}/kym-fixture
+      KYM_SITE_URL: https://fixture.example
+      KYM_BASE_URL: /
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.21.0
+          cache: npm
+      - run: npm ci
+      - name: Create artificial external dataset
+        run: npm run data:fixture -- --data-dir "$KYM_DATA_DIR"
+      - run: npm run catalog:generate
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Check source tree contains no business data
+        run: |
+          test -z "$(git ls-files content static/files src/generated/catalog.json '*.sqlite')"
+          git diff --exit-code

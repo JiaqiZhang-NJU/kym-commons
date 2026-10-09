@@ -9,5 +9,5 @@
     "resolveJsonModule": true,
     "strict": true
   },
-  "exclude": [".docusaurus", "build"]
+  "exclude": [".docusaurus", "build", ".local-data", ".local-backups", ".local-releases", ".local-runtime", ".migration-work", ".trae"]
 }

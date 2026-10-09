@@ -1,55 +1,34 @@
+import { formatFileSize, type SubmissionManifest } from "../../lib/submission";
 import styles from "./submit.module.css";
 
 type Props = {
   targetLabel: string;
-  issueTitle: string;
-  issueBody: string;
-  anonymous: boolean;
-  issueUrl: string;
-  sourceMode: "issue-attachment" | "external-link";
-  externalLink: string;
+  manifest: SubmissionManifest;
+  files: File[];
   hasNewTarget: boolean;
+  confirmedPrivacy: boolean;
+  confirmedRights: boolean;
+  onPrivacyChange: (value: boolean) => void;
+  onRightsChange: (value: boolean) => void;
 };
 
-export default function SubmitStepPreview({
-  targetLabel,
-  issueTitle,
-  issueBody,
-  anonymous,
-  issueUrl,
-  sourceMode,
-  externalLink,
-  hasNewTarget,
-}: Props) {
-  const sourceLabel = sourceMode === "issue-attachment" ? "GitHub Issue 附件" : "外部链接";
-
-  return (
-    <>
-      <div className={styles.panel}>
-        <strong>Resolved target</strong>
-        <p className={styles.muted}>{targetLabel}</p>
-        <p className={styles.muted}>文件来源：{sourceLabel}</p>
-        <p className={styles.muted}>外部链接：{externalLink.trim().length > 0 ? externalLink : "无"}</p>
-        <p className={styles.muted}>匿名发布：{anonymous ? "是" : "否"}</p>
-        {hasNewTarget ? <p className={styles.muted}>此投稿会在审核通过后同时创建新的方向或课程目录。</p> : null}
-        {sourceMode === "issue-attachment" ? (
-          <p className={styles.muted}>下一步：打开 GitHub Issue 后，请将资料文件上传为附件。</p>
-        ) : null}
-      </div>
-
-      <div>
-        <h2>Issue Title</h2>
-        <pre className={styles.previewBlock}>{issueTitle}</pre>
-      </div>
-
-      <div>
-        <h2>Issue Body</h2>
-        <pre className={styles.previewBlock}>{issueBody}</pre>
-      </div>
-
-      <a className="button button--primary button--lg" href={issueUrl} target="_blank" rel="noreferrer">
-        Open GitHub Issue
-      </a>
-    </>
-  );
+export default function SubmitStepPreview(props: Props) {
+  const { manifest } = props;
+  return <>
+    <h2>确认投稿</h2>
+    <dl className={styles.previewDetails}>
+      <dt>归属</dt><dd>{props.targetLabel}</dd>
+      <dt>资料标题</dt><dd>{manifest.title}</dd>
+      <dt>类型</dt><dd>{manifest.materialType}</dd>
+      <dt>学期或时间</dt><dd>{manifest.term}</dd>
+      <dt>发布偏好</dt><dd>{manifest.anonymous ? "匿名发布" : "不匿名"}</dd>
+      <dt>资料说明</dt><dd className={styles.summary}>{manifest.summary}</dd>
+      <dt>文件来源</dt><dd>{manifest.sourceMode === "upload" ? "上传文件" : <a href={manifest.externalLink ?? undefined} target="_blank" rel="noopener noreferrer">{manifest.externalLink}</a>}</dd>
+    </dl>
+    {manifest.sourceMode === "upload" && <ul className={styles.fileList}>{props.files.map((file, index) => <li key={`${file.name}-${index}`}><span>{file.name}</span><small>{formatFileSize(file.size)}</small></li>)}</ul>}
+    {props.hasNewTarget && <p className={styles.muted}>审核通过后，将同时创建所选的新方向或课程目录。</p>}
+    <p className={styles.muted}>投稿仅供维护者审核；审核通过并完成发布后，其他访客才能看到。</p>
+    <label className={styles.confirmation}><input type="checkbox" checked={props.confirmedPrivacy} onChange={(event) => props.onPrivacyChange(event.target.checked)} /><span>我确认资料已脱敏，不含应保护的个人信息。</span></label>
+    <label className={styles.confirmation}><input type="checkbox" checked={props.confirmedRights} onChange={(event) => props.onRightsChange(event.target.checked)} /><span>我有权分享这些资料，并同意维护者整理后公开发布。</span></label>
+  </>;
 }

@@ -1,29 +1,25 @@
-# About
+# 关于本站
 
-KYM Commons is an academic materials platform for the Kuang Yaming learning community.
+KYM Commons 是面向匡院学习共同体的资料站，帮助大家查找课程资料、分享学习经验，并长期维护这些内容。
 
-The project brings Foundation courses, track-based course materials, and direction-level `General Resources` into one coherent structure so that materials can be collected, reviewed, and maintained over time.
+## 资料怎么组织
 
-## Purpose
+- `Foundation` 收录前三学期基础课程资料。
+- `Tracks` 按宽口径方向组织课程资料。
+- 每个方向的 `General Resources` 收录不属于某一门课程的学习资源。
 
-KYM Commons aims to provide a stable and searchable knowledge space for course-related materials and shared disciplinary resources. The platform emphasizes continuity, clarity, and maintainability rather than short-term file collection.
+课程页可以按类别查看资料，也可以在 [资料检索](/browse) 中按关键词、分类和学期查找。
 
-## Content Organization
+## 如何补充资料
 
-The current structure includes:
+通过 [资料投稿](/submit) 填写归属和简介，上传文件或提供稳定的 HTTPS 链接。目录尚未收录的方向或课程，可以随投稿申请新建。
 
-- Foundation course materials for the first three semesters
-- Track-based course materials organized by broad disciplinary direction
-- `General Resources` for materials that belong to a direction but not to a single course
+投稿会先进入管理员审核队列。维护者检查内容、版权和个人信息后决定是否通过；审核通过后，系统构建并发布网站。发布完成前，投稿不会向其他访客公开。
 
-## Contribution Model
+请先阅读 [投稿规则](rules.md)。不需要为资料创建 GitHub Issue 或 PR。
 
-Materials are submitted through the platform, reviewed through GitHub-based workflows, and then incorporated into the published site through a consistent release process.
+## 如何长期保存
 
-## Review Principles
+GitHub 保存项目源码；服务器保存资料目录、审核记录和文件。维护者可以将数据库与已保存文件导出为一个完整备份包，在新服务器上用对应源码版本恢复网站。
 
-KYM Commons follows a curated model. Contributions are expected to be structured, attributable when appropriate, and suitable for long-term academic reference.
-
-## Maintainer Notes
-
-Maintainers should verify the repository, Pages, Actions, and domain configuration before the first push and before any public rollout.
+外部链接仍依赖其原托管平台；需要独立长期保存的资料应上传文件副本。服务器维护与迁移方法见 [运维说明](operations.md)。

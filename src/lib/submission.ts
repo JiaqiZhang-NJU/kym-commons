@@ -2,7 +2,9 @@ import { getCourse, getFoundationCourses, getTrackCourses, runtimeCatalog } from
 import { GENERAL_RESOURCES_SLUG } from "./materials";
 
 export type SubmissionScope = "foundation-course" | "track-course" | "track-general";
-export type FileSourceMode = "issue-attachment" | "external-link";
+// Kept for compatibility with the legacy Issue import helpers.
+export type FileSourceMode = "upload" | "issue-attachment" | "external-link";
+export type NativeFileSourceMode = "upload" | "external-link";
 export type TrackTargetMode = "existing" | "new";
 export type CourseTargetMode = "existing" | "new";
 
@@ -44,7 +46,39 @@ export type DetailStepState = {
   summary: string;
   sourceMode: FileSourceMode;
   externalLink: string;
+  files?: ReadonlyArray<SubmissionFile>;
 };
+
+export type SubmissionFile = { name: string; size: number; type: string };
+export type SubmissionLimits = { maxFileBytes: number; maxSubmissionBytes: number; maxFiles: number };
+
+export type SubmissionManifest = {
+  version: 3;
+  scope: SubmissionScope;
+  track: TargetTrack | null;
+  course: TargetCourse;
+  title: string;
+  term: string;
+  materialType: MaterialType;
+  summary: string;
+  sourceMode: NativeFileSourceMode;
+  externalLink: string | null;
+  anonymous: boolean;
+};
+
+export type UploadSession = {
+  id: string;
+  uploadToken: string;
+  files: Array<SubmissionFile & { id: string }>;
+  status: string;
+};
+
+export class SubmissionRequestError extends Error {
+  constructor(message: string, public readonly status: number) {
+    super(message);
+    this.name = "SubmissionRequestError";
+  }
+}
 
 export const COURSE_TYPES = ["课程笔记", "作业经验", "历年题/回忆", "参考资料", "FAQ"] as const;
 export const GENERAL_TYPES = ["方向导引", "经验分享", "科研入门", "竞赛/项目", "工具资源", "书单/参考资源", "其他"] as const;
@@ -97,8 +131,8 @@ export function getDefaultMaterialType(scope: SubmissionScope) {
   return scope === "track-general" ? GENERAL_TYPES[2] : COURSE_TYPES[0];
 }
 
-export function getDefaultSourceMode(): FileSourceMode {
-  return "issue-attachment";
+export function getDefaultSourceMode(): NativeFileSourceMode {
+  return "upload";
 }
 
 export function getFirstExistingCourseSlug(scope: SubmissionScope, trackSlug: string) {
@@ -129,7 +163,94 @@ export function isTargetStepComplete(input: TargetStepState) {
 
 export function isDetailsStepComplete(input: DetailStepState) {
   const baseComplete = input.title.trim().length > 0 && input.term.trim().length > 0 && input.summary.trim().length > 0;
-  return baseComplete && (input.sourceMode === "issue-attachment" || input.externalLink.trim().length > 0);
+  if (!baseComplete) return false;
+  if (input.sourceMode === "external-link") return isExternalSubmissionLink(input.externalLink);
+  if (input.sourceMode === "issue-attachment") return true;
+  return (input.files?.length ?? 0) > 0 && input.files!.every((file) => file.name.trim().length > 0 && file.size > 0);
+}
+
+export function isExternalSubmissionLink(value: string) {
+  try {
+    const url = new URL(value.trim());
+    return url.protocol === "https:" && !url.username && !url.password;
+  } catch {
+    return false;
+  }
+}
+
+export function buildSubmissionManifest(payload: SubmissionPayload): SubmissionManifest {
+  return {
+    version: 3,
+    scope: payload.scope,
+    track: payload.track,
+    course: payload.course,
+    title: payload.title.trim(),
+    term: payload.term.trim(),
+    materialType: payload.materialType,
+    summary: payload.summary.trim(),
+    sourceMode: payload.sourceMode === "external-link" ? "external-link" : "upload",
+    externalLink: payload.sourceMode === "external-link" ? payload.externalLink.trim() : null,
+    anonymous: payload.anonymous,
+  };
+}
+
+export function formatFileSize(bytes: number) {
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+export function getSubmissionFileError(files: ReadonlyArray<SubmissionFile>, limits?: SubmissionLimits) {
+  if (files.length === 0) return "请选择至少一个资料文件。";
+  if (files.some((file) => !file.name.trim() || file.size <= 0)) return "存在空文件，请移除或重新选择。";
+  if (files.some((file) => file.name.length > 240 || /[\x00-\x1f/\\]/u.test(file.name) || [".", ".."].includes(file.name))) return "存在不支持的文件名，请重命名后重新选择。";
+  if (!limits) return "";
+  if (files.length > limits.maxFiles) return `一次最多上传 ${limits.maxFiles} 个文件。`;
+  if (files.some((file) => file.size > limits.maxFileBytes)) return `单个文件不能超过 ${formatFileSize(limits.maxFileBytes)}。`;
+  if (files.reduce((sum, file) => sum + file.size, 0) > limits.maxSubmissionBytes) return `投稿总大小不能超过 ${formatFileSize(limits.maxSubmissionBytes)}。`;
+  return "";
+}
+
+export async function submissionRequest<T>(url: string, init?: RequestInit): Promise<T> {
+  let response: Response;
+  try {
+    response = await fetch(url, { credentials: "same-origin", ...init });
+  } catch {
+    throw new Error("网络连接失败，请检查网络后重试。已填写的内容会保留。");
+  }
+  const body = await response.json().catch(() => null);
+  if (!response.ok) {
+    const message = body?.message ?? body?.error;
+    throw new SubmissionRequestError(typeof message === "string" ? message : `请求失败（${response.status}），请稍后重试。`, response.status);
+  }
+  if (body === null) throw new Error("服务器返回了无法识别的内容，请稍后重试。");
+  return body as T;
+}
+
+export function uploadSubmissionFile(url: string, token: string, file: File, onProgress: (bytes: number) => void) {
+  return new Promise<void>((resolve, reject) => {
+    const request = new XMLHttpRequest();
+    request.open("PUT", url);
+    request.setRequestHeader("Authorization", `Bearer ${token}`);
+    request.setRequestHeader("Content-Type", "application/octet-stream");
+    request.upload.onprogress = (event) => onProgress(event.loaded);
+    request.onerror = () => reject(new Error(`“${file.name}”上传中断，请检查网络后重试。`));
+    request.onload = () => {
+      if (request.status >= 200 && request.status < 300) {
+        onProgress(file.size);
+        resolve();
+      } else {
+        let message = `“${file.name}”上传失败（${request.status}），请重试。`;
+        try {
+          const body = JSON.parse(request.responseText);
+          if (typeof body.message === "string") message = body.message;
+          else if (typeof body.error === "string") message = body.error;
+        } catch { /* Preserve the useful status when a proxy returns HTML. */ }
+        reject(new Error(message));
+      }
+    };
+    request.send(file);
+  });
 }
 
 export function buildIssueTitle(payload: Pick<SubmissionPayload, "track" | "course" | "term" | "materialType">) {

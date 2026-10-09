@@ -1,0 +1,12 @@
+[Unit]
+Description=Export and verify complete KYM Commons backup
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/bin/bash /opt/kym-commons/source/scripts/deploy/backup.sh
+Nice=10
+IOSchedulingClass=idle
+PrivateTmp=true
+UMask=0077
+TimeoutStartSec=7200

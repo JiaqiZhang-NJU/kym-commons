@@ -1,20 +1,30 @@
-# Rules
+# 投稿规则
 
-## Allowed Content
+## 可以投稿的内容
 
-- Course notes
-- Study guides
-- Experience summaries
-- Direction-level learning resources
+- 课程笔记和学习指南。
+- 学习、选课和课程经验总结。
+- 各方向的学习资源、入门资料和参考书目。
 
-## Prohibited Content
+## 不接收的内容
 
-- Personal private information
-- Copyright-infringing materials without permission
-- Unverified archive dumps
+- 姓名、学号、联系方式等个人隐私信息。
+- 未经许可公开分享、侵犯他人版权的资料。
+- 未经整理核实、无法说明内容和来源的资料包。
 
-## Submission Requirements
+资料在网上可以下载，不代表有权再次公开发布。涉及教师、同学或第三方的材料，请先确认分享权限。
 
-- Remove personal identifiers
-- Add a short summary
-- Provide a stable link
+## 投稿前需要做什么
+
+1. 删除或遮盖个人身份信息，检查文件正文、批注和附件。
+2. 选择合适的课程或方向，填写准确标题、时间和简短说明。
+3. 上传有权分享的文件，或提供稳定的 HTTPS 链接。
+4. 确认你同意维护者整理资料并在站内公开发布。
+
+一次可以上传多个文件，数量和大小限制以投稿页面为准。不要把文件直接提交到源码仓库。
+
+## 审核与发布
+
+维护者在后台检查内容并审核。通过后还需要完成网站发布；“审核通过”不等于资料已经公开。投稿被退回或发布失败时，原记录仍会保留，便于维护者处理。
+
+投稿支持匿名发布。资料发布后，如果发现隐私、版权或内容问题，请向维护者提供资料标题、页面地址或投稿编号。
