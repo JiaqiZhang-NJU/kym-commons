@@ -22,6 +22,16 @@ jobs:
         with:
           node-version: 24.21.0
           cache: npm
+      - name: Check portable Linux deployment scripts
+        run: |
+          python3 - <<'PY'
+          import pathlib, subprocess
+          files = subprocess.check_output(['git', 'ls-files', '-z', '*.sh', '*.service', '*.timer', '.env.example']).decode().split('\0')
+          for name in filter(None, files):
+              assert b'\r' not in pathlib.Path(name).read_bytes(), f'Non-Unix line ending: {name}'
+              if name.endswith('.sh'):
+                  subprocess.run(['bash', '-n', name], check=True)
+          PY
       - run: npm ci
       - name: Create artificial external dataset
         run: npm run data:fixture -- --data-dir "$KYM_DATA_DIR"
@@ -29,6 +39,8 @@ jobs:
       - run: npm test
       - run: npm run typecheck
       - run: npm run build
+      - name: Execute complete backup wrapper with artificial data
+        run: bash scripts/deploy/ci-backup-smoke.sh
       - name: Check source tree contains no business data
         run: |
           test -z "$(git ls-files content static/files src/generated/catalog.json '*.sqlite')"

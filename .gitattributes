@@ -1,0 +1,5 @@
+# Linux deployment entrypoints and service configuration must keep Unix newlines.
+*.sh text eol=lf
+*.service text eol=lf
+*.timer text eol=lf
+.env.example text eol=lf

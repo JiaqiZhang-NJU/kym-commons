@@ -27,7 +27,7 @@ export async function packSource(destination, archive) {
     // cause copied working-tree bytes to be mislabeled as a GitHub revision.
     const snapshot = path.join(destination, `.source-${randomUUID()}.tar`);
     try {
-      await execute('git', ['archive', '--format=tar', `--output=${snapshot}`, parentCommit, '--', ...files], { cwd: root });
+      await execute('git', ['-c', 'core.autocrlf=false', 'archive', '--format=tar', `--output=${snapshot}`, parentCommit, '--', ...files], { cwd: root });
       await execute('tar', ['-xf', snapshot, '-C', destination]);
     } finally { await fs.rm(snapshot, { force: true }); }
   }
