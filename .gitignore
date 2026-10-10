@@ -21,7 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 gcm-diagnose.log
 
-# Local data, migration archives, and runtime state
+# Local private data, backups, and runtime state
 /.local-data/
 /.local-backups/
 /.local-runtime/

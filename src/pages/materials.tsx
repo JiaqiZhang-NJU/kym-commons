@@ -18,11 +18,11 @@ export default function LegacyMaterialsRoute() {
   }, [target, redirectTarget]);
 
   return (
-    <Layout title="课程资料已迁移">
+    <Layout title="课程资料">
       <Head><meta name="robots" content="noindex,follow" /></Head>
       <main className="container margin-vert--lg">
-        <h1>课程资料已迁移</h1>
-        {target ? <p>正在前往新的课程资料页；如未自动跳转，请 <Link to={target}>继续前往</Link>。</p> : <><p>此旧链接缺少有效课程信息。</p><Link className="button button--primary" to="/browse">搜索资料包</Link></>}
+        <h1>课程资料</h1>
+        {target ? <p>正在打开课程资料；如未自动打开，请 <Link to={target}>继续前往</Link>。</p> : <><p>请选择课程或搜索资料。</p><Link className="button button--primary" to="/browse">搜索资料包</Link></>}
       </main>
     </Layout>
   );

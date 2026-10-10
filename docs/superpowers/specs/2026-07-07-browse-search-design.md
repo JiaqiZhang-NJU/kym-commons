@@ -236,7 +236,6 @@ This iteration does not include:
 - advanced search syntax
 - search suggestions
 - ranking by relevance score
-- migration to a backend or external search service
 
 ## Why This Stays Different From Existing Pages
 

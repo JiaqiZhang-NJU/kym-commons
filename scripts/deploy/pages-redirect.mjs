@@ -38,14 +38,14 @@ export function renderRedirectHtml(options = {}) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,follow">
-  <title>KYM Commons 已迁移</title>
+  <title>KYM Commons</title>
   <style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:4rem auto;padding:0 1rem;line-height:1.7}a{color:#2257a4}</style>
 </head>
 <body>
-  <h1>资料站已迁移</h1>
-  <p id="status">正在保留原链接前往新地址。未自动跳转时，请点击下方链接。</p>
+  <h1>KYM Commons</h1>
+  <p id="status">正在打开资料站。未自动打开时，请点击下方链接。</p>
   <p><a id="destination" href="${escapeHtml(fallback)}">前往 KYM Commons</a></p>
-  <noscript><p>浏览器未启用 JavaScript，请使用上方链接进入新站。</p></noscript>
+  <noscript><p>请使用上方链接打开资料站。</p></noscript>
   <script>
 ${redirectDestination.toString()}
 try {
@@ -53,7 +53,7 @@ try {
   document.getElementById('destination').href = destination;
   window.location.replace(destination);
 } catch {
-  document.getElementById('status').textContent = '此旧链接无法识别，请通过下方链接进入新站。';
+  document.getElementById('status').textContent = '请通过下方链接打开资料站。';
 }
   </script>
 </body>

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 if [[ $EUID != 0 ]]; then echo 'Run with sudo.' >&2; exit 1; fi
-archive="${1:-/home/ops/kym-migration/node-v24.21.0-linux-x64.tar.xz}"
+archive="${1:-/tmp/node-v24.21.0-linux-x64.tar.xz}"
 expected=fd8e59d5a511510f6a298afb548f18c7d2b1be404d8b4a27d94fbe49f56cb2d6
 echo "$expected  $archive" | sha256sum --check --status
 id kym-commons >/dev/null 2>&1 || useradd --system --home-dir /opt/kym-commons --shell /usr/sbin/nologin --gid www-data kym-commons

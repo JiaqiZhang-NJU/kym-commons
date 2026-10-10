@@ -1,4 +1,3 @@
-import { createHash } from "node:crypto";
 import fs from "node:fs";
 import fsp from "node:fs/promises";
 import os from "node:os";
@@ -7,7 +6,6 @@ import { Readable } from "node:stream";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { openStore } from "./store.mjs";
 import { blobPath, hashFile, materializeFileView, putBlob, putStreamBlob, safeRelativePath, validateRevisionCatalog, verifyBlob } from "./storage.mjs";
-import { importLegacy } from "../scripts/data/import-legacy.mjs";
 import { prepareBuild } from "../scripts/data/prepare-build.mjs";
 
 const temporaryRoots = [];
@@ -162,26 +160,7 @@ describe("streaming private blobs and public file views", () => {
   });
 });
 
-async function legacyFixture() {
-  const root = tempRoot();
-  const bytes = Buffer.from("sample binary");
-  const file = { path: "中文/space name.pdf", sha256: createHash("sha256").update(bytes).digest("hex"), sizeBytes: bytes.length };
-  const catalog = fixtureCatalog(file);
-  const writeJson = async (relative, data) => {
-    const output = path.join(root, relative);
-    await fsp.mkdir(path.dirname(output), { recursive: true });
-    await fsp.writeFile(output, `${JSON.stringify(data, null, 2)}\n`);
-  };
-  for (const key of ["tracks", "courses", "categories"]) await writeJson(`content/catalog/${key}.json`, { schemaVersion: 1, items: catalog[key] });
-  await writeJson("content/packages/tracks/cs/algorithms/notes.json", catalog.packages[0]);
-  await writeJson("src/generated/catalog.json", catalog);
-  await fsp.mkdir(path.join(root, "static/files/中文"), { recursive: true });
-  await fsp.writeFile(path.join(root, "static/files/中文/space name.pdf"), bytes);
-  await fsp.writeFile(path.join(root, "static/files/unindexed.cpp"), "int main(){}");
-  return { root, catalog };
-}
-
-describe("legacy import and build preparation", () => {
+describe("external data build preparation", () => {
   it("serializes parallel preparations and recovers a complete view lacking its interrupted manifest", async () => {
     const root = tempRoot();
     const file = await blobFixture(root);
@@ -216,16 +195,15 @@ describe("legacy import and build preparation", () => {
     expect(await hashFile(blobPath(root, file.sha256))).toEqual({ sha256: file.sha256, sizeBytes: file.sizeBytes });
   });
 
-  it("imports every file, then builds solely from the external database and blobs", async () => {
-    const { root, catalog } = await legacyFixture();
-    const destination = path.join(tempRoot(), "data");
-    const report = await importLegacy({ root, dataDir: destination, sourceCommit: "commit" });
-    expect(report.fileCount).toBe(2);
-    expect(report.unindexedFiles).toEqual(["unindexed.cpp"]);
-    expect(database(destination).getPublishedRevision().catalog).toEqual(catalog);
-    // Eliminate both legacy authorities: the build must succeed from external storage only.
-    await fsp.rm(path.join(root, "content"), { recursive: true });
-    await fsp.rm(path.join(root, "static/files"), { recursive: true });
+  it("builds solely from the external database and blobs, including unindexed files", async () => {
+    const root = tempRoot();
+    const destination = tempRoot();
+    const file = await blobFixture(destination);
+    const unindexed = { path: "unindexed.cpp", ...await putStreamBlob(destination, [Buffer.from("int main(){}")]) };
+    const catalog = fixtureCatalog(file);
+    const store = database(destination);
+    const revision = store.createRevision(catalog, [file, unindexed], { id: "source-data" });
+    store.setPublishedRevision(revision.id);
     const release = path.join(destination, "release");
     const output = path.join(root, "src/generated/catalog.json");
     await prepareBuild({ dataDir: destination, outputDir: release, catalogOutput: output });
@@ -235,19 +213,5 @@ describe("legacy import and build preparation", () => {
     await prepareBuild({ dataDir: destination, outputDir: release, catalogOutput: output });
     const other = database(destination).createRevision(catalog, database(destination).getPublishedRevision().files, { id: "other-revision" });
     await expect(prepareBuild({ dataDir: destination, revisionId: other.id, outputDir: release, catalogOutput: output })).rejects.toThrow("different or unknown revision");
-    await expect(importLegacy({ root, dataDir: destination })).rejects.toThrow("new or empty");
-  });
-
-  it("refuses a stale baseline and safely rolls back missing or mismatched files", async () => {
-    const { root } = await legacyFixture();
-    const destination = path.join(tempRoot(), "data");
-    await fsp.writeFile(path.join(root, "static/files/中文/space name.pdf"), "wrong bytes");
-    await expect(importLegacy({ root, dataDir: destination })).rejects.toThrow("does not match");
-    expect(fs.existsSync(destination)).toBe(false);
-    expect(await fsp.readdir(path.dirname(destination))).toEqual([]);
-    const generated = JSON.parse(await fsp.readFile(path.join(root, "src/generated/catalog.json"), "utf8"));
-    generated.packages[0].legacyIds.reverse();
-    await fsp.writeFile(path.join(root, "src/generated/catalog.json"), JSON.stringify(generated));
-    await expect(importLegacy({ root, dataDir: destination })).rejects.toThrow("differs from legacy content");
   });
 });

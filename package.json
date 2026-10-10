@@ -20,7 +20,6 @@
     "catalog:validate": "node scripts/data/prepare-build.mjs",
     "catalog:generate": "node scripts/data/prepare-build.mjs",
     "catalog:check": "node scripts/data/prepare-build.mjs",
-    "data:import-legacy": "node scripts/data/import-legacy.mjs",
     "data:fixture": "node scripts/data/create-fixture.mjs",
     "data:export": "node scripts/data/backup.mjs export",
     "data:verify": "node scripts/data/backup.mjs verify",
