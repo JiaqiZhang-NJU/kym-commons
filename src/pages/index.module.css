@@ -1,8 +1,5 @@
 .home { padding-bottom: 2rem; }
-.searchSection { padding: 2.25rem 2rem; background: var(--kym-surface-muted); border-radius: 10px; }
-.eyebrow { font-size: .7rem; color: var(--kym-muted-text); letter-spacing: .14em; margin-bottom: .75rem; }
-.searchSection h2 { font-size: 1.65rem; margin-bottom: .65rem; }
-.intro { color: var(--kym-muted-text); font-size: .9rem; margin-bottom: 1.5rem; }
+.searchSection { padding: 1.5rem 2rem; background: var(--kym-surface-muted); border-radius: 10px; }
 .searchLabel { display: block; font-size: .8rem; margin-bottom: .5rem; }
 .searchRow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; max-width: 760px; }
 .searchRow input { padding: .75rem .85rem; }
@@ -14,15 +11,11 @@
 .sectionHeading a { font-size: .8rem; }
 .entryGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .entryGrid h3::after { content: ' ↗'; color: var(--kym-muted-text); font-weight: 400; }
-.community { display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-top: 1px solid var(--kym-border); margin-top: 2.25rem; padding-top: 1.5rem; }
-.community p { color: var(--kym-muted-text); font-size: .875rem; margin-bottom: .75rem; }
-.community a { font-size: .8rem; }
-.ruleLink { margin-left: 1rem; }
-.ruleLink a { color: var(--kym-muted-text); }
+.summary { border-top: 1px solid var(--kym-border); margin-top: 1.5rem; padding-top: 1rem; }
 .stats { display: flex; gap: 2rem; margin: 0; flex: 0 0 auto; }
 .stats dt { color: var(--kym-muted-text); font-size: .75rem; font-weight: 400; }
-.stats dd { margin: .25rem 0 0; font-size: 1.7rem; font-variant-numeric: tabular-nums; }
+.stats dd { margin: .25rem 0 0; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
 .stats small { font-size: .75rem; color: var(--kym-muted-text); }
-.note { color: var(--kym-muted-text); font-size: .75rem; margin-top: 2rem; }
-@media (max-width: 760px) { .entryGrid { grid-template-columns: 1fr; } .community { align-items: start; flex-direction: column; gap: 1.25rem; } .searchSection { padding: 1.5rem; } }
+.note { color: var(--kym-muted-text); font-size: .75rem; margin-top: 1.25rem; }
+@media (max-width: 760px) { .entryGrid { grid-template-columns: 1fr; } .searchSection { padding: 1.5rem; } }
 @media (max-width: 450px) { .searchSection { padding: 1.25rem; } .searchRow { grid-template-columns: 1fr; } .sectionHeading { align-items: start; flex-direction: column; } .suggestions { gap: .65rem; } }

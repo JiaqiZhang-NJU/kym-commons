@@ -7,7 +7,7 @@ export default function TracksPage() {
   return (
     <Layout title="各方向资料">
       <main className="container margin-vert--lg">
-        <header className="kym-page-heading"><div><h1>各方向资料</h1><p>选一个方向，看看课程资料、入门指南和学习经验。</p></div></header>
+        <header className="kym-page-heading"><div><h1>各方向资料</h1><p>按方向查看课程资料和通用资料。</p></div></header>
         <div className="row">
           {runtimeCatalog.tracks.map((track) => (
             <div className="col col--4 margin-bottom--md" key={track.slug}>

@@ -86,7 +86,7 @@ const config: Config = {
           ],
         },
         {
-          title: '一起分享',
+          title: '投稿',
           items: [
             {label: '分享资料', to: '/submit'},
             {label: '投稿规则', to: '/docs/rules'},

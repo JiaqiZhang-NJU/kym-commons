@@ -89,7 +89,6 @@ export default function CatalogCoursePage({ course }: Props) {
         ) : (
           <section className={`${styles.stateCard} margin-top--lg`}>
             <h2>该课程暂时没有资料包</h2>
-            <p>有这门课的讲义、试卷或复习资料？欢迎分享。</p>
             <Link className="button button--primary" to="/submit">
               投稿资料
             </Link>
