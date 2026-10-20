@@ -4,7 +4,8 @@
 .login label, .reason { display: grid; gap: 0.5rem; }
 .toolbar, .actions, .recordHeading { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
 .toolbar, .recordHeading { justify-content: space-between; }
-.toolbar label { display: flex; gap: 0.75rem; align-items: center; }
+.toolbar label { display: flex; gap: 0.75rem; align-items: center; white-space: nowrap; }
+.toolbar label select { width: auto; min-width: 180px; }
 .recordHeading h2 { margin: 0; font-size: 1.4rem; overflow-wrap: anywhere; }
 .records { display: grid; gap: 1.5rem; }
 .details { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 0.65rem 1rem; }
