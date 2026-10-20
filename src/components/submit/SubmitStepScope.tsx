@@ -7,9 +7,9 @@ type Props = {
 };
 
 const options: Array<{ scope: SubmissionScope; title: string; description: string }> = [
-  { scope: "foundation-course", title: "大类培养课程", description: "面向前三学期的大类培养课程资料。" },
-  { scope: "track-course", title: "方向课程", description: "绑定到具体方向课程的笔记、经验与参考资料。" },
-  { scope: "track-general", title: "方向非课程资料", description: "会自动发布到对应方向的 General Resources。" },
+  { scope: "foundation-course", title: "基础课程", description: "前三学期基础课的笔记、试卷和复习资料。" },
+  { scope: "track-course", title: "方向课程", description: "某个方向里，一门具体课程的笔记、经验和参考资料。" },
+  { scope: "track-general", title: "方向通用资料", description: "入门指南、书目等，不属于某一门课的资料。" },
 ];
 
 export default function SubmitStepScope({ scope, onSelect }: Props) {

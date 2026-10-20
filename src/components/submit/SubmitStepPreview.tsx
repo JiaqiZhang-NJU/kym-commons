@@ -17,7 +17,7 @@ export default function SubmitStepPreview(props: Props) {
   return <>
     <h2>确认投稿</h2>
     <dl className={styles.previewDetails}>
-      <dt>归属</dt><dd>{props.targetLabel}</dd>
+      <dt>放在哪里</dt><dd>{props.targetLabel}</dd>
       <dt>资料标题</dt><dd>{manifest.title}</dd>
       <dt>类型</dt><dd>{manifest.materialType}</dd>
       <dt>学期或时间</dt><dd>{manifest.term}</dd>

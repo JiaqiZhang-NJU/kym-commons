@@ -1,111 +1,121 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
 :root {
-  --ifm-color-primary: #5a2a83;
-  --ifm-color-primary-dark: #4d2370;
-  --ifm-color-primary-darker: #472166;
-  --ifm-color-primary-darkest: #391a53;
-  --ifm-color-primary-light: #6a3596;
-  --ifm-color-primary-lighter: #7540a3;
-  --ifm-color-primary-lightest: #8c5bb8;
-  --ifm-background-color: #fcfbfe;
-  --ifm-font-color-base: #1f2430;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(90, 42, 131, 0.08);
-  --kym-surface: #ffffff;
-  --kym-surface-emphasis: #f5effb;
-  --kym-border: #ece7f4;
-  --kym-shadow: 0 12px 30px rgba(34, 24, 60, 0.06);
-  --kym-muted-text: #5f6472;
-  --kym-input-surface: #ffffff;
-  --kym-input-text: #1f2430;
-  --kym-input-placeholder: #7c8393;
-  --kym-code-surface: #f4f2f8;
-  --kym-code-text: #1f2430;
+  --ifm-font-family-base: 'Inter', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ifm-font-size-base: 16px; --ifm-line-height-base: 1.65;
+  --ifm-color-primary: #704297; --ifm-color-primary-dark: #633984; --ifm-color-primary-darker: #593277; --ifm-color-primary-darkest: #45265d;
+  --ifm-color-primary-light: #8052a6; --ifm-color-primary-lighter: #8b5eb1; --ifm-color-primary-lightest: #a47bc3;
+  --ifm-background-color: #fff; --ifm-background-surface-color: #fff; --ifm-font-color-base: #24262b; --ifm-heading-color: #24262b;
+  --ifm-heading-font-weight: 600; --ifm-navbar-background-color: #fafafa; --ifm-navbar-shadow: none;
+  --ifm-footer-background-color: #fff; --ifm-footer-color: #626670; --ifm-footer-link-color: #626670; --ifm-footer-title-color: #24262b;
+  --ifm-color-emphasis-200: #e8e9ec; --ifm-color-emphasis-300: #d8d9df; --ifm-color-emphasis-700: #626670;
+  --ifm-global-radius: 6px; --ifm-card-border-radius: 10px; --ifm-button-border-radius: 6px; --ifm-code-font-size: 90%;
+  --ifm-container-width-xl: 1160px; --kym-sidebar-width: 220px;
+  --kym-surface: #fff; --kym-surface-muted: #f6f6f7; --kym-surface-emphasis: #f3edf8; --kym-border: #e8e9ec; --kym-shadow: none;
+  --kym-muted-text: #626670; --kym-input-surface: #fff; --kym-input-text: #24262b; --kym-input-placeholder: #6f737c;
+  --kym-code-surface: #f6f6f7; --kym-code-text: #24262b; --docusaurus-highlighted-code-line-bg: #f3edf8; color-scheme: light;
 }
-
 [data-theme='dark'] {
-  --ifm-color-primary: #c3a1eb;
-  --ifm-color-primary-dark: #b48de4;
-  --ifm-color-primary-darker: #ac82e0;
-  --ifm-color-primary-darkest: #955fd5;
-  --ifm-color-primary-light: #d2b5f2;
-  --ifm-color-primary-lighter: #dac0f5;
-  --ifm-color-primary-lightest: #f1e7fd;
-  --ifm-background-color: #121019;
-  --ifm-font-color-base: #f2eff8;
-  --docusaurus-highlighted-code-line-bg: rgba(195, 161, 235, 0.16);
-  --kym-surface: #1a1623;
-  --kym-surface-emphasis: #241d31;
-  --kym-border: #3a3150;
-  --kym-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
-  --kym-muted-text: #c7bdd9;
-  --kym-input-surface: #171320;
-  --kym-input-text: #f5f2fb;
-  --kym-input-placeholder: #9f96b2;
-  --kym-code-surface: #171320;
-  --kym-code-text: #f5f2fb;
+  --ifm-color-primary: #c8a5e7; --ifm-color-primary-dark: #b98ddf; --ifm-color-primary-darker: #ae7ed6; --ifm-color-primary-darkest: #975bc9;
+  --ifm-color-primary-light: #d5b9ed; --ifm-color-primary-lighter: #dfcaf2; --ifm-color-primary-lightest: #ede0f8;
+  --ifm-background-color: #191a1d; --ifm-background-surface-color: #191a1d; --ifm-font-color-base: #e7e9ee; --ifm-heading-color: #e7e9ee;
+  --ifm-navbar-background-color: #151619; --ifm-footer-background-color: #191a1d;
+  --ifm-footer-color: #a9adb8; --ifm-footer-link-color: #a9adb8; --ifm-footer-title-color: #e7e9ee;
+  --ifm-color-emphasis-200: #32343b; --ifm-color-emphasis-300: #474a54; --ifm-color-emphasis-700: #b4b8c1; --ifm-color-danger-dark: #ff989d;
+  --kym-surface: #191a1d; --kym-surface-muted: #222429; --kym-surface-emphasis: #30263c; --kym-border: #32343b;
+  --kym-muted-text: #a9adb8; --kym-input-surface: #191a1d; --kym-input-text: #e7e9ee; --kym-input-placeholder: #a0a6b2;
+  --kym-code-surface: #222429; --kym-code-text: #e7e9ee; --docusaurus-highlighted-code-line-bg: #30263c; color-scheme: dark;
 }
-
-body {
-  background: var(--ifm-background-color);
+body { background: var(--ifm-background-color); }
+h1 { font-size: 1.75rem; letter-spacing: -.035em; margin-bottom: .6rem; }
+h2 { font-size: 1.15rem; letter-spacing: -.015em; }
+h3 { font-size: 1rem; }
+a { color: var(--ifm-color-primary); }
+p { overflow-wrap: anywhere; }
+main > h1 + p { color: var(--kym-muted-text); margin-bottom: 1.75rem; }
+main.container { padding-top: .5rem; padding-bottom: 1rem; }
+.container { width: 100%; }
+.navbar { border-bottom: 1px solid var(--kym-border); }
+.navbar__brand { color: var(--ifm-font-color-base); }
+.navbar__title { font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif; font-size: 1.15rem; letter-spacing: -.04em; }
+.navbar__logo { width: 24px; height: 24px; margin-right: .5rem; }
+[data-theme='dark'] img.navbar__logo { filter: invert(1); }
+.navbar__link { font-size: .875rem; font-weight: 400; color: var(--kym-muted-text); border-radius: 6px; }
+.navbar__link:hover { color: var(--ifm-font-color-base); background: var(--kym-surface-muted); }
+.navbar__link--active { color: var(--ifm-color-primary); background: var(--kym-surface-emphasis); font-weight: 600; }
+.navbar-sidebar { background: var(--ifm-navbar-background-color); }
+.menu__link { font-size: .875rem; }
+.menu__link--active { background: var(--kym-surface-emphasis); }
+.footer { border-top: 1px solid var(--kym-border); padding: 1.5rem 0; font-size: .8rem; }
+.footer__links { margin-bottom: 1rem; }
+.footer__title { font-size: .8rem; margin-bottom: .5rem; }
+.footer__copyright { color: var(--kym-muted-text); font-size: .75rem; }
+.card { border: 1px solid var(--kym-border); box-shadow: none; background: var(--kym-surface); color: var(--ifm-font-color-base); transition: border-color .15s, background .15s; }
+a.card:hover { border-color: var(--ifm-color-primary); background: var(--kym-surface-muted); text-decoration: none; }
+.card__body { padding: 1.15rem 1.25rem; min-width: 0; }
+.card__body h3 { margin-bottom: .45rem; overflow-wrap: anywhere; }
+.card__body p { color: var(--kym-muted-text); font-size: .875rem; }
+.card__body p:last-child { margin-bottom: 0; }
+.button { font-size: .875rem; font-weight: 500; padding: .5rem 1rem; line-height: 1.5; }
+.button--primary { --ifm-button-background-color: #292b30; --ifm-button-border-color: #292b30; --ifm-button-color: #fff; }
+.button--primary:hover { --ifm-button-background-color: #42454d; --ifm-button-border-color: #42454d; }
+[data-theme='dark'] .button--primary { --ifm-button-background-color: #e7e9ee; --ifm-button-border-color: #e7e9ee; --ifm-button-color: #191a1d; }
+[data-theme='dark'] .button--primary:hover { --ifm-button-background-color: #cdd1db; --ifm-button-border-color: #cdd1db; }
+.button--secondary { --ifm-button-background-color: var(--kym-surface-muted); --ifm-button-border-color: var(--kym-border); --ifm-button-color: var(--ifm-font-color-base); }
+.button--secondary:hover { --ifm-button-background-color: var(--kym-surface-emphasis); --ifm-button-border-color: var(--kym-border); }
+.button:disabled { opacity: .45; }
+input:not([type='checkbox']):not([type='radio']), select, textarea {
+  width: 100%; min-width: 0; border: 1px solid var(--kym-border); border-radius: 6px;
+  background: var(--kym-input-surface); color: var(--kym-input-text); padding: .6rem .75rem; font: inherit; font-size: .875rem;
 }
-
-.navbar {
-  border-bottom: 1px solid var(--kym-border);
+input[type='checkbox'], input[type='radio'] { width: auto; accent-color: var(--ifm-color-primary); }
+input::placeholder, textarea::placeholder { color: var(--kym-input-placeholder); }
+textarea { resize: vertical; }
+:focus-visible { outline: 2px solid var(--ifm-color-primary); outline-offset: 3px; }
+pre, code { color: var(--kym-code-text); }
+.badge--secondary { color: var(--kym-muted-text); background: var(--kym-surface-muted); border-color: var(--kym-border); font-weight: 500; }
+.kym-page-heading { display: flex; justify-content: space-between; align-items: start; gap: 1rem; border-bottom: 1px solid var(--kym-border); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+.kym-page-heading p { color: var(--kym-muted-text); margin: 0; font-size: .9rem; }
+.kym-material-list .card { border-width: 0 0 1px; border-radius: 0; margin-bottom: 0 !important; }
+.kym-material-list .card__body { padding: 1.25rem 0; }
+.kym-material-list .card__body h3 a { color: var(--ifm-font-color-base); }
+.kym-material-list .card__body h3 a:hover { color: var(--ifm-color-primary); }
+.kym-material-list .card__body p { max-width: 70ch; }
+.kym-file-grid .card { height: 100%; }
+.kym-file-grid .card__body { display: flex; flex-direction: column; align-items: start; }
+.kym-file-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: auto; }
+.kym-info { background: var(--kym-surface-muted); border-radius: 10px; padding: 1.25rem; }
+.kym-info dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem 1.5rem; margin-bottom: 0; font-size: .875rem; }
+.kym-info dd { margin: 0; overflow-wrap: anywhere; }
+.kym-info dt { color: var(--kym-muted-text); font-weight: 400; }
+@media (min-width: 997px) {
+  :root { --doc-sidebar-width: 0px !important; }
+  .navbar { position: fixed; inset: 0 auto 0 0; width: var(--kym-sidebar-width); height: 100vh; padding: 30px 16px 20px; border-bottom: 0; border-right: 1px solid var(--kym-border); overflow-y: auto; }
+  .navbar__inner { flex-direction: column; flex-wrap: nowrap; align-items: stretch; height: 100%; min-height: 570px; }
+  .navbar__items { flex-direction: column; align-items: stretch; flex: 0 0 auto; gap: 5px; }
+  .navbar__items--right { margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--kym-border); }
+  .navbar__brand { margin: 0 0 32px; padding: 0 4px; display: flex; flex-wrap: wrap; height: auto; }
+  .navbar__brand::after { content: '匡院资料站'; flex-basis: 100%; margin-top: 10px; padding-left: 4px; font-size: .75rem; color: var(--kym-muted-text); letter-spacing: .1em; }
+  .navbar__link { padding: 8px 12px; }
+  .navbar__items--right > div { margin: 6px 8px 0; }
+  .main-wrapper, #__docusaurus > .footer { margin-left: var(--kym-sidebar-width); }
+  .main-wrapper > main.container { max-width: 1160px; width: calc(100% - 80px); padding-left: 0; padding-right: 0; margin-top: 32px !important; }
+  .footer .container { max-width: 1160px; width: calc(100% - 80px); padding: 0; }
+  /* Public documents use the same navigation as the rest of the site. */
+  aside.theme-doc-sidebar-container { display: none; }
+  .main-wrapper main > .container { max-width: 1160px; width: calc(100% - 80px); padding: 32px 0 0 !important; }
+  .theme-doc-markdown { max-width: 760px; }
 }
-
-.hero--primary {
-  background: linear-gradient(135deg, #5a2a83 0%, #6f3f99 100%);
+@media (max-width: 996px) {
+  main.container { padding-left: 24px; padding-right: 24px; margin-top: 24px !important; }
+  .navbar { padding-left: 16px; padding-right: 16px; }
+  .footer .container { padding: 0 24px; }
+  .navbar__brand { margin-right: 0; }
 }
-
-.card {
-  border: 1px solid var(--kym-border);
-  box-shadow: var(--kym-shadow);
-  background: var(--kym-surface);
+@media (max-width: 576px) {
+  h1 { font-size: 1.5rem; }
+  main.container { padding-left: 16px; padding-right: 16px; }
+  .card__body { padding: 1rem; }
+  .kym-page-heading { flex-wrap: wrap; }
+  .kym-info dl { grid-template-columns: 1fr; gap: .25rem; }
+  .kym-info dd { margin-bottom: .6rem; }
 }
-
-.card:hover {
-  border-color: var(--ifm-color-primary-light);
-  text-decoration: none;
-}
-
-input:not([type='checkbox']):not([type='radio']),
-select,
-textarea {
-  width: 100%;
-  border: 1px solid var(--kym-border);
-  border-radius: 12px;
-  background: var(--kym-input-surface);
-  color: var(--kym-input-text);
-  padding: 0.75rem 0.875rem;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-  width: auto;
-  padding: 0;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--kym-input-placeholder);
-}
-
-pre,
-code {
-  color: var(--kym-code-text);
-}
-
-a {
-  color: var(--ifm-color-primary-lightest);
-}
-
-[data-theme='dark'] .navbar,
-[data-theme='dark'] .footer {
-  color: var(--ifm-font-color-base);
-}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }

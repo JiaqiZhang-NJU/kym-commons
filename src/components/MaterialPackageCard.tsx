@@ -31,7 +31,7 @@ export default function MaterialPackageCard({ materialPackage, isFavorite = fals
             </button>
           ) : null}
         </div>
-        <h3>{materialPackage.title}</h3>
+        <h3><Link to={buildPackagePath(materialPackage.id)}>{materialPackage.title}</Link></h3>
         <p>{materialPackage.summary}</p>
         <Link className="button button--primary button--sm" to={buildPackagePath(materialPackage.id)}>
           查看资料包

@@ -11,7 +11,7 @@
 
 .stepCard {
   border: 1px solid var(--kym-border);
-  border-radius: 16px;
+  border-radius: 10px;
   background: var(--kym-surface);
   padding: 1rem;
 }
@@ -23,7 +23,7 @@
 
 .panel {
   border: 1px solid var(--kym-border);
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--kym-surface);
   padding: 1.5rem;
   box-shadow: var(--kym-shadow);
@@ -50,7 +50,7 @@
 
 .choiceButton {
   border: 1px solid var(--kym-border);
-  border-radius: 16px;
+  border-radius: 10px;
   background: var(--kym-surface);
   color: inherit;
   text-align: left;
@@ -65,7 +65,7 @@
 
 .helperBox {
   border: 1px dashed var(--ifm-color-primary);
-  border-radius: 16px;
+  border-radius: 10px;
   background: var(--kym-surface-emphasis);
   color: var(--ifm-font-color-base);
   padding: 1rem;
@@ -143,7 +143,7 @@
 }
 
 .previewBlock {
-  border-radius: 16px;
+  border-radius: 10px;
   background: var(--kym-code-surface);
   color: var(--kym-code-text);
   padding: 1rem;
@@ -181,3 +181,8 @@
   .previewDetails dd { margin-bottom: 0.65rem; }
   .fileList li { flex-wrap: wrap; }
 }
+
+.stepCard { font-size: .8rem; padding: .75rem 1rem; background: var(--kym-surface-muted); border-color: transparent; }
+.stepCardActive { background: var(--kym-surface-emphasis); color: var(--ifm-color-primary); box-shadow: none; border-color: var(--ifm-color-primary); }
+.choiceButton p { margin: .35rem 0 0; font-size: .875rem; }
+.modeOption { border-radius: 6px; }

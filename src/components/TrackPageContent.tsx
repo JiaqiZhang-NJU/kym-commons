@@ -14,7 +14,7 @@ export default function TrackPageContent({ title, trackSlug }: Props) {
 
   return (
     <main className="container margin-vert--lg">
-      <h1>{title}</h1>
+      <header className="kym-page-heading"><div><h1>{title}</h1><p>按课程查看资料，其他学习资源放在“方向通用资料”里。</p></div></header>
       <div className="row">
         {courses.map((course) => (
           <div className="col col--4" key={course.slug}>

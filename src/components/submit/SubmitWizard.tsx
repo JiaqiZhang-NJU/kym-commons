@@ -15,7 +15,7 @@ import SubmitStepScope from "./SubmitStepScope";
 import SubmitStepTarget from "./SubmitStepTarget";
 import styles from "./submit.module.css";
 
-const steps = ["投稿类型", "归属位置", "资料详情", "预览提交"];
+const steps = ["投稿类型", "放在哪里", "资料详情", "预览提交"];
 type Props = { initialTarget?: SubmissionPrefill | null };
 
 export default function SubmitWizard({ initialTarget }: Props) {
@@ -67,7 +67,8 @@ export default function SubmitWizard({ initialTarget }: Props) {
       ? { mode: "new", slug: newCourseSlug.trim(), title: newCourseTitle.trim() }
       : { mode: "existing", slug: existingCourseSlug, title: selectedCourse?.title ?? "未选择课程" };
   const sectionLabel = scope === "foundation-course" ? "大类培养课程" : "宽口径方向课程";
-  const targetLabel = scope === "foundation-course" ? `Foundation / ${course.title}` : `${track?.label ?? "未选择方向"} / ${course.title}`;
+  const displayTitle = scope === "track-general" ? "方向通用资料" : course.title;
+  const targetLabel = scope === "foundation-course" ? `基础课程 / ${displayTitle}` : `${track?.label ?? "未选择方向"} / ${displayTitle}`;
   const targetState = { scope, trackTargetMode, existingTrackSlug, newTrackLabel, newTrackSlug, courseTargetMode, existingCourseSlug, newCourseTitle, newCourseSlug };
 
   const manifest = useMemo(() => {
@@ -144,7 +145,7 @@ export default function SubmitWizard({ initialTarget }: Props) {
   if (submittedId) return <div className={styles.panel} role="status"><h2>投稿已收到</h2><p>投稿编号：<code>{submittedId}</code></p><p>维护者审核通过并完成发布后，资料会出现在对应目录。</p><p className={styles.muted}>可以保存投稿编号，便于向维护者询问审核进度。</p></div>;
 
   return <div className={styles.wizardShell}>
-    <div className={styles.stepper}>{steps.map((step, index) => <div key={step} className={`${styles.stepCard} ${index === stepIndex ? styles.stepCardActive : ""}`}><strong>{index + 1}. {step}</strong></div>)}</div>
+    <div className={styles.stepper} aria-label="投稿步骤">{steps.map((step, index) => <div key={step} aria-current={index === stepIndex ? "step" : undefined} className={`${styles.stepCard} ${index === stepIndex ? styles.stepCardActive : ""}`}><strong>{index + 1}. {step}</strong></div>)}</div>
     <div className={styles.panel}>
       <fieldset disabled={busy} className={styles.fieldsetReset}>
       {stepIndex === 0 && <SubmitStepScope scope={scope} onSelect={handleScopeChange} />}

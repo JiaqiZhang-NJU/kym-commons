@@ -1,99 +1,28 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-  border-radius: 24px;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.subtitle {
-  max-width: 42rem;
-}
-
-.searchForm {
-  max-width: 46rem;
-  margin: 1.75rem 0;
-  padding: 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-}
-
-.searchLabel {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #fff;
-  font-weight: 700;
-}
-
-.searchRow {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 0.65rem;
-}
-
-.searchInput {
-  min-width: 0;
-  border-color: rgba(255, 255, 255, 0.45);
-  background: #fff;
-  color: #1f2430;
-}
-
-.searchInput::placeholder {
-  color: #6d7483;
-}
-
-.searchInput:focus {
-  outline: 3px solid rgba(255, 255, 255, 0.38);
-  outline-offset: 1px;
-}
-
-.searchSuggestions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 0.7rem;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.9rem;
-}
-
-.searchSuggestions a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
-  font-weight: 600;
-}
-
-.searchSuggestions a:hover {
-  border-bottom-color: #fff;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 576px) {
-  .searchRow {
-    grid-template-columns: 1fr;
-  }
-
-  .searchRow button {
-    width: 100%;
-  }
-}
+.home { padding-bottom: 2rem; }
+.searchSection { padding: 2.25rem 2rem; background: var(--kym-surface-muted); border-radius: 10px; }
+.eyebrow { font-size: .7rem; color: var(--kym-muted-text); letter-spacing: .14em; margin-bottom: .75rem; }
+.searchSection h2 { font-size: 1.65rem; margin-bottom: .65rem; }
+.intro { color: var(--kym-muted-text); font-size: .9rem; margin-bottom: 1.5rem; }
+.searchLabel { display: block; font-size: .8rem; margin-bottom: .5rem; }
+.searchRow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; max-width: 760px; }
+.searchRow input { padding: .75rem .85rem; }
+.suggestions { display: flex; gap: .9rem; flex-wrap: wrap; font-size: .8rem; margin-top: 1rem; }
+.suggestions span { color: var(--kym-muted-text); }
+.directory { margin-top: 2.25rem; }
+.sectionHeading { display: flex; justify-content: space-between; align-items: baseline; gap: .75rem; margin-bottom: 1rem; }
+.sectionHeading h2 { margin: 0; }
+.sectionHeading a { font-size: .8rem; }
+.entryGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.entryGrid h3::after { content: ' ↗'; color: var(--kym-muted-text); font-weight: 400; }
+.community { display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-top: 1px solid var(--kym-border); margin-top: 2.25rem; padding-top: 1.5rem; }
+.community p { color: var(--kym-muted-text); font-size: .875rem; margin-bottom: .75rem; }
+.community a { font-size: .8rem; }
+.ruleLink { margin-left: 1rem; }
+.ruleLink a { color: var(--kym-muted-text); }
+.stats { display: flex; gap: 2rem; margin: 0; flex: 0 0 auto; }
+.stats dt { color: var(--kym-muted-text); font-size: .75rem; font-weight: 400; }
+.stats dd { margin: .25rem 0 0; font-size: 1.7rem; font-variant-numeric: tabular-nums; }
+.stats small { font-size: .75rem; color: var(--kym-muted-text); }
+.note { color: var(--kym-muted-text); font-size: .75rem; margin-top: 2rem; }
+@media (max-width: 760px) { .entryGrid { grid-template-columns: 1fr; } .community { align-items: start; flex-direction: column; gap: 1.25rem; } .searchSection { padding: 1.5rem; } }
+@media (max-width: 450px) { .searchSection { padding: 1.25rem; } .searchRow { grid-template-columns: 1fr; } .sectionHeading { align-items: start; flex-direction: column; } .suggestions { gap: .65rem; } }

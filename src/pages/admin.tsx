@@ -2,6 +2,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Layout from "@theme/Layout";
 import { useEffect, useState, type FormEvent } from "react";
 import { formatFileSize, SubmissionRequestError, submissionRequest, type SubmissionManifest } from "../lib/submission";
+import { courseDisplayTitle } from "../lib/display";
 import styles from "./admin.module.css";
 
 type ReviewRecord = {
@@ -149,7 +150,7 @@ export default function AdminPage() {
           <div className={styles.recordHeading}><h2>{record.manifest.title}</h2><strong className={record.status === "publication-failed" ? styles.error : styles.badge}>{statusLabels[record.status] ?? record.status}</strong></div>
           <p className={styles.muted}>投稿编号：<code>{record.id}</code> · {displayTime(record.createdAt)}</p>
           <dl className={styles.details}>
-            <dt>归属</dt><dd>{record.manifest.track?.label ?? "大类培养课程"} / {record.manifest.course.title}{(record.manifest.track?.mode === "new" || record.manifest.course.mode === "new") && "（含新建目录）"}</dd>
+            <dt>放在哪里</dt><dd>{record.manifest.track?.label ?? "基础课程"} / {courseDisplayTitle(record.manifest.course)}{(record.manifest.track?.mode === "new" || record.manifest.course.mode === "new") && "（含新建目录）"}</dd>
             <dt>类型 / 时间</dt><dd>{record.manifest.materialType} / {record.manifest.term}</dd>
             <dt>发布偏好</dt><dd>{record.manifest.anonymous ? "匿名发布" : "不匿名"}</dd>
             <dt>说明</dt><dd className={styles.summary}>{record.manifest.summary}</dd>

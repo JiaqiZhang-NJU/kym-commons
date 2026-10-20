@@ -67,7 +67,7 @@ export default function SubmitStepDetails(props: Props) {
           maxLength={8000}
           value={props.summary}
           onChange={(event) => props.onSummaryChange(event.target.value)}
-          placeholder="简要说明资料内容、适用人群和使用建议"
+          placeholder="这份资料讲什么、适合谁、怎么用？简单介绍一下"
         />
       </label>
 
@@ -88,7 +88,7 @@ export default function SubmitStepDetails(props: Props) {
             type="button"
           >
             <strong>外部链接</strong>
-            <div className={styles.muted}>适用于资料已经托管在稳定外链位置的情况。</div>
+            <div className={styles.muted}>资料已经放在其他网站？贴上能长期访问的链接。</div>
           </button>
         </div>
       </fieldset>

@@ -8,6 +8,8 @@ import { getMaterialFileInfo, isExternalHref } from "../lib/materials";
 
 type Props = { materialPackage: MaterialPackage };
 
+const assetRoleLabels = { primary: '资料文件', supplement: '补充资料', question: '题目', solution: '参考解答', source: '源文件', dataset: '数据文件', archive: '压缩包' };
+
 export default function MaterialPackagePage({ materialPackage }: Props) {
   const coursePath = buildCanonicalCoursePath(materialPackage.placement);
 
@@ -27,19 +29,19 @@ export default function MaterialPackagePage({ materialPackage }: Props) {
 
         <section className="margin-top--xl">
           <h2>包含文件</h2>
-          <div className="row">
+          <div className="row kym-file-grid">
             {materialPackage.assets.map((asset) => (
               <AssetCard asset={asset} key={asset.id} />
             ))}
           </div>
         </section>
-        <section className="margin-top--xl">
+        <section className="kym-info margin-top--xl">
           <h2>资料信息</h2>
           <dl>
             <dt>资料包 ID</dt>
             <dd><code>{materialPackage.id}</code></dd>
             <dt>来源</dt>
-            <dd>{materialPackage.source.kind === "external" ? "外部链接" : "KYM Commons 仓库"}</dd>
+            <dd>{materialPackage.source.kind === "external" ? "外部链接" : "本站收录"}</dd>
             {materialPackage.updatedAt ? <><dt>更新日期</dt><dd>{materialPackage.updatedAt}</dd></> : null}
           </dl>
         </section>
@@ -57,12 +59,12 @@ function AssetCard({ asset }: { asset: MaterialPackage["assets"][number] }) {
       <div className="card">
         <div className="card__body">
           <h3>{asset.label}</h3>
-          <p>{asset.role} · {asset.mediaType ?? fileInfo.formatLabel}</p>
+          <p>{assetRoleLabels[asset.role]} · {fileInfo.formatLabel}</p>
           {asset.sizeBytes !== null ? <p><small>{formatBytes(asset.sizeBytes)}</small></p> : null}
-          <a className="button button--primary button--sm" href={href} target="_blank" rel="noreferrer">
+          <div className="kym-file-actions"><a className="button button--primary button--sm" href={href} target="_blank" rel="noreferrer">
             {fileInfo.external ? "访问链接" : "打开文件"}
           </a>
-          {!fileInfo.external ? <a className="button button--secondary button--sm margin-left--sm" href={href} download>下载</a> : null}
+          {!fileInfo.external ? <a className="button button--secondary button--sm" href={href} download>下载</a> : null}</div>
         </div>
       </div>
     </article>

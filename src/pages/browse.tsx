@@ -9,6 +9,7 @@ import {
   type CatalogFacet,
   type CatalogSearchQuery,
 } from "../catalog/search";
+import { courseDisplayTitle } from "../lib/display";
 import MaterialPackageCard from "../components/MaterialPackageCard";
 import { useMaterialFavorites } from "../hooks/useMaterialFavorites";
 import { paginateItems } from "../lib/materials";
@@ -55,7 +56,7 @@ export default function BrowsePage() {
   }, [favoriteIds, favoritesOnly, query]);
   const pagination = useMemo(() => paginateItems(results, page, PAGE_SIZE), [page, results]);
   const categories = useMemo(() => new Map(runtimeCatalog.categories.map((item) => [item.slug, item.label])), []);
-  const courses = useMemo(() => new Map(runtimeCatalog.courses.map((item) => [item.slug, item.title])), []);
+  const courses = useMemo(() => new Map(runtimeCatalog.courses.map((item) => [item.slug, courseDisplayTitle(item)])), []);
   const facets = useMemo(() => ({
     section: getCatalogFacetCounts(catalogPackages, query, "section"),
     category: getCatalogFacetCounts(catalogPackages, query, "category"),
@@ -96,8 +97,7 @@ export default function BrowsePage() {
   return (
     <Layout title="资料检索">
       <main className="container margin-vert--lg">
-        <h1>资料检索</h1>
-        <p>搜索课程、资料包、文件名与标签；检索结果按相关性排序。</p>
+        <header className="kym-page-heading"><div><h1>找资料</h1><p>输入关键词，再按课程、分类或学期筛选。最相关的结果会排在前面。</p></div></header>
         <form className={styles.searchPanel} onSubmit={(event) => { event.preventDefault(); update({ q: draftKeyword.trim() }); }}>
           <label className={styles.searchInput}>
             <span className="margin-bottom--sm display-block">关键词</span>
@@ -110,7 +110,7 @@ export default function BrowsePage() {
         </form>
 
         <section className={styles.facets} aria-label="筛选条件">
-          <FacetGroup title="归属" values={["foundation", "track"]} counts={facets.section} selected={query.section === "all" ? [] : [query.section]} label={(value) => value === "foundation" ? "基础课程" : "方向课程"} onToggle={(value) => toggleValue("section", value)} />
+          <FacetGroup title="课程范围" values={["foundation", "track"]} counts={facets.section} selected={query.section === "all" ? [] : [query.section]} label={(value) => value === "foundation" ? "基础课程" : "方向课程"} onToggle={(value) => toggleValue("section", value)} />
           <FacetGroup title="分类" values={[...facets.category.keys()]} counts={facets.category} selected={query.category ? [query.category] : []} label={(value) => categories.get(value) ?? value} onToggle={(value) => toggleValue("category", value)} />
           <FacetGroup title="课程" values={[...facets.course.keys()].sort((a, b) => (courses.get(a) ?? a).localeCompare(courses.get(b) ?? b, "zh-Hans"))} counts={facets.course} selected={query.course ? [query.course] : []} label={(value) => courses.get(value) ?? value} onToggle={(value) => toggleValue("course", value)} compact />
           <FacetGroup title="学期" values={[...facets.term.keys()]} counts={facets.term} selected={query.term ? [query.term] : []} label={(value) => value} onToggle={(value) => toggleValue("term", value)} />
@@ -122,7 +122,7 @@ export default function BrowsePage() {
           <span>仅看收藏（{favoriteIds.size}）</span>
         </label>
         <div className={styles.summaryRow} ref={resultsStartRef}><strong>找到 {pagination.totalItems} 个资料包{pagination.totalItems ? `，显示第 ${pagination.startItem}–${pagination.endItem} 个` : ""}</strong></div>
-        {pagination.items.length ? pagination.items.map((materialPackage) => <MaterialPackageCard key={materialPackage.id} materialPackage={materialPackage} isFavorite={favoriteIds.has(materialPackage.id)} onToggleFavorite={toggleFavorite} />) : <div className={styles.emptyState}><strong>没有找到匹配的资料包</strong><p className="margin-bottom--0">尝试删除某个标签或使用更短的关键词。</p></div>}
+        <div className="kym-material-list">{pagination.items.length ? pagination.items.map((materialPackage) => <MaterialPackageCard key={materialPackage.id} materialPackage={materialPackage} isFavorite={favoriteIds.has(materialPackage.id)} onToggleFavorite={toggleFavorite} />) : <div className={styles.emptyState}><strong>没有找到匹配的资料包</strong><p className="margin-bottom--0">尝试删除某个标签或使用更短的关键词。</p></div>}</div>
         {pagination.totalPages > 1 ? <nav className={styles.pagination} aria-label="检索结果分页"><button className="button button--secondary" type="button" disabled={pagination.page === 1} onClick={() => setPage(page - 1)}>上一页</button><span>第 {pagination.page} / {pagination.totalPages} 页</span><button className="button button--secondary" type="button" disabled={pagination.page === pagination.totalPages} onClick={() => setPage(page + 1)}>下一页</button></nav> : null}
       </main>
     </Layout>

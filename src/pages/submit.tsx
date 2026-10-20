@@ -12,10 +12,10 @@ export default function SubmitPage() {
   );
 
   return (
-    <Layout title="资料投稿">
+    <Layout title="分享资料">
       <main className="container margin-vert--lg">
-        <h1>资料投稿</h1>
-        <p>选择归属位置，填写说明并上传资料。维护者审核通过后会发布到网站。</p>
+        <h1>分享资料</h1>
+        <p>选好课程或方向，写几句介绍，再上传文件或贴上链接。审核通过后就会发布。</p>
         <SubmitWizard key={location.search} initialTarget={initialTarget} />
       </main>
     </Layout>

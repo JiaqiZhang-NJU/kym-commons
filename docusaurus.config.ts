@@ -61,12 +61,13 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/foundation', label: 'Foundation', position: 'left'},
-        {to: '/tracks', label: 'Tracks', position: 'left'},
-        {to: '/browse', label: 'Browse', position: 'left'},
-        {to: '/submit', label: 'Submit', position: 'left'},
-        {to: '/docs/rules', label: 'Rules', position: 'left'},
-        {to: '/docs/about', label: 'About', position: 'left'},
+        {to: '/', label: '首页', position: 'left', activeBaseRegex: '^/$'},
+        {to: '/foundation', label: '基础课程', position: 'left'},
+        {to: '/tracks', label: '各方向资料', position: 'left'},
+        {to: '/browse', label: '找资料', position: 'left'},
+        {to: '/submit', label: '分享资料', position: 'left'},
+        {to: '/docs/rules', label: '投稿规则', position: 'left'},
+        {to: '/docs/about', label: '关于本站', position: 'left'},
         {
           href: `https://github.com/${organizationName}/${projectName}`,
           label: 'GitHub',
@@ -75,31 +76,31 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'KYM Commons',
           items: [
-            {label: 'Foundation', to: '/foundation'},
-            {label: 'Tracks', to: '/tracks'},
+            {label: '基础课程', to: '/foundation'},
+            {label: '各方向资料', to: '/tracks'},
           ],
         },
         {
-          title: 'Contribute',
+          title: '一起分享',
           items: [
-            {label: 'Submit Materials', to: '/submit'},
-            {label: 'Rules', to: '/docs/rules'},
+            {label: '分享资料', to: '/submit'},
+            {label: '投稿规则', to: '/docs/rules'},
           ],
         },
         {
-          title: 'Project',
+          title: '了解本站',
           items: [
-            {label: 'About', to: '/docs/about'},
+            {label: '关于本站', to: '/docs/about'},
             {label: 'GitHub', href: `https://github.com/${organizationName}/${projectName}`},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} KYM Commons. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} KYM Commons.`,
     },
     prism: {
       theme: prismThemes.github,

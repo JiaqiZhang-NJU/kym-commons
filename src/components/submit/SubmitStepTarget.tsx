@@ -53,21 +53,21 @@ export default function SubmitStepTarget(props: Props) {
           <legend>所属方向</legend>
           <div className={styles.modeGroup}>
             <ModeOption checked={props.trackTargetMode === "existing"} name="track-target" onChange={() => props.onTrackTargetModeChange("existing")} title="已有方向" description="将资料放入已存在的方向。" value="existing" />
-            <ModeOption checked={props.trackTargetMode === "new"} name="track-target" onChange={() => props.onTrackTargetModeChange("new")} title="新建方向" description="审核通过后同时创建方向及其 General Resources。" value="new" />
+            <ModeOption checked={props.trackTargetMode === "new"} name="track-target" onChange={() => props.onTrackTargetModeChange("new")} title="新建方向" description="审核通过后，会一并创建这个方向和通用资料入口。" value="new" />
           </div>
           {props.trackTargetMode === "existing" ? (
             <label className={styles.field}><span>选择方向</span><select value={props.existingTrackSlug} onChange={(event) => props.onExistingTrackChange(event.target.value)}>{tracks.map((track) => <option key={track.slug} value={track.slug}>{track.label}</option>)}</select></label>
           ) : (
             <div className={styles.targetFields}>
               <label className={styles.field}><span>方向名称</span><input maxLength={200} value={props.newTrackLabel} onChange={(event) => props.onNewTrackLabelChange(event.target.value)} placeholder="例如：电子信息" /></label>
-              <label className={styles.field}><span>方向 slug</span><input maxLength={100} value={props.newTrackSlug} onChange={(event) => props.onNewTrackSlugChange(event.target.value)} placeholder="例如：electronic-information" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
+              <label className={styles.field}><span>方向网址名称</span><input maxLength={100} value={props.newTrackSlug} onChange={(event) => props.onNewTrackSlugChange(event.target.value)} placeholder="例如：electronic-information" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
             </div>
           )}
         </fieldset>
       )}
 
       {isTrackGeneral ? (
-        <div className={styles.helperBox}><strong>发布位置</strong><p className={styles.muted}>{displayTrackLabel} / General Resources</p></div>
+        <div className={styles.helperBox}><strong>发布位置</strong><p className={styles.muted}>{displayTrackLabel} / 方向通用资料</p></div>
       ) : (
         <fieldset className={styles.fieldsetReset}>
           <legend>课程</legend>
@@ -75,13 +75,13 @@ export default function SubmitStepTarget(props: Props) {
             <ModeOption checked={props.courseTargetMode === "existing"} name="course-target" onChange={() => props.onCourseTargetModeChange("existing")} title="已有课程" description="选择目录中已存在的课程。" value="existing" />
             <ModeOption checked={props.courseTargetMode === "new"} name="course-target" onChange={() => props.onCourseTargetModeChange("new")} title="新建课程" description="审核通过后与资料一同创建。" value="new" />
           </div>}
-          {forceNewCourse && <p className={styles.fieldHint}>新方向尚无现有课程；请填写其首门课程。</p>}
+          {forceNewCourse && <p className={styles.fieldHint}>新方向还没有课程，请先添加一门。</p>}
           {props.courseTargetMode === "existing" && !forceNewCourse ? (
             <label className={styles.field}><span>选择课程</span><select value={props.existingCourseSlug} onChange={(event) => props.onExistingCourseChange(event.target.value)}>{selectableCourses.length === 0 && <option value="">暂无已有课程</option>}{selectableCourses.map((course) => <option key={course.slug} value={course.slug}>{course.title}</option>)}</select></label>
           ) : (
             <div className={styles.targetFields}>
               <label className={styles.field}><span>课程名称</span><input maxLength={200} value={props.newCourseTitle} onChange={(event) => props.onNewCourseTitleChange(event.target.value)} placeholder="例如：数字信号处理" /></label>
-              <label className={styles.field}><span>课程 slug</span><input maxLength={100} value={props.newCourseSlug} onChange={(event) => props.onNewCourseSlugChange(event.target.value)} placeholder="例如：digital-signal-processing" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
+              <label className={styles.field}><span>课程网址名称</span><input maxLength={100} value={props.newCourseSlug} onChange={(event) => props.onNewCourseSlugChange(event.target.value)} placeholder="例如：digital-signal-processing" /><small className={styles.fieldHint}>使用小写英文、数字和连字符。</small></label>
             </div>
           )}
         </fieldset>
