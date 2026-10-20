@@ -37,7 +37,7 @@ main.container { padding-top: .5rem; padding-bottom: 1rem; }
 .navbar__brand { color: var(--ifm-font-color-base); }
 .navbar__title { font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif; font-size: 1.15rem; letter-spacing: -.04em; }
 .navbar__logo { width: 24px; height: 24px; margin-right: .5rem; }
-[data-theme='dark'] img.navbar__logo { filter: invert(1); }
+[data-theme='dark'] .navbar__logo { filter: invert(1); }
 .navbar__link { font-size: .875rem; font-weight: 400; color: var(--kym-muted-text); border-radius: 6px; }
 .navbar__link:hover { color: var(--ifm-font-color-base); background: var(--kym-surface-muted); }
 .navbar__link--active { color: var(--ifm-color-primary); background: var(--kym-surface-emphasis); font-weight: 600; }
